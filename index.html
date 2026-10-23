@@ -87,7 +87,7 @@
   </div>
 
   <div class="summary-card">
-    <div class="summary-title">펀드 현재 총 평가금액</div>
+    <div class="summary-title">현재 보유 주식 총 평가금액</div>
     <div class="total-eval" id="totalEval">--원</div>
     <div class="pnl-row" id="pnlRow">
       <span id="pnlAmt">--원</span>
@@ -95,8 +95,8 @@
     </div>
     <div class="stat-grid">
       <div class="stat-item">
-        <div class="stat-label">보유 주식 총액</div>
-        <div class="stat-value" id="stockEvalAmt">--원</div>
+        <div class="stat-label">매수 총액 (실제 원금)</div>
+        <div class="stat-value" id="stockPchsAmt">--원</div>
       </div>
       <div class="stat-item">
         <div class="stat-label">잔여 가용 현금</div>
@@ -160,10 +160,10 @@
       document.getElementById('pnlAmt').textContent = (isProfit ? '+' : '') + pnl.toLocaleString() + '원';
       document.getElementById('pnlPct').textContent = '(' + (isProfit ? '+' : '') + pnlPct.toFixed(2) + '%)';
 
-      document.getElementById('stockEvalAmt').textContent = (d.stock_eval || 0).toLocaleString() + '원';
+      document.getElementById('stockPchsAmt').textContent = (d.stock_pchs || 0).toLocaleString() + '원';
       document.getElementById('usableCash').textContent = (d.usable_cash || 0).toLocaleString() + '원';
       document.getElementById('deviceBattery').textContent = d.battery || '확인 중';
-      document.getElementById('lastUpdated').textContent = '최근 5분 감시 업데이트: ' + (d.updated_at || '--');
+      document.getElementById('lastUpdated').textContent = '최근 감시 동기화: ' + (d.updated_at || '--');
 
       // Holdings
       const holdings = d.holdings || [];
