@@ -1,11 +1,12 @@
 {
-  "updated_at": "2026-10-24 00:25:24",
+  "updated_at": "2026-10-24 01:38:09",
   "battery": "조회 불가 (센서 정보 미제공)",
   "fund_eval": 10452500,
   "stock_eval": 10452500,
+  "stock_pchs": 10674537,
   "usable_cash": 0,
-  "fund_pnl": 5452500,
-  "fund_pnl_pct": 109.05,
+  "fund_pnl": -222037,
+  "fund_pnl_pct": -2.0800621141694484,
   "holding_count": 6,
   "holdings": [
     {
