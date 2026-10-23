@@ -1,14 +1,21 @@
 {
-  "updated_at": "2026-10-24 02:45:06",
+  "updated_at": "2026-10-24 02:46:25",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "85% (⚡ 충전 중, 28.3°C)",
-  "fund_eval": 10452500,
+  "battery": "100% (⚡ 완충됨)",
+  "budget_limit": 5000000,
+  "fund_eval": 4854559,
+  "fund_pnl": -145441,
+  "fund_pnl_pct": -2.91,
   "stock_eval": 10452500,
   "stock_pchs": 10674537,
+  "stock_pnl": -222037,
+  "stock_pnl_pct": -2.08,
+  "stock_pnl_on_fund_pct": -4.44,
   "usable_cash": 0,
-  "fund_pnl": -222037,
-  "fund_pnl_pct": -2.0800621141694484,
+  "excess_amt": 5452500,
+  "rebalance_mode": true,
+  "rebalance_deadline": "2026-11-06",
   "holding_count": 6,
   "holdings": [
     {
@@ -19,7 +26,7 @@
       "pnl_rate": 0.79,
       "eval_amt": 1277000,
       "rsi": 16.0,
-      "investor_summary": "최근(10/23) 순매수: 외국인 -470,048주, 기관 +483,193주"
+      "investor_summary": "외국인 -470,048주, 기관 +483,193주"
     },
     {
       "code": "005380",
@@ -29,7 +36,7 @@
       "pnl_rate": -4.01,
       "eval_amt": 1773000,
       "rsi": 26.7,
-      "investor_summary": "최근(10/23) 순매수: 외국인 -5,449주, 기관 -33,158주"
+      "investor_summary": "외국인 -5,449주, 기관 -33,158주"
     },
     {
       "code": "005930",
@@ -39,7 +46,7 @@
       "pnl_rate": 1.11,
       "eval_amt": 1939500,
       "rsi": 19.5,
-      "investor_summary": "최근(10/23) 순매수: 외국인 -868,997주, 기관 +627,670주"
+      "investor_summary": "외국인 -868,997주, 기관 +627,670주"
     },
     {
       "code": "035420",
@@ -49,7 +56,7 @@
       "pnl_rate": -2.34,
       "eval_amt": 1736000,
       "rsi": 29.3,
-      "investor_summary": "최근(10/23) 순매수: 외국인 +35,464주, 기관 -79,384주"
+      "investor_summary": "외국인 +35,464주, 기관 -79,384주"
     },
     {
       "code": "105560",
@@ -59,7 +66,7 @@
       "pnl_rate": -5.63,
       "eval_amt": 1377000,
       "rsi": 29.0,
-      "investor_summary": "최근(10/23) 순매수: 외국인 -203,378주, 기관 +158,911주"
+      "investor_summary": "외국인 -203,378주, 기관 +158,911주"
     },
     {
       "code": "267260",
@@ -69,7 +76,7 @@
       "pnl_rate": -2.31,
       "eval_amt": 2350000,
       "rsi": 18.3,
-      "investor_summary": "최근(10/23) 순매수: 외국인 -20,217주, 기관 +3,697주"
+      "investor_summary": "외국인 -20,217주, 기관 +3,697주"
     }
   ],
   "watch_list": [
@@ -94,8 +101,8 @@
       "name": "HD현대일렉트릭"
     },
     {
-      "code": "000660",
-      "name": "SK하이닉스"
+      "code": "091160",
+      "name": "KODEX 반도체"
     }
   ]
 }
