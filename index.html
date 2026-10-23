@@ -151,6 +151,9 @@
     }
 
     function renderData(d) {
+      const stText = d.market_status || (d.is_market_open ? '장중 실시간 감시 중' : '주말 휴장 (24/7 시스템 정상 가동)');
+      document.getElementById('statusText').textContent = stText;
+
       document.getElementById('totalEval').textContent = (d.fund_eval || 0).toLocaleString() + '원';
       const pnl = d.fund_pnl || 0;
       const pnlPct = d.fund_pnl_pct || 0;
