@@ -1,5 +1,7 @@
 {
-  "updated_at": "2026-10-24 01:38:09",
+  "updated_at": "2026-10-24 01:46:31",
+  "market_status": "주말 휴장 (24/7 실시간 관제 중)",
+  "is_market_open": false,
   "battery": "조회 불가 (센서 정보 미제공)",
   "fund_eval": 10452500,
   "stock_eval": 10452500,
