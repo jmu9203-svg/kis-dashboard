@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>KIS 500만 원 AI 자율 펀드 대시보드</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --card-border: #30363d;
+      --text-main: #f0f6fc;
+      --text-sub: #8b949e;
+      --accent: #238636;
+      --profit: #f85149; /* 한국 주식 빨간색 상승 */
+      --loss: #58a6ff;   /* 한국 주식 파란색 하락 */
+      --pill-bg: #21262d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif; }
+    body { background-color: var(--bg); color: var(--text-main); padding: 16px; max-width: 640px; margin: 0 auto; -webkit-font-smoothing: antialiased; }
+    
+    /* Header */
+    .header { display: flex; justify-content: space-between; align-items: center; padding: 12px 0 20px 0; }
+    .title-group h1 { font-size: 20px; font-weight: 700; color: var(--text-main); }
+    .title-group p { font-size: 13px; color: var(--text-sub); margin-top: 2px; }
+    .status-badge { display: flex; align-items: center; gap: 6px; background: rgba(35, 134, 54, 0.2); border: 1px solid var(--accent); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; color: #3fb950; }
+    .pulse-dot { width: 8px; height: 8px; background: #3fb950; border-radius: 50%; box-shadow: 0 0 8px #3fb950; animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.2); } 100% { opacity: 1; transform: scale(1); } }
+
+    /* Summary Card */
+    .summary-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 20px; margin-bottom: 20px; }
+    .summary-title { font-size: 13px; color: var(--text-sub); font-weight: 500; }
+    .total-eval { font-size: 32px; font-weight: 800; margin: 8px 0; letter-spacing: -0.5px; }
+    .pnl-row { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; }
+    .profit-text { color: var(--profit); }
+    .loss-text { color: var(--loss); }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--card-border); }
+    .stat-item { font-size: 13px; }
+    .stat-label { color: var(--text-sub); margin-bottom: 4px; }
+    .stat-value { font-weight: 600; color: var(--text-main); }
+
+    /* Section Title */
+    .section-title { font-size: 16px; font-weight: 700; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
+    .section-count { font-size: 13px; color: var(--text-sub); font-weight: 400; }
+
+    /* Holdings List */
+    .holdings-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+    .holding-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 16px; }
+    .holding-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+    .stock-name { font-size: 16px; font-weight: 700; }
+    .stock-code { font-size: 12px; color: var(--text-sub); font-weight: 400; margin-left: 6px; }
+    .stock-qty { font-size: 13px; color: var(--text-sub); margin-top: 2px; }
+    .stock-val-box { text-align: right; }
+    .stock-cur-price { font-size: 16px; font-weight: 700; }
+    .stock-pnl { font-size: 13px; font-weight: 700; margin-top: 2px; }
+
+    /* Indicator Pills */
+    .indicator-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.06); }
+    .indicator-pill { background: var(--pill-bg); border-radius: 6px; padding: 4px 8px; font-size: 12px; color: var(--text-sub); display: flex; gap: 4px; }
+    .pill-val { color: var(--text-main); font-weight: 600; }
+    .rsi-oversold { color: #58a6ff; font-weight: 700; }
+    .rsi-overbought { color: #f85149; font-weight: 700; }
+
+    /* Footer Info */
+    .footer { text-align: center; color: var(--text-sub); font-size: 12px; padding: 20px 0; border-top: 1px solid var(--card-border); margin-top: 10px; }
+    .footer-detail { display: flex; justify-content: center; gap: 12px; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title-group">
+      <h1>AI 500만 원 자율 펀드</h1>
+      <p>한국투자증권 Open API & Gemini 실시간 대시보드</p>
+    </div>
+    <div class="status-badge" id="systemStatus">
+      <div class="pulse-dot"></div>
+      <span id="statusText">정상 감시 중</span>
+    </div>
+  </div>
+
+  <div class="summary-card">
+    <div class="summary-title">펀드 현재 총 평가금액</div>
+    <div class="total-eval" id="totalEval">--원</div>
+    <div class="pnl-row" id="pnlRow">
+      <span id="pnlAmt">--원</span>
+      <span id="pnlPct">(--%)</span>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-item">
+        <div class="stat-label">보유 주식 총액</div>
+        <div class="stat-value" id="stockEvalAmt">--원</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-label">잔여 가용 현금</div>
+        <div class="stat-value" id="usableCash">--원</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-label">종목당 편입 한도</div>
+        <div class="stat-value">1,500,000원 (30%)</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-label">공기계 배터리</div>
+        <div class="stat-value" id="deviceBattery">--</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">
+    <span>현재 보유 포트폴리오</span>
+    <span class="section-count" id="holdingCount">0개 종목</span>
+  </div>
+  <div class="holdings-list" id="holdingsList">
+    <!-- 동적으로 채워짐 -->
+  </div>
+
+  <div class="section-title">
+    <span>실시간 레이더 감시 종목</span>
+    <span class="section-count" id="watchCount">0개 종목</span>
+  </div>
+  <div class="holdings-list" id="watchList">
+    <!-- 동적으로 채워짐 -->
+  </div>
+
+  <div class="footer">
+    <div id="lastUpdated">최근 업데이트: 조회 중...</div>
+    <div class="footer-detail">
+      <span>스케줄: 평일 10:00 / 14:30</span>
+      <span>•</span>
+      <span>실시간 감시: 5분 주기</span>
+    </div>
+  </div>
+
+  <script>
+    async function loadDashboard() {
+      try {
+        const res = await fetch('dashboard_data.json?t=' + new Date().getTime());
+        if (!res.ok) throw new Error('데이터 로드 실패');
+        const data = await res.json();
+        renderData(data);
+      } catch (err) {
+        console.warn('로컬 데이터 대기 중:', err);
+      }
+    }
+
+    function renderData(d) {
+      document.getElementById('totalEval').textContent = (d.fund_eval || 0).toLocaleString() + '원';
+      const pnl = d.fund_pnl || 0;
+      const pnlPct = d.fund_pnl_pct || 0;
+      const pnlEl = document.getElementById('pnlRow');
+      const isProfit = pnl >= 0;
+      pnlEl.className = 'pnl-row ' + (isProfit ? 'profit-text' : 'loss-text');
+      document.getElementById('pnlAmt').textContent = (isProfit ? '+' : '') + pnl.toLocaleString() + '원';
+      document.getElementById('pnlPct').textContent = '(' + (isProfit ? '+' : '') + pnlPct.toFixed(2) + '%)';
+
+      document.getElementById('stockEvalAmt').textContent = (d.stock_eval || 0).toLocaleString() + '원';
+      document.getElementById('usableCash').textContent = (d.usable_cash || 0).toLocaleString() + '원';
+      document.getElementById('deviceBattery').textContent = d.battery || '확인 중';
+      document.getElementById('lastUpdated').textContent = '최근 5분 감시 업데이트: ' + (d.updated_at || '--');
+
+      // Holdings
+      const holdings = d.holdings || [];
+      document.getElementById('holdingCount').textContent = holdings.length + '개 종목';
+      const hList = document.getElementById('holdingsList');
+      hList.innerHTML = holdings.map(h => {
+        const hpnl = h.pnl_rate || 0;
+        const hprofit = hpnl >= 0;
+        const rsiVal = h.rsi || '--';
+        const rsiClass = rsiVal <= 30 ? 'rsi-oversold' : (rsiVal >= 70 ? 'rsi-overbought' : '');
+        return `
+          <div class="holding-card">
+            <div class="holding-top">
+              <div>
+                <span class="stock-name">${h.name}</span>
+                <span class="stock-code">${h.code}</span>
+                <div class="stock-qty">${h.qty}주 보유 (평단 ${h.avg_price.toLocaleString()}원)</div>
+              </div>
+              <div class="stock-val-box">
+                <div class="stock-cur-price">${(h.eval_amt || 0).toLocaleString()}원</div>
+                <div class="stock-pnl ${hprofit ? 'profit-text' : 'loss-text'}">${(hprofit ? '+' : '')}${hpnl.toFixed(2)}%</div>
+              </div>
+            </div>
+            <div class="indicator-row">
+              <div class="indicator-pill">14일 RSI: <span class="pill-val ${rsiClass}">${rsiVal}</span></div>
+              <div class="indicator-pill">수급: <span class="pill-val">${h.investor_summary || '분석 중'}</span></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // Watch List
+      const watch = d.watch_list || [];
+      document.getElementById('watchCount').textContent = watch.length + '개 종목';
+      const wList = document.getElementById('watchList');
+      wList.innerHTML = watch.map(w => `
+        <div class="holding-card" style="padding: 12px 16px;">
+          <div class="holding-top" style="margin-bottom: 0;">
+            <div>
+              <span class="stock-name">${w.name}</span>
+              <span class="stock-code">${w.code}</span>
+            </div>
+            <div style="font-size: 12px; color: var(--accent); font-weight: 600;">감시 레이더 가동 중 📡</div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    loadDashboard();
+    setInterval(loadDashboard, 15000); // 15초마다 자동 새로고침
+  </script>
+</body>
+</html>
