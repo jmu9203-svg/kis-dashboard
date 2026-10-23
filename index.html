@@ -23,6 +23,9 @@
       --profit: #f85149; /* 한국 주식 빨간색 상승 */
       --loss: #58a6ff;   /* 한국 주식 파란색 하락 */
       --pill-bg: #21262d;
+      --warn-bg: rgba(210, 153, 34, 0.15);
+      --warn-border: #d29922;
+      --warn-text: #e3b341;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif; }
     body { background-color: var(--bg); color: var(--text-main); padding: 16px; max-width: 640px; margin: 0 auto; -webkit-font-smoothing: antialiased; }
@@ -39,9 +42,10 @@
     .summary-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 20px; margin-bottom: 20px; }
     .summary-title { font-size: 13px; color: var(--text-sub); font-weight: 500; }
     .total-eval { font-size: 32px; font-weight: 800; margin: 8px 0; letter-spacing: -0.5px; }
-    .pnl-row { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; }
+    .pnl-row { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; flex-wrap: wrap; }
     .profit-text { color: var(--profit); }
     .loss-text { color: var(--loss); }
+    .rebalance-banner { margin-top: 12px; background: var(--warn-bg); border: 1px solid var(--warn-border); color: var(--warn-text); padding: 8px 12px; border-radius: 10px; font-size: 12px; font-weight: 600; display: none; }
     .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--card-border); }
     .stat-item { font-size: 13px; }
     .stat-label { color: var(--text-sub); margin-bottom: 4px; }
@@ -87,24 +91,25 @@
   </div>
 
   <div class="summary-card">
-    <div class="summary-title">현재 보유 주식 총 평가금액</div>
+    <div class="summary-title">500만 원 독립 펀드 순평가액 (동결금 4,500만 제외)</div>
     <div class="total-eval" id="totalEval">--원</div>
     <div class="pnl-row" id="pnlRow">
       <span id="pnlAmt">--원</span>
       <span id="pnlPct">(--%)</span>
     </div>
+    <div class="rebalance-banner" id="rebalanceBanner"></div>
     <div class="stat-grid">
       <div class="stat-item">
-        <div class="stat-label">매수 총액 (실제 원금)</div>
+        <div class="stat-label">보유 주식 평가액 (원금)</div>
         <div class="stat-value" id="stockPchsAmt">--원</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-label">보유 주식 평가손익 (500만 대비)</div>
+        <div class="stat-value" id="stockPnlInfo">--원</div>
       </div>
       <div class="stat-item">
         <div class="stat-label">잔여 가용 현금</div>
         <div class="stat-value" id="usableCash">--원</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-label">종목당 편입 한도</div>
-        <div class="stat-value">1,500,000원 (30%)</div>
       </div>
       <div class="stat-item">
         <div class="stat-label">공기계 배터리</div>
@@ -161,12 +166,30 @@
       const isProfit = pnl >= 0;
       pnlEl.className = 'pnl-row ' + (isProfit ? 'profit-text' : 'loss-text');
       document.getElementById('pnlAmt').textContent = (isProfit ? '+' : '') + pnl.toLocaleString() + '원';
-      document.getElementById('pnlPct').textContent = '(' + (isProfit ? '+' : '') + pnlPct.toFixed(2) + '%)';
+      document.getElementById('pnlPct').textContent = '(' + (isProfit ? '+' : '') + pnlPct.toFixed(2) + '% | 500만 시드 기준)';
 
-      document.getElementById('stockPchsAmt').textContent = (d.stock_pchs || 0).toLocaleString() + '원';
+      const stockEval = d.stock_eval || 0;
+      const stockPchs = d.stock_pchs || 0;
+      const stockPnl = (d.stock_pnl !== undefined) ? d.stock_pnl : (stockEval - stockPchs);
+      const stockPnlOnFundPct = (d.stock_pnl_on_fund_pct !== undefined) ? d.stock_pnl_on_fund_pct : (stockPnl / 5000000 * 100);
+
+      document.getElementById('stockPchsAmt').textContent = stockEval.toLocaleString() + '원 (원금 ' + stockPchs.toLocaleString() + '원)';
+      const spEl = document.getElementById('stockPnlInfo');
+      const spProfit = stockPnl >= 0;
+      spEl.className = 'stat-value ' + (spProfit ? 'profit-text' : 'loss-text');
+      spEl.textContent = (spProfit ? '+' : '') + stockPnl.toLocaleString() + '원 (' + (spProfit ? '+' : '') + stockPnlOnFundPct.toFixed(2) + '%)';
+
       document.getElementById('usableCash').textContent = (d.usable_cash || 0).toLocaleString() + '원';
       document.getElementById('deviceBattery').textContent = d.battery || '확인 중';
       document.getElementById('lastUpdated').textContent = '최근 감시 동기화: ' + (d.updated_at || '--');
+
+      const rbBanner = document.getElementById('rebalanceBanner');
+      if (d.excess_amt && d.excess_amt > 0) {
+        rbBanner.style.display = 'block';
+        rbBanner.textContent = '⚖️ [연착륙 리밸런싱 가동 중] 시드 초과분 ' + d.excess_amt.toLocaleString() + '원 단계적 축소 중 (목표기한: ~' + (d.rebalance_deadline || '2026-11-06') + ')';
+      } else {
+        rbBanner.style.display = 'none';
+      }
 
       // Holdings
       const holdings = d.holdings || [];
