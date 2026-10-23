@@ -1,0 +1,98 @@
+{
+  "updated_at": "2026-10-24 00:25:24",
+  "battery": "조회 불가 (센서 정보 미제공)",
+  "fund_eval": 10452500,
+  "stock_eval": 10452500,
+  "usable_cash": 0,
+  "fund_pnl": 5452500,
+  "fund_pnl_pct": 109.05,
+  "holding_count": 6,
+  "holdings": [
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "qty": 1,
+      "avg_price": 1267000,
+      "pnl_rate": 0.79,
+      "eval_amt": 1277000,
+      "rsi": 16.0,
+      "investor_summary": "최근(10/23) 순매수: 외국인 -470,048주, 기관 +483,193주"
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "qty": 6,
+      "avg_price": 307833,
+      "pnl_rate": -4.01,
+      "eval_amt": 1773000,
+      "rsi": 26.7,
+      "investor_summary": "최근(10/23) 순매수: 외국인 -5,449주, 기관 -33,158주"
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "qty": 9,
+      "avg_price": 213138,
+      "pnl_rate": 1.11,
+      "eval_amt": 1939500,
+      "rsi": 19.5,
+      "investor_summary": "최근(10/23) 순매수: 외국인 -868,997주, 기관 +627,670주"
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "qty": 10,
+      "avg_price": 177760,
+      "pnl_rate": -2.34,
+      "eval_amt": 1736000,
+      "rsi": 29.3,
+      "investor_summary": "최근(10/23) 순매수: 외국인 +35,464주, 기관 -79,384주"
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "qty": 9,
+      "avg_price": 162133,
+      "pnl_rate": -5.63,
+      "eval_amt": 1377000,
+      "rsi": 29.0,
+      "investor_summary": "최근(10/23) 순매수: 외국인 -203,378주, 기관 +158,911주"
+    },
+    {
+      "code": "267260",
+      "name": "HD현대일렉트릭",
+      "qty": 5,
+      "avg_price": 481100,
+      "pnl_rate": -2.31,
+      "eval_amt": 2350000,
+      "rsi": 18.3,
+      "investor_summary": "최근(10/23) 순매수: 외국인 -20,217주, 기관 +3,697주"
+    }
+  ],
+  "watch_list": [
+    {
+      "code": "005930",
+      "name": "삼성전자"
+    },
+    {
+      "code": "005380",
+      "name": "현대차"
+    },
+    {
+      "code": "105560",
+      "name": "KB금융"
+    },
+    {
+      "code": "035420",
+      "name": "NAVER"
+    },
+    {
+      "code": "267260",
+      "name": "HD현대일렉트릭"
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스"
+    }
+  ]
+}
