@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-25 02:15:43",
+  "updated_at": "2026-10-25 02:26:14",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "85% (⚡ 충전 중, 28.3°C)",
+  "battery": "85% (⚡ 충전 중, 27.2°C)",
   "budget_limit": 5000000,
   "fund_eval": 4854559,
   "fund_pnl": -145441,
@@ -143,8 +143,8 @@
     {
       "code": "091160",
       "name": "KODEX 반도체",
-      "price": 107590,
-      "change_rate": -0.66,
+      "price": 0,
+      "change_rate": 0.0,
       "rsi": 17.5,
       "is_held": false,
       "held_qty": 0,
