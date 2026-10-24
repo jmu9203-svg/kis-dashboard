@@ -130,6 +130,9 @@
     <span>실시간 레이더 감시 종목</span>
     <span class="section-count" id="watchCount">0개 종목</span>
   </div>
+  <div style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 12px; padding: 10px 14px; background: rgba(255, 255, 255, 0.03); border-radius: 10px; border: 1px dashed var(--border);">
+    💡 <b>AI 감시 바스켓 안내</b>: 평일 10:00 / 14:30마다 실시간 수급·뉴스를 분석하며, 현재는 연착륙 리밸런싱을 위해 신규 매수를 쉬고 안전하게 타점만 추적 중입니다.
+  </div>
   <div class="holdings-list" id="watchList">
     <!-- 동적으로 채워짐 -->
   </div>
@@ -225,17 +228,44 @@
       const watch = d.watch_list || [];
       document.getElementById('watchCount').textContent = watch.length + '개 종목';
       const wList = document.getElementById('watchList');
-      wList.innerHTML = watch.map(w => `
-        <div class="holding-card" style="padding: 12px 16px;">
-          <div class="holding-top" style="margin-bottom: 0;">
-            <div>
-              <span class="stock-name">${w.name}</span>
-              <span class="stock-code">${w.code}</span>
+      wList.innerHTML = watch.map(w => {
+        const curPrice = w.price ? w.price.toLocaleString() + '원' : '--';
+        let subRateHtml = '';
+        if (w.is_held && w.pnl_rate !== undefined && w.pnl_rate !== null) {
+          const hp = w.pnl_rate >= 0;
+          subRateHtml = `<div class="stock-pnl ${hp ? 'profit-text' : 'loss-text'}" style="font-size: 12px;">수익률 ${(hp ? '+' : '') + w.pnl_rate.toFixed(2)}%</div>`;
+        } else if (w.change_rate !== undefined && w.change_rate !== null) {
+          const cp = w.change_rate >= 0;
+          subRateHtml = `<div class="stock-pnl ${cp ? 'profit-text' : 'loss-text'}" style="font-size: 12px;">전일대비 ${(cp ? '+' : '') + w.change_rate.toFixed(2)}%</div>`;
+        }
+        const rsiVal = w.rsi || '--';
+        const rsiClass = rsiVal <= 30 ? 'rsi-oversold' : (rsiVal >= 70 ? 'rsi-overbought' : '');
+        const isHeld = w.is_held;
+        const statusBadge = isHeld 
+          ? `<span style="background: rgba(0, 199, 126, 0.15); color: #00c77e; padding: 2px 7px; border-radius: 6px; font-size: 11px; font-weight: 700;">${w.held_qty}주 보유 중 📦</span>`
+          : `<span style="background: rgba(49, 130, 246, 0.15); color: #3182f6; padding: 2px 7px; border-radius: 6px; font-size: 11px; font-weight: 700;">미보유 신규 🎯</span>`;
+        const actionBadge = w.action_status || '감시 레이더 가동 중 📡';
+
+        return `
+          <div class="holding-card" style="padding: 13px 16px;">
+            <div class="holding-top">
+              <div>
+                <span class="stock-name">${w.name}</span>
+                <span class="stock-code">${w.code}</span>
+                <div style="margin-top: 4px;">${statusBadge}</div>
+              </div>
+              <div class="stock-val-box">
+                <div class="stock-cur-price">${curPrice}</div>
+                ${subRateHtml}
+              </div>
             </div>
-            <div style="font-size: 12px; color: var(--accent); font-weight: 600;">감시 레이더 가동 중 📡</div>
+            <div class="indicator-row" style="margin-top: 8px;">
+              <div class="indicator-pill">14일 RSI: <span class="pill-val ${rsiClass}">${rsiVal}</span></div>
+              <div class="indicator-pill">AI 상태: <span class="pill-val" style="color: var(--accent); font-weight: 600;">${actionBadge}</span></div>
+            </div>
           </div>
-        </div>
-      `).join('');
+        `;
+      }).join('');
     }
 
     loadDashboard();
