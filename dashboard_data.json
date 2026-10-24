@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-24 10:23:54",
+  "updated_at": "2026-10-24 10:34:21",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "85% (⚡ 충전 중, 25.0°C)",
+  "battery": "조회 불가 (센서 정보 미제공)",
   "budget_limit": 5000000,
   "fund_eval": 4854559,
   "fund_pnl": -145441,
