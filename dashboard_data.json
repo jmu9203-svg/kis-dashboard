@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 05:26:36",
+  "updated_at": "2026-10-26 05:37:06",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 25.0°C)",
@@ -25,7 +25,7 @@
       "avg_price": 1267000,
       "pnl_rate": 0.79,
       "eval_amt": 1277000,
-      "rsi": 16.0,
+      "rsi": 16.6,
       "investor_summary": "외국인 -470,048주, 기관 +483,193주 | [5일누적 합계: 외인 -724,381주, 기관 -68,213주]"
     },
     {
@@ -35,7 +35,7 @@
       "avg_price": 307833,
       "pnl_rate": -4.01,
       "eval_amt": 1773000,
-      "rsi": 26.7,
+      "rsi": 27.8,
       "investor_summary": "외국인 -5,449주, 기관 -33,158주(4일연속매도⚠️) | [5일누적 합계: 외인 +87,954주, 기관 -115,266주]"
     },
     {
@@ -45,7 +45,7 @@
       "avg_price": 213138,
       "pnl_rate": 1.11,
       "eval_amt": 1939500,
-      "rsi": 19.5,
+      "rsi": 20.5,
       "investor_summary": "외국인 -868,997주(2일연속매도⚠️), 기관 +627,670주 | [5일누적 합계: 외인 +3,643,697주, 기관 -2,263,271주]"
     },
     {
@@ -55,7 +55,7 @@
       "avg_price": 177760,
       "pnl_rate": -2.34,
       "eval_amt": 1736000,
-      "rsi": 29.3,
+      "rsi": 28.4,
       "investor_summary": "외국인 +35,464주(4일연속매수🔥), 기관 -79,384주(4일연속매도⚠️) | [5일누적 합계: 외인 +135,263주, 기관 -217,967주]"
     },
     {
@@ -65,7 +65,7 @@
       "avg_price": 162133,
       "pnl_rate": -5.63,
       "eval_amt": 1377000,
-      "rsi": 29.0,
+      "rsi": 25.7,
       "investor_summary": "외국인 -203,378주(2일연속매도⚠️), 기관 +158,911주 | [5일누적 합계: 외인 -378,507주, 기관 +339,440주]"
     },
     {
@@ -75,7 +75,7 @@
       "avg_price": 481100,
       "pnl_rate": -2.31,
       "eval_amt": 2350000,
-      "rsi": 18.3,
+      "rsi": 17.2,
       "investor_summary": "외국인 -20,217주, 기관 +3,697주 | [5일누적 합계: 외인 +16,859주, 기관 -39,202주]"
     }
   ],
@@ -85,7 +85,7 @@
       "name": "삼성전자",
       "price": 215500,
       "change_rate": null,
-      "rsi": 19.5,
+      "rsi": 20.5,
       "is_held": true,
       "held_qty": 9,
       "pnl_rate": 1.11,
@@ -97,7 +97,7 @@
       "name": "현대차",
       "price": 295500,
       "change_rate": null,
-      "rsi": 26.7,
+      "rsi": 27.8,
       "is_held": true,
       "held_qty": 6,
       "pnl_rate": -4.01,
@@ -109,7 +109,7 @@
       "name": "KB금융",
       "price": 153000,
       "change_rate": null,
-      "rsi": 29.0,
+      "rsi": 25.7,
       "is_held": true,
       "held_qty": 9,
       "pnl_rate": -5.63,
@@ -121,7 +121,7 @@
       "name": "NAVER",
       "price": 173600,
       "change_rate": null,
-      "rsi": 29.3,
+      "rsi": 28.4,
       "is_held": true,
       "held_qty": 10,
       "pnl_rate": -2.34,
@@ -133,7 +133,7 @@
       "name": "HD현대일렉트릭",
       "price": 470000,
       "change_rate": null,
-      "rsi": 18.3,
+      "rsi": 17.2,
       "is_held": true,
       "held_qty": 5,
       "pnl_rate": -2.31,
@@ -144,8 +144,8 @@
       "code": "091160",
       "name": "KODEX 반도체",
       "price": 107590,
-      "change_rate": -0.66,
-      "rsi": 17.5,
+      "change_rate": 0.0,
+      "rsi": 17.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
