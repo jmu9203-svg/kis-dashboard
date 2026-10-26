@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 20:49:22",
+  "updated_at": "2026-10-26 20:59:52",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "60% (🔋 배터리 사용 중, 23.8°C)",
@@ -87,8 +87,8 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 148200,
-      "change_rate": -3.14,
+      "price": 0,
+      "change_rate": 0.0,
       "rsi": 22.1,
       "is_held": false,
       "held_qty": 0,
