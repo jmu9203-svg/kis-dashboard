@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 22:52:26",
+  "updated_at": "2026-10-26 22:41:58",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "55% (🔋 배터리 사용 중, 26.3°C)",
@@ -61,76 +61,94 @@
   ],
   "watch_list": [
     {
-      "code": "005930",
-      "name": "삼성전자",
-      "price": 213000,
-      "change_rate": null,
-      "rsi": 20.1,
-      "is_held": true,
-      "held_qty": 9,
-      "pnl_rate": -0.07,
-      "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "실시간 급락 감시 🛡️"
-    },
-    {
       "code": "005380",
       "name": "현대차",
-      "price": 288000,
-      "change_rate": null,
+      "price": 0,
+      "change_rate": 0.0,
       "rsi": 26.3,
       "is_held": true,
       "held_qty": 5,
-      "pnl_rate": -6.44,
-      "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "실시간 급락 감시 🛡️"
+      "pnl_rate": -6.44
     },
     {
-      "code": "105560",
-      "name": "KB금융",
-      "price": 148200,
-      "change_rate": -3.14,
-      "rsi": 22.1,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "연착륙 매수대기 ⏸️"
+      "code": "005930",
+      "name": "삼성전자",
+      "price": 0,
+      "change_rate": 0.0,
+      "rsi": 20.1,
+      "is_held": true,
+      "held_qty": 9,
+      "pnl_rate": -0.07
     },
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 174200,
-      "change_rate": null,
+      "price": 0,
+      "change_rate": 0.0,
       "rsi": 29.7,
       "is_held": true,
       "held_qty": 10,
-      "pnl_rate": -2.0,
-      "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "실시간 급락 감시 🛡️"
+      "pnl_rate": -2.0
     },
     {
       "code": "267260",
       "name": "HD현대일렉트릭",
-      "price": 447000,
-      "change_rate": null,
+      "price": 0,
+      "change_rate": 0.0,
       "rsi": 15.9,
       "is_held": true,
       "held_qty": 5,
-      "pnl_rate": -7.09,
-      "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "실시간 급락 감시 🛡️"
+      "pnl_rate": -7.09
     },
     {
-      "code": "091160",
-      "name": "KODEX 반도체",
-      "price": 103090,
-      "change_rate": -4.18,
-      "rsi": 16.6,
+      "code": "465580",
+      "name": "ACE 미국빅테크TOP7 Plus",
+      "price": 0,
+      "change_rate": 0.0,
+      "rsi": 32.4,
       "is_held": false,
       "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "연착륙 매수대기 ⏸️"
+      "pnl_rate": 0.0
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "price": 0,
+      "change_rate": 0.0,
+      "rsi": 22.1,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": 0.0
+    },
+    {
+      "code": "381180",
+      "name": "TIGER 미국필라델피아반도체나스닥",
+      "price": 0,
+      "change_rate": 0.0,
+      "rsi": 17.1,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": 0.0
+    },
+    {
+      "code": "138040",
+      "name": "메리츠금융지주",
+      "price": 0,
+      "change_rate": 0.0,
+      "rsi": 41.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": 0.0
+    },
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "price": 0,
+      "change_rate": 0.0,
+      "rsi": 20.2,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": 0.0
     }
   ]
 }
