@@ -153,11 +153,11 @@
   </div>
 
   <div class="section-title">
-    <span>실시간 레이더 감시 종목</span>
+    <span>🔄 한·미 AI 자율 로테이션 감시 바스켓</span>
     <span class="section-count" id="watchCount">0개 종목</span>
   </div>
-  <div style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 12px; padding: 10px 14px; background: rgba(255, 255, 255, 0.03); border-radius: 10px; border: 1px dashed var(--border);">
-    💡 <b>AI 감시 바스켓 안내</b>: 평일 10:00 / 14:30마다 실시간 수급·뉴스를 분석하며, 현재는 연착륙 리밸런싱을 위해 신규 매수를 쉬고 안전하게 타점만 추적 중입니다.
+  <div style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 12px; padding: 10px 14px; background: rgba(255, 255, 255, 0.03); border-radius: 10px; border: 1px dashed var(--card-border);">
+    💡 <b>한·미 30선 마스터 풀 AI 자율 발굴</b>: 코어 우량주 + <b>미국 대표 지수/빅테크 ETF(원화 즉시 매매·환전수수료 0원·매도거래세 0% 면제)</b> + <b>외인·기관 수급 상위 주도주</b>를 AI가 매일 스스로 스캔해 감시 바스켓을 자동 교체합니다.
   </div>
   <div class="holdings-list" id="watchList">
     <!-- 동적으로 채워짐 -->
@@ -330,13 +330,18 @@
           }
         }
 
+        const isUsEtf = ['465580', '133690', '360750', '381180', '381170', '458730'].includes(w.code) || (w.name || '').includes('미국');
+        const marketBadge = isUsEtf
+          ? `<span style="background: rgba(16, 185, 129, 0.15); color: #34d399; padding: 2px 6px; border-radius: 5px; font-size: 10px; font-weight: 700; margin-right: 4px;">🇺🇸 미국ETF(무환전)</span>`
+          : `<span style="background: rgba(59, 130, 246, 0.15); color: #60a5fa; padding: 2px 6px; border-radius: 5px; font-size: 10px; font-weight: 700; margin-right: 4px;">🇰🇷 국내우량</span>`;
+
         return `
           <div class="holding-card" style="padding: 13px 16px;">
             <div class="holding-top">
               <div>
-                <span class="stock-name">${w.name}</span>
+                ${marketBadge}<span class="stock-name">${w.name}</span>
                 <span class="stock-code">${w.code}</span>
-                <div style="margin-top: 4px;">${statusBadge}</div>
+                <div style="margin-top: 5px;">${statusBadge}</div>
               </div>
               <div class="stock-val-box">
                 <div class="stock-cur-price">${curPrice}</div>
