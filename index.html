@@ -28,12 +28,19 @@
       --warn-text: #e3b341;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif; }
-    body { background-color: var(--bg); color: var(--text-main); padding: 16px; max-width: 640px; margin: 0 auto; -webkit-font-smoothing: antialiased; }
+    body { background-color: var(--bg); color: var(--text-main); padding: 16px; max-width: 680px; margin: 0 auto; -webkit-font-smoothing: antialiased; }
+
+    /* Top Family Navigation Bar (Unified 4 Sites) */
+    .nav-tabs { display: flex; gap: 4px; background: #161b22; padding: 4px; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--card-border); overflow-x: auto; }
+    .nav-tab-item { flex: 1; text-align: center; padding: 8px 6px; font-size: 12px; font-weight: 600; color: var(--text-sub); text-decoration: none; border-radius: 8px; transition: all 0.2s; white-space: nowrap; }
+    .nav-tab-item:hover { color: var(--text-main); }
+    .nav-tab-item.active { background: #21262d; color: #fff; border: 1px solid rgba(255,255,255,0.12); }
     
     /* Header */
-    .header { display: flex; justify-content: space-between; align-items: center; padding: 12px 0 20px 0; }
-    .title-group h1 { font-size: 20px; font-weight: 700; color: var(--text-main); }
-    .title-group p { font-size: 13px; color: var(--text-sub); margin-top: 2px; }
+    .header { display: flex; justify-content: space-between; align-items: center; padding: 6px 0 16px 0; }
+    .title-group h1 { font-size: 21px; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 8px; }
+    .kis-tag { font-size: 11px; background: rgba(35, 134, 54, 0.2); color: #3fb950; border: 1px solid rgba(63, 185, 80, 0.4); padding: 2px 8px; border-radius: 12px; font-weight: 700; }
+    .title-group p { font-size: 13px; color: var(--text-sub); margin-top: 3px; }
     .status-badge { display: flex; align-items: center; gap: 6px; background: rgba(35, 134, 54, 0.2); border: 1px solid var(--accent); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; color: #3fb950; }
     .pulse-dot { width: 8px; height: 8px; background: #3fb950; border-radius: 50%; box-shadow: 0 0 8px #3fb950; animation: pulse 2s infinite; }
     @keyframes pulse { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.2); } 100% { opacity: 1; transform: scale(1); } }
@@ -79,22 +86,27 @@
   </style>
 </head>
 <body>
-  <!-- Top Family Navigation (4 Sites) -->
-  <div style="display: flex; gap: 4px; background: #161b22; padding: 4px; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--border); overflow-x: auto;">
-    <a href="https://jmu9203-svg.github.io/kis-dashboard/" style="flex: 1; text-align: center; padding: 8px 4px; font-size: 11px; font-weight: 600; color: #fff; text-decoration: none; border-radius: 8px; background: #21262d; border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;">💼 한투 500만 펀드</a>
-    <a href="https://jmu9203-svg.github.io/toss-dashboard/" style="flex: 1; text-align: center; padding: 8px 4px; font-size: 11px; font-weight: 600; color: var(--text-sub); text-decoration: none; border-radius: 8px; white-space: nowrap;">💙 토스 실전 비서</a>
-    <a href="https://jmu9203-svg.github.io/dividend-calendar/" style="flex: 1; text-align: center; padding: 8px 4px; font-size: 11px; font-weight: 600; color: var(--text-sub); text-decoration: none; border-radius: 8px; white-space: nowrap;">📅 배당 캘린더</a>
-    <a href="https://jmu9203-svg.github.io/system-architecture/" style="flex: 1; text-align: center; padding: 8px 4px; font-size: 11px; font-weight: 600; color: var(--text-sub); text-decoration: none; border-radius: 8px; white-space: nowrap;">🧠 전략 백서</a>
+  <!-- Top Family Navigation (Unified 4 Sites) -->
+  <div class="nav-tabs">
+    <a href="https://jmu9203-svg.github.io/kis-dashboard/" class="nav-tab-item active">💼 한투 500만 펀드</a>
+    <a href="https://jmu9203-svg.github.io/toss-dashboard/" class="nav-tab-item">💙 토스 실전 비서</a>
+    <a href="https://jmu9203-svg.github.io/dividend-calendar/" class="nav-tab-item">📅 배당 캘린더</a>
+    <a href="https://jmu9203-svg.github.io/system-architecture/" class="nav-tab-item">🧠 전략 백서</a>
   </div>
 
   <div class="header">
     <div class="title-group">
-      <h1>AI 500만 원 자율 펀드</h1>
-      <p>한국투자증권 Open API & Gemini 실시간 대시보드</p>
+      <h1>AI 500만 원 자율 펀드 <span class="kis-tag">Autopilot</span></h1>
+      <p>한국투자증권 Open API &amp; Gemini 실시간 관제</p>
     </div>
-    <div class="status-badge" id="systemStatus">
-      <div class="pulse-dot"></div>
-      <span id="statusText">정상 감시 중</span>
+    <div style="display: flex; gap: 6px; align-items: center;">
+      <div class="status-badge" style="background: var(--pill-bg); border: 1px solid var(--card-border); color: var(--text-main);">
+        <span id="headerBattery">🔋 --</span>
+      </div>
+      <div class="status-badge" id="systemStatus">
+        <div class="pulse-dot"></div>
+        <span id="statusText">정상 감시 중</span>
+      </div>
     </div>
   </div>
 
@@ -198,6 +210,9 @@
 
       document.getElementById('usableCash').textContent = (d.usable_cash || 0).toLocaleString() + '원';
       document.getElementById('deviceBattery').textContent = d.battery || '확인 중';
+      if (document.getElementById('headerBattery')) {
+        document.getElementById('headerBattery').textContent = '🔋 ' + (d.battery ? d.battery.split(' ')[0] : '--');
+      }
       document.getElementById('lastUpdated').textContent = '최근 감시 동기화: ' + (d.updated_at || '--');
 
       // 외부 역감시: 공기계 홈서버 전원/와이파이 먹통(25분 이상 미갱신) 자동 감지
