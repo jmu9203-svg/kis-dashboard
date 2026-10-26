@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-26 21:54:00",
+  "updated_at": "2026-10-26 22:04:29",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "57% (🔋 배터리 사용 중, 26.8°C)",
+  "battery": "57% (🔋 배터리 사용 중, 27.9°C)",
   "budget_limit": 5000000,
   "fund_eval": 4643635,
   "fund_pnl": -356365,
@@ -87,8 +87,8 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 0,
-      "change_rate": 0.0,
+      "price": 148200,
+      "change_rate": -3.14,
       "rsi": 22.1,
       "is_held": false,
       "held_qty": 0,
@@ -123,8 +123,8 @@
     {
       "code": "091160",
       "name": "KODEX 반도체",
-      "price": 0,
-      "change_rate": 0.0,
+      "price": 103090,
+      "change_rate": -4.18,
       "rsi": 16.6,
       "is_held": false,
       "held_qty": 0,
