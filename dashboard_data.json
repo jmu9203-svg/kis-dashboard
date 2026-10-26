@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-26 19:04:48",
+  "updated_at": "2026-10-26 19:15:16",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "64% (🔋 배터리 사용 중, 23.6°C)",
+  "battery": "63% (🔋 배터리 사용 중, 23.7°C)",
   "budget_limit": 5000000,
   "fund_eval": 4643635,
   "fund_pnl": -356365,
@@ -45,7 +45,7 @@
       "avg_price": 177760,
       "pnl_rate": -2.0,
       "eval_amt": 1742000,
-      "rsi": 29.7,
+      "rsi": 30.0,
       "investor_summary": "외국인 +49,450주(5일연속매수🔥), 기관 +23,293주 | [5일누적 합계: 외인 +214,043주, 기관 -264,250주]"
     },
     {
@@ -87,9 +87,9 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 0,
-      "change_rate": 0.0,
-      "rsi": 22.2,
+      "price": 148500,
+      "change_rate": -2.94,
+      "rsi": 22.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -101,7 +101,7 @@
       "name": "NAVER",
       "price": 174200,
       "change_rate": null,
-      "rsi": 29.7,
+      "rsi": 30.0,
       "is_held": true,
       "held_qty": 10,
       "pnl_rate": -2.0,
@@ -123,8 +123,8 @@
     {
       "code": "091160",
       "name": "KODEX 반도체",
-      "price": 0,
-      "change_rate": 0.0,
+      "price": 103090,
+      "change_rate": -4.18,
       "rsi": 16.6,
       "is_held": false,
       "held_qty": 0,
