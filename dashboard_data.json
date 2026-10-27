@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28 08:20:24",
+  "updated_at": "2026-10-28 08:31:03",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 24.3°C)",
@@ -51,18 +51,6 @@
   ],
   "watch_list": [
     {
-      "code": "005380",
-      "name": "현대차",
-      "price": 290500,
-      "change_rate": 0.0,
-      "rsi": 29.6,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "연착륙 매수대기 ⏸️"
-    },
-    {
       "code": "005930",
       "name": "삼성전자",
       "price": 222000,
@@ -111,6 +99,18 @@
       "action_status": "연착륙 매수대기 ⏸️"
     },
     {
+      "code": "005380",
+      "name": "현대차",
+      "price": 290500,
+      "change_rate": 0.0,
+      "rsi": 29.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "연착륙 매수대기 ⏸️"
+    },
+    {
       "code": "105560",
       "name": "KB금융",
       "price": 147600,
@@ -123,11 +123,11 @@
       "action_status": "연착륙 매수대기 ⏸️"
     },
     {
-      "code": "381170",
-      "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 29590,
+      "code": "381180",
+      "name": "TIGER 미국필라델피아반도체나스닥",
+      "price": 37865,
       "change_rate": 0.0,
-      "rsi": 12.8,
+      "rsi": 17.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -135,11 +135,11 @@
       "action_status": "연착륙 매수대기 ⏸️"
     },
     {
-      "code": "138040",
-      "name": "메리츠금융지주",
-      "price": 123000,
+      "code": "018260",
+      "name": "삼성에스디에스",
+      "price": 215000,
       "change_rate": 0.0,
-      "rsi": 33.9,
+      "rsi": 56.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -147,11 +147,11 @@
       "action_status": "연착륙 매수대기 ⏸️"
     },
     {
-      "code": "066570",
-      "name": "LG전자",
-      "price": 157500,
+      "code": "042660",
+      "name": "한화오션",
+      "price": 53000,
       "change_rate": 0.0,
-      "rsi": 8.4,
+      "rsi": 12.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
