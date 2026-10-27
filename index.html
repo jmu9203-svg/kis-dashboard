@@ -178,6 +178,65 @@
         const res = await fetch('dashboard_data.json?t=' + new Date().getTime());
         if (!res.ok) throw new Error('데이터 로드 실패');
         const data = await res.json();
+
+        // [프론트엔드 자가 치유(Self-Healing) 가드]
+        // 만약 한투 모의서버 초당 제한(TPS) 등으로 holdings가 일시적으로 비어 내려왔다면,
+        // last_good_fund.json(또는 브라우저 캐시) + watch_list 실시간 현재가를 결합해 즉시 복원합니다!
+        if (data.holdings && data.holdings.length > 0) {
+          try { localStorage.setItem('kis_last_good_snap', JSON.stringify(data)); } catch (e) {}
+        } else {
+          let snap = null;
+          try {
+            const rSnap = await fetch('last_good_fund.json?t=' + new Date().getTime());
+            if (rSnap.ok) snap = await rSnap.json();
+          } catch (e) {}
+          if (!snap || !snap.holdings || !snap.holdings.length) {
+            try {
+              const cached = localStorage.getItem('kis_last_good_snap');
+              if (cached) snap = JSON.parse(cached);
+            } catch (e) {}
+          }
+          if (snap && snap.holdings && snap.holdings.length > 0) {
+            const watchMap = {};
+            (data.watch_list || []).forEach(w => { watchMap[w.code] = w; });
+            const restored = snap.holdings.map(h => {
+              const wInfo = watchMap[h.code];
+              const curP = (wInfo && wInfo.price > 0) ? wInfo.price : Math.round((h.eval_amt || 0) / Math.max(1, h.qty || 1));
+              const evalAmt = curP * (h.qty || 0);
+              const pnlRate = h.avg_price > 0 ? ((curP - h.avg_price) / h.avg_price * 100) : (h.pnl_rate || 0);
+              return {
+                ...h,
+                eval_amt: evalAmt,
+                pnl_rate: Number(pnlRate.toFixed(2)),
+                rsi: (wInfo && wInfo.rsi !== undefined && wInfo.rsi !== null) ? wInfo.rsi : (h.rsi || '--'),
+                investor_summary: h.investor_summary || '기관·외인 수급 실시간 추적 중'
+              };
+            });
+            const stockEval = restored.reduce((s, h) => s + (h.eval_amt || 0), 0);
+            const stockPchs = restored.reduce((s, h) => s + ((h.avg_price || 0) * (h.qty || 0)), 0);
+            const stockPnl = stockEval - stockPchs;
+            const d2Cash = snap.d2_cash || 42309635;
+            const frozen = 45000000;
+            const budget = data.budget_limit || 5000000;
+            const actualTot = d2Cash + stockEval;
+            const fundEval = actualTot > frozen ? (actualTot - frozen) : (budget + stockPnl);
+            const fundPnl = fundEval - budget;
+
+            data.holdings = restored;
+            data.holding_count = restored.length;
+            data.stock_eval = stockEval;
+            data.stock_pchs = stockPchs;
+            data.stock_pnl = stockPnl;
+            data.stock_pnl_pct = stockPchs > 0 ? Number((stockPnl / stockPchs * 100).toFixed(2)) : 0;
+            data.stock_pnl_on_fund_pct = Number((stockPnl / budget * 100).toFixed(2));
+            data.usable_cash = snap.usable_cash !== undefined ? snap.usable_cash : Math.max(0, d2Cash - frozen);
+            data.fund_eval = fundEval;
+            data.fund_pnl = fundPnl;
+            data.fund_pnl_pct = Number((fundPnl / budget * 100).toFixed(2));
+            data.excess_amt = Math.max(0, stockEval - budget);
+          }
+        }
+
         renderData(data);
       } catch (err) {
         console.warn('로컬 데이터 대기 중:', err);
