@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-10-28 14:35:11",
+  "updated_at": "2026-10-28 14:37:16",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "73% (🔋 배터리 사용 중, 21.9°C)",
   "budget_limit": 5000000,
-  "fund_eval": 5008656,
-  "fund_pnl": 8656,
-  "fund_pnl_pct": 0.17,
-  "stock_eval": 4484800,
+  "fund_eval": 5014908,
+  "fund_pnl": 14908,
+  "fund_pnl_pct": 0.3,
+  "stock_eval": 5217000,
   "stock_pchs": 4466994,
-  "stock_pnl": 17806,
-  "stock_pnl_pct": 0.4,
-  "stock_pnl_on_fund_pct": 0.36,
-  "usable_cash": 523856,
-  "excess_amt": 0,
-  "rebalance_mode": false,
+  "stock_pnl": 750006,
+  "stock_pnl_pct": 16.79,
+  "stock_pnl_on_fund_pct": 15.0,
+  "usable_cash": 0,
+  "excess_amt": 217000,
+  "rebalance_mode": true,
   "rebalance_deadline": "2026-11-06",
   "holding_count": 3,
   "holdings": [
@@ -23,8 +23,8 @@
       "name": "삼성전자",
       "qty": 3,
       "avg_price": 213138,
-      "pnl_rate": 13.54,
-      "eval_amt": 726000,
+      "pnl_rate": 13.78,
+      "eval_amt": 1455000,
       "rsi": 39.3,
       "investor_summary": "외국인 +1,052,520주, 기관 +412,198주(3일연속매수🔥) | [5일누적 합계: 외인 +668,578주, 기관 +1,580,010주]"
     },
@@ -33,8 +33,8 @@
       "name": "NAVER",
       "qty": 8,
       "avg_price": 177760,
-      "pnl_rate": 0.47,
-      "eval_amt": 1428800,
+      "pnl_rate": 0.7,
+      "eval_amt": 1432000,
       "rsi": 38.4,
       "investor_summary": "외국인 -44,065주, 기관 -52,016주 | [5일누적 합계: 외인 +175,259주, 기관 -243,841주]"
     },
@@ -53,26 +53,26 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 242000,
+      "price": 485000,
       "change_rate": 8.9,
       "rsi": 39.3,
       "is_held": true,
       "held_qty": 3,
-      "pnl_rate": 13.54,
+      "pnl_rate": 13.78,
       "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "보유 홀딩 관망 💎"
+      "action_status": "연착륙 익절 감시 ⚖️"
     },
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 178600,
-      "change_rate": 2.47,
+      "price": 179000,
+      "change_rate": 2.52,
       "rsi": 38.4,
       "is_held": true,
       "held_qty": 8,
-      "pnl_rate": 0.47,
+      "pnl_rate": 0.7,
       "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "보유 홀딩 관망 💎"
+      "action_status": "실시간 급락 감시 🛡️"
     },
     {
       "code": "267260",
@@ -84,55 +84,55 @@
       "held_qty": 5,
       "pnl_rate": -3.14,
       "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "보유 홀딩 관망 💎"
+      "action_status": "실시간 급락 감시 🛡️"
     },
     {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 23925,
-      "change_rate": 2.88,
+      "price": 23910,
+      "change_rate": 2.82,
       "rsi": 32.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡"
+      "action_status": "연착륙 매수대기 ⏸️"
     },
     {
       "code": "005380",
       "name": "현대차",
-      "price": 299000,
-      "change_rate": 2.93,
-      "rsi": 34.4,
+      "price": 298500,
+      "change_rate": 2.75,
+      "rsi": 34.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡"
+      "action_status": "연착륙 매수대기 ⏸️"
     },
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 154700,
-      "change_rate": 4.81,
-      "rsi": 33.3,
+      "price": 154900,
+      "change_rate": 4.95,
+      "rsi": 33.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡"
+      "action_status": "연착륙 매수대기 ⏸️"
     },
     {
       "code": "381170",
       "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 30540,
-      "change_rate": 3.21,
+      "price": 30520,
+      "change_rate": 3.14,
       "rsi": 33.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡"
+      "action_status": "연착륙 매수대기 ⏸️"
     },
     {
       "code": "018260",
@@ -144,7 +144,7 @@
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡"
+      "action_status": "연착륙 매수대기 ⏸️"
     },
     {
       "code": "042660",
@@ -156,7 +156,7 @@
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡"
+      "action_status": "연착륙 매수대기 ⏸️"
     }
   ]
 }
