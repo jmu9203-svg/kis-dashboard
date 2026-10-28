@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-28 23:56:40",
-  "market_status": "정규장 마감 (24/7 실시간 관제 중)",
+  "updated_at": "2026-10-29 00:07:24",
+  "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "61% (⚡ 충전 중, 24.7°C)",
+  "battery": "72% (⚡ 충전 중, 26.9°C)",
   "budget_limit": 5000000,
   "fund_eval": 4986356,
   "fund_pnl": -13644,
