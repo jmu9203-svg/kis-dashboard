@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28 19:51:38",
+  "updated_at": "2026-10-28 20:02:16",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "61% (🔋 배터리 사용 중, 21.6°C)",
@@ -35,7 +35,7 @@
       "avg_price": 177760,
       "pnl_rate": 0.14,
       "eval_amt": 1424000,
-      "rsi": 38.5,
+      "rsi": 38.1,
       "investor_summary": "외국인 -9,166주(2일연속매도⚠️), 기관 -168,931주(2일연속매도⚠️) | [5일누적 합계: 외인 +99,454주, 기관 -344,177주]"
     },
     {
@@ -45,7 +45,7 @@
       "avg_price": 481100,
       "pnl_rate": -3.87,
       "eval_amt": 2312500,
-      "rsi": 22.8,
+      "rsi": 23.0,
       "investor_summary": "외국인 -4,722주, 기관 -255주(3일연속매도⚠️) | [5일누적 합계: 외인 +26,492주, 기관 -52,672주]"
     }
   ],
@@ -66,8 +66,8 @@
       "code": "035420",
       "name": "NAVER",
       "price": 178000,
-      "change_rate": 2.52,
-      "rsi": 38.5,
+      "change_rate": 2.35,
+      "rsi": 38.1,
       "is_held": true,
       "held_qty": 8,
       "pnl_rate": 0.14,
@@ -78,8 +78,8 @@
       "code": "267260",
       "name": "HD현대일렉트릭",
       "price": 462500,
-      "change_rate": 3.44,
-      "rsi": 22.8,
+      "change_rate": 3.67,
+      "rsi": 23.0,
       "is_held": true,
       "held_qty": 5,
       "pnl_rate": -3.87,
@@ -113,9 +113,9 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 153400,
-      "change_rate": 3.93,
-      "rsi": 30.9,
+      "price": 153800,
+      "change_rate": 4.2,
+      "rsi": 31.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -137,9 +137,9 @@
     {
       "code": "018260",
       "name": "삼성에스디에스",
-      "price": 223000,
-      "change_rate": 3.72,
-      "rsi": 62.1,
+      "price": 223500,
+      "change_rate": 3.95,
+      "rsi": 62.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
