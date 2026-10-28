@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29 08:27:36",
+  "updated_at": "2026-10-29 08:38:14",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 23.0°C)",
@@ -135,11 +135,11 @@
       "action_status": "진입 타점 추적 중 📡"
     },
     {
-      "code": "018260",
-      "name": "삼성에스디에스",
-      "price": 222500,
+      "code": "012330",
+      "name": "현대모비스",
+      "price": 352000,
       "change_rate": 0.0,
-      "rsi": 75.2,
+      "rsi": 47.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -147,11 +147,11 @@
       "action_status": "진입 타점 추적 중 📡"
     },
     {
-      "code": "042660",
-      "name": "한화오션",
-      "price": 52500,
+      "code": "035720",
+      "name": "카카오",
+      "price": 29800,
       "change_rate": 0.0,
-      "rsi": 12.9,
+      "rsi": 29.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
