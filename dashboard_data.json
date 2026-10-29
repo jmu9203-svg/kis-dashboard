@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30 05:31:47",
+  "updated_at": "2026-10-30 05:42:22",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 23.2°C)",
@@ -46,7 +46,7 @@
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
       "price": 23590,
-      "change_rate": -1.3,
+      "change_rate": 0.0,
       "rsi": 30.7,
       "is_held": false,
       "held_qty": 0,
