@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29 19:59:33",
+  "updated_at": "2026-10-29 20:10:07",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "62% (🔋 배터리 사용 중, 21.5°C)",
@@ -25,8 +25,8 @@
       "avg_price": 177760,
       "pnl_rate": -1.61,
       "eval_amt": 1399200,
-      "rsi": 39.5,
-      "investor_summary": "외국인 +72,883주, 기관 -112,850주(3일연속매도⚠️) | [5일누적 합계: 외인 +110,733주, 기관 -395,609주]"
+      "rsi": 39.6,
+      "investor_summary": "외국인 +72,842주, 기관 -110,313주(3일연속매도⚠️) | [5일누적 합계: 외인 +110,692주, 기관 -393,072주]"
     }
   ],
   "watch_list": [
@@ -34,8 +34,8 @@
       "code": "035420",
       "name": "NAVER",
       "price": 174900,
-      "change_rate": -1.69,
-      "rsi": 39.5,
+      "change_rate": -1.63,
+      "rsi": 39.6,
       "is_held": true,
       "held_qty": 8,
       "pnl_rate": -1.61,
@@ -57,9 +57,9 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 230000,
-      "change_rate": -4.96,
-      "rsi": 37.9,
+      "price": 230500,
+      "change_rate": -4.75,
+      "rsi": 38.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -69,9 +69,9 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 292500,
-      "change_rate": -1.18,
-      "rsi": 35.3,
+      "price": 292000,
+      "change_rate": -1.35,
+      "rsi": 35.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -81,9 +81,9 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 156900,
-      "change_rate": 1.88,
-      "rsi": 42.1,
+      "price": 157000,
+      "change_rate": 1.95,
+      "rsi": 42.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -105,8 +105,8 @@
     {
       "code": "012330",
       "name": "현대모비스",
-      "price": 354500,
-      "change_rate": 0.71,
+      "price": 355000,
+      "change_rate": 0.85,
       "rsi": 48.6,
       "is_held": false,
       "held_qty": 0,
