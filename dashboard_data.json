@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30 08:20:57",
+  "updated_at": "2026-10-30 08:31:30",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 23.2°C)",
@@ -103,11 +103,11 @@
       "action_status": "진입 타점 추적 중 📡"
     },
     {
-      "code": "012330",
-      "name": "현대모비스",
-      "price": 353000,
+      "code": "035720",
+      "name": "카카오",
+      "price": 29300,
       "change_rate": 0.0,
-      "rsi": 49.4,
+      "rsi": 28.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -115,11 +115,11 @@
       "action_status": "진입 타점 추적 중 📡"
     },
     {
-      "code": "035720",
-      "name": "카카오",
-      "price": 29300,
+      "code": "138040",
+      "name": "메리츠금융지주",
+      "price": 131400,
       "change_rate": 0.0,
-      "rsi": 28.6,
+      "rsi": 53.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
