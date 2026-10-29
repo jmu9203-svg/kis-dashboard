@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29 16:37:36",
+  "updated_at": "2026-10-29 16:48:13",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "70% (🔋 배터리 사용 중, 21.2°C)",
@@ -69,9 +69,9 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 290500,
-      "change_rate": -1.86,
-      "rsi": 34.7,
+      "price": 290000,
+      "change_rate": -2.03,
+      "rsi": 34.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -117,9 +117,9 @@
     {
       "code": "035720",
       "name": "카카오",
-      "price": 29200,
-      "change_rate": -2.01,
-      "rsi": 26.9,
+      "price": 29150,
+      "change_rate": -2.18,
+      "rsi": 26.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
