@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-29 16:48:13",
+  "updated_at": "2026-10-29 16:58:50",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "70% (🔋 배터리 사용 중, 21.2°C)",
+  "battery": "69% (🔋 배터리 사용 중, 21.2°C)",
   "budget_limit": 5000000,
   "fund_eval": 4832317,
   "fund_pnl": -167683,
@@ -25,7 +25,7 @@
       "avg_price": 177760,
       "pnl_rate": -1.61,
       "eval_amt": 1399200,
-      "rsi": 38.6,
+      "rsi": 39.1,
       "investor_summary": "외국인 +72,883주, 기관 -112,850주(3일연속매도⚠️) | [5일누적 합계: 외인 +110,733주, 기관 -395,609주]"
     }
   ],
@@ -34,8 +34,8 @@
       "code": "035420",
       "name": "NAVER",
       "price": 174900,
-      "change_rate": -2.25,
-      "rsi": 38.6,
+      "change_rate": -1.97,
+      "rsi": 39.1,
       "is_held": true,
       "held_qty": 8,
       "pnl_rate": -1.61,
@@ -81,9 +81,9 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 155900,
-      "change_rate": 1.23,
-      "rsi": 40.5,
+      "price": 155400,
+      "change_rate": 0.91,
+      "rsi": 39.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
