@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30 17:25:03",
+  "updated_at": "2026-10-30 17:35:44",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "68% (🔋 배터리 사용 중, 22.1°C)",
@@ -372,9 +372,9 @@
     {
       "code": "066570",
       "name": "LG전자",
-      "price": 149100,
-      "change_rate": -3.93,
-      "rsi": 17.2,
+      "price": 149000,
+      "change_rate": -3.99,
+      "rsi": 17.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
