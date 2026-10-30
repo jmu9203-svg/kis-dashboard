@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-30 16:25:43",
-  "market_status": "장중 실시간 감시 & 3대 AI 앙상블 가동 중",
-  "is_market_open": true,
-  "battery": "74% (충전 중)",
+  "updated_at": "2026-10-30 16:31:39",
+  "market_status": "정규장 마감 (24/7 실시간 관제 중)",
+  "is_market_open": false,
+  "battery": "70% (🔋 배터리 사용 중, 22.0°C)",
   "budget_limit": 5000000,
   "fund_eval": 4811517,
   "fund_pnl": -188483,
@@ -25,34 +25,34 @@
       "avg_price": 177760,
       "pnl_rate": -3.07,
       "eval_amt": 1378400,
-      "rsi": 39.8,
+      "rsi": 39.9,
       "investor_summary": "외국인 +15,502주(2일연속매수🔥), 기관 -46,148주(4일연속매도⚠️) | [5일누적 합계: 외인 +90,730주, 기관 -359,836주]",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 65,
-        "consensus": "3사 합의",
+        "score": 50,
+        "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 65,
+            "score": 45,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 65,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 65,
+            "score": 50,
             "decision": "관망"
           }
         ],
-        "reason": "코스피200 정상·강세장 속에서 NAVER는 14일 RSI가 39.5로 낮고 외국인 저가 매수세가 일부 유입되고 있으나, 기관의 4일 연속 대규모 순매도와 음봉 흐름이 겹쳐 있습니다. 또한 글로벌 빅테크 실적 발표 집중 구간으로 변동성이 확대될 수 있어 신규 진입보다는 관망하며 추가 조정을 확인하는 것이 안전합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 53점 ↔ AI 65점)"
+        "reason": "코스피200 시장이 -4.51% 급락하는 패닉 폭락장 레짐에 진입하여 당일 신규 매수가 전면 차단되었으며, 기관의 3일 연속 매도와 5일 누적 대량 순매도세가 지속되고 있어 추가 매수나 매도 조건에 부합하지 않으므로 기존 포지션을 유지하며 관망합니다.",
+        "audit_badge": "🟢 팩트 검증 통과 (정량 31점 ↔ AI 50점 | 뉴스·포지션 가중치 반영)"
       }
     }
   ],
@@ -60,9 +60,9 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 279500,
-      "change_rate": -4.44,
-      "rsi": 32.8,
+      "price": 279000,
+      "change_rate": -4.62,
+      "rsi": 32.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -70,30 +70,30 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 57,
+        "score": 50,
         "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 58,
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 58,
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 55,
+            "score": 50,
             "decision": "관망"
           }
         ],
-        "reason": "14일 RSI가 32.8로 과매도 구간에 진입했으나, 29일 공식 실적발표를 앞둔 경계감과 장중 긴 윗꼬리 음봉 및 외국인의 5일 누적 순매도 지속으로 단기 변동성이 확대될 리스크가 큽니다. 따라서 확실한 수급 유입과 실적 가시성이 확인될 때까지 신규 진입을 유보하고 관망을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 57점)"
+        "reason": "코스피200 -4.51% 급락으로 인한 '패닉 폭락장' 레짐에서 신규 매수가 전면 차단되어 있음. RSI 32.4로 과매도 구간이지만, 당일 긴 윗꼬리 음봉과 기관의 5일 누적 순매도(-43,415주)가 확인되어 반등 확신도가 낮음. 따라서 원금 보호를 위해 관망하며 추가 하락 시 손절선(-8.5%) 또는 반등 시 수급 전환 여부를 모니터링함.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 50점)"
       }
     },
     {
@@ -109,7 +109,85 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 65,
+        "score": 52,
+        "consensus": "3:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 62,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "시장 전체가 패닉 폭락 상황이며 당일 외인 순매도가 발생하고 고점 저항이 강한 긴 윗꼬리 음봉이 나타났습니다. RSI는 저점이고 기관·외인 5일 누적 매수는 긍정적이지만, 변동성 확대와 하락 분위기로 인해 신규 진입은 보류합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 48점 ↔ AI 52점)"
+      }
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "price": 172300,
+      "change_rate": -1.6,
+      "rsi": 39.9,
+      "is_held": true,
+      "held_qty": 8,
+      "pnl_rate": -3.07,
+      "status_tag": "포트폴리오 보유 중 📦",
+      "action_status": "보유 홀딩 관망 💎",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 50,
+        "consensus": "3:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "코스피200 시장이 -4.51% 급락하는 패닉 폭락장 레짐에 진입하여 당일 신규 매수가 전면 차단되었으며, 기관의 3일 연속 매도와 5일 누적 대량 순매도세가 지속되고 있어 추가 매수나 매도 조건에 부합하지 않으므로 기존 포지션을 유지하며 관망합니다.",
+        "audit_badge": "🟢 팩트 검증 통과 (정량 31점 ↔ AI 50점 | 뉴스·포지션 가중치 반영)"
+      }
+    },
+    {
+      "code": "267260",
+      "name": "HD현대일렉트릭",
+      "price": 424000,
+      "change_rate": -3.75,
+      "rsi": 22.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 63,
         "consensus": "2:1 관망 우세",
         "models": [
           {
@@ -121,96 +199,18 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 84,
-            "decision": "매수"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
             "score": 55,
             "decision": "관망"
-          }
-        ],
-        "reason": "10월 29일 공식 실적 발표를 앞두고 장중 고점 대비 밀린 긴 윗꼬리 음봉이 발생했으며, 외국인 2일 연속 매도세와 MA20 아래의 단기 조정 국면이 겹쳐 신규 추격 매수보다는 실적 및 수급 방향성 확인 후 진입이 유리하므로 관망합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 60점 ↔ AI 65점)"
-      }
-    },
-    {
-      "code": "035420",
-      "name": "NAVER",
-      "price": 172300,
-      "change_rate": -1.66,
-      "rsi": 39.8,
-      "is_held": true,
-      "held_qty": 8,
-      "pnl_rate": -3.07,
-      "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "보유 홀딩 관망 💎",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 65,
-        "consensus": "3사 합의",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 65,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 65,
-            "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 65,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           }
         ],
-        "reason": "코스피200 정상·강세장 속에서 NAVER는 14일 RSI가 39.5로 낮고 외국인 저가 매수세가 일부 유입되고 있으나, 기관의 4일 연속 대규모 순매도와 음봉 흐름이 겹쳐 있습니다. 또한 글로벌 빅테크 실적 발표 집중 구간으로 변동성이 확대될 수 있어 신규 진입보다는 관망하며 추가 조정을 확인하는 것이 안전합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 53점 ↔ AI 65점)"
-      }
-    },
-    {
-      "code": "267260",
-      "name": "HD현대일렉트릭",
-      "price": 423000,
-      "change_rate": -3.97,
-      "rsi": 22.5,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 65,
-        "consensus": "3사 합의",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 65,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 65,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 65,
-            "decision": "관망"
-          }
-        ],
-        "reason": "14일 RSI가 22.5로 극단적 과매도 구간이며 외국인 5일 누적 순매수세가 유입 중이나, 3분기 공식 실적발표(D-2)를 코앞에 두고 있어 단기 불확실성이 높습니다. 또한 윗꼬리 캔들과 기관의 연속 순매도세가 확인되므로, 실적 발표 이후 방향성을 확인하고 신규 진입하는 것이 안전합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 65점)"
+        "reason": "현재 HD현대일렉트릭의 14일 RSI가 21.6으로 과매도 구간에 위치하고 있으며, 외국인과 기관의 수급 동향을 고려하면 매수 기회로 판단됩니다. 또한, 현재가가 20일 이동평균선 하회하고 있지만, 기술적 지표와 수급 데이터를 종합적으로 분석한 결과, 매수 확신도가 높아 매수 결정하였습니다. 시장 레짐이 약세장임을 고려하여 보수적으로 점수를 부여하였습니다.",
+        "audit_badge": "🟢 팩트 검증 통과 (정량 38점 ↔ AI 63점 | 뉴스·포지션 가중치 반영)"
       }
     },
     {
@@ -225,15 +225,15 @@
       "status_tag": "신규 레이더 감시 🎯",
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
-        "decision": "매수",
-        "score": 80,
-        "consensus": "3:0 매수 합의",
+        "decision": "관망",
+        "score": 57,
+        "consensus": "2:1 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 78,
-            "decision": "매수"
+            "score": 48,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
@@ -244,51 +244,51 @@
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 85,
-            "decision": "매수"
+            "score": 45,
+            "decision": "관망"
           }
         ],
-        "reason": "코스피200 정상·강세장 레짐 속에서 14일 RSI가 23.8로 극심한 과매도 구간에 진입했으며, 기관이 5일 연속 순매수(누적 +12만 주 이상)로 강한 저가 방어력을 보여주고 있습니다. 단기 조정에 따른 기술적 반등 매수 기회로 판단되어, 1회 목표 수량인 19주를 신규 분할 매수합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 71점 ↔ AI 80점)"
+        "reason": "코스피200이 -4.51% 급락한 패닉 폭락장 레짐으로 당일 신규 매수가 전면 차단되어 있으며, 14일 RSI가 23.6으로 과매도 구간이나 미 반도체 지수 급락 및 주요 빅테크 실적발표를 앞둔 변동성 확대 국면입니다. 따라서 리스크 관리 차원에서 신규 진입을 유보하고 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 57점 ↔ AI 57점)"
       }
     },
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 155400,
-      "change_rate": -0.89,
-      "rsi": 40.4,
+      "price": 155200,
+      "change_rate": -1.02,
+      "rsi": 40.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "신규 레이더 감시 🎯",
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
-        "decision": "매수",
-        "score": 83,
-        "consensus": "3:0 매수 합의",
+        "decision": "관망",
+        "score": 65,
+        "consensus": "3사 합의",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 82,
-            "decision": "매수"
+            "score": 65,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 82,
-            "decision": "매수"
+            "score": 65,
+            "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 85,
-            "decision": "매수"
+            "score": 65,
+            "decision": "관망"
           }
         ],
-        "reason": "현재 코스피200 정상·강세장 속에서 KB금융은 3분기 역대 최대 순익 달성이라는 강력한 펀더멘털을 보유하고 있습니다. 주가가 20일 이내 단기 조정(-1.02%)을 거쳤으나 14일 RSI 40.2 중립 수준에서 121%의 활발한 거래량과 함께 아래꼬리를 달고 반등하며 외국인 5일 누적 순매수세가 유입되어 매수 확신도 가산점을 충족하므로, 2주 분할 매수를 즉시 집행합니다.",
-        "audit_badge": "🟢 팩트 검증 통과 (정량 65점 ↔ AI 83점 | 뉴스·포지션 가중치 반영)"
+        "reason": "시장 레짐이 급락장임에도 불구하고 RSI가 40 이하에 가까워 저점 매수 신호이며, 외국인 연속 순매수와 긍정적인 3분기 실적 뉴스가 결합돼 매수 확신도가 높다. 현금 여유와 주당 가격이 500,000원 이하이므로 2주(≈311,600원) 규모로 진입한다.",
+        "audit_badge": "🟢 팩트 검증 통과 (정량 47점 ↔ AI 65점 | 뉴스·포지션 가중치 반영)"
       }
     },
     {
@@ -303,31 +303,31 @@
       "status_tag": "신규 레이더 감시 🎯",
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
-        "decision": "매수",
-        "score": 82,
-        "consensus": "3:0 매수 합의",
+        "decision": "관망",
+        "score": 64,
+        "consensus": "2:1 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 76,
-            "decision": "매수"
+            "score": 58,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 85,
-            "decision": "매수"
+            "score": 55,
+            "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 85,
+            "score": 80,
             "decision": "매수"
           }
         ],
-        "reason": "정상·강세장 레짐 속에서 14일 RSI가 31.6으로 과매도 구간에 진입했으며, 외국인의 지속적인 5일 누적 순매수세가 유입되어 기술적 반등 기대감이 높습니다. 다만 장중 윗꼬리가 발생한 점을 감안해 1회 목표치인 11주(약 42만 원)만 분할 관점으로 신규 매수 집행합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 82점)"
+        "reason": "RSI 30.9의 과매도 구간 진입과 외국인 5일 누적 순매수 유입은 긍정적이나, 코스피200 약세·조정장 레짐과 미 필라델피아반도체 지수 약세(-2.07%), 기관의 4일 연속 매도 및 윗꼬리 음봉 출회로 인해 적극적 신규 매수보다는 보수적 관망이 유리합니다.",
+        "audit_badge": "🟢 팩트 검증 통과 (정량 35점 ↔ AI 64점 | 뉴스·포지션 가중치 반영)"
       }
     },
     {
@@ -342,39 +342,39 @@
       "status_tag": "신규 레이더 감시 🎯",
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
-        "decision": "매수",
-        "score": 83,
-        "consensus": "3:0 매수 합의",
+        "decision": "관망",
+        "score": 59,
+        "consensus": "2:1 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 82,
-            "decision": "매수"
+            "score": 50,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 82,
-            "decision": "매수"
+            "score": 50,
+            "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 85,
+            "score": 80,
             "decision": "매수"
           }
         ],
-        "reason": "현재 시장은 정상·강세장이며 20일 이동평균선을 상회하는 상승 추세 속에서 기관의 2일 연속 순매수와 외인·기관의 5일 누적 순매수 유입이 확인됩니다. 14일 RSI는 53.3의 안정적인 중립 구간을 유지하고 거래량 또한 20일 평균 대비 130%로 활발하여 신규 진입 조건에 부합하므로 3주를 자동 매수합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 78점 ↔ AI 83점)"
+        "reason": "현재 코스피200 시장 상태가 -4.51% 패닉 폭락장으로 당일 신규 매수가 전면 차단되어 있습니다. 메리츠금융지주 자체는 아래꼬리 양봉 반등과 외국인 5일 연속 순매수 등 견조한 수급을 보이고 있으나, 거시경제 레짐의 엄격한 매수 제한 원칙에 따라 관망 및 진입 대기를 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 59점)"
       }
     },
     {
       "code": "066570",
       "name": "LG전자",
-      "price": 149600,
-      "change_rate": -3.61,
-      "rsi": 17.3,
+      "price": 149700,
+      "change_rate": -3.54,
+      "rsi": 17.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -382,13 +382,13 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 67,
+        "score": 64,
         "consensus": "2:1 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 62,
+            "score": 58,
             "decision": "관망"
           },
           {
@@ -400,12 +400,12 @@
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 85,
+            "score": 80,
             "decision": "매수"
           }
         ],
-        "reason": "14일 RSI가 17.4로 극심한 과매도 구간이나, 20일 이동평균선을 크게 하회하고 장중 고점 대비 밀린 '긴 윗꼬리 음봉'과 외국인의 2일 연속 매도 및 5일 누적 대량 순매도세가 겹쳐 추세적 반등 확인이 필요합니다. 따라서 성급한 진입을 자제하고 수급 안정을 대기하며 관망합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 67점)"
+        "reason": "현재 코스피 약세장 속에서 14일 RSI가 13.8로 극단적 과매도 상태이나, 20일선(-5.81%)을 크게 이탈하고 긴 윗꼬리 음봉과 기관의 연속 순매도세가 출회되어 기술적 추세가 훼손되었습니다. 따라서 무리한 신규 진입보다는 변동성이 진정되고 수급이 개선되는지를 확인하며 보수적으로 관망합니다.",
+        "audit_badge": "🟢 팩트 검증 통과 (정량 46점 ↔ AI 64점 | 뉴스·포지션 가중치 반영)"
       }
     }
   ]
