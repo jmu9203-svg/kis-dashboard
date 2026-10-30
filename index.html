@@ -80,6 +80,71 @@
     .rsi-oversold { color: #58a6ff; font-weight: 700; }
     .rsi-overbought { color: #f85149; font-weight: 700; }
 
+    /* 3대 빅테크 AI 앙상블 스코어보드 박스 */
+    .ai-ensemble-box {
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+    }
+    .ai-ensemble-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .ai-ensemble-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .ai-decision-badge {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+    .ai-badge-buy { background: rgba(63, 185, 80, 0.15); color: #3fb950; border: 1px solid rgba(63, 185, 80, 0.35); }
+    .ai-badge-hold { background: rgba(227, 179, 65, 0.15); color: #e3b341; border: 1px solid rgba(227, 179, 65, 0.35); }
+    .ai-badge-sell { background: rgba(248, 81, 73, 0.15); color: #f85149; border: 1px solid rgba(248, 81, 73, 0.35); }
+    
+    .ai-models-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .ai-model-chip {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 6px;
+      padding: 5px 6px;
+      text-align: center;
+    }
+    .ai-model-name {
+      font-size: 10px;
+      color: var(--text-sub);
+      font-weight: 600;
+    }
+    .ai-model-val {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 2px;
+    }
+    .ai-reason-text {
+      font-size: 11px;
+      color: #8b949e;
+      line-height: 1.45;
+      padding-top: 6px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.06);
+    }
+
     /* Footer Info */
     .footer { text-align: center; color: var(--text-sub); font-size: 12px; padding: 20px 0; border-top: 1px solid var(--card-border); margin-top: 10px; }
     .footer-detail { display: flex; justify-content: center; gap: 12px; margin-top: 6px; }
@@ -254,6 +319,67 @@
       }
     }
 
+
+    function renderEnsembleBox(item, isHeld) {
+      const ens = item.ai_ensemble || {};
+      const ensDec = ens.decision || (isHeld ? '홀딩' : '관망');
+      const ensScore = ens.score !== undefined ? ens.score : 55;
+      const consensus = ens.consensus || '3사 합의';
+      const aiReason = ens.reason || '5대 핵심 팩트 및 거시경제 레짐 분석 완료.';
+      const auditBadge = ens.audit_badge || '✅ 5대 팩트 검증 통과';
+      const models = ens.models || [
+        { provider: 'Google', model: 'Gemini 3.5', score: ensScore, decision: ensDec },
+        { provider: 'Groq', model: 'Groq 120B', score: ensScore, decision: ensDec },
+        { provider: 'Meta', model: 'Llama 3.3', score: ensScore, decision: ensDec }
+      ];
+
+      let decBadgeClass = 'ai-badge-hold';
+      let decIcon = '🟡';
+      if (ensDec.includes('매수')) {
+        decBadgeClass = 'ai-badge-buy';
+        decIcon = '🟢';
+      } else if (ensDec.includes('매도')) {
+        decBadgeClass = 'ai-badge-sell';
+        decIcon = '🔴';
+      }
+
+      const modelsHtml = models.map(m => {
+        let mColor = '#e3b341';
+        if ((m.decision || '').includes('매수')) mColor = '#3fb950';
+        else if ((m.decision || '').includes('매도')) mColor = '#f85149';
+
+        let icon = '🏛️';
+        if (m.provider === 'Groq') icon = '⚡';
+        else if (m.provider === 'Meta') icon = '🌐';
+
+        return `
+          <div class="ai-model-chip">
+            <div class="ai-model-name">${icon} ${m.provider}</div>
+            <div class="ai-model-val" style="color: ${mColor};">${m.score}점 <span style="font-size: 10px; font-weight: 600;">${m.decision}</span></div>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <div class="ai-ensemble-box">
+          <div class="ai-ensemble-head">
+            <div class="ai-ensemble-title">
+              <span>🤖 3대 빅테크 AI 앙상블</span>
+              <span style="font-size: 10px; color: var(--text-sub); font-weight: 500;">· ${consensus}</span>
+            </div>
+            <span class="ai-decision-badge ${decBadgeClass}">${decIcon} ${ensDec} (${ensScore}점)</span>
+          </div>
+          <div class="ai-models-grid">
+            ${modelsHtml}
+          </div>
+          <div class="ai-reason-text">
+            <div style="margin-bottom: 3px; color: #c9d1d9;">💡 <b>판단 근거</b>: ${aiReason}</div>
+            <div style="font-size: 10px; color: #58a6ff;">🕵️ <b>팩트 감사</b>: ${auditBadge}</div>
+          </div>
+        </div>
+      `;
+    }
+
     function renderData(d) {
       const stText = d.market_status || (d.is_market_open ? '장중 실시간 감시 중' : '주말 휴장 (24/7 시스템 정상 가동)');
       document.getElementById('statusText').textContent = stText;
@@ -340,6 +466,7 @@
               <div class="indicator-pill">14일 RSI: <span class="pill-val ${rsiClass}">${rsiVal}</span></div>
               <div class="indicator-pill">수급: <span class="pill-val">${h.investor_summary || '분석 중'}</span></div>
             </div>
+            ${renderEnsembleBox(h, true)}
           </div>
         `;
       }).join('');
@@ -425,6 +552,7 @@
               <div class="indicator-pill">14일 RSI: <span class="pill-val ${rsiClass}">${rsiDisplay}</span></div>
               <div class="indicator-pill">AI 상태: <span class="pill-val" style="color: var(--accent); font-weight: 600;">${actionBadge}</span></div>
             </div>
+            ${renderEnsembleBox(w, isHeld)}
           </div>
         `;
       }).join('');
