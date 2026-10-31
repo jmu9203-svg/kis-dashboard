@@ -2,6 +2,9 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>KIS 500만 원 AI 자율 펀드 대시보드</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -366,6 +369,7 @@
             <div class="ai-ensemble-title">
               <span>🤖 3대 빅테크 AI 앙상블</span>
               <span style="font-size: 10px; color: var(--text-sub); font-weight: 500;">· ${consensus}</span>
+              ${ens.checked_at ? `<span style="font-size: 10px; color: #8b949e; background: rgba(255,255,255,0.06); padding: 1px 5px; border-radius: 4px; font-weight: 500;">🕒 ${ens.checked_at.slice(5)}</span>` : ''}
             </div>
             <span class="ai-decision-badge ${decBadgeClass}">${decIcon} ${ensDec} (${ensScore}점)</span>
           </div>
@@ -374,7 +378,10 @@
           </div>
           <div class="ai-reason-text">
             <div style="margin-bottom: 3px; color: #c9d1d9;">💡 <b>판단 근거</b>: ${aiReason}</div>
-            <div style="font-size: 10px; color: #58a6ff;">🕵️ <b>팩트 감사</b>: ${auditBadge}</div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px; font-size: 10px;">
+              <span style="color: #58a6ff;">🕵️ <b>팩트 감사</b>: ${auditBadge}</span>
+              <span style="color: #8b949e;">🕒 <b>AI 분석 갱신</b>: ${ens.checked_at || '실시간 최신'}</span>
+            </div>
           </div>
         </div>
       `;
