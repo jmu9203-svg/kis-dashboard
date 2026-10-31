@@ -34,13 +34,15 @@
     body { background-color: var(--bg); color: var(--text-main); padding: 16px; max-width: 680px; margin: 0 auto; -webkit-font-smoothing: antialiased; }
 
     /* Top Family Navigation Bar (Unified 4 Sites) */
-    .nav-tabs { display: flex; gap: 4px; background: #161b22; padding: 4px; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--card-border); overflow-x: auto; }
+    /* Top Family Navigation Bar (Unified 4 Sites) */
+    .nav-tabs { display: flex; gap: 5px; background: #161b22; padding: 5px; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--card-border); overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+    .nav-tabs::-webkit-scrollbar { display: none; }
     .nav-tab-item { flex: 1; text-align: center; padding: 8px 6px; font-size: 12px; font-weight: 600; color: var(--text-sub); text-decoration: none; border-radius: 8px; transition: all 0.2s; white-space: nowrap; }
-    .nav-tab-item:hover { color: var(--text-main); }
-    .nav-tab-item.active { background: #21262d; color: #fff; border: 1px solid rgba(255,255,255,0.12); }
+    .nav-tab-item:hover { color: var(--text-main); background: rgba(255, 255, 255, 0.04); }
+    .nav-tab-item.active { background: #21262d; color: #3fb950; font-weight: 700; border: 1px solid rgba(63, 185, 80, 0.4); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
     
     /* Header */
-    .header { display: flex; justify-content: space-between; align-items: center; padding: 6px 0 16px 0; }
+    .header { display: flex; justify-content: space-between; align-items: center; padding: 6px 0 16px 0; gap: 10px; flex-wrap: wrap; }
     .title-group h1 { font-size: 21px; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 8px; }
     .kis-tag { font-size: 11px; background: rgba(35, 134, 54, 0.2); color: #3fb950; border: 1px solid rgba(63, 185, 80, 0.4); padding: 2px 8px; border-radius: 12px; font-weight: 700; }
     .title-group p { font-size: 13px; color: var(--text-sub); margin-top: 3px; }
@@ -149,8 +151,15 @@
     }
 
     /* Footer Info */
-    .footer { text-align: center; color: var(--text-sub); font-size: 12px; padding: 20px 0; border-top: 1px solid var(--card-border); margin-top: 10px; }
-    .footer-detail { display: flex; justify-content: center; gap: 12px; margin-top: 6px; }
+    .footer { text-align: center; color: var(--text-sub); font-size: 12px; padding: 24px 0 16px 0; border-top: 1px solid var(--card-border); margin-top: 24px; }
+    .footer-detail { display: flex; justify-content: center; gap: 10px; margin-top: 8px; font-size: 11px; flex-wrap: wrap; }
+    @media (max-width: 480px) {
+      body { padding: 12px 10px; }
+      .title-group h1 { font-size: 18px; }
+      .nav-tab-item { font-size: 11px; padding: 7px 4px; }
+      .total-eval { font-size: 26px; }
+      .stat-grid { gap: 10px; }
+    }
   </style>
 </head>
 <body>
@@ -179,9 +188,9 @@
   </div>
 
   <!-- Watchdog & External Dead-Server Siren Banner -->
-  <div id="watchdogBanner" style="background: rgba(0, 196, 113, 0.10); border: 1px solid rgba(0, 196, 113, 0.30); border-radius: 12px; padding: 10px 14px; margin-bottom: 14px; font-size: 12px; display: flex; justify-content: space-between; align-items: center;">
+  <div id="watchdogBanner" style="background: rgba(0, 196, 113, 0.10); border: 1px solid rgba(0, 196, 113, 0.30); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
     <span id="watchdogText">🩺 <b>5중 자체 감시(Watchdog) &amp; ✈️ 주간 블랙박스 정상</b> — 서킷브레이커·금 15:40 자동보고</span>
-    <span id="watchdogSyncAge" style="color: var(--text-sub); font-weight: 600;">방금 동기화</span>
+    <span id="watchdogSyncAge" style="color: var(--text-sub); font-weight: 600; font-size: 11px; white-space: nowrap; flex-shrink: 0;">방금 동기화</span>
   </div>
 
   <div class="summary-card">
@@ -232,13 +241,15 @@
   </div>
 
   <div class="footer">
-    <div id="lastUpdated">최근 업데이트: 조회 중...</div>
+    <div id="lastUpdated">최근 감시 동기화: 조회 중...</div>
     <div class="footer-detail">
       <span>스케줄: 평일 10:00 / 14:30</span>
       <span>•</span>
       <span>장중 5분 감시</span>
       <span>•</span>
-      <span>✈️ 주간 블랙박스: 매주 금 15:40 결산</span>
+      <span>✈️ 금 15:40 결산</span>
+      <span>•</span>
+      <span>자동 새로고침: 15초</span>
     </div>
   </div>
 
@@ -434,7 +445,7 @@
           } else {
             wdBanner.style.background = 'rgba(0, 196, 113, 0.10)';
             wdBanner.style.borderColor = 'rgba(0, 196, 113, 0.30)';
-            wdText.innerHTML = '🩺 <b>5중 자체 감시(Watchdog) 정상</b> — 서킷브레이커(-3.5%)·무결성 감시 중';
+            wdText.innerHTML = '🩺 <b>5중 자체 감시(Watchdog) &amp; ✈️ 주간 블랙박스 정상</b> — 서킷브레이커(-3.5%)·금 15:40 자동결산';
           }
         }
       }
