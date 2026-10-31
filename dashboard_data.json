@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31 23:58:40",
+  "updated_at": "2026-11-01 00:03:36",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.9°C)",
@@ -406,45 +406,6 @@
         ],
         "reason": "현재 코스피200 시장 상태가 🚨 패닉 폭락장(-3.88%)으로 당일 신규 매수가 전면 차단되어 있으며, 외국인의 2일 연속 매도세 및 장중 고점 대비 밀린 긴 윗꼬리 음봉 등 하방 압력이 거셉니다. 14일 RSI가 17.3으로 극단적 과매도 구간이나 거시경제적 리스크와 수급 악화가 뚜렷하여 신규 진입을 유보하고 철저한 관망(방어) 기조를 유지합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 36점 ↔ AI 51점)"
-      }
-    },
-    {
-      "code": "065950",
-      "name": "지엔씨에너지",
-      "price": 1033,
-      "change_rate": 0.68,
-      "rsi": 28.3,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 50,
-        "consensus": "3:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 40,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피200이 -3.88% 급락하는 패닉 폭락장 진입으로 당일 신규 매수가 전면 차단되었으며, RSI 29.3 과매도와 외인 연속 순매수 및 아래꼬리 반등 등 긍정적 지표에도 불구하고 20일 평균 대비 거래량이 34%로 크게 부족하여 가짜 반등 위험이 있으므로 리스크 관리를 위해 관망을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 50점)"
       }
     }
   ]
