@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31 14:53:50",
+  "updated_at": "2026-10-31 15:04:47",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "75% (🔋 배터리 사용 중, 21.8°C)",
@@ -335,7 +335,7 @@
       "name": "메리츠금융지주",
       "price": 131700,
       "change_rate": 0.23,
-      "rsi": 53.6,
+      "rsi": null,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
