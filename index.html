@@ -294,9 +294,9 @@
             const stockEval = restored.reduce((s, h) => s + (h.eval_amt || 0), 0);
             const stockPchs = restored.reduce((s, h) => s + ((h.avg_price || 0) * (h.qty || 0)), 0);
             const stockPnl = stockEval - stockPchs;
-            const d2Cash = snap.d2_cash || 42309635;
             const frozen = 45000000;
             const budget = data.budget_limit || 5000000;
+            const d2Cash = snap.d2_cash || (frozen + (snap.usable_cash !== undefined ? snap.usable_cash : Math.max(0, budget - stockEval)));
             const actualTot = d2Cash + stockEval;
             const fundEval = actualTot > frozen ? (actualTot - frozen) : (budget + stockPnl);
             const fundPnl = fundEval - budget;
