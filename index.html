@@ -379,7 +379,7 @@
           <div class="ai-reason-text">
             <div style="margin-bottom: 3px; color: #c9d1d9;">💡 <b>판단 근거</b>: ${aiReason}</div>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px; font-size: 10px;">
-              <span style="color: #58a6ff;">🕵️ <b>팩트 감사</b>: ${auditBadge}</span>
+              <span style="color: ${auditBadge.includes('⚠️') || auditBadge.includes('🛡️') ? '#e3b341' : '#3fb950'};">🕵️ <b>팩트 감사</b>: ${auditBadge}</span>
               <span style="color: #8b949e;">🕒 <b>AI 분석 갱신</b>: ${ens.checked_at || '실시간 최신'}</span>
             </div>
           </div>
