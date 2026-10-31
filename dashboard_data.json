@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01 01:39:17",
+  "updated_at": "2026-11-01 01:49:43",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.9°C)",
@@ -29,248 +29,6 @@
       "investor_summary": "외국인 +19,109주(2일연속매수🔥), 기관 -45,852주(4일연속매도⚠️) | [5일누적 합계: 외인 +94,337주, 기관 -359,540주]",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 64,
-        "consensus": "2:1 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 80,
-            "decision": "매수"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 코스피200 시장이 -3.88% 패닉 폭락장 상태로 신규 매수가 전면 차단되어 있으며, 보유 종목의 순수익률(-3.42%)이 ATR 맞춤형 경고선(-6.0%)이나 손절선(-8.5%)에 도달하지 않았고 외인 5일 연속 순매수 유입 등 긍정적 모멘텀이 상존하여 무리한 손절이나 추가 매수보다는 현 포지션을 유지하며 관망합니다.",
-        "audit_badge": "🟢 팩트 검증 통과 (정량 35점 ↔ AI 64점 | 뉴스·포지션 가중치 반영)",
-        "checked_at": "2026-10-30 17:04:47"
-      }
-    }
-  ],
-  "watch_list": [
-    {
-      "code": "005380",
-      "name": "현대차",
-      "price": 278500,
-      "change_rate": -4.79,
-      "rsi": 32.5,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 51,
-        "consensus": "3:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 45,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 코스피200 시장이 -3.88% 패닉 폭락장 상태로 당일 신규 매수가 전면 차단되어 있으며, 현대차 역시 장중 고점 대비 밀린 긴 윗꼬리 음봉과 외국인 5일 누적 순매도세가 이어져 리스크 관리가 필요합니다. 14일 RSI가 32.6으로 과매도권에 진입했으나 거시경제 불안과 수급 악화로 인해 즉각적인 진입을 보류하고 관망합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 51점)",
-        "checked_at": "2026-10-30 17:04:57"
-      }
-    },
-    {
-      "code": "005930",
-      "name": "삼성전자",
-      "price": 220500,
-      "change_rate": -4.96,
-      "rsi": 38.5,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 54,
-        "consensus": "3:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 62,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 코스피200 시장 상태가 -3.88% 패닉 폭락장으로 당일 신규 매수 전면 차단 지침이 적용되며, 장중 고점 대비 밀린 긴 윗꼬리 음봉과 외국인 2일 연속 매도세가 관측됩니다. 따라서 리스크 관리와 원금 보호를 위해 신규 진입을 자제하고 철저한 관망을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 44점 ↔ AI 54점)",
-        "checked_at": "2026-10-30 17:05:12"
-      }
-    },
-    {
-      "code": "035420",
-      "name": "NAVER",
-      "price": 172300,
-      "change_rate": -2.34,
-      "rsi": 38.7,
-      "is_held": true,
-      "held_qty": 8,
-      "pnl_rate": -3.07,
-      "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "보유 홀딩 관망 💎",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 64,
-        "consensus": "2:1 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 80,
-            "decision": "매수"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 코스피200 시장이 -3.88% 패닉 폭락장 상태로 신규 매수가 전면 차단되어 있으며, 보유 종목의 순수익률(-3.42%)이 ATR 맞춤형 경고선(-6.0%)이나 손절선(-8.5%)에 도달하지 않았고 외인 5일 연속 순매수 유입 등 긍정적 모멘텀이 상존하여 무리한 손절이나 추가 매수보다는 현 포지션을 유지하며 관망합니다.",
-        "audit_badge": "🟢 팩트 검증 통과 (정량 35점 ↔ AI 64점 | 뉴스·포지션 가중치 반영)",
-        "checked_at": "2026-10-30 17:04:47"
-      }
-    },
-    {
-      "code": "267260",
-      "name": "HD현대일렉트릭",
-      "price": 418500,
-      "change_rate": -4.99,
-      "rsi": 22.1,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 50,
-        "consensus": "3:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 45,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피200 지수가 -3.88% 급락한 패닉 폭락장으로 당일 신규 매수 전면 차단 원칙이 적용됩니다. RSI가 22.4로 과매도 구간이나 장중 긴 윗꼬리 음봉과 기관의 지속적인 5일 누적 순매도(-47,511주)가 겹쳐 추가 변동성 확대를 방어하기 위해 관망을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 37점 ↔ AI 50점)",
-        "checked_at": "2026-10-30 17:05:31"
-      }
-    },
-    {
-      "code": "465580",
-      "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22695,
-      "change_rate": -3.79,
-      "rsi": 23.8,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 58,
-        "consensus": "2:1 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 45,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 80,
-            "decision": "매수"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 거시경제 장세가 코스피200 패닉 폭락장(-3.88%)으로 당일 신규매수 전면 차단 원칙이 적용되며, 미 필라델피아 반도체 지수의 급락(-4.74%)과 대형 빅테크 실적발표 앞두고 변동성이 확대되어 리스크 관리가 최우선이므로 관망을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 53점 ↔ AI 58점)",
-        "checked_at": "2026-10-30 17:05:48"
-      }
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
-      "price": 154600,
-      "change_rate": -1.4,
-      "rsi": 39.6,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
         "score": 61,
         "consensus": "2:1 관망 우세",
         "models": [
@@ -293,17 +51,19 @@
             "decision": "관망"
           }
         ],
-        "reason": "현재 코스피200 시장 상태가 -3.88% 패닉 폭락장으로 당일 신규 매수 전면 차단 지침이 적용됩니다. KB금융이 아래꼬리를 달며 반등하고 5일 누적 외인 수급이 유입되었으나, 거시경제의 극심한 변동성과 하락 압력으로 인해 리스크 관리를 최우선으로 하여 관망을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 49점 ↔ AI 61점)",
-        "checked_at": "2026-10-30 17:06:04"
+        "reason": "코스피200이 -3.88% 급락하는 패닉 폭락장 레짐 속에서 당일 신규 매수 전면 차단 지침이 적용되며, 장중 고점 대비 밀린 윗꼬리 음봉과 기관의 지속적인 매도세로 인해 추가 하락 리스크가 존재합니다. 현재 보유 중인 NAVER의 수익률(-3.42%)은 ATR 맞춤형 경고선(-6.0%) 및 손절선(-8.5%)에 도달하지 않았고, RSI(38.7)가 중립 구간에 머물러 있어 무리한 대응보다는 포지션을 유지하며 관망합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 28점 ↔ AI 61점 | 편차 33점 · 보수적 관망)",
+        "checked_at": "2026-11-01 01:47:42"
       }
-    },
+    }
+  ],
+  "watch_list": [
     {
-      "code": "381180",
-      "name": "TIGER 미국필라델피아반도체나스닥",
-      "price": 38285,
-      "change_rate": -3.58,
-      "rsi": 31.6,
+      "code": "005380",
+      "name": "현대차",
+      "price": 278500,
+      "change_rate": -4.79,
+      "rsi": 32.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -333,57 +93,17 @@
             "decision": "관망"
           }
         ],
-        "reason": "현재 코스피200 시장 상태가 패닉 폭락장(-3.88%)으로 당일 신규 매수 전면 차단 지침이 적용되며, 14일 RSI는 31.6으로 과매도 구간이나 장중 고점 대비 밀린 '긴 윗꼬리 음봉'과 미 반도체 지수 하락(-4.74%) 등 거시적 변동성이 극심하여 리스크 관리를 위해 관망을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 48점)",
-        "checked_at": "2026-10-30 17:06:23"
+        "reason": "코스피200 지수가 -3.88% 급락하는 패닉 폭락장 레짐 속에서 당일 신규매수가 전면 차단되어 있으며, 현대차 역시 긴 윗꼬리 음봉과 외국인 5일 누적 순매도세가 이어지고 있어 철저한 리스크 관리를 위해 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 48점 | 편차 5점)",
+        "checked_at": "2026-11-01 01:47:57"
       }
     },
     {
-      "code": "138040",
-      "name": "메리츠금융지주",
-      "price": 131700,
-      "change_rate": 0.23,
-      "rsi": 53.6,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 61,
-        "consensus": "2:1 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 78,
-            "decision": "매수"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 코스피200 시장이 -3.88% 패닉 폭락장으로 진입하여 당일 신규 매수가 전면 차단되었습니다. 메리츠금융지주는 20일 이동평균선을 상회하고 아래꼬리 양봉과 기관의 연속 순매수로 기술적 반등 흐름을 보이고 있으나, 거시경제의 극단적 변동성과 리스크 관리 지침에 따라 신규 진입을 보류하고 관망을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 65점 ↔ AI 61점)",
-        "checked_at": "2026-10-30 17:06:39"
-      }
-    },
-    {
-      "code": "066570",
-      "name": "LG전자",
-      "price": 147800,
-      "change_rate": -4.77,
-      "rsi": 16.8,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": 220500,
+      "change_rate": -4.96,
+      "rsi": 38.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -413,9 +133,289 @@
             "decision": "관망"
           }
         ],
-        "reason": "현재 코스피200 시장 상태가 🚨 패닉 폭락장(-3.88%)으로 당일 신규 매수가 전면 차단되어 있으며, 외국인의 2일 연속 매도세 및 장중 고점 대비 밀린 긴 윗꼬리 음봉 등 하방 압력이 거셉니다. 14일 RSI가 17.3으로 극단적 과매도 구간이나 거시경제적 리스크와 수급 악화가 뚜렷하여 신규 진입을 유보하고 철저한 관망(방어) 기조를 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 36점 ↔ AI 51점)",
-        "checked_at": "2026-10-30 17:06:51"
+        "reason": "현재 코스피 시장이 패닉 폭락장(-3.88%)으로 당일 신규 매수가 전면 차단되어 있으며, 삼성전자 역시 긴 윗꼬리 음봉과 외국인 연속 매도세로 인해 추가 하락 위험이 큽니다. 미 반도체 지수 급락과 매크로 불확실성이 상존하므로 섣부른 진입을 자제하고 철저한 관망(방어) 기조를 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 40점 ↔ AI 51점 | 편차 11점)",
+        "checked_at": "2026-11-01 01:48:14"
+      }
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "price": 172300,
+      "change_rate": -2.34,
+      "rsi": 38.7,
+      "is_held": true,
+      "held_qty": 8,
+      "pnl_rate": -3.07,
+      "status_tag": "포트폴리오 보유 중 📦",
+      "action_status": "보유 홀딩 관망 💎",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 61,
+        "consensus": "2:1 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 80,
+            "decision": "매수"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "코스피200이 -3.88% 급락하는 패닉 폭락장 레짐 속에서 당일 신규 매수 전면 차단 지침이 적용되며, 장중 고점 대비 밀린 윗꼬리 음봉과 기관의 지속적인 매도세로 인해 추가 하락 리스크가 존재합니다. 현재 보유 중인 NAVER의 수익률(-3.42%)은 ATR 맞춤형 경고선(-6.0%) 및 손절선(-8.5%)에 도달하지 않았고, RSI(38.7)가 중립 구간에 머물러 있어 무리한 대응보다는 포지션을 유지하며 관망합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 28점 ↔ AI 61점 | 편차 33점 · 보수적 관망)",
+        "checked_at": "2026-11-01 01:47:42"
+      }
+    },
+    {
+      "code": "267260",
+      "name": "HD현대일렉트릭",
+      "price": 418500,
+      "change_rate": -4.99,
+      "rsi": 22.1,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 48,
+        "consensus": "3:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 50,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 코스피200 시장이 -3.88% 패닉 폭락장으로 신규 매수가 전면 차단된 상태이며, 긴 윗꼬리 음봉과 기관의 5일 연속 매도세로 인해 하방 압력이 큽니다. RSI가 22.1로 과매도 구간이나 거시적 변동성과 상단 매물대 저항을 고려할 때 무리한 진입보다는 관망을 유지하며 타이밍을 조절해야 합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 37점 ↔ AI 48점 | 편차 11점)",
+        "checked_at": "2026-11-01 01:48:27"
+      }
+    },
+    {
+      "code": "465580",
+      "name": "ACE 미국빅테크TOP7 Plus",
+      "price": 22695,
+      "change_rate": -3.79,
+      "rsi": 23.8,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 47,
+        "consensus": "3:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 거시경제 장세가 코스피200 패닉 폭락장(-3.88% 급락)으로 당일 신규매수 전면 차단 지침이 적용되며, 미 필라델피아 반도체 지수의 급락(-4.74%) 및 애플·AMD 등 주요 빅테크 실적발표를 앞둔 변동성 확대 국면입니다. RSI가 23.8로 과매도 구간이나 거시적 리스크가 매우 높아 원금 보호와 리스크 관리를 위해 매수를 보류하고 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 53점 ↔ AI 47점 | 편차 6점)",
+        "checked_at": "2026-11-01 01:48:48"
+      }
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "price": 154600,
+      "change_rate": -1.4,
+      "rsi": 39.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "3:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 62,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "코스피200 지수가 -3.88% 급락하는 패닉 폭락장으로 당일 신규 매수 전면 차단 지침이 적용됩니다. KB금융이 RSI 39.6 및 아래꼬리 양봉 반등을 보이고 외인 5일 누적 순매수세가 유입되었으나, 거시적 하방 압력이 너무 커 리스크 관리를 위해 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 49점 ↔ AI 56점 | 편차 7점)",
+        "checked_at": "2026-11-01 01:49:00"
+      }
+    },
+    {
+      "code": "381180",
+      "name": "TIGER 미국필라델피아반도체나스닥",
+      "price": 38285,
+      "change_rate": -3.58,
+      "rsi": 31.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 57,
+        "consensus": "2:1 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "reason": "현재 코스피200 시장 상태가 '패닉 폭락장(-3.88%)'으로 당일 신규 매수가 전면 차단되었으며, 미 필라델피아 반도체 지수의 급락(-4.74%)과 장중 긴 윗꼬리 음봉 등 하방 압력이 거셉니다. 14일 RSI가 31.6으로 과매도 구간이나 거시경제적 위험이 너무 커서 리스크 관리를 위해 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 57점 | 편차 5점)",
+        "checked_at": "2026-11-01 01:49:12"
+      }
+    },
+    {
+      "code": "138040",
+      "name": "메리츠금융지주",
+      "price": 131700,
+      "change_rate": 0.23,
+      "rsi": 53.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 62,
+        "consensus": "2:1 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 62,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "reason": "현재 거시경제 장세가 코스피200 -3.88% 급락인 패닉 폭락장으로 당일 신규매수가 전면 차단되어 있으며, 종목 자체의 펀더멘털과 수급은 양호하나 매크로 리스크 방어를 위해 무리한 진입을 피하고 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 60점 ↔ AI 62점 | 편차 2점)",
+        "checked_at": "2026-11-01 01:49:28"
+      }
+    },
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "price": 147800,
+      "change_rate": -4.77,
+      "rsi": 16.8,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 47,
+        "consensus": "3:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 40,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 코스피200 시장 상태가 -3.88% 패닉 폭락장으로 당일 신규 매수가 전면 차단되어 있으며, 긴 윗꼬리 음봉과 외국인 2일 연속 순매도 등 하방 압력이 거세 리스크 관리를 위해 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 36점 ↔ AI 47점 | 편차 11점)",
+        "checked_at": "2026-11-01 01:49:38"
       }
     }
   ]
