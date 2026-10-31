@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01 03:15:33",
+  "updated_at": "2026-11-01 03:17:49",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.9°C)",
@@ -12,6 +12,8 @@
   "stock_pnl": -43680,
   "stock_pnl_pct": -3.07,
   "stock_pnl_on_fund_pct": -0.87,
+  "d2_cash": 48433117,
+  "actual_tot_eval": 49811517,
   "usable_cash": 3433117,
   "excess_amt": 0,
   "rebalance_mode": false,
