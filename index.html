@@ -180,7 +180,7 @@
 
   <!-- Watchdog & External Dead-Server Siren Banner -->
   <div id="watchdogBanner" style="background: rgba(0, 196, 113, 0.10); border: 1px solid rgba(0, 196, 113, 0.30); border-radius: 12px; padding: 10px 14px; margin-bottom: 14px; font-size: 12px; display: flex; justify-content: space-between; align-items: center;">
-    <span id="watchdogText">🩺 <b>5중 자체 감시(Watchdog) 정상</b> — 서킷브레이커(-3.5%)·무결성 감시 중</span>
+    <span id="watchdogText">🩺 <b>5중 자체 감시(Watchdog) &amp; ✈️ 주간 블랙박스 정상</b> — 서킷브레이커·금 15:40 자동보고</span>
     <span id="watchdogSyncAge" style="color: var(--text-sub); font-weight: 600;">방금 동기화</span>
   </div>
 
@@ -236,7 +236,9 @@
     <div class="footer-detail">
       <span>스케줄: 평일 10:00 / 14:30</span>
       <span>•</span>
-      <span>실시간 감시: 장중 5분 / 휴장 10분</span>
+      <span>장중 5분 감시</span>
+      <span>•</span>
+      <span>✈️ 주간 블랙박스: 매주 금 15:40 결산</span>
     </div>
   </div>
 
@@ -266,12 +268,10 @@
           }
           if (!snap || !snap.holdings || !snap.holdings.length) {
             snap = {
-              d2_cash: 42309635,
-              usable_cash: 0,
+              d2_cash: 48433117,
+              usable_cash: 3433117,
               holdings: [
-                { code: '005930', name: '삼성전자', qty: 6, avg_price: 213138, pnl_rate: 13.31, eval_amt: 1449000, rsi: 27.9, investor_summary: '기관 +627,948주(2일연속매수🔥) | [5일누적: 외인 +1,417,717주]' },
-                { code: '035420', name: 'NAVER', qty: 8, avg_price: 177760, pnl_rate: 0.98, eval_amt: 1436000, rsi: 32.2, investor_summary: '외국인 +56,068주(5일연속매수🔥), 기관 +19,701주' },
-                { code: '267260', name: 'HD현대일렉트릭', qty: 5, avg_price: 481100, pnl_rate: -3.14, eval_amt: 2330000, rsi: 18.7, investor_summary: '5일누적 외인 +26,082주 매집 유지' }
+                { code: '035420', name: 'NAVER', qty: 8, avg_price: 177760, pnl_rate: -3.07, eval_amt: 1378400, rsi: 38.7, investor_summary: '외국인 유입 지속 관망' }
               ]
             };
           }
@@ -493,8 +493,6 @@
         let curPriceNum = w.price;
         if (!curPriceNum && heldInfo && heldInfo.qty > 0) {
           curPriceNum = Math.round(heldInfo.eval_amt / heldInfo.qty);
-        } else if (!curPriceNum && w.code === '091160') {
-          curPriceNum = 107590;
         }
 
         const curPrice = curPriceNum ? curPriceNum.toLocaleString() + '원' : '--';
@@ -508,8 +506,6 @@
         } else if (w.change_rate !== undefined && w.change_rate !== null) {
           const cp = w.change_rate >= 0;
           subRateHtml = `<div class="stock-pnl ${cp ? 'profit-text' : 'loss-text'}" style="font-size: 12px;">전일대비 ${(cp ? '+' : '') + w.change_rate.toFixed(2)}%</div>`;
-        } else if (w.code === '091160') {
-          subRateHtml = `<div class="stock-pnl loss-text" style="font-size: 12px;">전일대비 -0.66%</div>`;
         } else {
           subRateHtml = `<div class="stock-pnl" style="font-size: 12px; color: var(--text-sub);">시세 추적 중</div>`;
         }
@@ -517,8 +513,6 @@
         let rsiVal = w.rsi;
         if ((rsiVal === undefined || rsiVal === null) && heldInfo) {
           rsiVal = heldInfo.rsi;
-        } else if ((rsiVal === undefined || rsiVal === null) && w.code === '091160') {
-          rsiVal = 17.5;
         }
         const rsiDisplay = (rsiVal !== undefined && rsiVal !== null) ? rsiVal : '--';
         const rsiClass = rsiVal <= 30 ? 'rsi-oversold' : (rsiVal >= 70 ? 'rsi-overbought' : '');
