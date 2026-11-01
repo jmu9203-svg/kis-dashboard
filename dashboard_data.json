@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 08:29:42",
+  "updated_at": "2026-11-02 08:40:23",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "84% (⚡ 충전 중, 23.3°C)",
@@ -61,11 +61,51 @@
   ],
   "watch_list": [
     {
-      "code": "005380",
-      "name": "현대차",
-      "price": 282000,
+      "code": "035420",
+      "name": "NAVER",
+      "price": 172300,
       "change_rate": 0.0,
-      "rsi": 35.0,
+      "rsi": 42.7,
+      "is_held": true,
+      "held_qty": 8,
+      "pnl_rate": -3.07,
+      "status_tag": "포트폴리오 보유 중 📦",
+      "action_status": "보유 홀딩 관망 💎",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 49,
+        "consensus": "3:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "당일 코스피200 -3.88% 급락에 따른 시스템 '패닉 폭락장 락다운' 가동으로 신규 매수가 전면 차단되었습니다. 현재 -3.42%의 순손실 중이나 ATR 손절선(-7.0%) 및 경고선(-5.0%)에 도달하지 않았고 기관의 지속적인 이탈세가 확인되어 현 포지션을 유지하며 리스크를 철저히 관리합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
+        "checked_at": "2026-11-02 00:50:54"
+      }
+    },
+    {
+      "code": "465580",
+      "name": "ACE 미국빅테크TOP7 Plus",
+      "price": 22695,
+      "change_rate": 0.0,
+      "rsi": 24.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -95,7 +135,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "당일 코스피200 대폭락(-3.88%)으로 인해 최우선 거시경제 안전 가드레일인 신규 매수 락다운이 발동되었습니다. 14일 RSI가 과매도 구간(32.5)에 진입했으나 긴 윗꼬리 음봉과 외인 5일 누적 순매도세가 겹쳐 리스크 관리가 절대적으로 필요하므로 향후 시장 안정 시 재진입을 검토합니다.",
+        "reason": "코스피200 급락(-3.88%)으로 인해 전면적인 '신규 매수 락다운' 가이드라인이 발동되어 RSI 과매도 구간임에도 매수를 전면 차단합니다. 현재 미보유 상태이므로 향후 시장 변동성이 진정되고 거시경제 안정세가 확인될 때 재진입을 검토하겠습니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
         "checked_at": "2026-11-02 00:50:54"
       }
@@ -141,91 +181,11 @@
       }
     },
     {
-      "code": "035420",
-      "name": "NAVER",
-      "price": 172300,
+      "code": "005380",
+      "name": "현대차",
+      "price": 282000,
       "change_rate": 0.0,
-      "rsi": 42.7,
-      "is_held": true,
-      "held_qty": 8,
-      "pnl_rate": -3.07,
-      "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "보유 홀딩 관망 💎",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 49,
-        "consensus": "3:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 45,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "당일 코스피200 -3.88% 급락에 따른 시스템 '패닉 폭락장 락다운' 가동으로 신규 매수가 전면 차단되었습니다. 현재 -3.42%의 순손실 중이나 ATR 손절선(-7.0%) 및 경고선(-5.0%)에 도달하지 않았고 기관의 지속적인 이탈세가 확인되어 현 포지션을 유지하며 리스크를 철저히 관리합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
-      }
-    },
-    {
-      "code": "267260",
-      "name": "HD현대일렉트릭",
-      "price": 424500,
-      "change_rate": 0.0,
-      "rsi": 24.5,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 49,
-        "consensus": "3:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 45,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피200 급락(-3.88%)으로 인해 최우선 거시경제 안전 가드레일인 '패닉 폭락장 락다운'이 발동되어 신규 매수가 전면 차단되었습니다. 14일 RSI가 22.1로 극심한 과매도 구간이자 외인 저가 매수세가 유입되고 있으나, 시스템 락다운 지침에 따라 철저한 리스크 관리를 위해 관망을 유지하며 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
-      }
-    },
-    {
-      "code": "465580",
-      "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22695,
-      "change_rate": 0.0,
-      "rsi": 24.1,
+      "rsi": 35.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -255,7 +215,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "코스피200 급락(-3.88%)으로 인해 전면적인 '신규 매수 락다운' 가이드라인이 발동되어 RSI 과매도 구간임에도 매수를 전면 차단합니다. 현재 미보유 상태이므로 향후 시장 변동성이 진정되고 거시경제 안정세가 확인될 때 재진입을 검토하겠습니다.",
+        "reason": "당일 코스피200 대폭락(-3.88%)으로 인해 최우선 거시경제 안전 가드레일인 신규 매수 락다운이 발동되었습니다. 14일 RSI가 과매도 구간(32.5)에 진입했으나 긴 윗꼬리 음봉과 외인 5일 누적 순매도세가 겹쳐 리스크 관리가 절대적으로 필요하므로 향후 시장 안정 시 재진입을 검토합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
         "checked_at": "2026-11-02 00:50:54"
       }
@@ -381,41 +341,41 @@
       }
     },
     {
-      "code": "066570",
-      "name": "LG전자",
-      "price": 150700,
+      "code": "035720",
+      "name": "카카오",
+      "price": 29450,
       "change_rate": 0.0,
-      "rsi": 20.3,
+      "rsi": 33.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "신규 레이더 감시 🎯",
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
-        "decision": "관망",
-        "score": 50,
-        "consensus": "3:0 관망 우세",
+        "decision": "매수",
+        "score": 73,
+        "consensus": "2:1 매수 합의",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 62,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
+            "score": 78,
+            "decision": "매수"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           }
         ],
-        "reason": "코스피200 시장의 패닉 폭락장(-3.88%)으로 인해 시스템 전체 신규 매수 락다운이 발동되어 기술적 과매도 상태임에도 매수를 전면 차단합니다. 외국인 수급 이탈 및 거시경제 변동성 확대를 고려해 당일 진입을 보류하며, 향후 시장 안정 시 재진입을 검토합니다.",
+        "reason": "현재 코스피200이 패닉 폭락장임에도 불구하고, 카카오의 14일 RSI 지표가 30.5로 과매도 구간에 있으면서 외국인과 기관의 5일누적 순매수가 유지되고, 당일 캔들 모양이 아래꼬리 양봉 반등을 보이고 있어 저가 매수세가 유입되는 것으로 판단됩니다. 또한, 카카오모빌리티의 자동차 검사 예약으로 행안부 장관상을 수상하는 등 호재 뉴스가 발표되면서 매수 확신도가 높아졌습니다. 따라서, 자동 매수 집행을 결정했습니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
         "checked_at": "2026-11-02 00:50:54"
       }
