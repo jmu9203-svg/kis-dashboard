@@ -359,21 +359,17 @@
 
       const modelsHtml = models.map(m => {
         let mColor = '#e3b341';
-        const decStr = m.decision || '';
-        if (decStr.includes('매수')) mColor = '#3fb950';
-        else if (decStr.includes('매도')) mColor = '#f85149';
-        else if (decStr.includes('대기') || decStr.includes('미호출') || decStr.includes('지연')) mColor = '#8b949e';
+        if ((m.decision || '').includes('매수')) mColor = '#3fb950';
+        else if ((m.decision || '').includes('매도')) mColor = '#f85149';
 
         let icon = '🏛️';
         if (m.provider === 'Groq') icon = '⚡';
         else if (m.provider === 'Meta') icon = '🌐';
 
-        const scoreStr = (m.score === null || m.score === undefined || m.score === '-') ? '-' : `${m.score}점`;
-
         return `
           <div class="ai-model-chip">
             <div class="ai-model-name">${icon} ${m.provider}</div>
-            <div class="ai-model-val" style="color: ${mColor};">${scoreStr} <span style="font-size: 10px; font-weight: 600;">${decStr}</span></div>
+            <div class="ai-model-val" style="color: ${mColor};">${m.score}점 <span style="font-size: 10px; font-weight: 600;">${m.decision}</span></div>
           </div>
         `;
       }).join('');
