@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 19:33:37",
+  "updated_at": "2026-11-02 19:44:19",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "62% (🔋 배터리 사용 중, 21.7°C)",
@@ -223,9 +223,9 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 153700,
-      "change_rate": -1.16,
-      "rsi": 39.1,
+      "price": 153600,
+      "change_rate": -1.22,
+      "rsi": 39.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -303,9 +303,9 @@
     {
       "code": "035720",
       "name": "카카오",
-      "price": 29800,
-      "change_rate": 1.19,
-      "rsi": 37.7,
+      "price": 29750,
+      "change_rate": 1.02,
+      "rsi": 37.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
