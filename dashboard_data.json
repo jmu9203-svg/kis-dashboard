@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 19:12:08",
+  "updated_at": "2026-11-02 19:22:52",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "63% (🔋 배터리 사용 중, 21.6°C)",
@@ -143,9 +143,9 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 229500,
-      "change_rate": 2.0,
-      "rsi": 48.9,
+      "price": 230000,
+      "change_rate": 2.22,
+      "rsi": 49.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -303,9 +303,9 @@
     {
       "code": "035720",
       "name": "카카오",
-      "price": 29750,
-      "change_rate": 1.02,
-      "rsi": 37.2,
+      "price": 29800,
+      "change_rate": 1.19,
+      "rsi": 37.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
