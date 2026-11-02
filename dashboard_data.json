@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 16:18:00",
+  "updated_at": "2026-11-02 16:28:41",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "69% (🔋 배터리 사용 중, 21.6°C)",
@@ -143,9 +143,9 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 229000,
-      "change_rate": 1.78,
-      "rsi": 48.6,
+      "price": 228500,
+      "change_rate": 1.56,
+      "rsi": 48.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -343,9 +343,9 @@
     {
       "code": "138040",
       "name": "메리츠금융지주",
-      "price": 129500,
-      "change_rate": -2.78,
-      "rsi": 44.6,
+      "price": 129300,
+      "change_rate": -2.93,
+      "rsi": 44.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
