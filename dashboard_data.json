@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-11-02 09:58:52",
+  "updated_at": "2026-11-02 10:01:53",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "83% (🔋 배터리 사용 중, 22.7°C)",
   "budget_limit": 5000000,
-  "fund_eval": 4844317,
-  "fund_pnl": -155683,
-  "fund_pnl_pct": -3.11,
-  "stock_eval": 1411200,
+  "fund_eval": 4843517,
+  "fund_pnl": -156483,
+  "fund_pnl_pct": -3.13,
+  "stock_eval": 1410400,
   "stock_pchs": 1422080,
-  "stock_pnl": -10880,
-  "stock_pnl_pct": -0.77,
-  "stock_pnl_on_fund_pct": -0.22,
+  "stock_pnl": -11680,
+  "stock_pnl_pct": -0.82,
+  "stock_pnl_on_fund_pct": -0.23,
   "d2_cash": 48433117,
-  "actual_tot_eval": 49844317,
+  "actual_tot_eval": 49843517,
   "usable_cash": 3433117,
   "excess_amt": 0,
   "rebalance_mode": false,
@@ -25,37 +25,37 @@
       "name": "NAVER",
       "qty": 8,
       "avg_price": 177760,
-      "pnl_rate": -0.77,
-      "eval_amt": 1411200,
+      "pnl_rate": -0.82,
+      "eval_amt": 1410400,
       "rsi": 48.0,
       "investor_summary": "외국인 +19,109주(2일연속매수🔥), 기관 -45,852주(4일연속매도⚠️) | [5일누적 합계: 외인 +94,337주, 기관 -359,540주]",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 49,
+        "score": 53,
         "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 52,
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 50,
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "당일 코스피200 -3.88% 급락에 따른 시스템 '패닉 폭락장 락다운' 가동으로 신규 매수가 전면 차단되었습니다. 현재 -3.42%의 순손실 중이나 ATR 손절선(-7.0%) 및 경고선(-5.0%)에 도달하지 않았고 기관의 지속적인 이탈세가 확인되어 현 포지션을 유지하며 리스크를 철저히 관리합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
+        "reason": "현재 코스피200 약세·조정장 레짐 속에서 거래량이 20일 평균 대비 33%로 크게 부족하며, 기관의 지속적인 매도세와 다가오는 실적 발표(D-10) 경계감으로 인해 추가 매수나 매도보다는 기존 포지션을 유지하며 시장 추이를 관망하는 것이 타당합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 53점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-02 10:00:39"
       }
     }
   ],
@@ -63,41 +63,41 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 176400,
-      "change_rate": 2.38,
+      "price": 176300,
+      "change_rate": 2.32,
       "rsi": 48.0,
       "is_held": true,
       "held_qty": 8,
-      "pnl_rate": -0.77,
+      "pnl_rate": -0.82,
       "status_tag": "포트폴리오 보유 중 📦",
       "action_status": "보유 홀딩 관망 💎",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 49,
+        "score": 53,
         "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 52,
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 50,
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "당일 코스피200 -3.88% 급락에 따른 시스템 '패닉 폭락장 락다운' 가동으로 신규 매수가 전면 차단되었습니다. 현재 -3.42%의 순손실 중이나 ATR 손절선(-7.0%) 및 경고선(-5.0%)에 도달하지 않았고 기관의 지속적인 이탈세가 확인되어 현 포지션을 유지하며 리스크를 철저히 관리합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
+        "reason": "현재 코스피200 약세·조정장 레짐 속에서 거래량이 20일 평균 대비 33%로 크게 부족하며, 기관의 지속적인 매도세와 다가오는 실적 발표(D-10) 경계감으로 인해 추가 매수나 매도보다는 기존 포지션을 유지하며 시장 추이를 관망하는 것이 타당합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 53점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-02 10:00:39"
       }
     },
     {
@@ -113,38 +113,38 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 48,
-        "consensus": "3:0 관망 우세",
+        "score": 66,
+        "consensus": "2:1 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 62,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 50,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           }
         ],
-        "reason": "코스피200 급락(-3.88%)으로 인해 전면적인 '신규 매수 락다운' 가이드라인이 발동되어 RSI 과매도 구간임에도 매수를 전면 차단합니다. 현재 미보유 상태이므로 향후 시장 변동성이 진정되고 거시경제 안정세가 확인될 때 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
+        "reason": "현재 코스피 약세장과 SOXX 급락 여파로 신중한 접근이 필요하며, RSI가 25.3으로 과매도 상태이나 거래량이 실종된 상태입니다. 기관의 누적 순매수세가 유입되고 있으나 단기 변동성 확대를 고려하여 향후 시장 안정 시 재진입을 검토하며 현재는 관망을 유지합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 53점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-02 10:00:39"
       }
     },
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 222000,
-      "change_rate": -1.33,
+      "price": 221750,
+      "change_rate": -1.44,
       "rsi": 45.5,
       "is_held": false,
       "held_qty": 0,
@@ -153,19 +153,19 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 48,
+        "score": 52,
         "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 52,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 50,
+            "score": 55,
             "decision": "관망"
           },
           {
@@ -175,16 +175,16 @@
             "decision": "관망"
           }
         ],
-        "reason": "코스피200 시장의 패닉 폭락장(-3.88%)으로 인해 시스템 락다운 가동에 따라 신규 매수가 엄격히 차단되었습니다. 장중 긴 윗꼬리 음봉과 미 반도체 지수 급락 여파로 변동성이 확대되어 리스크 관리가 최우선이므로, 향후 시장 안정 시 재진입을 검토하며 관망합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
+        "reason": "코스피200 약세·조정장 레짐 속 필라델피아 반도체 지수의 급락 및 거래량 부족(20일 대비 20% 미달)으로 인해 추격 매수 리스크가 큽니다. 기관의 5일 누적 순매수세가 유입되고 있으나, 미 빅테크 실적 시험대와 외인 매도세(2일 연속)를 고려해 현재는 관망을 유지하며 향후 시장 안정 시 재진입을 검토하겠습니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 53점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-02 10:00:39"
       }
     },
     {
       "code": "005380",
       "name": "현대차",
-      "price": 285500,
-      "change_rate": 1.24,
+      "price": 286000,
+      "change_rate": 1.42,
       "rsi": 37.0,
       "is_held": false,
       "held_qty": 0,
@@ -193,19 +193,19 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 48,
+        "score": 54,
         "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 52,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 50,
+            "score": 60,
             "decision": "관망"
           },
           {
@@ -215,9 +215,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "당일 코스피200 대폭락(-3.88%)으로 인해 최우선 거시경제 안전 가드레일인 신규 매수 락다운이 발동되었습니다. 14일 RSI가 과매도 구간(32.5)에 진입했으나 긴 윗꼬리 음봉과 외인 5일 누적 순매도세가 겹쳐 리스크 관리가 절대적으로 필요하므로 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
+        "reason": "코스피 약세·조정장 속에서 20일 이동평균선을 하회하고 거래량이 22% 부족해 가짜 반등 위험이 존재합니다. 외국인 5일 누적 수급이 순매도 우위인 점을 고려할 때 신규 진입 시그널이 충족되지 않았으므로 현재는 관망하며 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 53점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-02 10:00:39"
       }
     },
     {
@@ -233,38 +233,38 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 48,
+        "score": 54,
         "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 52,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 50,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 50,
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "코스피200 급락(-3.88%)으로 인한 시스템 '신규 매수 전면 차단(락다운)'이 가동 중이므로, 기술적 지표나 수급과 무관하게 철저한 리스크 관리가 필요합니다. 펀더멘털은 견조하나 시장 변동성 확대로 인해 현재는 매수를 자제하고 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
+        "reason": "현재 약세·조정장 레짐과 미 필라델피아 반도체 지수 급락 여파로 거시경제 불확실성이 큰 상태입니다. 14일 RSI가 39.3으로 낙폭과대 구간에 진입했으나, 20일 평균 대비 거래량이 25% 부족해 가짜 반등 위험이 있어 신규 진입을 보류하며 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 53점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-02 10:00:39"
       }
     },
     {
       "code": "381180",
       "name": "TIGER 미국필라델피아반도체나스닥",
-      "price": 37540,
-      "change_rate": -1.95,
+      "price": 37580,
+      "change_rate": -1.84,
       "rsi": 33.5,
       "is_held": false,
       "held_qty": 0,
@@ -273,78 +273,38 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 48,
-        "consensus": "3:0 관망 우세",
+        "score": 65,
+        "consensus": "모델 간 이견 (편차 28점 · 안전 관망)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 52,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 50,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           }
         ],
-        "reason": "코스피200 급락(-3.88%)으로 패닉 폭락장 락다운이 발동되어 신규 매수가 전면 차단되었으며, 긴 윗꼬리 음봉과 미 반도체 지수 약세로 인해 리스크 관리가 최우선인 국면입니다. 따라서 RSI가 과매도 구간이나 매수를 보류하고 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
-      }
-    },
-    {
-      "code": "138040",
-      "name": "메리츠금융지주",
-      "price": 133150,
-      "change_rate": -0.04,
-      "rsi": 51.1,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 50,
-        "consensus": "3:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피200 지수가 -3.88% 급락하며 시스템 전체에 신규 매수 전면 차단(락다운) 가드레일이 발동되었으므로, 개별 종목의 수급 양호세에도 불구하고 매수를 엄격히 금지합니다. 이에 따라 리스크 관리를 위해 '관망'을 유지하며, 향후 시장 하방 압력이 진정되고 거시경제 레짐이 안정될 때 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
+        "reason": "미국 필라델피아 반도체 지수의 급락과 약세장 레짐으로 인해 하방 압력이 커진 상태입니다. RSI가 과매도 구간에 진입했으나 거래량이 부족하고 20일 이동평균선을 하회하고 있어 추가 변동성 확대를 대비해 관망하며 향후 시장 안정 시 재진입을 검토하겠습니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 53점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-02 10:00:39"
       }
     },
     {
       "code": "035720",
       "name": "카카오",
-      "price": 29600,
-      "change_rate": 0.51,
+      "price": 29525,
+      "change_rate": 0.25,
       "rsi": 35.6,
       "is_held": false,
       "held_qty": 0,
@@ -352,14 +312,14 @@
       "status_tag": "신규 레이더 감시 🎯",
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
-        "decision": "매수",
-        "score": 73,
-        "consensus": "2:1 매수 합의",
+        "decision": "관망",
+        "score": 64,
+        "consensus": "2:1 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 62,
+            "score": 58,
             "decision": "관망"
           },
           {
@@ -371,13 +331,53 @@
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 80,
-            "decision": "매수"
+            "score": 55,
+            "decision": "관망"
           }
         ],
-        "reason": "현재 코스피200이 패닉 폭락장임에도 불구하고, 카카오의 14일 RSI 지표가 30.5로 과매도 구간에 있으면서 외국인과 기관의 5일누적 순매수가 유지되고, 당일 캔들 모양이 아래꼬리 양봉 반등을 보이고 있어 저가 매수세가 유입되는 것으로 판단됩니다. 또한, 카카오모빌리티의 자동차 검사 예약으로 행안부 장관상을 수상하는 등 호재 뉴스가 발표되면서 매수 확신도가 높아졌습니다. 따라서, 자동 매수 집행을 결정했습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 35점 ↔ AI 49점 | 편차 14점)",
-        "checked_at": "2026-11-02 00:50:54"
+        "reason": "코스피200 약세장 및 미 반도체 급락 여파 속에서 기관의 연속 순매수와 낮은 RSI(35.6)로 저가 매력은 있으나, 거래량이 20일 평균 대비 20% 부족하고 MA20을 하회하고 있어 추가 모멘텀 확인이 필요합니다. 따라서 현재는 보유 수량이 0주이므로 무리한 진입을 자제하고 관망하며 향후 시장 안정 시 재진입을 검토하겠습니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 53점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-02 10:00:39"
+      }
+    },
+    {
+      "code": "138040",
+      "name": "메리츠금융지주",
+      "price": 133000,
+      "change_rate": -0.15,
+      "rsi": 51.1,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 55,
+        "consensus": "3:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 코스피200 약세·조정장 속에서 메리츠금융지주는 20일 이내 이동평균선을 상회하고 있으나, 당일 거래량이 20일 평균 대비 10% 부족하며 미 반도체 지수 급락에 따른 장중 변동성 확대로 매수 커트라인(75점)을 충족하지 못합니다. 기관의 5일 누적 순매수세가 유입되고 있어 긍정적이나, 단기 거래량 실종과 호가 공백 우려가 있어 신규 진입을 보류하고 향후 시장 안정 시 재진입을 검토하겠습니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 53점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-02 10:00:39"
       }
     }
   ]
