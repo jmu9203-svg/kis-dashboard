@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 16:25:56",
+  "updated_at": "2026-11-03 16:36:40",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "69% (🔋 배터리 사용 중, 20.8°C)",
@@ -143,9 +143,9 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 219500,
-      "change_rate": -4.15,
-      "rsi": 44.8,
+      "price": 220000,
+      "change_rate": -3.93,
+      "rsi": 45.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -303,9 +303,9 @@
     {
       "code": "018260",
       "name": "삼성에스디에스",
-      "price": 200500,
-      "change_rate": -3.84,
-      "rsi": 48.7,
+      "price": 201000,
+      "change_rate": -3.6,
+      "rsi": 49.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
