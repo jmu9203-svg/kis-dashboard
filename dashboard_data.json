@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 17:09:01",
+  "updated_at": "2026-11-03 17:19:42",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "68% (🔋 배터리 사용 중, 20.8°C)",
@@ -64,7 +64,7 @@
       "code": "035420",
       "name": "NAVER",
       "price": 169000,
-      "change_rate": -3.36,
+      "change_rate": -3.31,
       "rsi": 39.4,
       "is_held": true,
       "held_qty": 8,
@@ -143,9 +143,9 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 220000,
-      "change_rate": -3.93,
-      "rsi": 45.0,
+      "price": 219500,
+      "change_rate": -4.15,
+      "rsi": 44.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
