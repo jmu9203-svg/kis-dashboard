@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04 17:13:21",
+  "updated_at": "2026-11-04 17:21:27",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "69% (🔋 배터리 사용 중, 20.5°C)",
@@ -27,7 +27,7 @@
       "avg_price": 177760,
       "pnl_rate": -3.92,
       "eval_amt": 1366400,
-      "rsi": 46.4,
+      "rsi": 46.5,
       "investor_summary": "외국인 +89,459주, 기관 -126,309주(2일연속매도⚠️) | [5일누적 합계: 외인 +188,272주, 기관 -309,780주]",
       "ai_ensemble": {
         "decision": "관망",
@@ -61,20 +61,20 @@
   ],
   "watch_list": [
     {
-      "code": "035420",
-      "name": "NAVER",
-      "price": 170800,
-      "change_rate": 0.89,
-      "rsi": 46.4,
-      "is_held": true,
-      "held_qty": 8,
-      "pnl_rate": -3.92,
-      "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "보유 홀딩 관망 💎",
+      "code": "005380",
+      "name": "현대차",
+      "price": 282500,
+      "change_rate": 1.8,
+      "rsi": 44.1,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 58,
-        "consensus": "3:0 관망 우세",
+        "score": 68,
+        "consensus": "2:1 관망 우세",
         "models": [
           {
             "provider": "Google",
@@ -85,48 +85,8 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 60,
+            "score": 62,
             "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "보유 중인 NAVER는 현재 가격이 목표 익절선(+8.5%)에 미치지 못하고 RSI도 중립 수준이며, 외국인 순매수는 5일 누적이지만 당일 매도세가 나타났고 기관은 지속 매도 중이다. 따라서 추가 매수는 자제하고, 손절선(-7%)도 아직 도달하지 않아 현 포지션을 유지하는 것이 바람직하다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 58점 | 편차 15점)",
-        "checked_at": "2026-11-04 14:30:22"
-      }
-    },
-    {
-      "code": "465580",
-      "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22600,
-      "change_rate": 1.1,
-      "rsi": 32.2,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 80,
-        "consensus": "정량 가드레일 제동 (관망 유지)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 78,
-            "decision": "매수"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 78,
-            "decision": "매수"
           },
           {
             "provider": "Meta",
@@ -135,9 +95,9 @@
             "decision": "매수"
           }
         ],
-        "reason": "코스피200 약세·조정장에도 불구하고 RSI가 31.8로 과매도 구간에 있어 반등 매수 기회가 크며, 당일 거래량이 20일 평균 대비 214%로 급증해 강한 수급이 확인됩니다. 외국인 투자자의 연속 순매수와 현금·포지션 한도 내에서 19주(≈429,210원) 매수를 진행하면 위험을 제한하면서 상승 잠재력을 확보할 수 있습니다.",
-        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 68점 ↔ 교정후 80점 | 편차 12점)",
-        "checked_at": "2026-11-04 14:30:41"
+        "reason": "주가가 단기 이동평균선 아래에 위치하고 RSI가 40 이하는 아니며 외국인 순매도가 지속되는 등 매수 신호가 약합니다. 다만 거래량이 활발하고 일부 긍정적 뉴스가 있어 급격한 매도는 피하고 관망하며 추세 변화를 기다리는 것이 바람직합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 48점 ↔ AI 68점 | 편차 20점 · 보수적 관망)",
+        "checked_at": "2026-11-04 14:31:26"
       }
     },
     {
@@ -181,20 +141,20 @@
       }
     },
     {
-      "code": "005380",
-      "name": "현대차",
-      "price": 282500,
-      "change_rate": 1.8,
-      "rsi": 44.1,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
+      "code": "035420",
+      "name": "NAVER",
+      "price": 170800,
+      "change_rate": 0.95,
+      "rsi": 46.5,
+      "is_held": true,
+      "held_qty": 8,
+      "pnl_rate": -3.92,
+      "status_tag": "포트폴리오 보유 중 📦",
+      "action_status": "보유 홀딩 관망 💎",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 68,
-        "consensus": "2:1 관망 우세",
+        "score": 58,
+        "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
@@ -205,8 +165,88 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 60,
             "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "보유 중인 NAVER는 현재 가격이 목표 익절선(+8.5%)에 미치지 못하고 RSI도 중립 수준이며, 외국인 순매수는 5일 누적이지만 당일 매도세가 나타났고 기관은 지속 매도 중이다. 따라서 추가 매수는 자제하고, 손절선(-7%)도 아직 도달하지 않아 현 포지션을 유지하는 것이 바람직하다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 58점 | 편차 15점)",
+        "checked_at": "2026-11-04 14:30:22"
+      }
+    },
+    {
+      "code": "267260",
+      "name": "HD현대일렉트릭",
+      "price": 439000,
+      "change_rate": 0.0,
+      "rsi": 39.2,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 65,
+        "consensus": "모델 간 이견 (편차 28점 · 안전 관망)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 78,
+            "decision": "매수"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "reason": "RSI가 40 이하로 저가 매수 매력도가 높고 외국인 순매수가 지속되고 있어 상승 모멘텀이 기대됩니다. 시장은 약세이지만 해당 종목은 AI 데이터센터와 배전사업 확대라는 호재가 있어 중장기 상승 가능성이 있습니다. 현금과 종목 한도 내에서 1주를 매수하는 것이 적절합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 65점 | 편차 11점)",
+        "checked_at": "2026-11-04 10:02:55"
+      }
+    },
+    {
+      "code": "465580",
+      "name": "ACE 미국빅테크TOP7 Plus",
+      "price": 22600,
+      "change_rate": 1.1,
+      "rsi": 32.2,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 80,
+        "consensus": "정량 가드레일 제동 (관망 유지)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 78,
+            "decision": "매수"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 78,
+            "decision": "매수"
           },
           {
             "provider": "Meta",
@@ -215,9 +255,9 @@
             "decision": "매수"
           }
         ],
-        "reason": "주가가 단기 이동평균선 아래에 위치하고 RSI가 40 이하는 아니며 외국인 순매도가 지속되는 등 매수 신호가 약합니다. 다만 거래량이 활발하고 일부 긍정적 뉴스가 있어 급격한 매도는 피하고 관망하며 추세 변화를 기다리는 것이 바람직합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 48점 ↔ AI 68점 | 편차 20점 · 보수적 관망)",
-        "checked_at": "2026-11-04 14:31:26"
+        "reason": "코스피200 약세·조정장에도 불구하고 RSI가 31.8로 과매도 구간에 있어 반등 매수 기회가 크며, 당일 거래량이 20일 평균 대비 214%로 급증해 강한 수급이 확인됩니다. 외국인 투자자의 연속 순매수와 현금·포지션 한도 내에서 커트라인 및 리스크 관리 기준에 따라 신규 진입을 유보하고 관망합니다.",
+        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 68점 ↔ 교정후 80점 | 편차 12점)",
+        "checked_at": "2026-11-04 14:30:41"
       }
     },
     {
@@ -261,11 +301,11 @@
       }
     },
     {
-      "code": "381170",
-      "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 28830,
-      "change_rate": 1.59,
-      "rsi": 31.9,
+      "code": "381180",
+      "name": "TIGER 미국필라델피아반도체나스닥",
+      "price": 37050,
+      "change_rate": 2.73,
+      "rsi": 38.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -273,20 +313,20 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 65,
-        "consensus": "정량 가드레일 제동 (관망 유지)",
+        "score": 64,
+        "consensus": "2:1 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 78,
-            "decision": "매수"
+            "score": 52,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 82,
-            "decision": "매수"
+            "score": 55,
+            "decision": "관망"
           },
           {
             "provider": "Meta",
@@ -295,17 +335,17 @@
             "decision": "매수"
           }
         ],
-        "reason": "코스피200 약세·조정장에도 불구하고 RSI가 31로 과매도 구간에 있어 반등 여력이 크고, 외국인 순매수가 5일 누적 플러스를 기록해 수급이 개선되고 있다. 거래량이 20일 평균 대비 188%로 급증한 점과 ETF 순자산 확대·신규 편입 뉴스가 긍정적 모멘텀을 제공한다. 가용 현금과 종목·섹터 한도를 충족하므로 15주(≈431,400원) 매수를 권고한다.",
-        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 62점 ↔ 교정후 65점 | 편차 3점)",
-        "checked_at": "2026-11-04 14:32:05"
+        "reason": "현재 시장 레짐이 약세장이지만, 14일 RSI가 34.5로 과매도 구간에 있으며, 외국인과 기관의 수급이 양호하고, 거래량이 평시 수준을 유지하고 있어 매수 기회로 판단됩니다. 또한, 원/달러 환율이 안정세를 보이고 있어 추가적인 악재는 없어 보입니다. 따라서, 현재 가용 현금을 사용하여 신규 매수를 결정합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 69점 ↔ AI 64점 | 편차 5점)",
+        "checked_at": "2026-11-02 14:31:57"
       }
     },
     {
       "code": "138040",
       "name": "메리츠금융지주",
-      "price": 131900,
-      "change_rate": 1.15,
-      "rsi": 52.1,
+      "price": 131800,
+      "change_rate": 1.07,
+      "rsi": 51.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -341,11 +381,11 @@
       }
     },
     {
-      "code": "064350",
-      "name": "현대로템",
-      "price": 79800,
-      "change_rate": 3.5,
-      "rsi": 38.1,
+      "code": "066570",
+      "name": "LG전자",
+      "price": 146400,
+      "change_rate": 1.31,
+      "rsi": 28.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -353,31 +393,31 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 80,
-        "consensus": "정량 가드레일 제동 (관망 유지)",
+        "score": 50,
+        "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 78,
-            "decision": "매수"
+            "score": 45,
+            "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 78,
-            "decision": "매수"
+            "score": 55,
+            "decision": "관망"
           },
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 85,
-            "decision": "매수"
+            "score": 50,
+            "decision": "관망"
           }
         ],
-        "reason": "코스피200이 약세이지만 현대로템은 저가 RSI와 외국인 연속 순매수, 강한 거래량 상승으로 매수 매력도가 높으며, 수소기관차 등 호재 뉴스가 긍정적이다. 가용 현금과 종목 한도 내에서 5주(≈450,000원) 정도 진입해 포지션을 시작한다.",
-        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 69점 ↔ 교정후 80점 | 편차 11점)",
-        "checked_at": "2026-11-04 14:32:47"
+        "reason": "코스피200 시장의 패닉 폭락장(-3.88%)으로 인해 시스템 전체 신규 매수 락다운이 발동되어 기술적 과매도 상태임에도 매수를 전면 차단합니다. 외국인 수급 이탈 및 거시경제 변동성 확대를 고려해 당일 진입을 보류하며, 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 36점 ↔ AI 50점 | 편차 14점)",
+        "checked_at": "2026-11-02 00:52:05"
       }
     }
   ]
