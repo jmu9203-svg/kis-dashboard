@@ -6,7 +6,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>한투 실전 AI 자율 운용 대시보드</title>
+  <title>KIS 500만 원 AI 자율 펀드 대시보드</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -165,7 +165,7 @@
 <body>
   <!-- Top Family Navigation (Unified 4 Sites) -->
   <div class="nav-tabs">
-    <a href="https://jmu9203-svg.github.io/kis-dashboard/" class="nav-tab-item active">💼 한투 실전 계좌</a>
+    <a href="https://jmu9203-svg.github.io/kis-dashboard/" class="nav-tab-item active">💼 한투 500만 펀드</a>
     <a href="https://jmu9203-svg.github.io/toss-dashboard/" class="nav-tab-item">💙 토스 실전 비서</a>
     <a href="https://jmu9203-svg.github.io/dividend-calendar/" class="nav-tab-item">📅 배당 캘린더</a>
     <a href="https://jmu9203-svg.github.io/system-architecture/" class="nav-tab-item">🧠 전략 백서</a>
@@ -173,8 +173,8 @@
 
   <div class="header">
     <div class="title-group">
-      <h1>한투 실전 AI 자율 운용 <span class="kis-tag">Real Trading</span></h1>
-      <p>한국투자증권 실전 오픈API &amp; 5대 퀀트 안전장치 실시간 자율 운용</p>
+      <h1>AI 500만 원 자율 펀드 <span class="kis-tag">Autopilot</span></h1>
+      <p>한국투자증권 Open API &amp; 미국 3대 빅테크 이종 앙상블 AI 실시간 관제</p>
     </div>
     <div style="display: flex; gap: 6px; align-items: center;">
       <div class="status-badge" style="background: var(--pill-bg); border: 1px solid var(--card-border); color: var(--text-main);">
@@ -194,7 +194,7 @@
   </div>
 
   <div class="summary-card">
-    <div class="summary-title" id="summaryTitle">실전 계좌 총 자산 평가액 (실시간 예수금 연동)</div>
+    <div class="summary-title">500만 원 독립 펀드 순평가액 (동결금 4,500만 제외)</div>
     <div class="total-eval" id="totalEval">--원</div>
     <div class="pnl-row" id="pnlRow">
       <span id="pnlAmt">--원</span>
@@ -207,7 +207,7 @@
         <div class="stat-value" id="stockPchsAmt">--원</div>
       </div>
       <div class="stat-item">
-        <div class="stat-label" id="statPnlLabel">보유 주식 평가손익</div>
+        <div class="stat-label">보유 주식 평가손익 (500만 대비)</div>
         <div class="stat-value" id="stockPnlInfo">--원</div>
       </div>
       <div class="stat-item">
@@ -413,20 +413,12 @@
       const isProfit = pnl >= 0;
       pnlEl.className = 'pnl-row ' + (isProfit ? 'profit-text' : 'loss-text');
       document.getElementById('pnlAmt').textContent = (isProfit ? '+' : '') + pnl.toLocaleString() + '원';
-      const isReal = (d.env_type === 'REAL' || !d.frozen_reserve);
-      const seedLabel = isReal ? '실시간 잔고 연동' : '500만 시드 기준';
-      document.getElementById('pnlPct').textContent = '(' + (isProfit ? '+' : '') + pnlPct.toFixed(2) + '% | ' + seedLabel + ')';
-      if (isReal) {
-        const sTitle = document.getElementById('summaryTitle');
-        if (sTitle) sTitle.textContent = '실전 계좌 총 자산 평가액 (실시간 예수금 연동)';
-        const spLabel = document.getElementById('statPnlLabel');
-        if (spLabel) spLabel.textContent = '보유 주식 평가손익';
-      }
+      document.getElementById('pnlPct').textContent = '(' + (isProfit ? '+' : '') + pnlPct.toFixed(2) + '% | 500만 시드 기준)';
 
       const stockEval = d.stock_eval || 0;
       const stockPchs = d.stock_pchs || 0;
       const stockPnl = (d.stock_pnl !== undefined) ? d.stock_pnl : (stockEval - stockPchs);
-      const stockPnlOnFundPct = (d.stock_pnl_on_fund_pct !== undefined) ? d.stock_pnl_on_fund_pct : (stockPnl / (d.budget_limit || 2500000) * 100);
+      const stockPnlOnFundPct = (d.stock_pnl_on_fund_pct !== undefined) ? d.stock_pnl_on_fund_pct : (stockPnl / 5000000 * 100);
 
       document.getElementById('stockPchsAmt').textContent = stockEval.toLocaleString() + '원 (원금 ' + stockPchs.toLocaleString() + '원)';
       const spEl = document.getElementById('stockPnlInfo');
@@ -474,16 +466,7 @@
       const holdings = d.holdings || [];
       document.getElementById('holdingCount').textContent = holdings.length + '개 종목';
       const hList = document.getElementById('holdingsList');
-      if (holdings.length === 0) {
-        hList.innerHTML = `
-          <div style="text-align: center; padding: 32px 16px; color: var(--text-sub); background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; font-size: 14px;">
-            <div style="font-size: 26px; margin-bottom: 8px;">📦</div>
-            <div style="font-weight: 700; color: var(--text-main); font-size: 15px;">현재 보유 주식이 없습니다.</div>
-            <div style="font-size: 12px; color: var(--accent-blue); margin-top: 6px;">(100% 현금 대기 중 · 평일 정규장 10:00 / 14:30 퀀트 우량주 발굴 시 자동 분할 매수)</div>
-          </div>
-        `;
-      } else {
-        hList.innerHTML = holdings.map(h => {
+      hList.innerHTML = holdings.map(h => {
         const hpnl = h.pnl_rate || 0;
         const hprofit = hpnl >= 0;
         const rsiVal = h.rsi || '--';
@@ -509,7 +492,6 @@
           </div>
         `;
       }).join('');
-      }
 
       // Watch List (holdings 크로스 레퍼런스 폴백으로 즉각 100% 실시간 시세/RSI 표시 보장)
       const watch = d.watch_list || [];
