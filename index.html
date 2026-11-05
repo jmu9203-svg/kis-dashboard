@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="AI 펀드">
+  <meta name="apple-mobile-web-app-title" content="한투 실전 AI">
   <meta name="theme-color" content="#0d1117">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <style>
@@ -22,133 +22,97 @@
       --card-border: #30363d;
       --text-main: #f0f6fc;
       --text-sub: #8b949e;
-      --accent: #238636;
-      --profit: #f85149; /* 한국 주식 빨간색 상승 */
-      --loss: #58a6ff;   /* 한국 주식 파란색 하락 */
+      --toss-blue: #3182F6;
+      --toss-blue-bg: rgba(49, 130, 246, 0.15);
+      --profit: #f04452; /* 상승 레드 */
+      --loss: #3182F6;   /* 하락 블루 */
       --pill-bg: #21262d;
       --warn-bg: rgba(210, 153, 34, 0.15);
       --warn-border: #d29922;
       --warn-text: #e3b341;
+      --action-box-bg: rgba(49, 130, 246, 0.08);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif; }
     body { background-color: var(--bg); color: var(--text-main); padding: 16px; max-width: 680px; margin: 0 auto; -webkit-font-smoothing: antialiased; }
 
     /* Top Family Navigation Bar (Unified 4 Sites) */
-    /* Top Family Navigation Bar (Unified 4 Sites) */
     .nav-tabs { display: flex; gap: 5px; background: #161b22; padding: 5px; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--card-border); overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
     .nav-tabs::-webkit-scrollbar { display: none; }
     .nav-tab-item { flex: 1; text-align: center; padding: 8px 6px; font-size: 12px; font-weight: 600; color: var(--text-sub); text-decoration: none; border-radius: 8px; transition: all 0.2s; white-space: nowrap; }
     .nav-tab-item:hover { color: var(--text-main); background: rgba(255, 255, 255, 0.04); }
-    .nav-tab-item.active { background: #21262d; color: #3fb950; font-weight: 700; border: 1px solid rgba(63, 185, 80, 0.4); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
-    
+    .nav-tab-item.active { background: #21262d; color: #58a6ff; font-weight: 700; border: 1px solid rgba(49, 130, 246, 0.45); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+
     /* Header */
     .header { display: flex; justify-content: space-between; align-items: center; padding: 6px 0 16px 0; gap: 10px; flex-wrap: wrap; }
     .title-group h1 { font-size: 21px; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 8px; }
-    .kis-tag { font-size: 11px; background: rgba(35, 134, 54, 0.2); color: #3fb950; border: 1px solid rgba(63, 185, 80, 0.4); padding: 2px 8px; border-radius: 12px; font-weight: 700; }
+    .kis-tag { background: var(--toss-blue-bg); color: #60a5fa; border: 1px solid rgba(49, 130, 246, 0.4); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
     .title-group p { font-size: 13px; color: var(--text-sub); margin-top: 3px; }
-    .status-badge { display: flex; align-items: center; gap: 6px; background: rgba(35, 134, 54, 0.2); border: 1px solid var(--accent); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; color: #3fb950; }
+    .status-badge { display: flex; align-items: center; gap: 6px; background: var(--toss-blue-bg); border: 1px solid var(--toss-blue); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; color: var(--toss-blue); }
     .pulse-dot { width: 8px; height: 8px; background: #3fb950; border-radius: 50%; box-shadow: 0 0 8px #3fb950; animation: pulse 2s infinite; }
     @keyframes pulse { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.2); } 100% { opacity: 1; transform: scale(1); } }
 
+    /* Watchdog Banner */
+    #watchdogBanner { background: rgba(49, 130, 246, 0.10); border: 1px solid rgba(49, 130, 246, 0.30); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+
     /* Summary Card */
-    .summary-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 20px; margin-bottom: 20px; }
-    .summary-title { font-size: 13px; color: var(--text-sub); font-weight: 500; }
-    .total-eval { font-size: 32px; font-weight: 800; margin: 8px 0; letter-spacing: -0.5px; }
+    .summary-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+    .summary-title { font-size: 13px; color: var(--text-sub); font-weight: 500; display: flex; justify-content: space-between; }
+    .total-eval { font-size: 30px; font-weight: 800; margin: 8px 0; letter-spacing: -0.5px; }
     .pnl-row { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; flex-wrap: wrap; }
     .profit-text { color: var(--profit); }
     .loss-text { color: var(--loss); }
-    .rebalance-banner { margin-top: 12px; background: var(--warn-bg); border: 1px solid var(--warn-border); color: var(--warn-text); padding: 8px 12px; border-radius: 10px; font-size: 12px; font-weight: 600; display: none; }
+
     .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--card-border); }
     .stat-item { font-size: 13px; }
     .stat-label { color: var(--text-sub); margin-bottom: 4px; }
     .stat-value { font-weight: 600; color: var(--text-main); }
+
+    /* Filter Tabs */
+    .filter-tabs { display: flex; gap: 8px; margin-bottom: 16px; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; padding-bottom: 4px; }
+    .filter-tabs::-webkit-scrollbar { display: none; }
+    .tab-btn { background: var(--pill-bg); border: 1px solid var(--card-border); color: var(--text-sub); padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+    .tab-btn.active { background: var(--toss-blue); color: #fff; border-color: var(--toss-blue); }
 
     /* Section Title */
     .section-title { font-size: 16px; font-weight: 700; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
     .section-count { font-size: 13px; color: var(--text-sub); font-weight: 400; }
 
     /* Holdings List */
-    .holdings-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
-    .holding-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 16px; }
+    .holdings-list { display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }
+    .holding-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 18px; }
     .holding-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+    .stock-title { display: flex; align-items: center; gap: 6px; }
+    .country-tag { font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 700; }
+    .country-kr { background: rgba(49, 130, 246, 0.2); color: #58a6ff; }
+    .country-us { background: rgba(35, 134, 54, 0.2); color: #3fb950; }
     .stock-name { font-size: 16px; font-weight: 700; }
-    .stock-code { font-size: 12px; color: var(--text-sub); font-weight: 400; margin-left: 6px; }
-    .stock-qty { font-size: 13px; color: var(--text-sub); margin-top: 2px; }
+    .stock-code { font-size: 12px; color: var(--text-sub); font-weight: 400; }
+    .stock-qty { font-size: 13px; color: var(--text-sub); margin-top: 3px; }
     .stock-val-box { text-align: right; }
     .stock-cur-price { font-size: 16px; font-weight: 700; }
     .stock-pnl { font-size: 13px; font-weight: 700; margin-top: 2px; }
+
+    /* AI Decision Banner */
+    .ai-badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 8px; font-size: 12px; font-weight: 700; margin-top: 6px; }
+    .badge-buy { background: rgba(35, 134, 54, 0.2); color: #3fb950; border: 1px solid rgba(63, 185, 80, 0.4); }
+    .badge-sell { background: rgba(248, 81, 73, 0.2); color: #f85149; border: 1px solid rgba(248, 81, 73, 0.4); }
+    .badge-hold { background: rgba(210, 153, 34, 0.2); color: #e3b341; border: 1px solid rgba(227, 179, 65, 0.4); }
+
+    /* Action Tip Box */
+    .action-tip-box { background: var(--action-box-bg); border-left: 3px solid var(--toss-blue); padding: 10px 12px; border-radius: 0 8px 8px 0; margin-top: 10px; font-size: 12px; line-height: 1.5; }
+    .action-tip-title { font-weight: 700; color: var(--toss-blue); margin-bottom: 2px; display: flex; align-items: center; gap: 4px; }
+    .action-tip-text { color: var(--text-main); font-weight: 500; }
+    .action-reason { color: var(--text-sub); font-size: 11px; margin-top: 4px; }
 
     /* Indicator Pills */
     .indicator-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.06); }
     .indicator-pill { background: var(--pill-bg); border-radius: 6px; padding: 4px 8px; font-size: 12px; color: var(--text-sub); display: flex; gap: 4px; }
     .pill-val { color: var(--text-main); font-weight: 600; }
-    .rsi-oversold { color: #58a6ff; font-weight: 700; }
-    .rsi-overbought { color: #f85149; font-weight: 700; }
 
-    /* 3대 빅테크 AI 앙상블 스코어보드 박스 */
-    .ai-ensemble-box {
-      margin-top: 10px;
-      padding: 10px 12px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 10px;
-    }
-    .ai-ensemble-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8px;
-    }
-    .ai-ensemble-title {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--text-main);
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-    .ai-decision-badge {
-      font-size: 11px;
-      font-weight: 800;
-      padding: 2px 8px;
-      border-radius: 12px;
-      white-space: nowrap;
-    }
-    .ai-badge-buy { background: rgba(63, 185, 80, 0.15); color: #3fb950; border: 1px solid rgba(63, 185, 80, 0.35); }
-    .ai-badge-hold { background: rgba(227, 179, 65, 0.15); color: #e3b341; border: 1px solid rgba(227, 179, 65, 0.35); }
-    .ai-badge-sell { background: rgba(248, 81, 73, 0.15); color: #f85149; border: 1px solid rgba(248, 81, 73, 0.35); }
-    
-    .ai-models-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px;
-      margin-bottom: 8px;
-    }
-    .ai-model-chip {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 6px;
-      padding: 5px 6px;
-      text-align: center;
-    }
-    .ai-model-name {
-      font-size: 10px;
-      color: var(--text-sub);
-      font-weight: 600;
-    }
-    .ai-model-val {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-top: 2px;
-    }
-    .ai-reason-text {
-      font-size: 11px;
-      color: #8b949e;
-      line-height: 1.45;
-      padding-top: 6px;
-      border-top: 1px dashed rgba(255, 255, 255, 0.06);
-    }
+    /* Empty State Box */
+    .empty-state-box { text-align: center; padding: 36px 16px; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; }
+    .btn-goto-basket { margin-top: 12px; background: var(--toss-blue); color: #fff; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+    .btn-goto-basket:hover { opacity: 0.9; }
 
     /* Footer Info */
     .footer { text-align: center; color: var(--text-sub); font-size: 12px; padding: 24px 0 16px 0; border-top: 1px solid var(--card-border); margin-top: 24px; }
@@ -173,8 +137,8 @@
 
   <div class="header">
     <div class="title-group">
-      <h1>한투 실전 AI 자율 운용 <span class="kis-tag">Real Trading</span></h1>
-      <p>한국투자증권 실전 오픈API &amp; 5대 퀀트 안전장치 실시간 자율 운용</p>
+      <h1>한투 실전계좌 <span class="kis-tag">AI 자율 운용</span></h1>
+      <p>한국투자증권 공식 Open API · 국내 &amp; 미국 해외주식 24시간 퀀트 자율 운용</p>
     </div>
     <div style="display: flex; gap: 6px; align-items: center;">
       <div class="status-badge" style="background: var(--pill-bg); border: 1px solid var(--card-border); color: var(--text-main);">
@@ -182,356 +146,427 @@
       </div>
       <div class="status-badge" id="systemStatus">
         <div class="pulse-dot"></div>
-        <span id="statusText">정상 감시 중</span>
+        <span id="statusText">24/7 실시간 관제</span>
       </div>
     </div>
   </div>
 
-  <!-- Watchdog & External Dead-Server Siren Banner -->
-  <div id="watchdogBanner" style="background: rgba(0, 196, 113, 0.10); border: 1px solid rgba(0, 196, 113, 0.30); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;">
-    <span id="watchdogText">🩺 <b>5중 자체 감시(Watchdog) &amp; ✈️ 주간 블랙박스 정상</b> — 서킷브레이커·금 15:40 자동보고</span>
+  <!-- Watchdog & Safety Siren Banner -->
+  <div id="watchdogBanner">
+    <span id="watchdogText">🩺 <b>5중 자체 감시(Watchdog) &amp; ✈️ 주간 블랙박스 정상</b> — 서킷브레이커(-3.5%)·24/7 실시간 관제</span>
     <span id="watchdogSyncAge" style="color: var(--text-sub); font-weight: 600; font-size: 11px; white-space: nowrap; flex-shrink: 0;">방금 동기화</span>
   </div>
 
+  <!-- Summary Card (Toss Layout) -->
   <div class="summary-card">
-    <div class="summary-title" id="summaryTitle">실전 계좌 총 자산 평가액 (실시간 예수금 연동)</div>
-    <div class="total-eval" id="totalEval">--원</div>
-    <div class="pnl-row" id="pnlRow">
-      <span id="pnlAmt">--원</span>
-      <span id="pnlPct">(--%)</span>
+    <div class="summary-title">
+      <span>한투증권 실전 총 자산 (국내 + 해외 통합 운용)</span>
+      <span id="accountNoTag">계좌: 10154692-01</span>
     </div>
-    <div class="rebalance-banner" id="rebalanceBanner"></div>
+    <div class="total-eval" id="totalEval">2,500,000원</div>
+    <div class="pnl-row" id="pnlRow">
+      <span id="pnlAmt">+0원</span>
+      <span id="pnlPct">(+0.00% | 실시간 잔고 연동)</span>
+    </div>
     <div class="stat-grid">
       <div class="stat-item">
-        <div class="stat-label">보유 주식 평가액 (원금)</div>
-        <div class="stat-value" id="stockPchsAmt">--원</div>
+        <div class="stat-label">🇰🇷 국내주식 평가금 (원금)</div>
+        <div class="stat-value" id="krwStockInfo">0원 (0원)</div>
       </div>
       <div class="stat-item">
-        <div class="stat-label" id="statPnlLabel">보유 주식 평가손익</div>
-        <div class="stat-value" id="stockPnlInfo">--원</div>
+        <div class="stat-label">🇺🇸 미국주식 평가금 (원금)</div>
+        <div class="stat-value" id="usdStockInfo">$0.00 ($0.00)</div>
       </div>
       <div class="stat-item">
-        <div class="stat-label">잔여 가용 현금</div>
-        <div class="stat-value" id="usableCash">--원</div>
+        <div class="stat-label">💵 원화 가용 예수금</div>
+        <div class="stat-value" id="krwCash">2,500,000원</div>
       </div>
       <div class="stat-item">
-        <div class="stat-label">공기계 배터리</div>
-        <div class="stat-value" id="deviceBattery">--</div>
+        <div class="stat-label">💵 달러/통합증거금 예수금</div>
+        <div class="stat-value" id="usdCash">2,500,000원 ($1,760)</div>
       </div>
     </div>
   </div>
 
-  <div class="section-title">
-    <span>현재 보유 포트폴리오</span>
-    <span class="section-count" id="holdingCount">0개 종목</span>
+  <!-- Portfolio Health & Balance Card (Toss-Style) -->
+  <div id="portfolioHealthCard" style="background: var(--card-bg); border: 1px solid var(--card-border); border-left: 4px solid #10b981; border-radius: 14px; padding: 16px; margin-bottom: 18px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 8px;">
+      <span style="font-size:14px; font-weight:800; color:var(--text-main); display:flex; align-items:center; gap:6px;">
+        <span>🩺 포트폴리오 밸런스 &amp; 건강도 진단</span>
+      </span>
+      <span id="healthGradeBadge" style="font-size:11px; font-weight:700; background:rgba(16,185,129,0.18); color:#34d399; border:1px solid rgba(16,185,129,0.4); padding:3px 8px; border-radius:8px;">95점 (매우 우수)</span>
+    </div>
+    <div id="healthDiagnoses" style="font-size:12px; color:#93c5fd; line-height:1.6; margin-bottom:8px;">
+      • 실전 시드 250만 원 100% 현금 대기 중 (변동성 방어 최적화)<br>• 글로벌 통합증거금 지원 — 국내 우량주 및 미국 빅테크 동시 분할 매수 여력 확보
+    </div>
+    <div style="background:rgba(255,255,255,0.03); border-radius:8px; padding:8px 10px; font-size:11.5px; color:var(--text-sub); line-height:1.5;">
+      <span style="color:#60a5fa; font-weight:700;">📋 AI 리밸런싱 처방전:</span> <span id="healthPrescription">국내 정규장(10:00 / 14:30) 퀀트 발굴 및 미국 정규장(23:30) 빅테크 눌림목 매수 진입 대기</span>
+    </div>
   </div>
-  <div class="holdings-list" id="holdingsList">
-    <!-- 동적으로 채워짐 -->
+
+  <!-- Master Cash Action Plan Card (Toss-Style) -->
+  <div id="cashMasterPlanCard" style="background: linear-gradient(145deg, rgba(49, 130, 246, 0.14), rgba(22, 27, 34, 0.95)); border: 1px solid rgba(49, 130, 246, 0.45); border-radius: 16px; padding: 18px; margin-bottom: 18px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 10px;">
+      <div style="font-size: 15px; font-weight: 800; color: #58a6ff; display:flex; align-items:center; gap:6px;">
+        <span>🧭 오늘의 예수금 운용 최종 실전 행동 팁</span>
+      </div>
+      <span style="font-size: 11px; background: rgba(49, 130, 246, 0.2); color: #93c5fd; padding: 3px 8px; border-radius: 8px; font-weight: 700;">5단계 퀀트 결론</span>
+    </div>
+
+    <!-- KRW Cash Plan -->
+    <div style="background: rgba(13, 17, 23, 0.65); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 6px; flex-wrap: wrap; gap: 4px;">
+        <span style="font-size: 12px; font-weight: 700; color: #93c5fd;" id="mpKrwTitle">🇰🇷 국내 원화 예수금 운용 지침</span>
+        <span style="font-size: 12px; font-weight: 800; color: #fbbf24;" id="mpKrwVerdict">10:00 / 14:30 퀀트 스크리너 분할 매수 대기</span>
+      </div>
+      <div style="font-size: 12.5px; color: var(--text-main); line-height: 1.55;" id="mpKrwDetail">
+        가용 원화 예수금 2,500,000원 전액 대기 중. 외인/기관 5일 순매수 + 20일선 지지 TOP 종목 발굴 시 종목당 최대 75만 원 이내 1차 매수를 자동 집행합니다.
+      </div>
+    </div>
+
+    <!-- USD Cash Plan -->
+    <div style="background: rgba(13, 17, 23, 0.65); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 12px 14px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 6px; flex-wrap: wrap; gap: 4px;">
+        <span style="font-size: 12px; font-weight: 700; color: #34d399;" id="mpUsdTitle">🇺🇸 해외/달러 예수금 운용 지침</span>
+        <span style="font-size: 12px; font-weight: 800; color: #34d399;" id="mpUsdVerdict">통합증거금 기반 미국 정규장(23:30) 빅테크/ETF 눌림목 진입 대기</span>
+      </div>
+      <div style="font-size: 12.5px; color: var(--text-main); line-height: 1.55;" id="mpUsdDetail">
+        별도 환전 없이 원화 예수금으로 미국 주식(AAPL, NVDA, TSLA, SGOV 등) 즉시 매수 지원. 미국장 개장 후 RSI 35 이하 과매도 시 자동 분할 매수를 검토합니다.
+      </div>
+    </div>
+  </div>
+
+  <!-- Filter Tabs (Exact 4 Menu Options as requested) -->
+  <div class="filter-tabs">
+    <button class="tab-btn active" onclick="setFilter('ALL', this)">전체 보유 종목</button>
+    <button class="tab-btn" onclick="setFilter('KR', this)">🇰🇷 국내 주식</button>
+    <button class="tab-btn" onclick="setFilter('US', this)">🇺🇸 미국 주식</button>
+    <button class="tab-btn" onclick="setFilter('BASKET', this)">✨ AI 감시 · 발굴 바스켓</button>
   </div>
 
   <div class="section-title">
-    <span>🔄 한·미 AI 자율 로테이션 감시 바스켓</span>
-    <span class="section-count" id="watchCount">0개 종목</span>
+    <span id="sectionTitleText">실시간 보유 포트폴리오</span>
+    <span class="section-count" id="holdingCount">0개 종목</span>
   </div>
-  <div style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 12px; padding: 10px 14px; background: rgba(255, 255, 255, 0.03); border-radius: 10px; border: 1px dashed var(--card-border);">
-    💡 <b>한·미 30선 마스터 풀 AI 자율 발굴</b>: 코어 우량주 + <b>미국 대표 지수/빅테크 ETF(원화 즉시 매매·환전수수료 0원·매도거래세 0% 면제)</b> + <b>외인·기관 수급 상위 주도주</b>를 AI가 매일 스스로 스캔해 감시 바스켓을 자동 교체합니다.
-  </div>
-  <div class="holdings-list" id="watchList">
-    <!-- 동적으로 채워짐 -->
+
+  <div class="holdings-list" id="holdingsList">
+    <!-- 동적 렌더링 -->
   </div>
 
   <div class="footer">
     <div id="lastUpdated">최근 감시 동기화: 조회 중...</div>
     <div class="footer-detail">
-      <span>스케줄: 평일 10:00 / 14:30</span>
-      <span>•</span>
-      <span>장중 5분 감시</span>
-      <span>•</span>
-      <span>✈️ 금 15:40 결산</span>
+      <span>스케줄: 평일 국내장 10:00 / 14:30 · 미국장 23:30</span>
       <span>•</span>
       <span>자동 새로고침: 15초</span>
     </div>
   </div>
 
   <script>
-    async function loadDashboard() {
-      try {
-        const res = await fetch('dashboard_data.json?t=' + new Date().getTime());
-        if (!res.ok) throw new Error('데이터 로드 실패');
-        const data = await res.json();
+    let currentFilter = 'ALL';
+    let globalData = null;
 
-        // [실전 계좌 최적화] 레거시 모의투자 브라우저 로컬 캐시 및 팬텀 스냅샷 원천 파기
-        try {
-          localStorage.removeItem('kis_last_good_snap');
-        } catch (e) {}
-
-        renderData(data);
-      } catch (err) {
-        console.warn('로컬 데이터 대기 중:', err);
+    function setFilter(filterType, btnEl) {
+      currentFilter = filterType;
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      else {
+        const matchingBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick').includes(`'${filterType}'`));
+        if (matchingBtn) matchingBtn.classList.add('active');
       }
+      if (globalData) renderData(globalData);
     }
 
-
-    function renderEnsembleBox(item, isHeld) {
-      const ens = item.ai_ensemble || {};
-      const ensDec = ens.decision || (isHeld ? '홀딩' : '관망');
-      const ensScore = ens.score !== undefined ? ens.score : 55;
-      const consensus = ens.consensus || '3사 합의';
-      const aiReason = ens.reason || '5대 핵심 팩트 및 거시경제 레짐 분석 완료.';
-      const auditBadge = ens.audit_badge || '✅ 5대 팩트 검증 통과';
-      const models = ens.models || [
-        { provider: 'Google', model: 'Gemini 3.5', score: ensScore, decision: ensDec },
-        { provider: 'Groq', model: 'Groq 120B', score: ensScore, decision: ensDec },
-        { provider: 'Meta', model: 'Llama 3.3', score: ensScore, decision: ensDec }
-      ];
-
-      let decBadgeClass = 'ai-badge-hold';
-      let decIcon = '🟡';
-      if (ensDec.includes('매수')) {
-        decBadgeClass = 'ai-badge-buy';
-        decIcon = '🟢';
-      } else if (ensDec.includes('매도')) {
-        decBadgeClass = 'ai-badge-sell';
-        decIcon = '🔴';
-      }
-
-      const modelsHtml = models.map(m => {
+    function renderModelChips(models, consensus) {
+      if (!models || models.length === 0) return '';
+      const chipsHtml = models.map(m => {
         let mColor = '#e3b341';
-        const decStr = m.decision || '';
-        if (decStr.includes('매수')) mColor = '#3fb950';
-        else if (decStr.includes('매도')) mColor = '#f85149';
-        else if (decStr.includes('대기') || decStr.includes('미호출') || decStr.includes('지연')) mColor = '#8b949e';
+        const dec = m.decision || '';
+        if (dec.includes('매수') || dec.includes('추매')) mColor = '#3fb950';
+        else if (dec.includes('매도')) mColor = '#f85149';
 
         let icon = '🏛️';
         if (m.provider === 'Groq') icon = '⚡';
         else if (m.provider === 'Meta') icon = '🌐';
 
-        const scoreStr = (m.score === null || m.score === undefined || m.score === '-') ? '-' : `${m.score}점`;
+        const scText = (m.score === null || m.score === undefined || m.score === '-') ? '-' : `${m.score}점`;
 
         return `
-          <div class="ai-model-chip">
-            <div class="ai-model-name">${icon} ${m.provider}</div>
-            <div class="ai-model-val" style="color: ${mColor};">${scoreStr} <span style="font-size: 10px; font-weight: 600;">${decStr}</span></div>
+          <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 4px 8px; font-size: 11px; display: flex; justify-content: space-between; align-items: center;">
+            <span style="color: #c9d1d9;">${icon} ${m.provider}</span>
+            <span style="color: ${mColor}; font-weight: 700;">${scText} <span style="font-size: 10px; font-weight: 600;">${dec}</span></span>
           </div>
         `;
       }).join('');
 
       return `
-        <div class="ai-ensemble-box">
-          <div class="ai-ensemble-head">
-            <div class="ai-ensemble-title">
-              <span>🤖 3대 빅테크 AI 앙상블</span>
-              <span style="font-size: 10px; color: var(--text-sub); font-weight: 500;">· ${consensus}</span>
-              ${ens.checked_at ? `<span style="font-size: 10px; color: #8b949e; background: rgba(255,255,255,0.06); padding: 1px 5px; border-radius: 4px; font-weight: 500;">🕒 ${ens.checked_at.slice(5)}</span>` : ''}
-            </div>
-            <span class="ai-decision-badge ${decBadgeClass}">${decIcon} ${ensDec} (${ensScore}점)</span>
+        <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.25); border-radius: 8px; padding: 8px 10px; margin: 8px 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-size: 11px; font-weight: 700; color: #c4b5fd;">🤖 미국 3대 빅테크 AI 앙상블</span>
+            <span style="font-size: 10px; color: #8b949e;">· ${consensus || '3사 합의'}</span>
           </div>
-          <div class="ai-models-grid">
-            ${modelsHtml}
-          </div>
-          <div class="ai-reason-text">
-            <div style="margin-bottom: 3px; color: #c9d1d9;">💡 <b>판단 근거</b>: ${aiReason}</div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px; font-size: 10px;">
-              <span style="color: ${auditBadge.includes('⚠️') || auditBadge.includes('🛡️') ? '#e3b341' : '#3fb950'};">🕵️ <b>팩트 감사</b>: ${auditBadge}</span>
-              <span style="color: #8b949e;">🕒 <b>AI 분석 갱신</b>: ${ens.checked_at || '실시간 최신'}</span>
-            </div>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;">
+            ${chipsHtml}
           </div>
         </div>
       `;
     }
 
     function renderData(d) {
-      const stText = d.market_status || (d.is_market_open ? '장중 실시간 감시 중' : '주말 휴장 (24/7 시스템 정상 가동)');
-      document.getElementById('statusText').textContent = stText;
-
-      document.getElementById('totalEval').textContent = (d.fund_eval || 0).toLocaleString() + '원';
-      const pnl = d.fund_pnl || 0;
-      const pnlPct = d.fund_pnl_pct || 0;
-      const pnlEl = document.getElementById('pnlRow');
-      const isProfit = pnl >= 0;
-      pnlEl.className = 'pnl-row ' + (isProfit ? 'profit-text' : 'loss-text');
-      document.getElementById('pnlAmt').textContent = (isProfit ? '+' : '') + pnl.toLocaleString() + '원';
-      const isReal = (d.env_type === 'REAL' || !d.frozen_reserve);
-      const seedLabel = isReal ? '실시간 잔고 연동' : '500만 시드 기준';
-      document.getElementById('pnlPct').textContent = '(' + (isProfit ? '+' : '') + pnlPct.toFixed(2) + '% | ' + seedLabel + ')';
-      if (isReal) {
-        const sTitle = document.getElementById('summaryTitle');
-        if (sTitle) sTitle.textContent = '실전 계좌 총 자산 평가액 (실시간 예수금 연동)';
-        const spLabel = document.getElementById('statPnlLabel');
-        if (spLabel) spLabel.textContent = '보유 주식 평가손익';
+      document.getElementById('accountNoTag').textContent = '계좌: ' + (d.account_no || '10154692-01');
+      if (d.battery) {
+        const bShort = '🔋 ' + (d.battery.includes(' ') ? d.battery.split(' ')[0] : d.battery);
+        const elH = document.getElementById('headerBattery');
+        if (elH) elH.textContent = bShort;
       }
-
-      const stockEval = d.stock_eval || 0;
-      const stockPchs = d.stock_pchs || 0;
-      const stockPnl = (d.stock_pnl !== undefined) ? d.stock_pnl : (stockEval - stockPchs);
-      const stockPnlOnFundPct = (d.stock_pnl_on_fund_pct !== undefined) ? d.stock_pnl_on_fund_pct : (stockPnl / (d.budget_limit || 2500000) * 100);
-
-      document.getElementById('stockPchsAmt').textContent = stockEval.toLocaleString() + '원 (원금 ' + stockPchs.toLocaleString() + '원)';
-      const spEl = document.getElementById('stockPnlInfo');
-      const spProfit = stockPnl >= 0;
-      spEl.className = 'stat-value ' + (spProfit ? 'profit-text' : 'loss-text');
-      spEl.textContent = (spProfit ? '+' : '') + stockPnl.toLocaleString() + '원 (' + (spProfit ? '+' : '') + stockPnlOnFundPct.toFixed(2) + '%)';
-
-      document.getElementById('usableCash').textContent = (d.usable_cash || 0).toLocaleString() + '원';
-      document.getElementById('deviceBattery').textContent = d.battery || '확인 중';
-      if (document.getElementById('headerBattery')) {
-        document.getElementById('headerBattery').textContent = '🔋 ' + (d.battery ? d.battery.split(' ')[0] : '--');
+      if (d.market_status) {
+        document.getElementById('statusText').textContent = d.market_status;
       }
-      document.getElementById('lastUpdated').textContent = '최근 감시 동기화: ' + (d.updated_at || '--');
-
-      // 외부 역감시: 공기계 홈서버 전원/와이파이 먹통(25분 이상 미갱신) 자동 감지
-      if (d.updated_at) {
+      if (d.updated_at && document.getElementById('watchdogSyncAge')) {
         const parsed = new Date(d.updated_at.replace(' ', 'T'));
         if (!isNaN(parsed.getTime())) {
           const diffMin = Math.max(0, Math.round((Date.now() - parsed.getTime()) / 60000));
-          const wdBanner = document.getElementById('watchdogBanner');
-          const wdText = document.getElementById('watchdogText');
-          const wdAge = document.getElementById('watchdogSyncAge');
-          wdAge.textContent = diffMin <= 1 ? '방금 동기화' : `${diffMin}분 전 동기화`;
-          if (diffMin > 25) {
-            wdBanner.style.background = 'rgba(240, 68, 82, 0.18)';
-            wdBanner.style.borderColor = '#f04452';
-            wdText.innerHTML = '🚨 <b>[경보] 공기계 홈서버 응답 지연!</b> — 25분 이상 갱신이 없습니다 (전원/와이파이 확인)';
-          } else {
-            wdBanner.style.background = 'rgba(0, 196, 113, 0.10)';
-            wdBanner.style.borderColor = 'rgba(0, 196, 113, 0.30)';
-            wdText.innerHTML = '🩺 <b>5중 자체 감시(Watchdog) &amp; ✈️ 주간 블랙박스 정상</b> — 서킷브레이커(-3.5%)·금 15:40 자동결산';
-          }
+          document.getElementById('watchdogSyncAge').textContent = diffMin <= 1 ? '방금 동기화' : `${diffMin}분 전 동기화`;
         }
       }
 
-      const rbBanner = document.getElementById('rebalanceBanner');
-      if (d.excess_amt && d.excess_amt > 0) {
-        rbBanner.style.display = 'block';
-        rbBanner.textContent = '⚖️ [연착륙 리밸런싱 가동 중] 시드 초과분 ' + d.excess_amt.toLocaleString() + '원 단계적 축소 중 (목표기한: ~' + (d.rebalance_deadline || '2026-11-06') + ')';
-      } else {
-        rbBanner.style.display = 'none';
+      const fundEval = d.fund_eval || 2500000;
+      const fundPnl = d.fund_pnl || 0;
+      const fundPnlPct = d.fund_pnl_pct || 0;
+      const krwStockEval = d.mkt_val_krw !== undefined ? d.mkt_val_krw : (d.stock_eval || 0);
+      const krwStockPchs = d.tot_pchs_krw !== undefined ? d.tot_pchs_krw : (d.stock_pchs || 0);
+      const usdStockEval = d.mkt_val_usd || 0;
+      const usdStockPchs = d.tot_pchs_usd || 0;
+      const krwCashVal = d.krw_cash !== undefined ? d.krw_cash : (d.usable_cash || 2500000);
+
+      document.getElementById('totalEval').textContent = (fundEval || 0).toLocaleString() + '원';
+      const isProfit = fundPnl >= 0;
+      const pnlEl = document.getElementById('pnlRow');
+      pnlEl.className = 'pnl-row ' + (isProfit ? 'profit-text' : 'loss-text');
+      document.getElementById('pnlAmt').textContent = (isProfit ? '+' : '') + fundPnl.toLocaleString() + '원';
+      document.getElementById('pnlPct').textContent = '(' + (isProfit ? '+' : '') + fundPnlPct.toFixed(2) + '% | 실시간 잔고 연동)';
+
+      document.getElementById('krwStockInfo').textContent = krwStockEval.toLocaleString() + '원 (' + krwStockPchs.toLocaleString() + '원)';
+      document.getElementById('usdStockInfo').textContent = '$' + usdStockEval.toFixed(2) + ' ($' + usdStockPchs.toFixed(2) + ')';
+      document.getElementById('krwCash').textContent = krwCashVal.toLocaleString() + '원';
+      const usdAvailableApprox = Math.round(krwCashVal / 1420);
+      document.getElementById('usdCash').textContent = krwCashVal.toLocaleString() + '원 ($' + usdAvailableApprox.toLocaleString() + ')';
+      document.getElementById('lastUpdated').textContent = '최근 감시 동기화: ' + (d.updated_at || '--');
+
+      // Health Diagnosis
+      const hInfo = d.portfolio_health;
+      if (hInfo) {
+        const sc = hInfo.score || 95;
+        const cardEl = document.getElementById('portfolioHealthCard');
+        const badgeEl = document.getElementById('healthGradeBadge');
+        const isGood = sc >= 85;
+        cardEl.style.borderLeftColor = isGood ? '#10b981' : '#fbbf24';
+        badgeEl.textContent = `${sc}점 (${hInfo.grade || '우수'})`;
+        const diags = (hInfo.diagnoses || []).map(dg => `• ${dg}`).join('<br>');
+        document.getElementById('healthDiagnoses').innerHTML = diags;
+        const rx = (hInfo.prescriptions || []).join(' / ') || '국내 및 미국 우량주 퀀트 타점 포착 시 분할 매수 대기';
+        document.getElementById('healthPrescription').textContent = rx;
       }
 
-      // Holdings
-      const holdings = d.holdings || [];
-      document.getElementById('holdingCount').textContent = holdings.length + '개 종목';
+      // Cash Master Plan
+      const cmp = d.cash_master_plan;
+      if (cmp) {
+        if (cmp.krw_verdict) document.getElementById('mpKrwVerdict').textContent = cmp.krw_verdict;
+        if (cmp.krw_detail) document.getElementById('mpKrwDetail').textContent = cmp.krw_detail;
+        if (cmp.usd_verdict) document.getElementById('mpUsdVerdict').textContent = cmp.usd_verdict;
+        if (cmp.usd_detail) document.getElementById('mpUsdDetail').textContent = cmp.usd_detail;
+      }
+
       const hList = document.getElementById('holdingsList');
-      if (holdings.length === 0) {
-        hList.innerHTML = `
-          <div style="text-align: center; padding: 32px 16px; color: var(--text-sub); background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; font-size: 14px;">
-            <div style="font-size: 26px; margin-bottom: 8px;">📦</div>
-            <div style="font-weight: 700; color: var(--text-main); font-size: 15px;">현재 보유 주식이 없습니다.</div>
-            <div style="font-size: 12px; color: var(--accent-blue); margin-top: 6px;">(100% 현금 대기 중 · 평일 정규장 10:00 / 14:30 퀀트 우량주 발굴 시 자동 분할 매수)</div>
+
+      // 1. AI 감시 · 발굴 바스켓 탭
+      if (currentFilter === 'BASKET') {
+        document.getElementById('sectionTitleText').textContent = '✨ AI 감시 · 퀀트 발굴 바스켓 (국내 & 미국 우량주)';
+        const watch = d.watch_list || [];
+        document.getElementById('holdingCount').textContent = watch.length + '개 유망주';
+
+        if (watch.length === 0) {
+          hList.innerHTML = `<div class="empty-state-box">레이더 감시 종목을 불러오는 중입니다...</div>`;
+          return;
+        }
+
+        const bannerHtml = `
+          <div style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 6px; padding: 12px 14px; background: rgba(49, 130, 246, 0.08); border-radius: 12px; border: 1px dashed rgba(49, 130, 246, 0.35);">
+            🎯 <b>국내 &amp; 미국 해외주식 24시간 실시간 AI 앙상블 &amp; 5대 퀀트 가드 감시 중</b><br>
+            평일 국내장(10:00 / 14:30) 외인·기관 5일 순매수 우량주와 미국장(23:30) 빅테크/ETF를 실시간 추적하여 눌림목 포착 시 자동 분할 매수를 실행합니다.
           </div>
         `;
-      } else {
-        hList.innerHTML = holdings.map(h => {
-        const hpnl = h.pnl_rate || 0;
-        const hprofit = hpnl >= 0;
-        const rsiVal = h.rsi || '--';
-        const rsiClass = rsiVal <= 30 ? 'rsi-oversold' : (rsiVal >= 70 ? 'rsi-overbought' : '');
+
+        hList.innerHTML = bannerHtml + watch.map(item => {
+          const isKr = (item.marketCountry === 'KR' || !item.marketCountry);
+          const countryBadge = isKr 
+            ? '<span class="country-tag country-kr">🇰🇷 국내</span>' 
+            : '<span class="country-tag country-us">🇺🇸 미국</span>';
+          const priceStr = isKr 
+            ? (item.price || 0).toLocaleString() + '원' 
+            : '$' + Number(item.price || 0).toFixed(2);
+          const chg = item.change_rate || 0;
+          const isChgUp = chg >= 0;
+          const chgStr = (isChgUp ? '+' : '') + Number(chg).toFixed(2) + '%';
+          const chgColor = isChgUp ? 'var(--profit)' : 'var(--loss)';
+
+          const ens = item.ai_ensemble || {};
+          const ensDec = ens.decision || '관망';
+          const ensScore = ens.score !== undefined ? ens.score : 55;
+          const consensus = ens.consensus || '3사 합의';
+          const aiReason = ens.reason || '5대 핵심 팩트 및 레짐 분석 완료.';
+          const auditBadge = ens.audit_badge || '✅ 5대 팩트 검증 통과';
+
+          let badgeClass = 'badge-hold';
+          if (ensDec.includes('매수')) badgeClass = 'badge-buy';
+          else if (ensDec.includes('매도')) badgeClass = 'badge-sell';
+
+          return `
+            <div class="holding-card">
+              <div class="holding-top">
+                <div>
+                  <div class="stock-title">
+                    ${countryBadge}
+                    <span class="stock-name">${item.name}</span>
+                    <span class="stock-code">${item.code}</span>
+                  </div>
+                  <div class="stock-qty" style="color: var(--toss-blue); font-weight: 600; margin-top: 4px;">🏷️ ${item.sector || (isKr ? '국내 대표주' : '글로벌 빅테크')}</div>
+                </div>
+                <div class="stock-val-box">
+                  <div class="stock-cur-price">${priceStr}</div>
+                  <div class="stock-pnl" style="color: ${chgColor};">${chgStr}</div>
+                </div>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; margin: 6px 0 2px 0;">
+                <span class="ai-badge ${badgeClass}">✨ AI 앙상블 종합: ${ensScore}점 (${ensDec})</span>
+                <span style="font-size: 10px; color: #8b949e; background: rgba(255,255,255,0.06); padding: 2px 7px; border-radius: 6px; font-weight: 500;">🕒 분석: ${ens.checked_at || d.updated_at || '실시간'}</span>
+              </div>
+
+              ${renderModelChips(ens.models, consensus)}
+
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; margin-top: 4px; padding: 5px 10px; background: rgba(63, 185, 80, 0.08); border-radius: 6px; border: 1px solid rgba(63, 185, 80, 0.3);">
+                <span style="color: #3fb950; font-weight: 600;">${auditBadge}</span>
+                <span style="color: #8b949e; font-size: 10px;">${item.action_status || '자율 매매 감시 중'}</span>
+              </div>
+
+              <div class="action-tip-box" style="border-left-color: ${ensDec.includes('매수') ? '#3fb950' : '#3182F6'}; margin-top: 10px;">
+                <div class="action-tip-title" style="color: ${ensDec.includes('매수') ? '#3fb950' : '#3182F6'};">💡 AI 자율 운용 액션 &amp; 타점 분석</div>
+                <div class="action-tip-text">${aiReason}</div>
+              </div>
+
+              <div class="indicator-row">
+                <div class="indicator-pill"><span>14일 RSI</span><span class="pill-val">${item.rsi !== null && item.rsi !== undefined ? item.rsi : '--'}</span></div>
+                <div class="indicator-pill"><span>구분</span><span class="pill-val">${item.theme_tag || (isKr ? '코스피 우량주' : '미국 대표주')}</span></div>
+              </div>
+            </div>
+          `;
+        }).join('');
+        return;
+      }
+
+      // 2. 전체 / 국내 / 미국 보유 종목 탭
+      document.getElementById('sectionTitleText').textContent = '실시간 보유 포트폴리오';
+      const holdings = d.holdings || [];
+      const filtered = holdings.filter(h => {
+        if (currentFilter === 'ALL') return true;
+        if (currentFilter === 'KR') return h.marketCountry === 'KR' || !h.marketCountry;
+        if (currentFilter === 'US') return h.marketCountry === 'US';
+        return true;
+      });
+
+      document.getElementById('holdingCount').textContent = filtered.length + '개 종목';
+
+      if (filtered.length === 0) {
+        hList.innerHTML = `
+          <div class="empty-state-box">
+            <div style="font-size: 28px; margin-bottom: 8px;">📦</div>
+            <div style="font-weight: 700; font-size: 15px; color: #f0f6fc; margin-bottom: 4px;">현재 보유 주식이 없습니다.</div>
+            <div style="font-size: 12.5px; color: #8b949e; line-height: 1.5; margin-bottom: 14px;">(100% 현금 대기 중 · 국내장 10:00/14:30 퀀트 및 미국장 23:30 빅테크 발굴 시 자동 분할 매수)</div>
+            <button class="btn-goto-basket" onclick="setFilter('BASKET')">👉 ✨ AI 감시 · 발굴 바스켓 보기</button>
+          </div>
+        `;
+        return;
+      }
+
+      hList.innerHTML = filtered.map(h => {
+        const isKr = (h.marketCountry === 'KR' || !h.marketCountry);
+        const countryBadge = isKr 
+          ? '<span class="country-tag country-kr">🇰🇷 국내</span>' 
+          : '<span class="country-tag country-us">🇺🇸 미국</span>';
+        const pnlRate = h.pnl_rate || 0;
+        const isItemProfit = pnlRate >= 0;
+        const priceStr = isKr ? (h.cur_price || 0).toLocaleString() + '원' : '$' + Number(h.cur_price || 0).toFixed(2);
+        const avgStr = isKr ? (h.avg_price || 0).toLocaleString() + '원' : '$' + Number(h.avg_price || 0).toFixed(2);
+        const evalStr = isKr ? (h.eval_amt || 0).toLocaleString() + '원' : '$' + Number(h.eval_amt || 0).toFixed(2);
+
+        const ens = h.ai_ensemble || {};
+        const ensDec = ens.decision || '홀딩';
+        const ensScore = ens.score !== undefined ? ens.score : 60;
+        const consensus = ens.consensus || '3사 합의';
+
+        let badgeClass = 'badge-hold';
+        if (ensDec.includes('매수')) badgeClass = 'badge-buy';
+        else if (ensDec.includes('매도')) badgeClass = 'badge-sell';
+
         return `
           <div class="holding-card">
             <div class="holding-top">
               <div>
-                <span class="stock-name">${h.name}</span>
-                <span class="stock-code">${h.code}</span>
-                <div class="stock-qty">${h.qty}주 보유 (평단 ${(h.avg_price || 0).toLocaleString()}원)</div>
+                <div class="stock-title">
+                  ${countryBadge}
+                  <span class="stock-name">${h.name}</span>
+                  <span class="stock-code">${h.code}</span>
+                </div>
+                <div class="stock-qty">${h.qty}주 보유 (평단 ${avgStr})</div>
               </div>
               <div class="stock-val-box">
-                <div class="stock-cur-price">${(h.eval_amt || 0).toLocaleString()}원</div>
-                <div class="stock-pnl ${hprofit ? 'profit-text' : 'loss-text'}">${(hprofit ? '+' : '')}${hpnl.toFixed(2)}%</div>
+                <div class="stock-cur-price">${evalStr}</div>
+                <div class="stock-pnl" style="color: ${isItemProfit ? 'var(--profit)' : 'var(--loss)'};">
+                  ${isItemProfit ? '+' : ''}${Number(pnlRate).toFixed(2)}%
+                </div>
               </div>
             </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; margin: 6px 0 2px 0;">
+              <span class="ai-badge ${badgeClass}">🤖 AI 실시간 판단: ${ensScore}점 (${ensDec})</span>
+              <span style="font-size: 10px; color: #8b949e; background: rgba(255,255,255,0.06); padding: 2px 7px; border-radius: 6px; font-weight: 500;">🕒 갱신: ${ens.checked_at || '실시간'}</span>
+            </div>
+
+            ${renderModelChips(ens.models, consensus)}
+
+            <div class="action-tip-box" style="border-left-color: ${ensDec.includes('매수') ? '#3fb950' : '#3182F6'}; margin-top: 10px;">
+              <div class="action-tip-title" style="color: ${ensDec.includes('매수') ? '#3fb950' : '#3182F6'};">💡 AI 실시간 전략 지침</div>
+              <div class="action-tip-text">${ens.reason || '안정적인 포지션을 유지하며 추세를 관제합니다.'}</div>
+            </div>
+
             <div class="indicator-row">
-              <div class="indicator-pill">14일 RSI: <span class="pill-val ${rsiClass}">${rsiVal}</span></div>
-              <div class="indicator-pill">수급: <span class="pill-val">${h.investor_summary || '분석 중'}</span></div>
+              <div class="indicator-pill"><span>14일 RSI</span><span class="pill-val">${h.rsi !== undefined && h.rsi !== null ? h.rsi : '--'}</span></div>
+              <div class="indicator-pill"><span>수급 동향</span><span class="pill-val">${h.investor_summary || '기관·외인 실시간 추적 중'}</span></div>
             </div>
-            ${renderEnsembleBox(h, true)}
-          </div>
-        `;
-      }).join('');
-      }
-
-      // Watch List (holdings 크로스 레퍼런스 폴백으로 즉각 100% 실시간 시세/RSI 표시 보장)
-      const watch = d.watch_list || [];
-      document.getElementById('watchCount').textContent = watch.length + '개 종목';
-      const wList = document.getElementById('watchList');
-      
-      const holdingsMap = {};
-      (d.holdings || []).forEach(h => { holdingsMap[h.code] = h; });
-
-      wList.innerHTML = watch.map(w => {
-        const heldInfo = holdingsMap[w.code];
-        const isHeld = (w.is_held !== undefined) ? w.is_held : !!heldInfo;
-        
-        let curPriceNum = w.price;
-        if (!curPriceNum && heldInfo && heldInfo.qty > 0) {
-          curPriceNum = Math.round(heldInfo.eval_amt / heldInfo.qty);
-        }
-
-        const curPrice = curPriceNum ? curPriceNum.toLocaleString() + '원' : '--';
-
-        let subRateHtml = '';
-        if (isHeld && heldInfo) {
-          const hp = (w.pnl_rate !== undefined && w.pnl_rate !== null) ? w.pnl_rate : heldInfo.pnl_rate;
-          const isProf = hp >= 0;
-          const dayChg = (w.change_rate !== undefined && w.change_rate !== null) ? ` (당일 ${(w.change_rate >= 0 ? '+' : '') + w.change_rate.toFixed(2)}%)` : '';
-          subRateHtml = `<div class="stock-pnl ${isProf ? 'profit-text' : 'loss-text'}" style="font-size: 12px;">수익률 ${(isProf ? '+' : '') + hp.toFixed(2)}%${dayChg}</div>`;
-        } else if (w.change_rate !== undefined && w.change_rate !== null) {
-          const cp = w.change_rate >= 0;
-          subRateHtml = `<div class="stock-pnl ${cp ? 'profit-text' : 'loss-text'}" style="font-size: 12px;">전일대비 ${(cp ? '+' : '') + w.change_rate.toFixed(2)}%</div>`;
-        } else {
-          subRateHtml = `<div class="stock-pnl" style="font-size: 12px; color: var(--text-sub);">시세 추적 중</div>`;
-        }
-
-        let rsiVal = w.rsi;
-        if ((rsiVal === undefined || rsiVal === null) && heldInfo) {
-          rsiVal = heldInfo.rsi;
-        }
-        const rsiDisplay = (rsiVal !== undefined && rsiVal !== null) ? rsiVal : '--';
-        const rsiClass = rsiVal <= 30 ? 'rsi-oversold' : (rsiVal >= 70 ? 'rsi-overbought' : '');
-
-        const heldQty = (w.held_qty !== undefined) ? w.held_qty : (heldInfo ? heldInfo.qty : 0);
-        const statusBadge = isHeld 
-          ? `<span style="background: rgba(0, 199, 126, 0.15); color: #00c77e; padding: 2px 7px; border-radius: 6px; font-size: 11px; font-weight: 700;">${heldQty}주 보유 중 📦</span>`
-          : `<span style="background: rgba(49, 130, 246, 0.15); color: #3182f6; padding: 2px 7px; border-radius: 6px; font-size: 11px; font-weight: 700;">미보유 신규 🎯</span>`;
-
-        let actionBadge = w.action_status;
-        if (!actionBadge) {
-          if (isHeld) {
-            actionBadge = (d.excess_amt > 0 && heldInfo && heldInfo.pnl_rate >= 1.5) ? '연착륙 익절 감시 ⚖️' : '실시간 급락 감시 🛡️';
-          } else {
-            actionBadge = (d.excess_amt > 0) ? '연착륙 매수대기 ⏸️' : '진입 타점 추적 중 📡';
-          }
-        }
-
-        const isUsEtf = ['465580', '133690', '360750', '381180', '381170', '458730'].includes(w.code) || (w.name || '').includes('미국');
-        const marketBadge = isUsEtf
-          ? `<span style="background: rgba(16, 185, 129, 0.15); color: #34d399; padding: 2px 6px; border-radius: 5px; font-size: 10px; font-weight: 700; margin-right: 4px;">🇺🇸 미국ETF(무환전)</span>`
-          : `<span style="background: rgba(59, 130, 246, 0.15); color: #60a5fa; padding: 2px 6px; border-radius: 5px; font-size: 10px; font-weight: 700; margin-right: 4px;">🇰🇷 국내우량</span>`;
-
-        return `
-          <div class="holding-card" style="padding: 13px 16px;">
-            <div class="holding-top">
-              <div>
-                ${marketBadge}<span class="stock-name">${w.name}</span>
-                <span class="stock-code">${w.code}</span>
-                <div style="margin-top: 5px;">${statusBadge}</div>
-              </div>
-              <div class="stock-val-box">
-                <div class="stock-cur-price">${curPrice}</div>
-                ${subRateHtml}
-              </div>
-            </div>
-            <div class="indicator-row" style="margin-top: 8px;">
-              <div class="indicator-pill">14일 RSI: <span class="pill-val ${rsiClass}">${rsiDisplay}</span></div>
-              <div class="indicator-pill">AI 상태: <span class="pill-val" style="color: var(--accent); font-weight: 600;">${actionBadge}</span></div>
-            </div>
-            ${renderEnsembleBox(w, isHeld)}
           </div>
         `;
       }).join('');
     }
 
+    async function loadDashboard() {
+      try {
+        const res = await fetch('dashboard_data.json?t=' + new Date().getTime());
+        if (!res.ok) throw new Error('데이터 로드 실패');
+        const data = await res.json();
+        globalData = data;
+
+        // 실전 계좌 최적화: 레거시 모의투자 로컬 캐시 원천 파기
+        try { localStorage.removeItem('kis_last_good_snap'); } catch (e) {}
+
+        renderData(data);
+      } catch (err) {
+        console.warn('데이터 로드 대기 중:', err);
+      }
+    }
+
     loadDashboard();
-    setInterval(loadDashboard, 15000); // 15초마다 자동 새로고침
+    setInterval(loadDashboard, 15000);
   </script>
 </body>
 </html>
