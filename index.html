@@ -302,10 +302,10 @@
       return `
         <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.25); border-radius: 8px; padding: 8px 10px; margin: 8px 0;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-            <span style="font-size: 11px; font-weight: 700; color: #c4b5fd;">🤖 미국 3대 빅테크 AI 앙상블</span>
-            <span style="font-size: 10px; color: #8b949e;">· ${consensus || '3사 합의'}</span>
+            <span style="font-size: 11px; font-weight: 700; color: #c4b5fd;">🤖 초고속 2사 듀얼 AI 앙상블</span>
+            <span style="font-size: 10px; color: #8b949e;">· ${consensus || '2사 합의'}</span>
           </div>
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 6px;">
             ${chipsHtml}
           </div>
         </div>
@@ -413,7 +413,7 @@
           const ens = item.ai_ensemble || {};
           const ensDec = ens.decision || '관망';
           const ensScore = ens.score !== undefined ? ens.score : 55;
-          const consensus = ens.consensus || '3사 합의';
+          const consensus = ens.consensus || '2사 합의';
           const aiReason = ens.reason || '5대 핵심 팩트 및 레짐 분석 완료.';
           const auditBadge = ens.audit_badge || '✅ 5대 팩트 검증 통과';
 
@@ -503,7 +503,7 @@
         const ens = h.ai_ensemble || {};
         const ensDec = ens.decision || '홀딩';
         const ensScore = ens.score !== undefined ? ens.score : 60;
-        const consensus = ens.consensus || '3사 합의';
+        const consensus = ens.consensus || '2사 합의';
 
         let badgeClass = 'badge-hold';
         if (ensDec.includes('매수')) badgeClass = 'badge-buy';
