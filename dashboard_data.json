@@ -25,10 +25,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-05 21:32:54",
+  "updated_at": "2026-11-05 21:43:41",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "76% (⚡ 충전 중, 24.6°C)",
+  "battery": "83% (⚡ 충전 중, 25.2°C)",
   "budget_limit": 2500000,
   "fund_eval": 2500000,
   "fund_pnl": 0,
@@ -446,8 +446,8 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 352.17,
-      "change_rate": 0.76,
+      "price": 352.3,
+      "change_rate": 0.8,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
@@ -484,14 +484,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 21:32:54"
+        "checked_at": "2026-11-05 21:43:41"
       }
     },
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 197.56,
-      "change_rate": -1.28,
+      "price": 197.3364,
+      "change_rate": -1.4,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 반도체",
@@ -528,14 +528,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 21:32:54"
+        "checked_at": "2026-11-05 21:43:41"
       }
     },
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 377.23,
-      "change_rate": -2.07,
+      "price": 377.01,
+      "change_rate": -2.12,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "전기차/로보틱스",
@@ -572,13 +572,13 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 21:32:54"
+        "checked_at": "2026-11-05 21:43:41"
       }
     },
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.45,
+      "price": 100.4548,
       "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
@@ -616,14 +616,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 21:32:54"
+        "checked_at": "2026-11-05 21:43:41"
       }
     },
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 36.3005,
-      "change_rate": 0.25,
+      "price": 36.31,
+      "change_rate": 0.28,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국 고배당 ETF",
@@ -660,7 +660,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 21:32:54"
+        "checked_at": "2026-11-05 21:43:41"
       }
     }
   ]
