@@ -23,9 +23,9 @@
     "usd_verdict": "통합증거금 기반 미국 정규장(23:30) 빅테크/ETF 눌림목 진입 대기",
     "usd_detail": "별도 환전 없이 원화 예수금으로 미국 주식(AAPL, NVDA, TSLA, SGOV 등) 즉시 매수 지원. 미국장 개장 후 RSI 35 이하 과매도 시 자동 분할 매수를 검토합니다."
   },
-  "env_type": "VIRTUAL",
+  "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-05 23:05:40",
+  "updated_at": "2026-11-05 23:15:01",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.8°C)",
@@ -256,9 +256,9 @@
             "decision": "관망"
           },
           {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
+            "provider": "NVIDIA",
+            "model": "Nemotron 3.5",
+            "score": 56,
             "decision": "관망"
           }
         ],
@@ -446,8 +446,8 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 352.94,
-      "change_rate": 0.98,
+      "price": 353.0771,
+      "change_rate": 1.02,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
@@ -484,14 +484,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 23:05:40"
+        "checked_at": "2026-11-05 23:15:01"
       }
     },
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 197.0,
-      "change_rate": -1.56,
+      "price": 196.6,
+      "change_rate": -1.76,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 반도체",
@@ -528,14 +528,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 23:05:40"
+        "checked_at": "2026-11-05 23:15:01"
       }
     },
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 375.0,
-      "change_rate": -2.65,
+      "price": 374.18,
+      "change_rate": -2.86,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "전기차/로보틱스",
@@ -572,14 +572,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 23:05:40"
+        "checked_at": "2026-11-05 23:15:01"
       }
     },
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.4574,
-      "change_rate": 0.01,
+      "price": 100.45,
+      "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "초단기 채권 ETF",
@@ -616,7 +616,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 23:05:40"
+        "checked_at": "2026-11-05 23:15:01"
       }
     },
     {
@@ -660,7 +660,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 23:05:40"
+        "checked_at": "2026-11-05 23:15:01"
       }
     }
   ]
