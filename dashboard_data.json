@@ -25,7 +25,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-05 19:38:11",
+  "updated_at": "2026-11-05 19:49:37",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "63% (🔋 배터리 사용 중, 20.9°C)",
@@ -50,13 +50,13 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 294500,
-      "change_rate": 3.88,
+      "price": 294000,
+      "change_rate": 3.7,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 41.7,
+      "rsi": 41.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -94,13 +94,13 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 203000,
-      "change_rate": -6.88,
+      "price": 201500,
+      "change_rate": -7.57,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 44.3,
+      "rsi": 43.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -138,13 +138,13 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 184000,
-      "change_rate": 7.73,
+      "price": 184100,
+      "change_rate": 7.79,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 54.0,
+      "rsi": 54.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -182,13 +182,13 @@
     {
       "code": "267260",
       "name": "HD현대일렉트릭",
-      "price": 400500,
-      "change_rate": -8.67,
+      "price": 400000,
+      "change_rate": -8.78,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 25.1,
+      "rsi": 25.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -270,13 +270,13 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 158200,
-      "change_rate": 4.42,
+      "price": 158000,
+      "change_rate": 4.29,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 47.7,
+      "rsi": 47.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -402,13 +402,13 @@
     {
       "code": "066570",
       "name": "LG전자",
-      "price": 143000,
-      "change_rate": -2.26,
+      "price": 142800,
+      "change_rate": -2.39,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 24.7,
+      "rsi": 24.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -446,7 +446,7 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 350.94,
+      "price": 350.93,
       "change_rate": 0.41,
       "marketCountry": "US",
       "currency": "USD",
@@ -484,14 +484,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 19:38:11"
+        "checked_at": "2026-11-05 19:49:37"
       }
     },
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 199.19,
-      "change_rate": -0.47,
+      "price": 199.46,
+      "change_rate": -0.33,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 반도체",
@@ -528,14 +528,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 19:38:11"
+        "checked_at": "2026-11-05 19:49:37"
       }
     },
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 378.47,
-      "change_rate": -1.74,
+      "price": 378.0252,
+      "change_rate": -1.86,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "전기차/로보틱스",
@@ -572,13 +572,13 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 19:38:11"
+        "checked_at": "2026-11-05 19:49:37"
       }
     },
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.4526,
+      "price": 100.4524,
       "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
@@ -616,14 +616,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 19:38:11"
+        "checked_at": "2026-11-05 19:49:37"
       }
     },
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 36.25,
-      "change_rate": 0.11,
+      "price": 36.2405,
+      "change_rate": 0.08,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국 고배당 ETF",
@@ -660,7 +660,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-05 19:38:11"
+        "checked_at": "2026-11-05 19:49:37"
       }
     }
   ]
