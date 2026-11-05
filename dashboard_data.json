@@ -1,5 +1,7 @@
 {
-  "updated_at": "2026-11-05 18:47:55",
+  "env_type": "REAL",
+  "frozen_reserve": 0,
+  "updated_at": "2026-11-05 18:48:42",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "65% (🔋 배터리 사용 중, 21.0°C)",
@@ -64,9 +66,9 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 202500,
-      "change_rate": -7.11,
-      "rsi": 44.1,
+      "price": 203000,
+      "change_rate": -6.88,
+      "rsi": 44.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -144,8 +146,8 @@
     {
       "code": "267260",
       "name": "HD현대일렉트릭",
-      "price": 401000,
-      "change_rate": -8.55,
+      "price": 400500,
+      "change_rate": -8.67,
       "rsi": 25.1,
       "is_held": false,
       "held_qty": 0,
