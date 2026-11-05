@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05 14:34:01",
+  "updated_at": "2026-11-05 14:34:23",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "75% (🔋 배터리 사용 중, 20.8°C)",
@@ -103,8 +103,8 @@
     {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 23170,
-      "change_rate": 2.52,
+      "price": 23175,
+      "change_rate": 2.54,
       "rsi": 40.1,
       "is_held": false,
       "held_qty": 0,
@@ -143,8 +143,8 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 200500,
-      "change_rate": -8.03,
+      "price": 201000,
+      "change_rate": -7.8,
       "rsi": 43.2,
       "is_held": false,
       "held_qty": 0,
@@ -223,8 +223,8 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 156300,
-      "change_rate": 3.17,
+      "price": 156200,
+      "change_rate": 3.1,
       "rsi": 45.0,
       "is_held": false,
       "held_qty": 0,
@@ -303,8 +303,8 @@
     {
       "code": "138040",
       "name": "메리츠금융지주",
-      "price": 135000,
-      "change_rate": 2.12,
+      "price": 134900,
+      "change_rate": 2.04,
       "rsi": 57.9,
       "is_held": false,
       "held_qty": 0,
@@ -343,8 +343,8 @@
     {
       "code": "051910",
       "name": "LG화학",
-      "price": 247000,
-      "change_rate": 0.0,
+      "price": 246500,
+      "change_rate": -0.2,
       "rsi": 46.6,
       "is_held": false,
       "held_qty": 0,
