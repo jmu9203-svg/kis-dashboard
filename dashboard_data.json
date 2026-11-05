@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-11-05 14:40:02",
+  "updated_at": "2026-11-05 14:46:59",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "74% (🔋 배터리 사용 중, 20.7°C)",
   "budget_limit": 5000000,
-  "fund_eval": 4919517,
-  "fund_pnl": -80483,
-  "fund_pnl_pct": -1.61,
-  "stock_eval": 1486400,
+  "fund_eval": 4909117,
+  "fund_pnl": -90883,
+  "fund_pnl_pct": -1.82,
+  "stock_eval": 1476000,
   "stock_pchs": 1422080,
-  "stock_pnl": 64320,
-  "stock_pnl_pct": 4.52,
-  "stock_pnl_on_fund_pct": 1.29,
+  "stock_pnl": 53920,
+  "stock_pnl_pct": 3.79,
+  "stock_pnl_on_fund_pct": 1.08,
   "d2_cash": 48433117,
-  "actual_tot_eval": 49919517,
+  "actual_tot_eval": 49909117,
   "usable_cash": 3433117,
   "excess_amt": 0,
   "rebalance_mode": false,
@@ -25,9 +25,9 @@
       "name": "NAVER",
       "qty": 8,
       "avg_price": 177760,
-      "pnl_rate": 4.52,
-      "eval_amt": 1486400,
-      "rsi": 55.6,
+      "pnl_rate": 3.79,
+      "eval_amt": 1476000,
+      "rsi": 54.4,
       "investor_summary": "외국인 +98,383주, 기관 -120,973주(2일연속매도⚠️) | [5일누적 합계: 외인 +197,196주, 기관 -304,444주]",
       "ai_ensemble": {
         "decision": "관망",
@@ -61,131 +61,11 @@
   ],
   "watch_list": [
     {
-      "code": "035420",
-      "name": "NAVER",
-      "price": 185800,
-      "change_rate": 8.72,
-      "rsi": 55.6,
-      "is_held": true,
-      "held_qty": 8,
-      "pnl_rate": 4.52,
-      "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "보유 홀딩 관망 💎",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 56,
-        "consensus": "3:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 53,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 60,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피200 급락으로 전반적 시장 레짐은 보수적이며, 현재 보유 포지션은 아직 목표익절선에 미치지 못하고 손절선도 안전 구간이다. RSI는 중립이고 외국인 순매수는 긍정적이지만 기관 매도와 급격한 거래량 폭발은 변동성을 높인다. 추가 매수는 자금과 섹터 한도 제한으로 보류하고, 현 포지션을 유지하며 추후 추세 확인을 기다린다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 56점 | 편차 6점)",
-        "checked_at": "2026-11-05 14:30:35"
-      }
-    },
-    {
-      "code": "465580",
-      "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 23190,
-      "change_rate": 2.61,
-      "rsi": 40.3,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 56,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 56,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 62,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피200 급락으로 전체 시장이 급락 분위기이며, RSI가 저가 영역에 머물러 매수 매력은 있지만 외국인 순매도가 지속되고 기관 수급만 긍정적이라 위험이 상존한다. 가용 현금은 충분하지만 보수적 접근을 위해 진입을 미루고 관망한다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 32점 ↔ AI 56점 | 편차 24점 · 보수적 관망)",
-        "checked_at": "2026-11-05 14:32:01"
-      }
-    },
-    {
-      "code": "005930",
-      "name": "삼성전자",
-      "price": 201500,
-      "change_rate": -7.57,
-      "rsi": 43.7,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 47,
-        "consensus": "3:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 42,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Meta",
-            "model": "Llama 3.3",
-            "score": 45,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피200 급락과 외국인 순매도 압력으로 하방 리스크가 크고 RSI는 저가 매수 수준에 미치지 못한다. 거래량은 활발하지만 긍정·부정 뉴스가 혼재해 보수적으로 관망하며 현금 보유를 유지한다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 34점 ↔ AI 47점 | 편차 13점)",
-        "checked_at": "2026-11-05 14:32:16"
-      }
-    },
-    {
       "code": "005380",
       "name": "현대차",
-      "price": 293500,
-      "change_rate": 3.53,
-      "rsi": 41.1,
+      "price": 291000,
+      "change_rate": 2.65,
+      "rsi": 39.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -221,11 +101,171 @@
       }
     },
     {
+      "code": "005930",
+      "name": "삼성전자",
+      "price": 200000,
+      "change_rate": -8.26,
+      "rsi": 43.1,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 47,
+        "consensus": "3:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 42,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 45,
+            "decision": "관망"
+          }
+        ],
+        "reason": "코스피200 급락과 외국인 순매도 압력으로 하방 리스크가 크고 RSI는 저가 매수 수준에 미치지 못한다. 거래량은 활발하지만 긍정·부정 뉴스가 혼재해 보수적으로 관망하며 현금 보유를 유지한다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 34점 ↔ AI 47점 | 편차 13점)",
+        "checked_at": "2026-11-05 14:32:16"
+      }
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "price": 184500,
+      "change_rate": 7.99,
+      "rsi": 54.4,
+      "is_held": true,
+      "held_qty": 8,
+      "pnl_rate": 3.79,
+      "status_tag": "포트폴리오 보유 중 📦",
+      "action_status": "보유 홀딩 관망 💎",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "3:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 53,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 60,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "코스피200 급락으로 전반적 시장 레짐은 보수적이며, 현재 보유 포지션은 아직 목표익절선에 미치지 못하고 손절선도 안전 구간이다. RSI는 중립이고 외국인 순매수는 긍정적이지만 기관 매도와 급격한 거래량 폭발은 변동성을 높인다. 추가 매수는 자금과 섹터 한도 제한으로 보류하고, 현 포지션을 유지하며 추후 추세 확인을 기다린다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 56점 | 편차 6점)",
+        "checked_at": "2026-11-05 14:30:35"
+      }
+    },
+    {
+      "code": "267260",
+      "name": "HD현대일렉트릭",
+      "price": 396000,
+      "change_rate": -9.69,
+      "rsi": 24.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 65,
+        "consensus": "모델 간 이견 (편차 28점 · 안전 관망)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 78,
+            "decision": "매수"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "reason": "RSI가 40 이하로 저가 매수 매력도가 높고 외국인 순매수가 지속되고 있어 상승 모멘텀이 기대됩니다. 시장은 약세이지만 해당 종목은 AI 데이터센터와 배전사업 확대라는 호재가 있어 중장기 상승 가능성이 있습니다. 현금과 종목 한도 내에서 1주를 매수하는 것이 적절합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 65점 | 편차 11점)",
+        "checked_at": "2026-11-04 10:02:55"
+      }
+    },
+    {
+      "code": "465580",
+      "name": "ACE 미국빅테크TOP7 Plus",
+      "price": 23140,
+      "change_rate": 2.39,
+      "rsi": 39.7,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 56,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 62,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "코스피200 급락으로 전체 시장이 급락 분위기이며, RSI가 저가 영역에 머물러 매수 매력은 있지만 외국인 순매도가 지속되고 기관 수급만 긍정적이라 위험이 상존한다. 가용 현금은 충분하지만 보수적 접근을 위해 진입을 미루고 관망한다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 32점 ↔ AI 56점 | 편차 24점 · 보수적 관망)",
+        "checked_at": "2026-11-05 14:32:01"
+      }
+    },
+    {
       "code": "105560",
       "name": "KB금융",
-      "price": 157400,
-      "change_rate": 3.89,
-      "rsi": 46.7,
+      "price": 156200,
+      "change_rate": 3.1,
+      "rsi": 45.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -261,11 +301,11 @@
       }
     },
     {
-      "code": "458730",
-      "name": "TIGER 미국배당다우존스",
-      "price": 15395,
-      "change_rate": 2.19,
-      "rsi": 85.0,
+      "code": "381180",
+      "name": "TIGER 미국필라델피아반도체나스닥",
+      "price": 34735,
+      "change_rate": -6.25,
+      "rsi": 33.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -273,8 +313,8 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 52,
-        "consensus": "3:0 관망 우세",
+        "score": 64,
+        "consensus": "2:1 관망 우세",
         "models": [
           {
             "provider": "Google",
@@ -291,21 +331,21 @@
           {
             "provider": "Meta",
             "model": "Llama 3.3",
-            "score": 50,
-            "decision": "관망"
+            "score": 85,
+            "decision": "매수"
           }
         ],
-        "reason": "코스피200 급락으로 전체 시장이 급변하는 상황이며, 해당 ETF는 RSI 85로 과열된 상태이므로 즉각 매수는 위험합니다. 거래량은 활발하지만 외국인 순매도가 지속되고 있어 추가 상승 여력이 제한적이므로 보류하고 시장 흐름을 관찰합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 34점 ↔ AI 52점 | 편차 18점 · 보수적 관망)",
-        "checked_at": "2026-11-05 14:33:21"
+        "reason": "현재 시장 레짐이 약세장이지만, 14일 RSI가 34.5로 과매도 구간에 있으며, 외국인과 기관의 수급이 양호하고, 거래량이 평시 수준을 유지하고 있어 매수 기회로 판단됩니다. 또한, 원/달러 환율이 안정세를 보이고 있어 추가적인 악재는 없어 보입니다. 따라서, 현재 가용 현금을 사용하여 신규 매수를 결정합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 69점 ↔ AI 64점 | 편차 5점)",
+        "checked_at": "2026-11-02 14:31:57"
       }
     },
     {
       "code": "138040",
       "name": "메리츠금융지주",
-      "price": 135400,
-      "change_rate": 2.42,
-      "rsi": 58.9,
+      "price": 135000,
+      "change_rate": 2.12,
+      "rsi": 58.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -341,11 +381,11 @@
       }
     },
     {
-      "code": "051910",
-      "name": "LG화학",
-      "price": 246500,
-      "change_rate": -0.2,
-      "rsi": 46.6,
+      "code": "066570",
+      "name": "LG전자",
+      "price": 142300,
+      "change_rate": -2.73,
+      "rsi": 24.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -375,9 +415,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "코스피가 급락한 패닉 장이라 보수적으로 접근해야 하며, RSI는 중립이고 외국인 순매도·기관 순매수가 혼재돼 진입 신호가 약합니다. 긍정적 실적과 수출 확대 뉴스가 있지만 특허소송·기술유출 리스크가 존재해 당장은 관망이 적절합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 34점 ↔ AI 50점 | 편차 16점 · 보수적 관망)",
-        "checked_at": "2026-11-05 14:33:55"
+        "reason": "코스피200 시장의 패닉 폭락장(-3.88%)으로 인해 시스템 전체 신규 매수 락다운이 발동되어 기술적 과매도 상태임에도 매수를 전면 차단합니다. 외국인 수급 이탈 및 거시경제 변동성 확대를 고려해 당일 진입을 보류하며, 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 36점 ↔ AI 50점 | 편차 14점)",
+        "checked_at": "2026-11-02 00:52:05"
       }
     }
   ]
