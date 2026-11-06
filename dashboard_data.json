@@ -25,7 +25,7 @@
   },
   "env_type": "VIRTUAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-06 09:04:18",
+  "updated_at": "2026-11-06 09:10:08",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "84% (⚡ 충전 중, 22.5°C)",
@@ -396,8 +396,8 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 344.35,
-      "change_rate": -1.48,
+      "price": 344.17,
+      "change_rate": -1.53,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
@@ -428,7 +428,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 09:04:18"
+        "checked_at": "2026-11-06 09:10:08"
       }
     },
     {
@@ -466,7 +466,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 09:04:18"
+        "checked_at": "2026-11-06 09:10:08"
       }
     },
     {
@@ -504,7 +504,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 09:04:18"
+        "checked_at": "2026-11-06 09:10:08"
       }
     },
     {
@@ -542,14 +542,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 09:04:18"
+        "checked_at": "2026-11-06 09:10:08"
       }
     },
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.4575,
-      "change_rate": 0.01,
+      "price": 100.45,
+      "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "초단기 채권 ETF",
@@ -580,14 +580,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 09:04:18"
+        "checked_at": "2026-11-06 09:10:08"
       }
     },
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 35.33,
-      "change_rate": -2.43,
+      "price": 35.42,
+      "change_rate": -2.18,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국 고배당 ETF",
@@ -618,7 +618,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 09:04:18"
+        "checked_at": "2026-11-06 09:10:08"
       }
     }
   ]
