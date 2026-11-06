@@ -25,7 +25,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-06 13:28:33",
+  "updated_at": "2026-11-06 13:31:45",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "76% (🔋 배터리 사용 중, 20.8°C)",
@@ -50,13 +50,13 @@
     {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22570,
-      "change_rate": -2.88,
+      "price": 22555,
+      "change_rate": -2.95,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 37.6,
+      "rsi": 37.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -64,13 +64,13 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 64,
+        "score": 62,
         "consensus": "1:1 의견 분립 (안전 관망 채택)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 50,
+            "score": 45,
             "decision": "관망"
           },
           {
@@ -80,21 +80,21 @@
             "decision": "매수"
           }
         ],
-        "reason": "당일 코스피200 지수가 -4.14% 급락하는 패닉 폭락장 레짐으로 신규 매수가 전면 차단되어 있으며, 기관의 4일 연속 순매도와 MA20 하회 흐름을 보이고 있습니다. 저가 매수세 유입 가능성이 있으나 거시경제 변동성과 하방 리스크가 극심하므로 현재는 관망을 유지하며 향후 시장 안정 시 재진입을 검토하겠습니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 39점 ↔ AI 64점 | 편차 25점 · 보수적 관망)",
-        "checked_at": "2026-11-06 11:30:12"
+        "reason": "당일 코스피200 지수가 -5.84% 급락하는 패닉 폭락장 레짐으로 인해 신규 매수 전면 차단 지침이 적용됩니다. 비록 대량 거래량이 유입되며 양봉 흐름을 보이고 있으나, 기관의 지속적인 매도세와 극심한 거시경제 변동성을 감안할 때 철저한 리스크 관리가 필요하므로 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 39점 ↔ AI 62점 | 편차 23점 · 보수적 관망)",
+        "checked_at": "2026-11-06 13:30:27"
       }
     },
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 188700,
-      "change_rate": -6.35,
+      "price": 188900,
+      "change_rate": -6.25,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 37.9,
+      "rsi": 38.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -102,13 +102,13 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 57,
+        "score": 54,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 52,
+            "score": 45,
             "decision": "관망"
           },
           {
@@ -118,9 +118,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "시장 전반이 급락하고 외국인 순매도가 지속되는 상황에서 RSI가 저가를 가리키지만 변동성이 크고 위험이 높아 즉각적인 매수는 보수적으로 보류합니다. 현금 여유가 있어 추후 추세가 안정될 때 소량 진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 57점 | 편차 14점)",
-        "checked_at": "2026-11-06 11:30:17"
+        "reason": "시장 전반이 급락하고 외국인 순매도가 지속되는 등 하방 리스크가 크지만 RSI가 저가 영역에 있어 단기 반등 가능성도 존재한다. 현재 현금 여유는 있으나 보수적인 접근이 필요하므로 신규 진입을 미루고 관망한다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 28점 ↔ AI 54점 | 편차 26점 · 보수적 관망)",
+        "checked_at": "2026-11-06 13:30:31"
       }
     },
     {
@@ -132,7 +132,45 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 27.9,
+      "rsi": 28.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 62,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 78,
+            "decision": "매수"
+          }
+        ],
+        "reason": "당일 코스피200 지수가 -5.84% 폭락하는 극심한 매크로 불안정성으로 인해 신규 매수가 전면 차단된 상태입니다. 14일 RSI가 27.9로 과매도 구간에 진입했으나, 외국인 수급의 연속 이탈과 긴 윗꼬리 캔들 부담을 고려하여 향후 시장 안정 시 재진입을 검토하며 관망합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 40점 ↔ AI 62점 | 편차 22점 · 보수적 관망)",
+        "checked_at": "2026-11-06 13:30:35"
+      }
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "price": 150600,
+      "change_rate": -4.08,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "국내 우량주",
+      "theme_tag": "퀀트 수급 유망",
+      "rsi": 35.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -156,47 +194,9 @@
             "decision": "매수"
           }
         ],
-        "reason": "당일 코스피200 지수가 -4.14% 급락하는 패닉 폭락장 레짐으로 인해 신규 매수 전면 차단 지침이 적용됩니다. RSI가 27.8로 과매도 구간에 진입하고 기관 수급이 유입되고 있으나, 매크로 불확실성과 하방 리스크를 고려하여 현금 비중을 유지하며 향후 시장 안정 시 재진입을 검토합니다.",
+        "reason": "당일 코스피200이 -5.84% 급락하는 패닉 폭락장으로 인해 신규 매수 전면 차단 지침이 적용됩니다. 기관의 5일 연속 순매수와 아래꼬리 반등 시도가 포착되었으나, 거시경제 변동성 극대화 및 단기 하방 리스크를 고려해 보수적으로 관망하며 향후 시장 안정 시 재진입을 검토합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 66점 | 편차 14점)",
-        "checked_at": "2026-11-06 11:30:21"
-      }
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
-      "price": 150600,
-      "change_rate": -4.08,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "국내 우량주",
-      "theme_tag": "퀀트 수급 유망",
-      "rsi": 35.8,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 56,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 62,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피가 급락한 패닉 장이며 외국인 순매도가 지속되는 반면 기관은 매수하고 있어 진입 리스크가 높다. RSI는 저점에 머물러 반등 가능성을 시사하지만, 보수적인 포지션 관리와 현금 유동성을 고려해 당장은 관망을 유지한다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 56점 | 편차 2점)",
-        "checked_at": "2026-11-06 11:30:29"
+        "checked_at": "2026-11-06 13:30:49"
       }
     },
     {
@@ -216,25 +216,25 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 52,
+        "score": 50,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 50,
+            "score": 45,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "당일 코스피200이 -4.14% 급락하는 패닉 폭락장으로 신규 매수 전면 차단 원칙이 적용됩니다. 종목 자체의 거래량 급증과 기관 수급은 양호하나 극심한 거시경제 변동성과 하방 리스크를 고려해 보수적으로 관망하며, 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 52점 | 편차 2점)",
-        "checked_at": "2026-11-06 11:30:38"
+        "reason": "당일 코스피200 지수가 -5.84% 폭락하는 극심한 패닉 장세로 인해 신규 매수 전면 차단 원칙이 적용됩니다. 기관의 연속 순매수와 대량 거래량 유입 등 개별 펀더멘털은 양호하나, 거시경제 하방 리스크가 너무 커서 신규 진입을 보류하고 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 50점 | 편차 4점)",
+        "checked_at": "2026-11-06 13:30:56"
       }
     },
     {
@@ -254,44 +254,6 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 50,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 45,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "당일 코스피200 지수가 -4.14% 급락하는 패닉 폭락장세가 형성되어 신규 매수가 전면 차단되었으며, 20일 이동평균선을 하회하는 등 하방 리스크가 큽니다. 외인 및 기관의 5일 누적 순매수와 구미 AI 데이터센터 착공 등 펀더멘털 모멘텀은 유효하나, 극심한 거시경제 변동성을 고려하여 현 시점에서는 진입을 보류하고 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 50점 | 편차 4점)",
-        "checked_at": "2026-11-06 11:30:48"
-      }
-    },
-    {
-      "code": "138040",
-      "name": "메리츠금융지주",
-      "price": 132000,
-      "change_rate": -2.22,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "국내 우량주",
-      "theme_tag": "퀀트 수급 유망",
-      "rsi": 51.8,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
         "score": 62,
         "consensus": "1:1 의견 분립 (안전 관망 채택)",
         "models": [
@@ -303,26 +265,26 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
+            "model": "Groq 120B",
+            "score": 78,
             "decision": "매수"
           }
         ],
-        "reason": "당일 코스피200 지수가 -4.14% 급락하는 패닉 폭락장세로 신규 매수 전면 차단 원칙이 적용됩니다. 기관의 3일 연속 순매수와 20일선 위 상승추세는 양호하나 극심한 거시경제 변동성 속에서 리스크 관리가 최우선이므로 관망하며 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 65점 ↔ AI 62점 | 편차 3점)",
-        "checked_at": "2026-11-06 11:30:57"
+        "reason": "당일 코스피200 지수가 -5.84% 급락하는 극심한 패닉 폭락장 레짐으로 인해 신규 매수 전면 차단 원칙이 적용됩니다. 종목 자체의 외인·기관 연속 순매수와 AI 데이터센터 모멘텀은 긍정적이나, 거시경제 하방 리스크가 너무 높아 향후 시장 안정 시 재진입을 검토하며 관망합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 62점 | 편차 8점)",
+        "checked_at": "2026-11-06 13:31:09"
       }
     },
     {
-      "code": "035420",
-      "name": "NAVER",
-      "price": 188500,
-      "change_rate": 1.95,
+      "code": "035720",
+      "name": "카카오",
+      "price": 32600,
+      "change_rate": 1.24,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 55.4,
+      "rsi": 52.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -330,25 +292,63 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 58,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "score": 60,
+        "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 62,
+            "decision": "관망"
+          }
+        ],
+        "reason": "당일 코스피200이 -5.84% 폭락하는 극심한 약세장 레짐 속에서, 당일 주가가 +5% 이상 급등한 종목은 단기 차익실현 되돌림 위험이 크다는 추격매수 방지 규칙에 해당합니다. 따라서 대량 거래량과 외인·기관의 수급 유입에도 불구하고 신규 매수를 전면 차단하고 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 73점 ↔ AI 60점 | 편차 13점)",
+        "checked_at": "2026-11-06 13:31:22"
+      }
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "price": 189000,
+      "change_rate": 2.22,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "국내 우량주",
+      "theme_tag": "퀀트 수급 유망",
+      "rsi": 55.9,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 20B",
-            "score": 70,
-            "decision": "매수"
+            "score": 55,
+            "decision": "관망"
           }
         ],
-        "reason": "코스피200이 당일 -4.14% 급락하는 패닉 폭락장 레짐 속에서 당일 주가가 +5.2% 급등하여 단기 고점 추격매수 방지 규칙이 발동되었습니다. 또한 과거 예측 적중률 저조에 따른 보수적 감점(-4점)을 반영하여 신규 진입을 보류하고, 향후 시장 안정 시 눌림목 구간에서 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 73점 ↔ AI 58점 | 편차 15점)",
-        "checked_at": "2026-11-06 11:31:07"
+        "reason": "현재 RSI가 중립 수준이며 과열 신호가 없고, ATR 목표익절선에 도달하지 않았으므로 매수에 대한 확신이 부족합니다. 또한 보유량이 없으므로 매도는 불가능하며, 급락장 상황에서 보수적으로 관망하는 것이 적절합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 73점 ↔ AI 56점 | 편차 17점 · 보수적 관망)",
+        "checked_at": "2026-11-06 13:31:39"
       }
     },
     {
@@ -386,7 +386,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:28:33"
+        "checked_at": "2026-11-06 13:31:45"
       }
     },
     {
@@ -424,7 +424,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:28:33"
+        "checked_at": "2026-11-06 13:31:45"
       }
     },
     {
@@ -462,7 +462,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:28:33"
+        "checked_at": "2026-11-06 13:31:45"
       }
     },
     {
@@ -500,7 +500,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:28:33"
+        "checked_at": "2026-11-06 13:31:45"
       }
     },
     {
@@ -538,7 +538,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:28:33"
+        "checked_at": "2026-11-06 13:31:45"
       }
     },
     {
@@ -576,7 +576,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:28:33"
+        "checked_at": "2026-11-06 13:31:45"
       }
     }
   ]
