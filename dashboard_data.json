@@ -25,7 +25,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-06 13:22:48",
+  "updated_at": "2026-11-06 13:28:33",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "76% (🔋 배터리 사용 중, 20.8°C)",
@@ -50,13 +50,13 @@
     {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22560,
-      "change_rate": -2.93,
+      "price": 22570,
+      "change_rate": -2.88,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 37.5,
+      "rsi": 37.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -88,13 +88,13 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 189500,
-      "change_rate": -5.96,
+      "price": 188700,
+      "change_rate": -6.35,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 38.2,
+      "rsi": 37.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -126,13 +126,13 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 280500,
-      "change_rate": -4.43,
+      "price": 280000,
+      "change_rate": -4.6,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 28.0,
+      "rsi": 27.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -164,13 +164,13 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 149750,
-      "change_rate": -4.62,
+      "price": 150600,
+      "change_rate": -4.08,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 35.1,
+      "rsi": 35.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -202,8 +202,8 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15130,
-      "change_rate": -1.88,
+      "price": 15125,
+      "change_rate": -1.91,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -240,13 +240,13 @@
     {
       "code": "018260",
       "name": "삼성에스디에스",
-      "price": 210000,
-      "change_rate": 2.44,
+      "price": 211000,
+      "change_rate": 2.93,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 54.6,
+      "rsi": 55.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -278,13 +278,13 @@
     {
       "code": "138040",
       "name": "메리츠금융지주",
-      "price": 131500,
-      "change_rate": -2.59,
+      "price": 132000,
+      "change_rate": -2.22,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 50.7,
+      "rsi": 51.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -316,13 +316,13 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 188000,
-      "change_rate": 1.68,
+      "price": 188500,
+      "change_rate": 1.95,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 55.0,
+      "rsi": 55.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -386,7 +386,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:22:48"
+        "checked_at": "2026-11-06 13:28:33"
       }
     },
     {
@@ -424,7 +424,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:22:48"
+        "checked_at": "2026-11-06 13:28:33"
       }
     },
     {
@@ -462,7 +462,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:22:48"
+        "checked_at": "2026-11-06 13:28:33"
       }
     },
     {
@@ -500,7 +500,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:22:48"
+        "checked_at": "2026-11-06 13:28:33"
       }
     },
     {
@@ -538,7 +538,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:22:48"
+        "checked_at": "2026-11-06 13:28:33"
       }
     },
     {
@@ -576,7 +576,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 13:22:48"
+        "checked_at": "2026-11-06 13:28:33"
       }
     }
   ]
