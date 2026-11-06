@@ -25,7 +25,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-06 11:33:38",
+  "updated_at": "2026-11-06 11:39:19",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "80% (🔋 배터리 사용 중, 21.0°C)",
@@ -50,13 +50,13 @@
     {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22750,
-      "change_rate": -2.11,
+      "price": 22745,
+      "change_rate": -2.13,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 39.3,
+      "rsi": 38.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -88,13 +88,13 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 194700,
-      "change_rate": -3.37,
+      "price": 195100,
+      "change_rate": -3.18,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 40.3,
+      "rsi": 40.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -132,7 +132,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 27.6,
+      "rsi": 27.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -164,13 +164,13 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 149000,
-      "change_rate": -5.1,
+      "price": 149200,
+      "change_rate": -4.97,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 34.4,
+      "rsi": 34.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -202,8 +202,8 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15130,
-      "change_rate": -1.88,
+      "price": 15125,
+      "change_rate": -1.91,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -284,7 +284,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 49.6,
+      "rsi": 49.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -316,13 +316,13 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 183700,
-      "change_rate": -0.65,
+      "price": 184200,
+      "change_rate": -0.38,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 50.9,
+      "rsi": 51.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -386,7 +386,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 11:33:38"
+        "checked_at": "2026-11-06 11:39:19"
       }
     },
     {
@@ -424,7 +424,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 11:33:38"
+        "checked_at": "2026-11-06 11:39:19"
       }
     },
     {
@@ -462,7 +462,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 11:33:38"
+        "checked_at": "2026-11-06 11:39:19"
       }
     },
     {
@@ -500,7 +500,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 11:33:38"
+        "checked_at": "2026-11-06 11:39:19"
       }
     },
     {
@@ -538,7 +538,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 11:33:38"
+        "checked_at": "2026-11-06 11:39:19"
       }
     },
     {
@@ -576,7 +576,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 11:33:38"
+        "checked_at": "2026-11-06 11:39:19"
       }
     }
   ]
