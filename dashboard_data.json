@@ -25,7 +25,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-06 14:40:10",
+  "updated_at": "2026-11-06 14:46:26",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "73% (🔋 배터리 사용 중, 20.8°C)",
@@ -88,8 +88,8 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 192500,
-      "change_rate": -4.47,
+      "price": 192300,
+      "change_rate": -4.57,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -126,13 +126,13 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 284500,
-      "change_rate": -3.07,
+      "price": 284000,
+      "change_rate": -3.24,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 29.1,
+      "rsi": 29.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -164,13 +164,13 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 153300,
-      "change_rate": -2.36,
+      "price": 152700,
+      "change_rate": -2.74,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 38.2,
+      "rsi": 37.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -202,13 +202,13 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15245,
-      "change_rate": -1.13,
+      "price": 15250,
+      "change_rate": -1.1,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 74.6,
+      "rsi": 74.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -240,13 +240,13 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 193500,
-      "change_rate": 4.65,
+      "price": 193200,
+      "change_rate": 4.49,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 59.5,
+      "rsi": 59.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -316,13 +316,13 @@
     {
       "code": "138040",
       "name": "메리츠금융지주",
-      "price": 132300,
-      "change_rate": -2.0,
+      "price": 131700,
+      "change_rate": -2.44,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 52.0,
+      "rsi": 51.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -386,7 +386,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 14:40:10"
+        "checked_at": "2026-11-06 14:46:26"
       }
     },
     {
@@ -424,7 +424,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 14:40:10"
+        "checked_at": "2026-11-06 14:46:26"
       }
     },
     {
@@ -462,7 +462,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 14:40:10"
+        "checked_at": "2026-11-06 14:46:26"
       }
     },
     {
@@ -500,7 +500,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 14:40:10"
+        "checked_at": "2026-11-06 14:46:26"
       }
     },
     {
@@ -538,7 +538,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 14:40:10"
+        "checked_at": "2026-11-06 14:46:26"
       }
     },
     {
@@ -576,7 +576,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-06 14:40:10"
+        "checked_at": "2026-11-06 14:46:26"
       }
     }
   ]
