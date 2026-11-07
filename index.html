@@ -53,10 +53,6 @@
 
     /* Watchdog Banner */
     #watchdogBanner { background: rgba(49, 130, 246, 0.10); border: 1px solid rgba(49, 130, 246, 0.30); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
-    .rsi-oversold { color: #34d399 !important; font-weight: 700 !important; }
-    .rsi-overbought { color: #f85149 !important; font-weight: 700 !important; }
-    .thread-chip { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; display: inline-flex; align-items: center; gap: 3px; }
-    .thread-chip-ok { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
 
     /* Summary Card */
     .summary-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
@@ -157,15 +153,7 @@
 
   <!-- Watchdog & Safety Siren Banner -->
   <div id="watchdogBanner">
-    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-      <span id="watchdogText">🩺 <b>4대 스레드(메인·토스·스케줄러·감시망) 정상 박동</b> — 서킷브레이커(-3.5%) 안전 관제</span>
-      <div id="watchdogThreadBadges" style="display: inline-flex; gap: 4px; flex-wrap: wrap;">
-        <span class="thread-chip thread-chip-ok">한투봇 🟢</span>
-        <span class="thread-chip thread-chip-ok">토스봇 🟢</span>
-        <span class="thread-chip thread-chip-ok">스케줄러 🟢</span>
-        <span class="thread-chip thread-chip-ok">5분감시망 🟢</span>
-      </div>
-    </div>
+    <span id="watchdogText">🩺 <b>5중 자체 감시(Watchdog) &amp; ✈️ 주간 블랙박스 정상</b> — 서킷브레이커(-3.5%)·24/7 실시간 관제</span>
     <span id="watchdogSyncAge" style="color: var(--text-sub); font-weight: 600; font-size: 11px; white-space: nowrap; flex-shrink: 0;">방금 동기화</span>
   </div>
 
@@ -243,14 +231,8 @@
         <span style="font-size: 12px; font-weight: 800; color: #34d399;" id="mpUsdVerdict">통합증거금 기반 미국 정규장(23:30) 빅테크/ETF 눌림목 진입 대기</span>
       </div>
       <div style="font-size: 12.5px; color: var(--text-main); line-height: 1.55;" id="mpUsdDetail">
-        별도 환전 없이 원화 예수금으로 미국 주식(AAPL, NVDA, TSLA, SGOV 등) 즉시 매수 지원. 미국장 개장 후 Wilder RSI 35 이하 과매도 시 0.18% 우대 마찰비용을 반영하여 자동 분할 매수를 검토합니다.
+        별도 환전 없이 원화 예수금으로 미국 주식(AAPL, NVDA, TSLA, SGOV 등) 즉시 매수 지원. 미국장 개장 후 RSI 35 이하 과매도 시 자동 분할 매수를 검토합니다.
       </div>
-    </div>
-
-    <!-- Friction & Quant Guard Badge -->
-    <div style="margin-top: 10px; padding: 9px 12px; background: rgba(255,255,255,0.03); border: 1px dashed rgba(255,255,255,0.14); border-radius: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 11.5px; color: var(--text-sub);">
-      <span>🛡️ <b>정밀 마찰비용 세이프가드</b>: 국내 0.35% · ETF 0.15% · 미국 0.18% 슬리피지 방어</span>
-      <span style="color: #60a5fa; font-weight: 700;">📐 정통 Wilder RMA 알고리즘 연동</span>
     </div>
   </div>
 
@@ -345,23 +327,6 @@
         if (!isNaN(parsed.getTime())) {
           const diffMin = Math.max(0, Math.round((Date.now() - parsed.getTime()) / 60000));
           document.getElementById('watchdogSyncAge').textContent = diffMin <= 1 ? '방금 동기화' : `${diffMin}분 전 동기화`;
-        }
-      }
-
-      if (d.watchdog) {
-        const wb = document.getElementById('watchdogBanner');
-        const wt = document.getElementById('watchdogText');
-        const isTripped = d.watchdog.circuit_breaker_tripped;
-        const threadMsg = d.watchdog.thread_status || '🟢 4대 스레드(메인·토스·스케줄러·감시망) 정상 박동 중';
-
-        if (isTripped) {
-          wb.style.background = 'rgba(248, 81, 73, 0.15)';
-          wb.style.borderColor = 'rgba(248, 81, 73, 0.45)';
-          wt.innerHTML = `🚨 <b>일일 서킷브레이커 발동 (${d.watchdog.circuit_breaker_limit_pct || -3.5}% 초과)</b> — 리스크 방어 신규 매수 전면 차단`;
-        } else {
-          wb.style.background = 'rgba(49, 130, 246, 0.10)';
-          wb.style.borderColor = 'rgba(49, 130, 246, 0.30)';
-          wt.innerHTML = `🩺 <b>${threadMsg}</b> — 서킷브레이커(-3.5%) 안전 · 24/7 자체 감사 통과`;
         }
       }
 
@@ -491,7 +456,7 @@
               </div>
 
               <div class="indicator-row">
-                <div class="indicator-pill"><span>Wilder RSI (14)</span><span class="pill-val ${item.rsi !== null && item.rsi !== undefined ? (item.rsi <= 30 ? 'rsi-oversold' : (item.rsi >= 70 ? 'rsi-overbought' : '')) : ''}">${item.rsi !== null && item.rsi !== undefined ? (item.rsi <= 30 ? item.rsi + ' (과매도 눌림목 🟢)' : (item.rsi >= 70 ? item.rsi + ' (과열 경계 ⚠️)' : item.rsi + ' (중립)')) : '--'}</span></div>
+                <div class="indicator-pill"><span>14일 RSI</span><span class="pill-val">${item.rsi !== null && item.rsi !== undefined ? item.rsi : '--'}</span></div>
                 <div class="indicator-pill"><span>구분</span><span class="pill-val">${item.theme_tag || (isKr ? '코스피 우량주' : '미국 대표주')}</span></div>
               </div>
             </div>
@@ -576,7 +541,7 @@
             </div>
 
             <div class="indicator-row">
-              <div class="indicator-pill"><span>Wilder RSI (14)</span><span class="pill-val ${h.rsi !== undefined && h.rsi !== null ? (h.rsi <= 30 ? 'rsi-oversold' : (h.rsi >= 70 ? 'rsi-overbought' : '')) : ''}">${h.rsi !== undefined && h.rsi !== null ? (h.rsi <= 30 ? h.rsi + ' (과매도 눌림목 🟢)' : (h.rsi >= 70 ? h.rsi + ' (과열 경계 ⚠️)' : h.rsi + ' (중립)')) : '--'}</span></div>
+              <div class="indicator-pill"><span>14일 RSI</span><span class="pill-val">${h.rsi !== undefined && h.rsi !== null ? h.rsi : '--'}</span></div>
               <div class="indicator-pill"><span>수급 동향</span><span class="pill-val">${h.investor_summary || '기관·외인 실시간 추적 중'}</span></div>
             </div>
           </div>
