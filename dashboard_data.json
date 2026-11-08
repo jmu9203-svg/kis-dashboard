@@ -10,7 +10,7 @@
     "score": 95,
     "grade": "매우 우수",
     "diagnoses": [
-      "실전 자산 0원 (국내 0종목 / 해외 0종목) 100% 현금 대기 중",
+      "실전 자산 2,500,000원 (국내 0종목 / 해외 0종목) 100% 현금 대기 중",
       "글로벌 통합증거금 지원 — 국내 우량주 및 미국 빅테크 동시 분할 매수 여력 확보"
     ],
     "prescriptions": [
@@ -32,7 +32,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🔴 점검필요 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-08 18:19:21"
+    "checked_at": "2026-11-08 18:20:49"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -40,14 +40,14 @@
     "overseas_stock_pct": 0.18,
     "rsi_algorithm": "Wilder Running Moving Average (RMA)"
   },
-  "env_type": "REAL",
+  "env_type": "VIRTUAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-08 18:19:21",
+  "updated_at": "2026-11-08 18:20:50",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 21.6°C)",
-  "budget_limit": 0,
-  "fund_eval": 0,
+  "budget_limit": 2500000,
+  "fund_eval": 2500000,
   "fund_pnl": 0,
   "fund_pnl_pct": 0.0,
   "stock_eval": 0,
@@ -409,7 +409,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 18:19:21"
+        "checked_at": "2026-11-08 18:20:50"
       }
     },
     {
@@ -447,7 +447,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 18:19:21"
+        "checked_at": "2026-11-08 18:20:50"
       }
     },
     {
@@ -485,7 +485,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 18:19:21"
+        "checked_at": "2026-11-08 18:20:50"
       }
     },
     {
@@ -523,7 +523,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 18:19:21"
+        "checked_at": "2026-11-08 18:20:50"
       }
     },
     {
@@ -561,7 +561,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 18:19:21"
+        "checked_at": "2026-11-08 18:20:50"
       }
     },
     {
@@ -599,7 +599,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 18:19:21"
+        "checked_at": "2026-11-08 18:20:50"
       }
     }
   ]
