@@ -17,38 +17,39 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <style>
     :root {
-      --bg: #0d1117;
-      --card-bg: #161b22;
-      --card-border: #30363d;
-      --text-main: #f0f6fc;
-      --text-sub: #8b949e;
-      --toss-blue: #3182F6;
-      --toss-blue-bg: rgba(49, 130, 246, 0.15);
-      --profit: #f04452; /* 상승 레드 */
-      --loss: #3182F6;   /* 하락 블루 */
-      --pill-bg: #21262d;
-      --warn-bg: rgba(210, 153, 34, 0.15);
-      --warn-border: #d29922;
-      --warn-text: #e3b341;
-      --action-box-bg: rgba(49, 130, 246, 0.08);
+      --bg: #0b0f17;
+      --card-bg: #141a24;
+      --card-border: #232c3d;
+      --text-main: #f1f5f9;
+      --text-sub: #94a3b8;
+      --text-muted: #64748b;
+      --toss-blue: #3b82f6;
+      --toss-blue-bg: rgba(59, 130, 246, 0.12);
+      --profit: #f43f5e; /* 상승 레드 */
+      --loss: #3b82f6;   /* 하락 블루 */
+      --pill-bg: #1a2230;
+      --warn-bg: rgba(245, 158, 11, 0.12);
+      --warn-border: rgba(245, 158, 11, 0.35);
+      --warn-text: #fbbf24;
+      --action-box-bg: rgba(59, 130, 246, 0.06);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif; }
     body { background-color: var(--bg); color: var(--text-main); padding: 16px; max-width: 680px; margin: 0 auto; -webkit-font-smoothing: antialiased; }
 
     /* Top Family Navigation Bar (Unified 4 Sites) */
-    .nav-tabs { display: flex; gap: 5px; background: #161b22; padding: 5px; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--card-border); overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+    .nav-tabs { display: flex; gap: 6px; background: #131924; padding: 6px; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--card-border); overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
     .nav-tabs::-webkit-scrollbar { display: none; }
     .nav-tab-item { flex: 1; text-align: center; padding: 8px 6px; font-size: 12px; font-weight: 600; color: var(--text-sub); text-decoration: none; border-radius: 8px; transition: all 0.2s; white-space: nowrap; }
-    .nav-tab-item:hover { color: var(--text-main); background: rgba(255, 255, 255, 0.04); }
-    .nav-tab-item.active { background: #21262d; color: #58a6ff; font-weight: 700; border: 1px solid rgba(49, 130, 246, 0.45); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+    .nav-tab-item:hover { color: var(--text-main); background: rgba(255, 255, 255, 0.05); }
+    .nav-tab-item.active { background: #1e2638; color: #60a5fa; font-weight: 700; border: 1px solid rgba(96, 165, 250, 0.4); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
 
     /* Header */
     .header { display: flex; justify-content: space-between; align-items: center; padding: 6px 0 16px 0; gap: 10px; flex-wrap: wrap; }
     .title-group h1 { font-size: 21px; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 8px; }
-    .kis-tag { background: var(--toss-blue-bg); color: #60a5fa; border: 1px solid rgba(49, 130, 246, 0.4); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
-    .title-group p { font-size: 13px; color: var(--text-sub); margin-top: 3px; }
-    .status-badge { display: flex; align-items: center; gap: 6px; background: var(--toss-blue-bg); border: 1px solid var(--toss-blue); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; color: var(--toss-blue); }
-    .pulse-dot { width: 8px; height: 8px; background: #3fb950; border-radius: 50%; box-shadow: 0 0 8px #3fb950; animation: pulse 2s infinite; }
+    .kis-tag { background: var(--toss-blue-bg); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.35); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; letter-spacing: 0.2px; }
+    .title-group p { font-size: 12.5px; color: var(--text-sub); margin-top: 4px; }
+    .status-badge { display: flex; align-items: center; gap: 6px; background: var(--toss-blue-bg); border: 1px solid var(--toss-blue); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; color: #60a5fa; }
+    .pulse-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulse 2s infinite; }
     @keyframes pulse { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.2); } 100% { opacity: 1; transform: scale(1); } }
 
     /* Watchdog Banner */
@@ -57,6 +58,21 @@
     .rsi-overbought { color: #f85149 !important; font-weight: 700 !important; }
     .thread-chip { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; display: inline-flex; align-items: center; gap: 3px; }
     .thread-chip-ok { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+
+    /* Account Chip */
+    .account-chip { font-size: 11px; background: rgba(255,255,255,0.06); padding: 3px 8px; border-radius: 6px; color: var(--text-sub); font-weight: 600; border: 1px solid rgba(255,255,255,0.08); }
+
+    /* Strategy & Health Compact Card */
+    .strategy-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 14px 16px; margin-bottom: 16px; }
+    .strategy-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .strategy-title { font-size: 13.5px; font-weight: 700; color: var(--text-main); display: flex; align-items: center; gap: 6px; }
+    .strategy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
+    .strategy-col { background: rgba(11, 15, 23, 0.6); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px 12px; }
+    .strategy-col-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+    .strategy-col-title { font-size: 11.5px; font-weight: 700; color: #60a5fa; }
+    .strategy-col-verdict { font-size: 11px; font-weight: 700; color: var(--warn-text); }
+    .strategy-col-desc { font-size: 11.5px; color: var(--text-sub); line-height: 1.45; }
+    .strategy-footer { margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); flex-wrap: wrap; gap: 4px; }
 
     /* Summary Card */
     .summary-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
@@ -133,16 +149,16 @@
 <body>
   <!-- Top Family Navigation (Unified 4 Sites) -->
   <div class="nav-tabs">
-    <a href="https://jmu9203-svg.github.io/kis-dashboard/" class="nav-tab-item active">💼 한투 실전 계좌</a>
-    <a href="https://jmu9203-svg.github.io/toss-dashboard/" class="nav-tab-item">💙 토스 실전 비서</a>
-    <a href="https://jmu9203-svg.github.io/dividend-calendar/" class="nav-tab-item">📅 배당 캘린더</a>
+    <a href="https://jmu9203-svg.github.io/kis-dashboard/" class="nav-tab-item active">💼 한투 운용</a>
+    <a href="https://jmu9203-svg.github.io/toss-dashboard/" class="nav-tab-item">💙 토스 운용</a>
+    <a href="https://jmu9203-svg.github.io/dividend-calendar/" class="nav-tab-item">📅 배당 관리</a>
     <a href="https://jmu9203-svg.github.io/system-architecture/" class="nav-tab-item">🧠 전략 백서</a>
   </div>
 
   <div class="header">
     <div class="title-group">
-      <h1>한투 실전계좌 <span class="kis-tag">AI 자율 운용</span></h1>
-      <p>한국투자증권 공식 Open API · 국내 &amp; 미국 해외주식 24시간 퀀트 자율 운용</p>
+      <h1>한투 실전 운용 <span class="kis-tag">AI QUANT</span></h1>
+      <p>한국투자증권 공식 계좌(10154692) · 24시간 퀀트 자율 운용</p>
     </div>
     <div style="display: flex; gap: 6px; align-items: center;">
       <div class="status-badge" style="background: var(--pill-bg); border: 1px solid var(--card-border); color: var(--text-main);">
@@ -158,112 +174,96 @@
   <!-- Watchdog & Safety Siren Banner -->
   <div id="watchdogBanner">
     <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-      <span id="watchdogText">🩺 <b>4대 스레드(메인·토스·스케줄러·감시망) 정상 박동</b> — 서킷브레이커(-3.5%) 안전 관제</span>
+      <span id="watchdogText">🟢 <b>자율 운용 정상</b> — 안전 가드레일 실시간 관제</span>
       <div id="watchdogThreadBadges" style="display: inline-flex; gap: 4px; flex-wrap: wrap;">
-        <span class="thread-chip thread-chip-ok">한투봇 🟢</span>
-        <span class="thread-chip thread-chip-ok">토스봇 🟢</span>
-        <span class="thread-chip thread-chip-ok">스케줄러 🟢</span>
-        <span class="thread-chip thread-chip-ok">5분감시망 🟢</span>
+        <span class="thread-chip thread-chip-ok">한투 🟢</span>
+        <span class="thread-chip thread-chip-ok">토스 🟢</span>
+        <span class="thread-chip thread-chip-ok">스케줄 🟢</span>
+        <span class="thread-chip thread-chip-ok">감시망 🟢</span>
       </div>
     </div>
     <span id="watchdogSyncAge" style="color: var(--text-sub); font-weight: 600; font-size: 11px; white-space: nowrap; flex-shrink: 0;">방금 동기화</span>
   </div>
 
-  <!-- Summary Card (Toss Layout) -->
+  <!-- Summary Card -->
   <div class="summary-card">
     <div class="summary-title">
-      <span>한투증권 실전 총 자산 (국내 + 해외 통합 운용)</span>
-      <span id="accountNoTag">계좌: 10154692-01</span>
+      <span>총 운용 자산 (NAV)</span>
+      <span id="accountNoTag" class="account-chip">계좌 10154692-01</span>
     </div>
     <div class="total-eval" id="totalEval">2,500,000원</div>
     <div class="pnl-row" id="pnlRow">
       <span id="pnlAmt">+0원</span>
-      <span id="pnlPct">(+0.00% | 실시간 잔고 연동)</span>
+      <span id="pnlPct">(+0.00%)</span>
     </div>
     <div class="stat-grid">
       <div class="stat-item">
-        <div class="stat-label">🇰🇷 국내주식 평가금 (원금)</div>
+        <div class="stat-label">국내 주식 평가금</div>
         <div class="stat-value" id="krwStockInfo">0원 (0원)</div>
       </div>
       <div class="stat-item">
-        <div class="stat-label">🇺🇸 미국주식 평가금 (원금)</div>
+        <div class="stat-label">해외 주식 평가금</div>
         <div class="stat-value" id="usdStockInfo">$0.00 ($0.00)</div>
       </div>
       <div class="stat-item">
-        <div class="stat-label">💵 원화 가용 예수금</div>
+        <div class="stat-label">원화 가용 예수금</div>
         <div class="stat-value" id="krwCash">2,500,000원</div>
       </div>
       <div class="stat-item">
-        <div class="stat-label">💵 달러/통합증거금 예수금</div>
+        <div class="stat-label">통합 가용 예수금</div>
         <div class="stat-value" id="usdCash">2,500,000원 ($1,760)</div>
       </div>
     </div>
   </div>
 
-  <!-- Portfolio Health & Balance Card (Toss-Style) -->
-  <div id="portfolioHealthCard" style="background: var(--card-bg); border: 1px solid var(--card-border); border-left: 4px solid #10b981; border-radius: 14px; padding: 16px; margin-bottom: 18px;">
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 8px;">
-      <span style="font-size:14px; font-weight:800; color:var(--text-main); display:flex; align-items:center; gap:6px;">
-        <span>🩺 포트폴리오 밸런스 &amp; 건강도 진단</span>
-      </span>
-      <span id="healthGradeBadge" style="font-size:11px; font-weight:700; background:rgba(16,185,129,0.18); color:#34d399; border:1px solid rgba(16,185,129,0.4); padding:3px 8px; border-radius:8px;">95점 (매우 우수)</span>
+  <!-- Portfolio Health & Strategy Summary (Integrated Compact Card) -->
+  <div class="strategy-card" id="portfolioHealthCard" style="border-left: 3px solid #10b981;">
+    <div class="strategy-header">
+      <span class="strategy-title">🎯 포트폴리오 밸런스 &amp; 운용 지침</span>
+      <span id="healthGradeBadge" style="font-size: 11px; font-weight: 700; background: rgba(16,185,129,0.15); color: #34d399; border: 1px solid rgba(16,185,129,0.3); padding: 2px 7px; border-radius: 6px;">정상 (우수)</span>
     </div>
-    <div id="healthDiagnoses" style="font-size:12px; color:#93c5fd; line-height:1.6; margin-bottom:8px;">
-      • 실전 시드 250만 원 100% 현금 대기 중 (변동성 방어 최적화)<br>• 글로벌 통합증거금 지원 — 국내 우량주 및 미국 빅테크 동시 분할 매수 여력 확보
+    
+    <div id="healthDiagnoses" style="font-size: 12px; color: #93c5fd; line-height: 1.5; margin-bottom: 8px;">
+      실전 시드 100% 현금 대기 중 · 글로벌 통합증거금 기반 국내/미국 분할 매수 여력 확보
     </div>
-    <div style="background:rgba(255,255,255,0.03); border-radius:8px; padding:8px 10px; font-size:11.5px; color:var(--text-sub); line-height:1.5;">
-      <span style="color:#60a5fa; font-weight:700;">📋 AI 리밸런싱 처방전:</span> <span id="healthPrescription">국내 정규장(10:00 / 14:30) 퀀트 발굴 및 미국 정규장(23:30) 빅테크 눌림목 매수 진입 대기</span>
+
+    <div class="strategy-grid" id="cashMasterPlanCard">
+      <div class="strategy-col">
+        <div class="strategy-col-header">
+          <span class="strategy-col-title" id="mpKrwTitle">국내 원화 운용</span>
+          <span class="strategy-col-verdict" id="mpKrwVerdict">10:00 / 14:30 퀀트 대기</span>
+        </div>
+        <div class="strategy-col-desc" id="mpKrwDetail">
+          외인/기관 5일 순매수 + 20일선 지지 포착 시 종목당 75만원 이내 자동 분할 매수
+        </div>
+      </div>
+      <div class="strategy-col">
+        <div class="strategy-col-header">
+          <span class="strategy-col-title" id="mpUsdTitle" style="color: #34d399;">해외 달러 운용</span>
+          <span class="strategy-col-verdict" id="mpUsdVerdict" style="color: #34d399;">23:30 빅테크 눌림목 대기</span>
+        </div>
+        <div class="strategy-col-desc" id="mpUsdDetail">
+          통합증거금 기반 미국 우량주 즉시 매수. RSI 35 이하 과매도 시 자동 분할 매수
+        </div>
+      </div>
+    </div>
+
+    <div class="strategy-footer">
+      <span id="healthPrescription">정규장 퀀트 스크리너 및 눌림목 포착 대기</span>
+      <span>🛡️ 마찰비용 제어 가드레일 가동</span>
     </div>
   </div>
 
-  <!-- Master Cash Action Plan Card (Toss-Style) -->
-  <div id="cashMasterPlanCard" style="background: linear-gradient(145deg, rgba(49, 130, 246, 0.14), rgba(22, 27, 34, 0.95)); border: 1px solid rgba(49, 130, 246, 0.45); border-radius: 16px; padding: 18px; margin-bottom: 18px; box-shadow: 0 4px 16px rgba(0,0,0,0.25);">
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 10px;">
-      <div style="font-size: 15px; font-weight: 800; color: #58a6ff; display:flex; align-items:center; gap:6px;">
-        <span>🧭 오늘의 예수금 운용 최종 실전 행동 팁</span>
-      </div>
-      <span style="font-size: 11px; background: rgba(49, 130, 246, 0.2); color: #93c5fd; padding: 3px 8px; border-radius: 8px; font-weight: 700;">5단계 퀀트 결론</span>
-    </div>
-
-    <!-- KRW Cash Plan -->
-    <div style="background: rgba(13, 17, 23, 0.65); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px;">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 6px; flex-wrap: wrap; gap: 4px;">
-        <span style="font-size: 12px; font-weight: 700; color: #93c5fd;" id="mpKrwTitle">🇰🇷 국내 원화 예수금 운용 지침</span>
-        <span style="font-size: 12px; font-weight: 800; color: #fbbf24;" id="mpKrwVerdict">10:00 / 14:30 퀀트 스크리너 분할 매수 대기</span>
-      </div>
-      <div style="font-size: 12.5px; color: var(--text-main); line-height: 1.55;" id="mpKrwDetail">
-        가용 원화 예수금 2,500,000원 전액 대기 중. 외인/기관 5일 순매수 + 20일선 지지 TOP 종목 발굴 시 종목당 최대 75만 원 이내 1차 매수를 자동 집행합니다.
-      </div>
-    </div>
-
-    <!-- USD Cash Plan -->
-    <div style="background: rgba(13, 17, 23, 0.65); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 12px 14px;">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 6px; flex-wrap: wrap; gap: 4px;">
-        <span style="font-size: 12px; font-weight: 700; color: #34d399;" id="mpUsdTitle">🇺🇸 해외/달러 예수금 운용 지침</span>
-        <span style="font-size: 12px; font-weight: 800; color: #34d399;" id="mpUsdVerdict">통합증거금 기반 미국 정규장(23:30) 빅테크/ETF 눌림목 진입 대기</span>
-      </div>
-      <div style="font-size: 12.5px; color: var(--text-main); line-height: 1.55;" id="mpUsdDetail">
-        별도 환전 없이 원화 예수금으로 미국 주식(AAPL, NVDA, TSLA, SGOV 등) 즉시 매수 지원. 미국장 개장 후 Wilder RSI 35 이하 과매도 시 0.18% 우대 마찰비용을 반영하여 자동 분할 매수를 검토합니다.
-      </div>
-    </div>
-
-    <!-- Friction & Quant Guard Badge -->
-    <div style="margin-top: 10px; padding: 9px 12px; background: rgba(255,255,255,0.03); border: 1px dashed rgba(255,255,255,0.14); border-radius: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 11.5px; color: var(--text-sub);">
-      <span>🛡️ <b>정밀 마찰비용 세이프가드</b>: 국내 0.35% · ETF 0.15% · 미국 0.18% 슬리피지 방어</span>
-      <span style="color: #60a5fa; font-weight: 700;">📐 정통 Wilder RMA 알고리즘 연동</span>
-    </div>
-  </div>
-
-  <!-- Filter Tabs (Exact 4 Menu Options as requested) -->
+  <!-- Filter Tabs -->
   <div class="filter-tabs">
-    <button class="tab-btn active" onclick="setFilter('ALL', this)">전체 보유 종목</button>
-    <button class="tab-btn" onclick="setFilter('KR', this)">🇰🇷 국내 주식</button>
-    <button class="tab-btn" onclick="setFilter('US', this)">🇺🇸 미국 주식</button>
-    <button class="tab-btn" onclick="setFilter('BASKET', this)">✨ AI 감시 · 발굴 바스켓</button>
+    <button class="tab-btn active" onclick="setFilter('ALL', this)">전체 종목</button>
+    <button class="tab-btn" onclick="setFilter('KR', this)">국내 주식</button>
+    <button class="tab-btn" onclick="setFilter('US', this)">해외 주식</button>
+    <button class="tab-btn" onclick="setFilter('BASKET', this)">발굴 바스켓</button>
   </div>
 
   <div class="section-title">
-    <span id="sectionTitleText">실시간 보유 포트폴리오</span>
+    <span id="sectionTitleText">보유 포트폴리오</span>
     <span class="section-count" id="holdingCount">0개 종목</span>
   </div>
 
@@ -272,11 +272,11 @@
   </div>
 
   <div class="footer">
-    <div id="lastUpdated">최근 감시 동기화: 조회 중...</div>
+    <div id="lastUpdated">최근 동기화: 조회 중...</div>
     <div class="footer-detail">
-      <span>스케줄: 국내장 4회(10:00·11:30·13:30·14:30) · 미국장 3회(23:35·01:30·05:30)</span>
+      <span>정규장 스케줄 자동 운용</span>
       <span>•</span>
-      <span>자동 새로고침: 15초</span>
+      <span>15초 자동 갱신</span>
     </div>
   </div>
 
@@ -416,7 +416,7 @@
 
       // 1. AI 감시 · 발굴 바스켓 탭
       if (currentFilter === 'BASKET') {
-        document.getElementById('sectionTitleText').textContent = '✨ AI 감시 · 퀀트 발굴 바스켓 (국내 & 미국 우량주)';
+        document.getElementById('sectionTitleText').textContent = 'AI 퀀트 발굴 바스켓';
         const watch = d.watch_list || [];
         document.getElementById('holdingCount').textContent = watch.length + '개 유망주';
 
@@ -426,9 +426,9 @@
         }
 
         const bannerHtml = `
-          <div style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 6px; padding: 12px 14px; background: rgba(49, 130, 246, 0.08); border-radius: 12px; border: 1px dashed rgba(49, 130, 246, 0.35);">
-            🎯 <b>국내 &amp; 미국 해외주식 24시간 실시간 AI 앙상블 &amp; 5대 퀀트 가드 감시 중</b><br>
-            평일 국내장(10:00 / 14:30) 외인·기관 5일 순매수 우량주와 미국장(23:30) 빅테크/ETF를 실시간 추적하여 눌림목 포착 시 자동 분할 매수를 실행합니다.
+          <div style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 10px; padding: 10px 14px; background: rgba(59, 130, 246, 0.06); border-radius: 10px; border: 1px solid var(--card-border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
+            <span>🎯 <b>퀀트 발굴 바스켓</b> — 수급 우량주 및 빅테크 실시간 추적</span>
+            <span style="color: #60a5fa; font-weight: 600; font-size: 11px;">눌림목 자동 분할 매수</span>
           </div>
         `;
 
@@ -515,10 +515,10 @@
       if (filtered.length === 0) {
         hList.innerHTML = `
           <div class="empty-state-box">
-            <div style="font-size: 28px; margin-bottom: 8px;">📦</div>
-            <div style="font-weight: 700; font-size: 15px; color: #f0f6fc; margin-bottom: 4px;">현재 보유 주식이 없습니다.</div>
-            <div style="font-size: 12.5px; color: #8b949e; line-height: 1.5; margin-bottom: 14px;">(100% 현금 대기 중 · 국내장 10:00/14:30 퀀트 및 미국장 23:30 빅테크 발굴 시 자동 분할 매수)</div>
-            <button class="btn-goto-basket" onclick="setFilter('BASKET')">👉 ✨ AI 감시 · 발굴 바스켓 보기</button>
+            <div style="font-size: 26px; margin-bottom: 8px;">📦</div>
+            <div style="font-weight: 700; font-size: 14px; color: #f0f6fc; margin-bottom: 4px;">현재 보유 종목이 없습니다</div>
+            <div style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 14px;">100% 현금 비중 대기 중 · 정규장 퀀트 타점 포착 시 자동 분할 매수</div>
+            <button class="btn-goto-basket" onclick="setFilter('BASKET')">발굴 바스켓 확인</button>
           </div>
         `;
         return;
