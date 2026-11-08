@@ -4,13 +4,13 @@
   "tot_pchs_krw": 0,
   "mkt_val_usd": 0.0,
   "tot_pchs_usd": 0.0,
-  "krw_cash": 2500000,
+  "krw_cash": 0,
   "usd_cash": 0.0,
   "portfolio_health": {
     "score": 95,
     "grade": "매우 우수",
     "diagnoses": [
-      "실전 자산 2,500,000원 (국내 0종목 / 해외 0종목) 100% 현금 대기 중",
+      "실전 자산 0원 (국내 0종목 / 해외 0종목) 100% 현금 대기 중",
       "글로벌 통합증거금 지원 — 국내 우량주 및 미국 빅테크 동시 분할 매수 여력 확보"
     ],
     "prescriptions": [
@@ -19,7 +19,7 @@
   },
   "cash_master_plan": {
     "krw_verdict": "정규장 10:00 / 14:30 퀀트 스크리너 분할 매수 대기 (비중 최대 30%)",
-    "krw_detail": "가용 원화 예수금 2,500,000원 전액 대기 중. 외인/기관 5일 순매수 + 20일선 지지 + Wilder RSI 눌림목 TOP 종목 발굴 시 종목당 최대 75만 원 이내 1차 매수를 자동 집행합니다.",
+    "krw_detail": "가용 원화 예수금 0원 전액 대기 중. 외인/기관 5일 순매수 + 20일선 지지 + Wilder RSI 눌림목 TOP 종목 발굴 시 종목당 최대 75만 원 이내 1차 매수를 자동 집행합니다.",
     "usd_verdict": "통합증거금 기반 미국 정규장(23:30) 빅테크/ETF 눌림목 진입 대기",
     "usd_detail": "별도 환전 없이 원화 예수금으로 미국 주식(AAPL, NVDA, TSLA, SGOV 등) 즉시 매수 지원. 미국장 개장 후 Wilder RSI 35 이하 과매도 시 0.18% 우대 마찰비용을 반영하여 자동 분할 매수를 검토합니다."
   },
@@ -31,8 +31,8 @@
     "daily_pnl_krw": 0,
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
-    "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-08 15:12:55"
+    "api_status": "한투 API: 🔴 점검필요 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
+    "checked_at": "2026-11-08 15:24:09"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -42,12 +42,12 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-08 15:12:56",
+  "updated_at": "2026-11-08 15:24:09",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 21.6°C)",
-  "budget_limit": 2500000,
-  "fund_eval": 2500000,
+  "budget_limit": 0,
+  "fund_eval": 0,
   "fund_pnl": 0,
   "fund_pnl_pct": 0.0,
   "stock_eval": 0,
@@ -55,9 +55,9 @@
   "stock_pnl": 0,
   "stock_pnl_pct": 0.0,
   "stock_pnl_on_fund_pct": 0.0,
-  "d2_cash": 2500000,
-  "actual_tot_eval": 2500000,
-  "usable_cash": 2500000,
+  "d2_cash": 0,
+  "actual_tot_eval": 0,
+  "usable_cash": 0,
   "excess_amt": 0,
   "rebalance_mode": false,
   "rebalance_deadline": "2026-11-06",
@@ -409,7 +409,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 15:12:56"
+        "checked_at": "2026-11-08 15:24:09"
       }
     },
     {
@@ -447,7 +447,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 15:12:56"
+        "checked_at": "2026-11-08 15:24:09"
       }
     },
     {
@@ -485,7 +485,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 15:12:56"
+        "checked_at": "2026-11-08 15:24:09"
       }
     },
     {
@@ -523,7 +523,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 15:12:56"
+        "checked_at": "2026-11-08 15:24:09"
       }
     },
     {
@@ -561,7 +561,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 15:12:56"
+        "checked_at": "2026-11-08 15:24:09"
       }
     },
     {
@@ -599,7 +599,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-08 15:12:56"
+        "checked_at": "2026-11-08 15:24:09"
       }
     }
   ]
