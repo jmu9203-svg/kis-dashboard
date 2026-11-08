@@ -4,13 +4,13 @@
   "tot_pchs_krw": 0,
   "mkt_val_usd": 0.0,
   "tot_pchs_usd": 0.0,
-  "krw_cash": 0,
+  "krw_cash": 2500000,
   "usd_cash": 0.0,
   "portfolio_health": {
     "score": 95,
     "grade": "매우 우수",
     "diagnoses": [
-      "실전 자산 0원 (국내 0종목 / 해외 0종목) 100% 현금 대기 중",
+      "실전 자산 2,500,000원 (국내 0종목 / 해외 0종목) 100% 현금 대기 중",
       "글로벌 통합증거금 지원 — 국내 우량주 및 미국 빅테크 동시 분할 매수 여력 확보"
     ],
     "prescriptions": [
@@ -19,20 +19,20 @@
   },
   "cash_master_plan": {
     "krw_verdict": "정규장 10:00 / 14:30 퀀트 스크리너 분할 매수 대기 (비중 최대 30%)",
-    "krw_detail": "가용 원화 예수금 0원 전액 대기 중. 외인/기관 5일 순매수 + 20일선 지지 + Wilder RSI 눌림목 TOP 종목 발굴 시 종목당 최대 75만 원 이내 1차 매수를 자동 집행합니다.",
+    "krw_detail": "가용 원화 예수금 2,500,000원 전액 대기 중. 외인/기관 5일 순매수 + 20일선 지지 + Wilder RSI 눌림목 TOP 종목 발굴 시 종목당 최대 75만 원 이내 1차 매수를 자동 집행합니다.",
     "usd_verdict": "통합증거금 기반 미국 정규장(23:30) 빅테크/ETF 눌림목 진입 대기",
     "usd_detail": "별도 환전 없이 원화 예수금으로 미국 주식(AAPL, NVDA, TSLA, SGOV 등) 즉시 매수 지원. 미국장 개장 후 Wilder RSI 35 이하 과매도 시 0.18% 우대 마찰비용을 반영하여 자동 분할 매수를 검토합니다."
   },
   "watchdog": {
-    "status": "WARNING",
+    "status": "HEALTHY",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
     "circuit_breaker_tripped": false,
     "circuit_breaker_limit_pct": -3.5,
     "daily_pnl_krw": 0,
     "daily_pnl_pct": 0.0,
-    "anomaly_count": 1,
-    "api_status": "한투 API: 🔴 점검필요 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-09 00:34:16"
+    "anomaly_count": 0,
+    "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
+    "checked_at": "2026-11-09 00:41:47"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -42,12 +42,12 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-09 00:34:16",
+  "updated_at": "2026-11-09 00:41:47",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "84% (⚡ 충전 중, 22.2°C)",
-  "budget_limit": 0,
-  "fund_eval": 0,
+  "budget_limit": 2500000,
+  "fund_eval": 2500000,
   "fund_pnl": 0,
   "fund_pnl_pct": 0.0,
   "stock_eval": 0,
@@ -55,9 +55,9 @@
   "stock_pnl": 0,
   "stock_pnl_pct": 0.0,
   "stock_pnl_on_fund_pct": 0.0,
-  "d2_cash": 0,
-  "actual_tot_eval": 0,
-  "usable_cash": 0,
+  "d2_cash": 2500000,
+  "actual_tot_eval": 2500000,
+  "usable_cash": 2500000,
   "excess_amt": 0,
   "rebalance_mode": false,
   "rebalance_deadline": "2026-11-06",
@@ -73,7 +73,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 37.9,
+      "rsi": 38.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -111,7 +111,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 38.4,
+      "rsi": 30.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -149,7 +149,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 28.7,
+      "rsi": 34.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -187,7 +187,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 37.3,
+      "rsi": 37.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -225,7 +225,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 72.7,
+      "rsi": 62.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -263,7 +263,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 58.6,
+      "rsi": 55.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -301,7 +301,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 16.8,
+      "rsi": 29.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -345,7 +345,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 51.5,
+      "rsi": 53.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -377,8 +377,8 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 0.0,
-      "change_rate": 0.0,
+      "price": 342.37,
+      "change_rate": -0.52,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
@@ -409,14 +409,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 00:34:16"
+        "checked_at": "2026-11-09 00:41:47"
       }
     },
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 0.0,
-      "change_rate": 0.0,
+      "price": 186.64,
+      "change_rate": 2.78,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 반도체",
@@ -447,14 +447,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 00:34:16"
+        "checked_at": "2026-11-09 00:41:47"
       }
     },
     {
       "code": "GOOGL",
       "name": "알파벳 A (구글)",
-      "price": 0.0,
-      "change_rate": 0.0,
+      "price": 284.78,
+      "change_rate": 0.78,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 클라우드·검색",
@@ -485,14 +485,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 00:34:16"
+        "checked_at": "2026-11-09 00:41:47"
       }
     },
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 0.0,
-      "change_rate": 0.0,
+      "price": 358.22,
+      "change_rate": 4.23,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "전기차/로보틱스",
@@ -523,14 +523,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 00:34:16"
+        "checked_at": "2026-11-09 00:41:47"
       }
     },
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 0.0,
-      "change_rate": 0.0,
+      "price": 100.49,
+      "change_rate": 0.04,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "초단기 채권 ETF",
@@ -561,14 +561,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 00:34:16"
+        "checked_at": "2026-11-09 00:41:47"
       }
     },
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 0.0,
-      "change_rate": 0.0,
+      "price": 35.17,
+      "change_rate": -0.71,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국 고배당 ETF",
@@ -599,7 +599,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 00:34:16"
+        "checked_at": "2026-11-09 00:41:47"
       }
     }
   ]
