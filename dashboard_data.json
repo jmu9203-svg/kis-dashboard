@@ -32,7 +32,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-10 08:26:48"
+    "checked_at": "2026-11-10 08:37:41"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -42,7 +42,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-10 08:26:48",
+  "updated_at": "2026-11-10 08:37:41",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.4°C)",
@@ -293,6 +293,44 @@
       }
     },
     {
+      "code": "035720",
+      "name": "카카오",
+      "price": 32100,
+      "change_rate": 0.0,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "국내 우량주",
+      "theme_tag": "퀀트 수급 유망",
+      "rsi": 55.9,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 66,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 78,
+            "decision": "매수"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "당일 코스피200이 -5.47%로 패닉 폭락장을 형성하여 시스템상 신규 매수 전면 차단 규정이 적용됩니다. 개별 종목의 기술적 강세(대량 거래량, 기관·외인 순매수)에도 불구하고 거시경제 변동성이 극심한 만큼 하방 리스크를 엄격히 감안하여 보수적으로 관망합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 73점 ↔ AI 66점 | 편차 7점)",
+        "checked_at": "2026-11-06 14:33:39"
+      }
+    },
+    {
       "code": "066570",
       "name": "LG전자",
       "price": 134700,
@@ -331,48 +369,10 @@
       }
     },
     {
-      "code": "138040",
-      "name": "메리츠금융지주",
-      "price": 128500,
-      "change_rate": 0.0,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "국내 우량주",
-      "theme_tag": "퀀트 수급 유망",
-      "rsi": 47.7,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 69,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          }
-        ],
-        "reason": "현재 코스피200 약세장 속에서 메리츠금융지주가 20일선을 하회하고 장대 음봉을 기록하며 단기 조정 압력이 거셉니다. 외국인의 5일 누적 순매수세가 유입되고 있으나 실적 발표(D-2)를 앞두고 변동성이 확대될 수 있어 신규 진입보다는 추세 안정화 여부를 확인하며 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 69점 | 편차 15점)",
-        "checked_at": "2026-11-09 14:32:17"
-      }
-    },
-    {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 351.1999,
-      "change_rate": 2.58,
+      "price": 350.9288,
+      "change_rate": 2.5,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
@@ -403,14 +403,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-10 08:26:48"
+        "checked_at": "2026-11-10 08:37:41"
       }
     },
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 179.3,
-      "change_rate": -3.93,
+      "price": 179.34,
+      "change_rate": -3.91,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 반도체",
@@ -441,14 +441,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-10 08:26:48"
+        "checked_at": "2026-11-10 08:37:41"
       }
     },
     {
       "code": "GOOGL",
       "name": "알파벳 A (구글)",
-      "price": 290.3298,
-      "change_rate": 1.95,
+      "price": 290.65,
+      "change_rate": 2.06,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 클라우드·검색",
@@ -479,14 +479,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-10 08:26:48"
+        "checked_at": "2026-11-10 08:37:41"
       }
     },
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 378.59,
-      "change_rate": 5.69,
+      "price": 378.25,
+      "change_rate": 5.59,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "전기차/로보틱스",
@@ -517,7 +517,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-10 08:26:48"
+        "checked_at": "2026-11-10 08:37:41"
       }
     },
     {
@@ -555,7 +555,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-10 08:26:48"
+        "checked_at": "2026-11-10 08:37:41"
       }
     },
     {
@@ -593,7 +593,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-10 08:26:48"
+        "checked_at": "2026-11-10 08:37:41"
       }
     }
   ]
