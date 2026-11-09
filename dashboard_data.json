@@ -32,7 +32,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-09 14:45:47"
+    "checked_at": "2026-11-09 14:51:34"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -42,7 +42,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-09 14:45:47",
+  "updated_at": "2026-11-09 14:51:34",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "72% (🔋 배터리 사용 중, 20.6°C)",
@@ -67,13 +67,13 @@
     {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22755,
-      "change_rate": 0.73,
+      "price": 22740,
+      "change_rate": 0.66,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 40.5,
+      "rsi": 40.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -105,13 +105,13 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 191500,
-      "change_rate": 1.48,
+      "price": 190700,
+      "change_rate": 1.06,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 31.3,
+      "rsi": 30.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -219,13 +219,13 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15200,
-      "change_rate": -0.33,
+      "price": 15197,
+      "change_rate": -0.35,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 60.1,
+      "rsi": 60.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -257,13 +257,13 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 188100,
-      "change_rate": -1.1,
+      "price": 187600,
+      "change_rate": -1.37,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 54.7,
+      "rsi": 54.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -295,8 +295,8 @@
     {
       "code": "066570",
       "name": "LG전자",
-      "price": 135700,
-      "change_rate": -2.09,
+      "price": 135650,
+      "change_rate": -2.13,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -333,8 +333,8 @@
     {
       "code": "138040",
       "name": "메리츠금융지주",
-      "price": 128000,
-      "change_rate": -3.18,
+      "price": 127900,
+      "change_rate": -3.25,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -403,7 +403,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 14:45:47"
+        "checked_at": "2026-11-09 14:51:34"
       }
     },
     {
@@ -441,7 +441,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 14:45:47"
+        "checked_at": "2026-11-09 14:51:34"
       }
     },
     {
@@ -479,7 +479,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 14:45:47"
+        "checked_at": "2026-11-09 14:51:34"
       }
     },
     {
@@ -517,7 +517,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 14:45:47"
+        "checked_at": "2026-11-09 14:51:34"
       }
     },
     {
@@ -555,14 +555,14 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 14:45:47"
+        "checked_at": "2026-11-09 14:51:34"
       }
     },
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 0.0,
-      "change_rate": 0.0,
+      "price": 35.17,
+      "change_rate": -0.71,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국 고배당 ETF",
@@ -593,7 +593,7 @@
         ],
         "reason": "미국 정규장(23:30~06:00) 변동성 실시간 감시 및 통합증거금 매수 대기.",
         "audit_badge": "✅ KIS 해외주식 시세 검증",
-        "checked_at": "2026-11-09 14:45:47"
+        "checked_at": "2026-11-09 14:51:34"
       }
     }
   ]
