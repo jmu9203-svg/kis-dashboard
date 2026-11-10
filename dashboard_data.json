@@ -64,7 +64,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 1,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-11 08:01:47"
+    "checked_at": "2026-11-11 08:13:18"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -74,7 +74,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 08:01:47",
+  "updated_at": "2026-11-11 08:13:18",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.5°C)",
@@ -175,7 +175,7 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 274000,
+      "price": 275000,
       "change_rate": 0.0,
       "marketCountry": "KR",
       "currency": "KRW",
@@ -213,7 +213,7 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 152800,
+      "price": 152700,
       "change_rate": 0.0,
       "marketCountry": "KR",
       "currency": "KRW",
@@ -289,7 +289,7 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 192300,
+      "price": 193000,
       "change_rate": 0.0,
       "marketCountry": "KR",
       "currency": "KRW",
@@ -365,7 +365,7 @@
     {
       "code": "066570",
       "name": "LG전자",
-      "price": 138600,
+      "price": 140000,
       "change_rate": 0.0,
       "marketCountry": "KR",
       "currency": "KRW",
