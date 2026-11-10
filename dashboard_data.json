@@ -74,9 +74,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 01:26:59",
+  "updated_at": "2026-11-11 01:32:10",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "85% (⚡ 충전 중, 22.5°C)",
   "budget_limit": 2500000,
   "fund_eval": 2500000,
@@ -403,126 +403,12 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 350.895,
+      "price": 0.0,
       "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
       "theme_tag": "AI 모바일 생태계",
-      "rsi": 50.0,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "실시간 매매 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 55,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "미국 증시가 약세·조정 장세이며 RSI가 중립 수준으로 저가 매수 신호가 약합니다. 거래량도 평균 대비 감소하고 있어 급등 추격 매수는 위험하므로 현재는 관망이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 55점 | 편차 7점)",
-        "checked_at": "2026-11-10 23:35:18"
-      }
-    },
-    {
-      "code": "NVDA",
-      "name": "엔비디아 (NVDA)",
-      "price": 171.8301,
-      "change_rate": 0.0,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "AI 반도체",
-      "theme_tag": "글로벌 AI 대장주",
-      "rsi": 50.0,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "실시간 매매 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 58,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 58,
-            "decision": "관망"
-          }
-        ],
-        "reason": "가격이 MA20 아래에 머무르고 거래량이 감소한 상태에서 과매도 RSI가 나타나지만, 전체 시장이 약세이며 음봉과 낮은 거래량이 가짜 반등 위험을 시사합니다. 따라서 신규 진입을 보류하고 관망하는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 48점 ↔ AI 58점 | 편차 10점)",
-        "checked_at": "2026-11-10 23:35:25"
-      }
-    },
-    {
-      "code": "GOOGL",
-      "name": "알파벳 A (구글)",
-      "price": 288.3,
-      "change_rate": 0.0,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "AI 클라우드·검색",
-      "theme_tag": "M7 최저 PER 🔍",
-      "rsi": 50.0,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "실시간 매매 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 60,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 62,
-            "decision": "관망"
-          }
-        ],
-        "reason": "RSI가 과매도 구역에 있어 단기 반등 가능성이 있지만, 가격이 20일 이동평균선 아래에 머물며 거래량이 현저히 낮고 윗꼬리 양봉이 나타나는 등 약세 신호가 다수 존재한다. 따라서 신중히 관망하며 추가 확인 후 진입을 검토한다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 60점 | 편차 8점)",
-        "checked_at": "2026-11-10 23:35:30"
-      }
-    },
-    {
-      "code": "TSLA",
-      "name": "테슬라 (TSLA)",
-      "price": 375.945,
-      "change_rate": 0.0,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "전기차/로보틱스",
-      "theme_tag": "자율주행·FSD",
       "rsi": 50.0,
       "is_held": false,
       "held_qty": 0,
@@ -547,20 +433,20 @@
             "decision": "관망"
           }
         ],
-        "reason": "미국 시장이 약세 조정 국면에 있고 TSLA는 MA20 이하로 하락했으며 RSI가 중립 수준에 머물러 매수 신호가 약합니다. 거래량이 평균보다 감소하고 음봉이 나타난 점도 추가적인 매수 근거가 부족함을 보여 관망을 권고합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 52점 | 편차 9점)",
-        "checked_at": "2026-11-10 23:35:38"
+        "reason": "RSI가 중립 수준이고 외인·기관 순매수와 같은 강력한 매수 신호가 없으며, 현재 가격 정보가 제공되지 않아 목표익절선 도달 여부를 판단할 수 없습니다. 따라서 신규 진입을 보류하고 관망하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 52점 | 편차 9점)",
+        "checked_at": "2026-11-11 01:30:40"
       }
     },
     {
-      "code": "SGOV",
-      "name": "iShares 0-3M 단기국채",
-      "price": 100.515,
+      "code": "NVDA",
+      "name": "엔비디아 (NVDA)",
+      "price": 0.0,
       "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
-      "sector": "초단기 채권 ETF",
-      "theme_tag": "연 4.5% 무위험 달러이자",
+      "sector": "AI 반도체",
+      "theme_tag": "글로벌 AI 대장주",
       "rsi": 50.0,
       "is_held": false,
       "held_qty": 0,
@@ -575,25 +461,139 @@
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 52,
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 52,
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "RSI가 100으로 과열 상태이며 거래량도 평균 대비 부족해 단기 매수 시점이 아닙니다. 현재 현금은 충분하지만, 과매수 신호와 약세 시장 환경을 고려해 관망하는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 37점 ↔ AI 52점 | 편차 15점)",
-        "checked_at": "2026-11-10 23:35:44"
+        "reason": "시장 레짐은 강세이지만 RSI가 중립이며 거래량도 평범해 매수 신호가 약합니다. ATR 목표익절선과 손절선도 아직 도달되지 않아 진입을 미루는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 52점 | 편차 9점)",
+        "checked_at": "2026-11-11 01:30:58"
+      }
+    },
+    {
+      "code": "GOOGL",
+      "name": "알파벳 A (구글)",
+      "price": 0.0,
+      "change_rate": 0.0,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "AI 클라우드·검색",
+      "theme_tag": "M7 최저 PER 🔍",
+      "rsi": 50.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "실시간 매매 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 55,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 시장은 강세이지만 GOOGL의 RSI가 중립이고 거래량도 평범해 매수 신호가 부족합니다. 또한 보유 포지션이 없으며, 특별한 호재나 외인·기관 순매수 흐름이 확인되지 않아 관망하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 55점 | 편차 6점)",
+        "checked_at": "2026-11-11 01:31:03"
+      }
+    },
+    {
+      "code": "TSLA",
+      "name": "테슬라 (TSLA)",
+      "price": 0.0,
+      "change_rate": 0.0,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "전기차/로보틱스",
+      "theme_tag": "자율주행·FSD",
+      "rsi": 50.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "실시간 매매 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 50,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 50,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "RSI가 중립 수준이며, ATR 목표익절선·과열익절선이 아직 도달하지 않았고, 외인·기관 수급이 명확하지 않아 매수·매도 판단이 어려운 상황입니다. 현재 가용 현금과 종목 한도는 충족하지만, 구체적인 매수 신호가 없으므로 관망이 가장 합리적입니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 50점 | 편차 11점)",
+        "checked_at": "2026-11-11 01:31:24"
+      }
+    },
+    {
+      "code": "SGOV",
+      "name": "iShares 0-3M 단기국채",
+      "price": 0.0,
+      "change_rate": 0.0,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "초단기 채권 ETF",
+      "theme_tag": "연 4.5% 무위험 달러이자",
+      "rsi": 50.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "실시간 매매 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 50,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 50,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 RSI가 중립 수준이며, ATR 목표익절선·과열익절선이 아직 도달하지 않았고, 외인·기관 수급이 명확히 매수 신호를 보이지 않으므로 보유하거나 진입을 보류하는 것이 가장 안전한 판단이다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 50점 | 편차 11점)",
+        "checked_at": "2026-11-11 01:31:49"
       }
     },
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 35.46,
+      "price": 0.0,
       "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
@@ -607,25 +607,25 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 54,
+        "score": 55,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 52,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "시장 전체가 약세 조정 국면에 있어 보수적인 접근이 필요하고, RSI가 중립이며 거래량도 약화된 상태라 매수 신호가 약합니다. 현재 현금과 한도는 충분하지만, 추가 매수는 관망으로 두는 것이 안전합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 54점 | 편차 5점)",
-        "checked_at": "2026-11-10 23:35:51"
+        "reason": "현재 RSI가 중립 수준이며, ATR 목표익절선·과열익절선이 아직 도달하지 않았고, 외인·기관 수급이 불확실한 상태이므로 보유하거나 진입하기에 적절한 시점이 아니라고 판단했습니다. 따라서 관망으로 유지하고 추가 정보를 기다리겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 55점 | 편차 6점)",
+        "checked_at": "2026-11-11 01:32:06"
       }
     }
   ],
