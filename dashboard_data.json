@@ -32,7 +32,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-10 13:27:50"
+    "checked_at": "2026-11-10 13:33:54"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -42,7 +42,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-10 13:31:25",
+  "updated_at": "2026-11-10 13:33:54",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "75% (🔋 배터리 사용 중, 20.4°C)",
@@ -105,8 +105,8 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 198000,
-      "change_rate": 4.27,
+      "price": 197900,
+      "change_rate": 4.21,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -143,8 +143,8 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 274500,
-      "change_rate": 1.1,
+      "price": 274000,
+      "change_rate": 0.92,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -181,8 +181,8 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 152600,
-      "change_rate": 1.13,
+      "price": 152700,
+      "change_rate": 1.19,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -219,8 +219,8 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15190,
-      "change_rate": 0.36,
+      "price": 15185,
+      "change_rate": 0.33,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -333,8 +333,8 @@
     {
       "code": "066570",
       "name": "LG전자",
-      "price": 138800,
-      "change_rate": 3.04,
+      "price": 139200,
+      "change_rate": 3.34,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
