@@ -42,9 +42,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-10 23:28:46",
+  "updated_at": "2026-11-10 23:35:55",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "85% (⚡ 충전 중, 23.6°C)",
   "budget_limit": 2500000,
   "fund_eval": 2500000,
@@ -371,94 +371,18 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 351.56,
-      "change_rate": 0.25,
+      "price": 351.055,
+      "change_rate": 0.1,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
       "theme_tag": "AI 모바일 생태계",
-      "rsi": 58.2,
+      "rsi": 57.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "새벽 정규장 분석 결과 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 56,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "RSI가 중립 수준이고 거래량이 평균보다 낮아 단기 매수 신호가 약합니다. 또한 현재 보유가 없으며, 현금과 종목 한도는 충분하지만 급등 추격이나 외국인·기관 순매수 등 강력한 매수 근거가 부족하므로 관망을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 56점 | 편차 6점)",
-        "checked_at": "2026-11-10 05:30:19"
-      }
-    },
-    {
-      "code": "NVDA",
-      "name": "엔비디아 (NVDA)",
-      "price": 174.03,
-      "change_rate": -2.6,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "AI 반도체",
-      "theme_tag": "글로벌 AI 대장주",
-      "rsi": 25.6,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "새벽 정규장 분석 결과 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 57,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 62,
-            "decision": "관망"
-          }
-        ],
-        "reason": "RSI가 과매도 구역에 있어 반등 가능성이 있으나 거래량이 20일 평균 대비 44%에 불과해 가짜 반등 위험이 크다. 현재 현금과 종목 한도는 충족하지만 MA20 하회와 약세 시장 분위기로 보수적인 접근이 필요하므로 신규 매수는 보류한다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 48점 ↔ AI 57점 | 편차 9점)",
-        "checked_at": "2026-11-10 05:30:23"
-      }
-    },
-    {
-      "code": "GOOGL",
-      "name": "알파벳 A (구글)",
-      "price": 289.49,
-      "change_rate": 0.47,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "AI 클라우드·검색",
-      "theme_tag": "M7 최저 PER 🔍",
-      "rsi": 34.1,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "새벽 정규장 분석 결과 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "실시간 매매 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 55,
@@ -477,26 +401,178 @@
             "decision": "관망"
           }
         ],
-        "reason": "가격이 20일 이동평균선 아래에 머물며 거래량이 약세를 보이고 있어 급등 매수는 위험합니다. RSI는 저가 영역이지만 외인·기관 순매수와 호재가 확인되지 않아 신중히 기다리는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 55점 | 편차 9점)",
-        "checked_at": "2026-11-10 05:30:29"
+        "reason": "미국 증시가 약세·조정 장세이며 RSI가 중립 수준으로 저가 매수 신호가 약합니다. 거래량도 평균 대비 감소하고 있어 급등 추격 매수는 위험하므로 현재는 관망이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 55점 | 편차 7점)",
+        "checked_at": "2026-11-10 23:35:18"
+      }
+    },
+    {
+      "code": "NVDA",
+      "name": "엔비디아 (NVDA)",
+      "price": 171.94,
+      "change_rate": -3.77,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "AI 반도체",
+      "theme_tag": "글로벌 AI 대장주",
+      "rsi": 24.9,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "실시간 매매 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 58,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          }
+        ],
+        "reason": "가격이 MA20 아래에 머무르고 거래량이 감소한 상태에서 과매도 RSI가 나타나지만, 전체 시장이 약세이며 음봉과 낮은 거래량이 가짜 반등 위험을 시사합니다. 따라서 신규 진입을 보류하고 관망하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 48점 ↔ AI 58점 | 편차 10점)",
+        "checked_at": "2026-11-10 23:35:25"
+      }
+    },
+    {
+      "code": "GOOGL",
+      "name": "알파벳 A (구글)",
+      "price": 288.485,
+      "change_rate": 0.12,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "AI 클라우드·검색",
+      "theme_tag": "M7 최저 PER 🔍",
+      "rsi": 33.1,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "실시간 매매 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 60,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 62,
+            "decision": "관망"
+          }
+        ],
+        "reason": "RSI가 과매도 구역에 있어 단기 반등 가능성이 있지만, 가격이 20일 이동평균선 아래에 머물며 거래량이 현저히 낮고 윗꼬리 양봉이 나타나는 등 약세 신호가 다수 존재한다. 따라서 신중히 관망하며 추가 확인 후 진입을 검토한다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 60점 | 편차 8점)",
+        "checked_at": "2026-11-10 23:35:30"
       }
     },
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 370.77,
-      "change_rate": -1.93,
+      "price": 377.0009,
+      "change_rate": -0.28,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "전기차/로보틱스",
       "theme_tag": "자율주행·FSD",
-      "rsi": 47.5,
+      "rsi": 49.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "새벽 정규장 분석 결과 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "실시간 매매 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 52,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 50,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "미국 시장이 약세 조정 국면에 있고 TSLA는 MA20 이하로 하락했으며 RSI가 중립 수준에 머물러 매수 신호가 약합니다. 거래량이 평균보다 감소하고 음봉이 나타난 점도 추가적인 매수 근거가 부족함을 보여 관망을 권고합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 52점 | 편차 9점)",
+        "checked_at": "2026-11-10 23:35:38"
+      }
+    },
+    {
+      "code": "SGOV",
+      "name": "iShares 0-3M 단기국채",
+      "price": 100.515,
+      "change_rate": 0.01,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "초단기 채권 ETF",
+      "theme_tag": "연 4.5% 무위험 달러이자",
+      "rsi": 100.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "실시간 매매 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 52,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 52,
+            "decision": "관망"
+          }
+        ],
+        "reason": "RSI가 100으로 과열 상태이며 거래량도 평균 대비 부족해 단기 매수 시점이 아닙니다. 현재 현금은 충분하지만, 과매수 신호와 약세 시장 환경을 고려해 관망하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 37점 ↔ AI 52점 | 편차 15점)",
+        "checked_at": "2026-11-10 23:35:44"
+      }
+    },
+    {
+      "code": "SCHD",
+      "name": "Schwab 미국 배당 다우",
+      "price": 35.445,
+      "change_rate": -0.58,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국 고배당 ETF",
+      "theme_tag": "10년 연속 배당성장",
+      "rsi": 57.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "실시간 매매 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 54,
@@ -515,85 +591,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "시장 전체가 약세 조정 국면에 있고 TSLA의 RSI는 중립이며 거래량도 평균보다 낮아 단기 매수 시점이 불확실합니다. 또한 최근 예측 적중률이 저조해 보수적으로 관망하는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 47점 ↔ AI 54점 | 편차 7점)",
-        "checked_at": "2026-11-10 05:30:34"
-      }
-    },
-    {
-      "code": "SGOV",
-      "name": "iShares 0-3M 단기국채",
-      "price": 100.515,
-      "change_rate": 0.01,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "초단기 채권 ETF",
-      "theme_tag": "연 4.5% 무위험 달러이자",
-      "rsi": 100.0,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "새벽 정규장 분석 결과 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 48,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 45,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 iShares 0-3M 단기국채(SGOV)는 14일 RSI가 100.0으로 극단적 과열 구간에 위치해 있으며, 거래량마저 20일 평균 대비 8% 부족하여 신규 진입 매력이 떨어집니다. 현재 미보유 상태인 만큼 무리한 추격 매수를 지양하고 향후 시장 안정 및 눌림목 형성 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 37점 ↔ AI 48점 | 편차 11점)",
-        "checked_at": "2026-11-10 05:30:42"
-      }
-    },
-    {
-      "code": "SCHD",
-      "name": "Schwab 미국 배당 다우",
-      "price": 35.52,
-      "change_rate": -0.36,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국 고배당 ETF",
-      "theme_tag": "10년 연속 배당성장",
-      "rsi": 58.8,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "새벽 정규장 분석 결과 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 55,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "미 증시 약세장 레짐과 거래량이 부족한 음봉 흐름이 겹쳐 단기 변동성 관리가 필요한 시점입니다. 현재 미보유 상태에서 뚜렷한 수급 돌파 모호성이 있어 신규 진입을 보류하고 향후 시장 안정 시 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 55점 | 편차 7점)",
-        "checked_at": "2026-11-10 05:30:55"
+        "reason": "시장 전체가 약세 조정 국면에 있어 보수적인 접근이 필요하고, RSI가 중립이며 거래량도 약화된 상태라 매수 신호가 약합니다. 현재 현금과 한도는 충분하지만, 추가 매수는 관망으로 두는 것이 안전합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 54점 | 편차 5점)",
+        "checked_at": "2026-11-10 23:35:51"
       }
     }
   ],
