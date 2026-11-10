@@ -74,10 +74,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 08:24:53",
-  "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
+  "updated_at": "2026-11-11 08:31:16",
+  "market_status": "24/7 시스템 정상 가동 중",
   "is_market_open": false,
-  "battery": "85% (⚡ 충전 중, 22.5°C)",
+  "battery": "확인 중",
   "budget_limit": 2500000,
   "fund_eval": 2500000,
   "fund_pnl": 0,
@@ -249,15 +249,15 @@
       }
     },
     {
-      "code": "458730",
-      "name": "TIGER 미국배당다우존스",
-      "price": 15115,
+      "code": "381170",
+      "name": "TIGER 미국테크TOP10 INDXX",
+      "price": 28795,
       "change_rate": 0.0,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 58.0,
+      "rsi": 37.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -265,25 +265,31 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 58,
-        "consensus": "2:0 관망 우세",
+        "score": 50,
+        "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 60,
+            "score": 45,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 50,
             "decision": "관망"
           }
         ],
-        "reason": "현재 코스피 약세·조정장 레짐으로 인해 매수 커트라인이 상향된 상태이며, 외국인 순매도 지속과 당일 음봉 흐름을 고려할 때 신규 진입보다는 추세 확인 후 20일선 부근에서의 눌림목 매수 기회를 대기하는 것이 타당합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 69점 ↔ AI 58점 | 편차 11점)",
-        "checked_at": "2026-11-10 14:31:10"
+        "reason": "시장 전반이 급락 국면에 있어 보수적 접근이 필요합니다. RSI는 저가 수준이지만 외국인·기관 순매도가 지속되고 ATR 목표익절선도 아직 도달하지 않아 진입 타이밍이 불확실합니다. 따라서 관망을 유지하고 추가 신호를 기다리는 것이 바람직합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 34점 ↔ AI 50점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-05 10:01:37"
       }
     },
     {
@@ -325,15 +331,15 @@
       }
     },
     {
-      "code": "035720",
-      "name": "카카오",
-      "price": 32050,
+      "code": "051910",
+      "name": "LG화학",
+      "price": 238000,
       "change_rate": 0.0,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 54.1,
+      "rsi": 42.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -341,37 +347,37 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 56,
+        "score": 55,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 58,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 코스피200 약세장 레짐과 당일 장중 고점을 찍고 밀린 긴 윗꼬리 음봉(상단 매물대 저항)을 고려할 때, 단기 추격매수보다는 20일 이동평균선 부근에서의 안전한 눌림목 지지를 확인하는 것이 바람직합니다. 향후 시장 변동성이 안정되고 기관 수급이 지속되는 지 여부를 지켜본 뒤 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 56점 | 편차 6점)",
-        "checked_at": "2026-11-10 14:31:36"
+        "reason": "현재 코스피200 약세장 속에서 20일 이동평균선을 하회하고 있으며, 석화 공급과잉 우려 등 부정적 뉴스 헤드라인이 상존하여 보수적 접근이 필요합니다. 다만 아래꼬리 양봉과 외국인 저가 매수세가 유입되고 있으므로, 향후 시장 안정 및 추가적인 수급 개선 여부를 확인한 후 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 65점 ↔ AI 55점 | 편차 10점)",
+        "checked_at": "2026-11-09 11:31:10"
       }
     },
     {
-      "code": "066570",
-      "name": "LG전자",
-      "price": 140000,
+      "code": "012330",
+      "name": "현대모비스",
+      "price": 351500,
       "change_rate": 0.0,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 32.1,
+      "rsi": 52.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -379,25 +385,31 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 71,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "score": 54,
+        "consensus": "3:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 62,
+            "score": 48,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 55,
+            "decision": "관망"
           }
         ],
-        "reason": "현재 코스피200 약세장 속에서 기관의 저가 매수세가 유입되고 14일 RSI가 과매도 구간에 진입했으나, 당일 장중 긴 윗꼬리 음봉을 형성하며 상단 매물대 저항이 확인되어 단기 추격매수보다 눌림목 확인이 필요합니다. 향후 시장 안정 및 추가 가격 조정을 거친 뒤 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 60점 ↔ AI 71점 | 편차 11점)",
-        "checked_at": "2026-11-10 14:31:46"
+        "reason": "코스피200이 급락한 패닉 장세에도 현대모비스는 상승세와 기관의 지속 매수를 보이고 있으나 외국인 매도와 목표 미달 뉴스가 혼재한다. RSI가 중립이고 ATR 목표익절선에 아직 미치지 않아 보수적으로 관망하는 것이 바람직하다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 55점 ↔ AI 54점 | 편차 1점)",
+        "checked_at": "2026-11-05 10:02:04"
       }
     },
     {
@@ -630,22 +642,22 @@
     }
   ],
   "morning_research": {
-    "updated_at": "2026-11-10 08:30:16",
+    "updated_at": "2026-11-11 08:30:22",
     "earnings_alert_level": "CAUTION",
-    "kr_macro_summary": "원/달러 환율이 1,342원 선에서 방향성을 모색하는 가운데, 외국인 대규모 순매도 기조와 맞물려 국내 증시는 변동성 장세를 지속하고 있습니다.",
-    "us_bigtech_summary": "미국 나스닥 공식 빅테크 실적 발표는 오는 11월 12일 어플라이드머티어리얼즈(AMAT, EPS $4.06)와 11월 17일 엔비디아(NVDA, EPS $2.49)를 앞두고 있으며 나스닥100 조정 장세 속에서 반도체 실적에 이목이 집중되고 있습니다.",
+    "kr_macro_summary": "원/달러 환율이 1,344.50원을 기록하며 안정세를 보이고 있으나, 미 기술주 폭락 여파로 코스피 시장의 외국인 수급 불확실성이 커진 상태입니다. NAVER 등 주요 종목의 실적 발표와 DART 공시를 주시하며 보수적인 리스크 관리가 필요합니다.",
+    "us_bigtech_summary": "11월 12일 어플라이드머티어리얼즈(AMAT, EPS 예상치 $4.06)와 11월 17일 엔비디아(NVDA, EPS 예상치 $2.49)의 실적 발표를 앞두고 글로벌 기술주 변동성이 확대되고 있습니다. 필라델피아 반도체 지수는 소폭 반등(+0.61%)했으나 나스닥100의 최근 급락 여파로 AI 섹터 전반의 경계감이 지속되고 있습니다.",
     "fx_soxx_info": {
-      "usd_krw": "1,342.00",
+      "usd_krw": "1,344.50",
       "usd_krw_change": "0.00",
       "usd_krw_rate": "0.00",
-      "soxx_price": "$146.9717",
-      "soxx_pct": "+0.14%",
-      "summary": "원/달러 환율: 1,342.00원 (전일대비 0.00원 / 0.00%) | 미 필라델피아 반도체(SOXX): $146.9717 (+0.14%)"
+      "soxx_price": "$147.48",
+      "soxx_pct": "+0.61%",
+      "summary": "원/달러 환율: 1,344.50원 (전일대비 0.00원 / 0.00%) | 미 필라델피아 반도체(SOXX): $147.48 (+0.61%)"
     },
     "us_official_calendar": [
       {
         "date": "2026-11-12",
-        "dday": 2,
+        "dday": 1,
         "symbol": "AMAT",
         "kr_name": "어플라이드머티어리얼즈",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -654,7 +666,7 @@
       },
       {
         "date": "2026-11-17",
-        "dday": 7,
+        "dday": 6,
         "symbol": "NVDA",
         "kr_name": "엔비디아",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -667,7 +679,7 @@
         "name": "삼성전자",
         "earnings_imminent": false,
         "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "지속적인 외국인 수급 이탈 및 100조 영업익 기대감 이후 주가 숨고르기 구간으로 분할 매수 대응.",
+        "memo": "DART 임원 주식 소유 변동 공시 및 외인 수급 추이를 모니터링하며 분할 매수 관점 접근",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -677,7 +689,7 @@
         "name": "SK하이닉스",
         "earnings_imminent": false,
         "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "HBM 모멘텀 유효하나 미국 빅테크 실적 및 반도체 지수(SOXX) 연동 흐름을 확인하며 보수적 접근.",
+        "memo": "HBM 수요 모멘텀과 미국 반도체(AMAT·NVDA) 실적 발표 연동성을 확인한 후 진입",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -687,7 +699,7 @@
         "name": "현대차",
         "earnings_imminent": false,
         "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "3분기 호실적 발표 이후 본업 초점 이동 및 로보틱스 모멘텀 반영하며 박스권 트레이딩.",
+        "memo": "본업 실적 호조 및 로보틱스 모멘텀 유효하나, 거시경제 변동성 완화 시까지 추격 매수 자제",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -697,33 +709,33 @@
         "name": "KB금융",
         "earnings_imminent": false,
         "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "높은 CET-1 비율을 바탕으로 한 방어력 우수, 매크로 변동성 방어용 포트폴리오 유지.",
+        "memo": "높은 CET-1 비율을 바탕으로 한 방어력 검증 완료, 안정적인 밴드 내 트레이딩 수행",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "219,722"
+        "consensus_target_price": "218,684"
       },
       "035420": {
         "name": "NAVER",
         "earnings_imminent": true,
-        "earnings_status": "2026-11-12 (D-2) '2026년 3분기 실적' 공식 발표 예정",
-        "memo": "D-2 임박 및 유상증자/DC 사업 이슈가 혼재되어 있으므로 공식 실적 발표 확인 후 진입.",
-        "official_ir_schedule": "2026-11-12 (D-2) 2026년 3분기 실적",
+        "earnings_status": "2026-11-12 (D-1) 3분기 실적 공식 발표 예정",
+        "memo": "내일 실적 발표 및 AI DC 사업 본격화에 따른 불확실성 해소 여부를 확인한 후 대응",
+        "official_ir_schedule": "2026-11-12 (D-1) 2026년 3분기 실적",
         "ir_date": "2026-11-12",
-        "ir_dday": 2,
+        "ir_dday": 1,
         "consensus_target_price": "319,696"
       },
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": false,
         "earnings_status": "공식 IR 일정 미등록",
-        "memo": "미국 전력망 인프라 관련 수급 및 글로벌 전력기기 업황 변동성에 연동하여 탄력적 대응."
+        "memo": "미국 빅테크 전력 인프라 투자 방향성과 연동하여 수급 유입 시 제한적 비중 확대"
       },
       "091160": {
         "name": "KODEX 반도체",
         "earnings_imminent": false,
-        "earnings_status": "향후 AMAT(11/12) 및 엔비디아(11/17) 실적 일정 연동",
-        "memo": "미국 반도체 지수(SOXX)와 주요 빅테크 실적 발표 전까지 추격 매수 자제 및 비중 유지."
+        "earnings_status": "미국 AMAT(11/12) 및 엔비디아(11/17) 실적 발표 연동",
+        "memo": "미국 대형 반도체 실적 발표 직전까지 성급한 추격 매수를 자제하고 관망 유지"
       },
       "465580": {
         "name": "ACE 미국빅테크TOP7 Plus",
@@ -731,25 +743,25 @@
         "ir_date": null,
         "ir_dday": null
       },
-      "458730": {
-        "name": "TIGER 미국배당다우존스",
+      "381170": {
+        "name": "TIGER 미국테크TOP10 INDXX",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
       },
-      "035720": {
-        "name": "카카오",
+      "051910": {
+        "name": "LG화학",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "46,682"
+        "consensus_target_price": "355,583"
       },
-      "066570": {
-        "name": "LG전자",
+      "012330": {
+        "name": "현대모비스",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "253,235"
+        "consensus_target_price": "606,957"
       }
     }
   }
