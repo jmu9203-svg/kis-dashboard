@@ -52,8 +52,8 @@
     .pulse-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulse 2s infinite; }
     @keyframes pulse { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.2); } 100% { opacity: 1; transform: scale(1); } }
 
-    /* Watchdog Banner */
-    #watchdogBanner { background: rgba(49, 130, 246, 0.10); border: 1px solid rgba(49, 130, 246, 0.30); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+    /* Watchdog Banner (Emergency Alert Only) */
+    #watchdogBanner { display: none; background: rgba(248, 81, 73, 0.15); border: 1px solid rgba(248, 81, 73, 0.45); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px; font-size: 12px; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
     .rsi-oversold { color: #34d399 !important; font-weight: 700 !important; }
     .rsi-overbought { color: #f85149 !important; font-weight: 700 !important; }
     .thread-chip { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; display: inline-flex; align-items: center; gap: 3px; }
@@ -160,7 +160,7 @@
       <h1>한투 실전 운용 <span class="kis-tag">AI QUANT</span></h1>
       <p>한국투자증권 공식 계좌(10154692) · 24시간 퀀트 자율 운용</p>
     </div>
-    <div style="display: flex; gap: 6px; align-items: center;">
+    <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
       <div class="status-badge" style="background: var(--pill-bg); border: 1px solid var(--card-border); color: var(--text-main);">
         <span id="headerBattery">🔋 --</span>
       </div>
@@ -168,21 +168,15 @@
         <div class="pulse-dot"></div>
         <span id="statusText">24/7 실시간 관제</span>
       </div>
+      <div class="status-badge" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--card-border); color: var(--text-sub);">
+        <span>🕒 </span><span id="watchdogSyncAge">방금 동기화</span>
+      </div>
     </div>
   </div>
 
-  <!-- Watchdog & Safety Siren Banner -->
+  <!-- Emergency Circuit Breaker Alert (서킷브레이커 발동 시에만 긴급 표시) -->
   <div id="watchdogBanner">
-    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-      <span id="watchdogText">🟢 <b>자율 운용 정상</b> — 안전 가드레일 실시간 관제</span>
-      <div id="watchdogThreadBadges" style="display: inline-flex; gap: 4px; flex-wrap: wrap;">
-        <span class="thread-chip thread-chip-ok">한투 🟢</span>
-        <span class="thread-chip thread-chip-ok">토스 🟢</span>
-        <span class="thread-chip thread-chip-ok">스케줄 🟢</span>
-        <span class="thread-chip thread-chip-ok">감시망 🟢</span>
-      </div>
-    </div>
-    <span id="watchdogSyncAge" style="color: var(--text-sub); font-weight: 600; font-size: 11px; white-space: nowrap; flex-shrink: 0;">방금 동기화</span>
+    <span id="watchdogText">🚨 일일 서킷브레이커 발동</span>
   </div>
 
   <!-- Summary Card -->
@@ -259,7 +253,7 @@
     <button class="tab-btn active" onclick="setFilter('ALL', this)">전체 종목</button>
     <button class="tab-btn" onclick="setFilter('KR', this)">국내 주식</button>
     <button class="tab-btn" onclick="setFilter('US', this)">해외 주식</button>
-    <button class="tab-btn" onclick="setFilter('BASKET', this)">발굴 바스켓</button>
+    <button class="tab-btn" onclick="setFilter('BASKET', this)">감시 종목</button>
     <button class="tab-btn" onclick="setFilter('RESEARCH', this)">🌅 모닝 리서치</button>
   </div>
 
@@ -353,16 +347,14 @@
         const wb = document.getElementById('watchdogBanner');
         const wt = document.getElementById('watchdogText');
         const isTripped = d.watchdog.circuit_breaker_tripped;
-        const threadMsg = d.watchdog.thread_status || '🟢 4대 스레드(메인·토스·스케줄러·감시망) 정상 박동 중';
 
-        if (isTripped) {
+        if (isTripped && wb && wt) {
+          wb.style.display = 'flex';
           wb.style.background = 'rgba(248, 81, 73, 0.15)';
           wb.style.borderColor = 'rgba(248, 81, 73, 0.45)';
           wt.innerHTML = `🚨 <b>일일 서킷브레이커 발동 (${d.watchdog.circuit_breaker_limit_pct || -3.5}% 초과)</b> — 리스크 방어 신규 매수 전면 차단`;
-        } else {
-          wb.style.background = 'rgba(49, 130, 246, 0.10)';
-          wb.style.borderColor = 'rgba(49, 130, 246, 0.30)';
-          wt.innerHTML = `🩺 <b>${threadMsg}</b> — 서킷브레이커(-3.5%) 안전 · 24/7 자체 감사 통과`;
+        } else if (wb) {
+          wb.style.display = 'none';
         }
       }
 
@@ -539,9 +531,9 @@
       }
 
       if (currentFilter === 'BASKET') {
-        document.getElementById('sectionTitleText').textContent = 'AI 퀀트 발굴 바스켓';
+        document.getElementById('sectionTitleText').textContent = 'AI 퀀트 감시 종목';
         const watch = d.watch_list || [];
-        document.getElementById('holdingCount').textContent = watch.length + '개 유망주';
+        document.getElementById('holdingCount').textContent = watch.length + '개 감시 종목';
 
         if (watch.length === 0) {
           hList.innerHTML = `<div class="empty-state-box">레이더 감시 종목을 불러오는 중입니다...</div>`;
@@ -550,7 +542,7 @@
 
         const bannerHtml = `
           <div style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 10px; padding: 10px 14px; background: rgba(59, 130, 246, 0.06); border-radius: 10px; border: 1px solid var(--card-border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
-            <span>🎯 <b>퀀트 발굴 바스켓</b> — 수급 우량주 및 빅테크 실시간 추적</span>
+            <span>🎯 <b>퀀트 감시 종목</b> — 수급 우량주 및 빅테크 실시간 추적</span>
             <span style="color: #60a5fa; font-weight: 600; font-size: 11px;">눌림목 자동 분할 매수</span>
           </div>
         `;
@@ -641,7 +633,7 @@
             <div style="font-size: 26px; margin-bottom: 8px;">📦</div>
             <div style="font-weight: 700; font-size: 14px; color: #f0f6fc; margin-bottom: 4px;">현재 보유 종목이 없습니다</div>
             <div style="font-size: 12px; color: var(--text-sub); line-height: 1.5; margin-bottom: 14px;">100% 현금 비중 대기 중 · 정규장 퀀트 타점 포착 시 자동 분할 매수</div>
-            <button class="btn-goto-basket" onclick="setFilter('BASKET')">발굴 바스켓 확인</button>
+            <button class="btn-goto-basket" onclick="setFilter('BASKET')">감시 종목 확인</button>
           </div>
         `;
         return;
