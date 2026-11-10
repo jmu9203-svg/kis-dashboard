@@ -49,10 +49,6 @@
     .kis-tag { background: var(--toss-blue-bg); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.35); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 12px; letter-spacing: 0.2px; }
     .title-group p { font-size: 12.5px; color: var(--text-sub); margin-top: 4px; }
     .status-badge { display: flex; align-items: center; gap: 6px; background: var(--toss-blue-bg); border: 1px solid var(--toss-blue); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; color: #60a5fa; }
-    .status-badge-btn { display: flex; align-items: center; gap: 6px; background: var(--toss-blue-bg); border: 1px solid var(--toss-blue); padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; color: #60a5fa; cursor: pointer; transition: all 0.2s ease; user-select: none; }
-    .status-badge-btn:hover { background: rgba(59, 130, 246, 0.22); border-color: #60a5fa; transform: translateY(-1px); box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3); }
-    .status-badge-btn:active { transform: translateY(0); }
-    @keyframes slideDown { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
     .pulse-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulse 2s infinite; }
     @keyframes pulse { 0% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.2); } 100% { opacity: 1; transform: scale(1); } }
 
@@ -168,33 +164,12 @@
       <div class="status-badge" style="background: var(--pill-bg); border: 1px solid var(--card-border); color: var(--text-main);">
         <span id="headerBattery">🔋 --</span>
       </div>
-      <div class="status-badge-btn" id="systemStatus" onclick="toggleMarketCalendar()" title="클릭하여 한·미 증시 운영시간 및 실시간 개장 현황 확인">
-        <div class="pulse-dot" id="systemPulseDot"></div>
+      <div class="status-badge" id="systemStatus">
+        <div class="pulse-dot"></div>
         <span id="statusText">24/7 실시간 관제</span>
-        <span id="marketToggleArrow" style="font-size: 10px; margin-left: 2px; opacity: 0.8;">▾</span>
       </div>
       <div class="status-badge" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--card-border); color: var(--text-sub);">
         <span>🕒 </span><span id="watchdogSyncAge">방금 동기화</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Market Status Compact Card (상단 배지 버튼 클릭 시 부드럽게 토글) -->
-  <div id="marketCalendarCard" style="display: none; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; animation: slideDown 0.25s ease;">
-    <div style="display: flex; align-items: center; gap: 8px;">
-      <span style="font-size: 12px; font-weight: 700; color: var(--text-main);">증시 개장 현황</span>
-      <span id="calendarDateTag" style="font-size: 11px; color: var(--text-muted);">실시간 세션</span>
-    </div>
-    <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
-      <div style="background: rgba(11, 15, 23, 0.6); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 4px 8px; font-size: 11.5px; display: flex; gap: 5px; align-items: center;">
-        <span style="color: #60a5fa; font-weight: 700;">KRX</span>
-        <span id="krMarketStatus" style="font-weight: 700; color: #94a3b8;">🌙 장 마감</span>
-        <span id="krMarketHours" style="color: var(--text-muted); font-size: 10.5px;">(09:00~15:30)</span>
-      </div>
-      <div style="background: rgba(11, 15, 23, 0.6); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 4px 8px; font-size: 11.5px; display: flex; gap: 5px; align-items: center;">
-        <span style="color: #34d399; font-weight: 700;">NYSE</span>
-        <span id="usMarketStatus" style="font-weight: 700; color: #34d399;">🟢 정규장 거래중</span>
-        <span id="usMarketHours" style="color: var(--text-muted); font-size: 10.5px;">(23:30~06:00)</span>
       </div>
     </div>
   </div>
@@ -350,126 +325,6 @@
       `;
     }
 
-    function toggleMarketCalendar() {
-      const card = document.getElementById('marketCalendarCard');
-      const arrow = document.getElementById('marketToggleArrow');
-      if (!card) return;
-      const isHidden = (card.style.display === 'none' || getComputedStyle(card).display === 'none');
-      card.style.display = isHidden ? 'flex' : 'none';
-      if (arrow) arrow.textContent = isHidden ? '▴' : '▾';
-    }
-
-    function updateMarketSessionDisplay(calendarData) {
-      const now = new Date();
-      const kstMin = now.getHours() * 60 + now.getMinutes();
-      const kstDay = now.getDay(); // 0: 일, 6: 토
-
-      const kr = calendarData?.kr || {};
-      const us = calendarData?.us || {};
-
-      // 1. KRX 실시간 판정
-      let krInSession = false;
-      let krLabel = kr.session_status;
-      let krColor = kr.session_color;
-      if (!krLabel) {
-        if (kstDay === 0 || kstDay === 6 || kr.is_trading_day === false || kr.is_open === false) {
-          krLabel = `🔴 휴장 (${kr.reason || '휴장일'})`;
-          krColor = '#f87171';
-        } else if (kstMin < 9 * 60) {
-          krLabel = '⏳ 장 시작 전 (09:00 개장)';
-          krColor = '#fbbf24';
-        } else if (kstMin >= 9 * 60 && kstMin < 15 * 60 + 30) {
-          krInSession = true;
-          krLabel = '🟢 정규장 거래중';
-          krColor = '#34d399';
-        } else {
-          krLabel = '🌙 장 마감 (15:30 종료)';
-          krColor = '#94a3b8';
-        }
-      } else {
-        krInSession = kr.is_in_session || false;
-      }
-
-      // 2. US 실시간 판정
-      const isDst = us.daylight_saving || false;
-      const openMin = isDst ? (22 * 60 + 30) : (23 * 60 + 30);
-      const closeMin = isDst ? (5 * 60) : (6 * 60);
-      const dstText = isDst ? ' (서머타임 ☀️)' : ' (표준시 ❄️)';
-
-      let usInSession = false;
-      let usLabel = us.session_status;
-      let usColor = us.session_color;
-      const inEarly = (kstMin < closeMin && kstDay >= 2 && kstDay <= 6);
-      const inNight = (kstMin >= openMin && kstDay >= 1 && kstDay <= 5);
-
-      if (!usLabel) {
-        if (inEarly || inNight) {
-          usInSession = true;
-          usLabel = '🟢 정규장 거래중';
-          usColor = '#34d399';
-        } else if (kstDay === 0 || (kstDay === 6 && kstMin >= closeMin)) {
-          usLabel = '🔴 주말 휴장';
-          usColor = '#f87171';
-        } else if (us.is_trading_day === false || us.is_open === false) {
-          usLabel = `🔴 휴장 (${us.reason || '휴장일'})`;
-          usColor = '#f87171';
-        } else {
-          usLabel = `🌙 장 마감 (${isDst ? '22:30' : '23:30'} 개장)`;
-          usColor = '#94a3b8';
-        }
-      } else {
-        usInSession = us.is_in_session || false;
-      }
-
-      // 상세 카드 반영
-      const krEl = document.getElementById('krMarketStatus');
-      if (krEl) {
-        krEl.textContent = krLabel;
-        krEl.style.color = krColor;
-        const krH = document.getElementById('krMarketHours');
-        if (krH) krH.textContent = `운영: ${kr.open_time || '09:00'} ~ ${kr.close_time || '15:30'}`;
-      }
-      const usEl = document.getElementById('usMarketStatus');
-      if (usEl) {
-        usEl.textContent = usLabel;
-        usEl.style.color = usColor;
-        const usH = document.getElementById('usMarketHours');
-        if (usH) usH.textContent = `운영: ${us.open_time || '23:30'} ~ ${us.close_time || '06:00'}${dstText}`;
-      }
-
-      // 3. 상단 헤더 통합 요약 텍스트 (한눈에 보는 현재 개장 상태)
-      let summary = '24/7 실시간 관제';
-      let dotColor = '#10b981';
-
-      if (krInSession && usInSession) {
-        summary = '🟢 한·미 정규장 동시 가동';
-        dotColor = '#10b981';
-      } else if (usInSession) {
-        summary = '🟢 미장 거래중 (국장 대기)';
-        dotColor = '#10b981';
-      } else if (krInSession) {
-        summary = '🟢 국장 거래중 (미장 마감)';
-        dotColor = '#10b981';
-      } else if (kstMin < 9 * 60 && (kstDay >= 1 && kstDay <= 5)) {
-        summary = '⏳ 국장 개장 대기 (09:00)';
-        dotColor = '#fbbf24';
-      } else if (kstDay === 0 || kstDay === 6) {
-        summary = '🔴 주말 휴장 (24/7 자체 감사)';
-        dotColor = '#f87171';
-      } else {
-        summary = '🌙 장 마감 (24/7 실시간 관제)';
-        dotColor = '#94a3b8';
-      }
-
-      const stEl = document.getElementById('statusText');
-      if (stEl) stEl.textContent = summary;
-      const dotEl = document.getElementById('systemPulseDot');
-      if (dotEl) {
-        dotEl.style.background = dotColor;
-        dotEl.style.boxShadow = `0 0 8px ${dotColor}`;
-      }
-    }
-
     function renderData(d) {
       document.getElementById('accountNoTag').textContent = '계좌: ' + (d.account_no || '10154692-01');
       if (d.battery) {
@@ -477,9 +332,9 @@
         const elH = document.getElementById('headerBattery');
         if (elH) elH.textContent = bShort;
       }
-      
-      // 실시간 마켓 세션 및 헤더 배지 동기화
-      updateMarketSessionDisplay(d.market_calendar);
+      if (d.market_status) {
+        document.getElementById('statusText').textContent = d.market_status;
+      }
       if (d.updated_at && document.getElementById('watchdogSyncAge')) {
         const parsed = new Date(d.updated_at.replace(' ', 'T'));
         if (!isNaN(parsed.getTime())) {
@@ -552,7 +407,7 @@
 
       const hList = document.getElementById('holdingsList');
 
-      // 1. AI 감시 종목 탭
+      // 1. AI 감시 · 발굴 바스켓 탭
       // 0. 장전 AI 모닝 리서치 & 어닝 인텔 뷰
       if (currentFilter === 'RESEARCH') {
         const mr = d.morning_research || {};
