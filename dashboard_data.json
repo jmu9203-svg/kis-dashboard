@@ -32,7 +32,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-10 14:26:55"
+    "checked_at": "2026-11-10 14:32:50"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -42,7 +42,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-10 14:31:51",
+  "updated_at": "2026-11-10 14:32:51",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "72% (🔋 배터리 사용 중, 20.3°C)",
@@ -105,8 +105,8 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 198700,
-      "change_rate": 4.63,
+      "price": 198800,
+      "change_rate": 4.69,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -181,8 +181,8 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 152300,
-      "change_rate": 0.93,
+      "price": 152200,
+      "change_rate": 0.86,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -219,8 +219,8 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15145,
-      "change_rate": 0.07,
+      "price": 15140,
+      "change_rate": 0.03,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -257,8 +257,8 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 193400,
-      "change_rate": 3.37,
+      "price": 193500,
+      "change_rate": 3.42,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -295,8 +295,8 @@
     {
       "code": "035720",
       "name": "카카오",
-      "price": 31800,
-      "change_rate": -0.93,
+      "price": 31850,
+      "change_rate": -0.78,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -333,8 +333,8 @@
     {
       "code": "066570",
       "name": "LG전자",
-      "price": 139500,
-      "change_rate": 3.56,
+      "price": 139400,
+      "change_rate": 3.49,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
