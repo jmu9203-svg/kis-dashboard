@@ -23,6 +23,38 @@
     "usd_verdict": "통합증거금 기반 미국 정규장(23:30) 빅테크/ETF 눌림목 진입 대기",
     "usd_detail": "별도 환전 없이 원화 예수금으로 미국 주식(AAPL, NVDA, TSLA, SGOV 등) 즉시 매수 지원. 미국장 개장 후 Wilder RSI 35 이하 과매도 시 0.18% 우대 마찰비용을 반영하여 자동 분할 매수를 검토합니다."
   },
+  "market_calendar": {
+    "kr": {
+      "success": true,
+      "market": "KR",
+      "date": "2026-11-11",
+      "is_open": true,
+      "is_trading_day": true,
+      "is_in_session": false,
+      "session_status": "⏳ 장 시작 전 (09:00 개장)",
+      "session_color": "#fbbf24",
+      "reason": "평일 정상 개장일",
+      "is_half_day": false,
+      "daylight_saving": false,
+      "open_time": "09:00",
+      "close_time": "15:30"
+    },
+    "us": {
+      "success": true,
+      "market": "US",
+      "date": "2026-11-11",
+      "is_open": true,
+      "is_trading_day": true,
+      "is_in_session": true,
+      "session_status": "🟢 정규장 거래중",
+      "session_color": "#34d399",
+      "reason": "평일 정상 개장일",
+      "is_half_day": false,
+      "daylight_saving": false,
+      "open_time": "23:30",
+      "close_time": "06:00"
+    }
+  },
   "watchdog": {
     "status": "WARNING",
     "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
@@ -32,7 +64,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 1,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-11 01:09:55"
+    "checked_at": "2026-11-11 01:13:52"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -42,7 +74,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 01:09:56",
+  "updated_at": "2026-11-11 01:13:52",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.5°C)",
