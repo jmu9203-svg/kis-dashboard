@@ -260,6 +260,7 @@
     <button class="tab-btn" onclick="setFilter('KR', this)">국내 주식</button>
     <button class="tab-btn" onclick="setFilter('US', this)">해외 주식</button>
     <button class="tab-btn" onclick="setFilter('BASKET', this)">발굴 바스켓</button>
+    <button class="tab-btn" onclick="setFilter('RESEARCH', this)">🌅 모닝 리서치</button>
   </div>
 
   <div class="section-title">
@@ -415,6 +416,128 @@
       const hList = document.getElementById('holdingsList');
 
       // 1. AI 감시 · 발굴 바스켓 탭
+      // 0. 장전 AI 모닝 리서치 & 어닝 인텔 뷰
+      if (currentFilter === 'RESEARCH') {
+        const mr = d.morning_research || {};
+        document.getElementById('sectionTitleText').textContent = '🌅 장전 AI 모닝 리서치';
+        document.getElementById('holdingCount').textContent = mr.updated_at ? `업데이트: ${mr.updated_at}` : '장전 08:30 분석';
+
+        const alertLvl = mr.earnings_alert_level || 'NORMAL';
+        let alertBadge = '<span class="ai-badge badge-buy">🟢 어닝 변동성 정상 (평시 분할 매수 모드)</span>';
+        if (alertLvl === 'HIGH_VOLATILITY') {
+          alertBadge = '<span class="ai-badge badge-sell">🚨 빅테크 어닝 집중 (극단적 변동성 유의)</span>';
+        } else if (alertLvl === 'CAUTION') {
+          alertBadge = '<span class="ai-badge badge-hold">🟡 실적 발표 주간 주의 (공식 발표 후 진입 권장)</span>';
+        }
+
+        const fx = mr.fx_soxx_info || {};
+        const fxText = fx.summary || (fx.usd_krw ? `원/달러 환율: ${fx.usd_krw}원 | SOXX 반도체: ${fx.soxx_price || '-'}` : '환율 및 SOXX 지표 정상 추적 중');
+        const usCal = mr.us_official_calendar || [];
+        const stockNotes = mr.stock_notes || {};
+
+        let usCalHtml = '';
+        if (usCal.length > 0) {
+          usCalHtml = usCal.map(ev => `
+            <div style="background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 10px 12px; margin-bottom: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                <span style="font-weight: 700; color: #60a5fa; font-size: 13px;">${ev.kr_name || ev.symbol} (${ev.symbol})</span>
+                <span style="font-size: 11px; background: rgba(59,130,246,0.15); color: #93c5fd; padding: 2px 7px; border-radius: 4px; font-weight: 600;">${ev.date} (D-${ev.dday})</span>
+              </div>
+              <div style="font-size: 11.5px; color: var(--text-sub); display: flex; justify-content: space-between;">
+                <span>발표 시간: <b style="color: var(--text-main);">${ev.time_desc || '장마감 후'}</b></span>
+                <span>예상 EPS: <b style="color: #34d399;">${ev.eps_forecast || '-'}</b></span>
+              </div>
+            </div>
+          `).join('');
+        } else {
+          usCalHtml = '<div style="font-size: 12px; color: var(--text-muted); padding: 8px 0;">향후 7일간 예정된 미국 핵심 빅테크 실적 발표가 없습니다.</div>';
+        }
+
+        let krNotesHtml = '';
+        const noteEntries = Object.entries(stockNotes);
+        if (noteEntries.length > 0) {
+          krNotesHtml = noteEntries.map(([code, n]) => {
+            const isImminent = n.earnings_imminent;
+            const immBadge = isImminent 
+              ? '<span style="font-size: 10px; background: rgba(248,81,73,0.15); color: #f85149; border: 1px solid rgba(248,81,73,0.3); padding: 1px 6px; border-radius: 4px; font-weight: 700;">실적임박</span>' 
+              : '';
+            const tpStr = n.consensus_target_price ? '목표가 ' + Number(n.consensus_target_price).toLocaleString() + '원' : '목표가 산정중';
+            return `
+              <div style="background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 12px; margin-bottom: 10px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                  <div style="display: flex; align-items: center; gap: 6px;">
+                    <span style="font-weight: 700; color: var(--text-main); font-size: 14px;">${n.name || code}</span>
+                    <span style="font-size: 11px; color: var(--text-muted);">${code}</span>
+                    ${immBadge}
+                  </div>
+                  <span style="font-size: 11.5px; color: #60a5fa; font-weight: 600;">${tpStr}</span>
+                </div>
+                <div style="font-size: 11.5px; color: #94a3b8; margin-bottom: 6px; line-height: 1.4;">
+                  📅 <b>공식 IR 일정:</b> ${n.official_ir_schedule || n.earnings_status || '향후 공식 IR 일정 미등록'}
+                </div>
+                <div class="action-tip-box" style="margin-top: 6px; padding: 8px 10px; border-left-color: #3b82f6;">
+                  <div class="action-tip-title" style="color: #3b82f6;">💡 AI 장중 실전 대응 지침</div>
+                  <div class="action-tip-text" style="font-size: 11.5px;">${n.memo || '실적 및 수급 동향 확인 후 분할 대응 유효'}</div>
+                </div>
+              </div>
+            `;
+          }).join('');
+        } else {
+          krNotesHtml = '<div style="font-size: 12px; color: var(--text-muted); padding: 8px 0;">국내 종목별 리서치 메모를 불러오는 중입니다...</div>';
+        }
+
+        hList.innerHTML = `
+          <!-- 모닝 리서치 헤더 카드 -->
+          <div class="holding-card" style="border-left: 3px solid #60a5fa; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
+              <div>
+                <div style="font-size: 15px; font-weight: 800; color: var(--text-main); display: flex; align-items: center; gap: 6px;">
+                  <span>🌅 당일 장전 공식 인텔리전스</span>
+                </div>
+                <div style="font-size: 11.5px; color: var(--text-sub); margin-top: 3px;">
+                  DART 전자공시 &amp; 나스닥 공식 캘린더 &amp; 거시경제 AI 분석
+                </div>
+              </div>
+              <div style="text-align: right;">
+                <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">분석 일시: <b style="color: #60a5fa;">${mr.updated_at || '장전 08:30'}</b></div>
+                ${alertBadge}
+              </div>
+            </div>
+
+            <!-- 거시경제 및 외환 지표 요약 -->
+            <div style="background: rgba(11, 15, 23, 0.6); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px 12px; margin-top: 10px;">
+              <div style="font-size: 11.5px; font-weight: 700; color: #60a5fa; margin-bottom: 6px;">🌐 거시경제 &amp; 외환·반도체 지표</div>
+              <div style="font-size: 12px; color: #e2e8f0; line-height: 1.5; margin-bottom: 6px;">${fxText}</div>
+              <div style="font-size: 11.5px; color: var(--text-sub); line-height: 1.5; margin-bottom: 4px;">
+                🇰🇷 <b>국내 증시 &amp; 수급:</b> ${mr.kr_macro_summary || '외국인 및 기관 수급 동향 모니터링 중'}
+              </div>
+              <div style="font-size: 11.5px; color: var(--text-sub); line-height: 1.5;">
+                🇺🇸 <b>미국 빅테크 &amp; 증시:</b> ${mr.us_bigtech_summary || '나스닥 주요 빅테크 실적 및 가이던스 추적 중'}
+              </div>
+            </div>
+          </div>
+
+          <!-- 미국 나스닥 공식 어닝 캘린더 -->
+          <div class="holding-card" style="margin-bottom: 14px;">
+            <div style="font-size: 14px; font-weight: 700; color: var(--text-main); margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between;">
+              <span>🇺🇸 나스닥 공식 빅테크 실적발표 (향후 7일)</span>
+              <span style="font-size: 11px; color: var(--text-muted);">${usCal.length}건 예정</span>
+            </div>
+            ${usCalHtml}
+          </div>
+
+          <!-- 국내 보유·감시 종목별 공식 IR 및 지침 -->
+          <div class="holding-card">
+            <div style="font-size: 14px; font-weight: 700; color: var(--text-main); margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between;">
+              <span>🇰🇷 보유·감시 종목 DART/IR 일정 &amp; AI 지침</span>
+              <span style="font-size: 11px; color: var(--text-muted);">${noteEntries.length}개 종목</span>
+            </div>
+            ${krNotesHtml}
+          </div>
+        `;
+        return;
+      }
+
       if (currentFilter === 'BASKET') {
         document.getElementById('sectionTitleText').textContent = 'AI 퀀트 발굴 바스켓';
         const watch = d.watch_list || [];
