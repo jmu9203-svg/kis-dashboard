@@ -64,7 +64,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 1,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-11 09:24:45"
+    "checked_at": "2026-11-11 09:31:31"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -74,10 +74,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 09:24:45",
+  "updated_at": "2026-11-11 09:31:31",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
-  "battery": "85% (⚡ 충전 중, 22.5°C)",
+  "battery": "84% (🔋 배터리 사용 중, 21.7°C)",
   "budget_limit": 2500000,
   "fund_eval": 2500000,
   "fund_pnl": 0,
@@ -99,8 +99,8 @@
     {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22870,
-      "change_rate": -0.72,
+      "price": 22920,
+      "change_rate": -0.5,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -137,8 +137,8 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 197300,
-      "change_rate": -0.8,
+      "price": 198000,
+      "change_rate": -0.45,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -213,8 +213,8 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 153400,
-      "change_rate": 0.46,
+      "price": 154100,
+      "change_rate": 0.92,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -251,8 +251,8 @@
     {
       "code": "381170",
       "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 28560,
-      "change_rate": -0.82,
+      "price": 28595,
+      "change_rate": -0.69,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -295,8 +295,8 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 197600,
-      "change_rate": 2.38,
+      "price": 197500,
+      "change_rate": 2.33,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -333,8 +333,8 @@
     {
       "code": "051910",
       "name": "LG화학",
-      "price": 241000,
-      "change_rate": 1.26,
+      "price": 244500,
+      "change_rate": 2.73,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -371,8 +371,8 @@
     {
       "code": "012330",
       "name": "현대모비스",
-      "price": 355500,
-      "change_rate": 1.14,
+      "price": 354500,
+      "change_rate": 0.85,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
