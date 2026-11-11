@@ -8,11 +8,11 @@
       "name": "엔비디아",
       "qty": 1,
       "avg_price": 176.06,
-      "pnl_rate": -0.26,
-      "eval_amt": 234860,
+      "pnl_rate": -0.6,
+      "eval_amt": 234058,
       "marketCountry": "KR",
       "currency": "KRW",
-      "rsi": 30.4,
+      "rsi": 29.9,
       "investor_summary": "조회 대기",
       "ai_ensemble": {
         "decision": "관망",
@@ -42,10 +42,10 @@
       "name": "엔비디아",
       "qty": 1,
       "avg_price": 176.06,
-      "cur_price": 175.63,
-      "pnl_rate": -0.24,
-      "eval_amt": 175.63,
-      "eval_amt_krw": 249394,
+      "cur_price": 175.015,
+      "pnl_rate": -0.59,
+      "eval_amt": 175.015,
+      "eval_amt_krw": 248521,
       "marketCountry": "US",
       "currency": "USD",
       "rsi": 45.0,
@@ -76,7 +76,7 @@
         ],
         "reason": "미국 빅테크 우량주 펀더멘털 및 변동성 지수 감시 중.",
         "audit_badge": "✅ 미국주식 KIS 오픈API 검증",
-        "checked_at": "2026-11-12 05:01:37"
+        "checked_at": "2026-11-12 05:07:32"
       }
     }
   ]
