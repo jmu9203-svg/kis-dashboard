@@ -64,7 +64,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 1,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-11 10:52:30"
+    "checked_at": "2026-11-11 10:59:04"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -74,7 +74,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 10:52:30",
+  "updated_at": "2026-11-11 10:59:04",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "81% (🔋 배터리 사용 중, 21.0°C)",
@@ -99,8 +99,8 @@
     {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22955,
-      "change_rate": -0.35,
+      "price": 22940,
+      "change_rate": -0.41,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -137,8 +137,8 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 202000,
-      "change_rate": 1.56,
+      "price": 201500,
+      "change_rate": 1.31,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -251,8 +251,8 @@
     {
       "code": "381170",
       "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 28675,
-      "change_rate": -0.42,
+      "price": 28660,
+      "change_rate": -0.47,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -289,8 +289,8 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 192900,
-      "change_rate": -0.05,
+      "price": 192800,
+      "change_rate": -0.1,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -327,8 +327,8 @@
     {
       "code": "051910",
       "name": "LG화학",
-      "price": 243000,
-      "change_rate": 2.1,
+      "price": 241500,
+      "change_rate": 1.47,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -365,8 +365,8 @@
     {
       "code": "012330",
       "name": "현대모비스",
-      "price": 354500,
-      "change_rate": 0.85,
+      "price": 353500,
+      "change_rate": 0.57,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
