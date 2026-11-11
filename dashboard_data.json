@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-12 08:19:30"
+    "checked_at": "2026-11-12 08:30:29"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-12 08:19:31",
+  "updated_at": "2026-11-12 08:30:29",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.7°C)",
@@ -110,7 +110,7 @@
       "eval_amt_krw": 232225,
       "marketCountry": "US",
       "currency": "USD",
-      "rsi": 20.9,
+      "rsi": 21.4,
       "investor_summary": "글로벌 기관 · 미국 정규장 수급 연동",
       "ai_ensemble": {
         "decision": "관망",
@@ -137,6 +137,44 @@
     }
   ],
   "watch_list": [
+    {
+      "code": "NVDA",
+      "name": "엔비디아",
+      "price": 173,
+      "change_rate": null,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "국내 우량주",
+      "theme_tag": "퀀트 수급 유망",
+      "rsi": 21.4,
+      "is_held": true,
+      "held_qty": 1,
+      "pnl_rate": -1.32,
+      "status_tag": "포트폴리오 보유 중 📦",
+      "action_status": "보유 홀딩 관망 💎",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 58,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 주가는 MA20 이하이며 약세 조정 국면이지만 RSI가 과매도 구역에 있어 반등 가능성이 있습니다. 그러나 ATR 목표익절선에 도달하지 않았고 손절선도 아직 내려가지 않아 보유 포지션을 유지하고 신규 매수는 자제하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 58점 | 편차 8점)",
+        "checked_at": "2026-11-12 05:30:33"
+      }
+    },
     {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
@@ -366,15 +404,15 @@
       }
     },
     {
-      "code": "035720",
-      "name": "카카오",
-      "price": 32000,
+      "code": "086790",
+      "name": "하나금융지주",
+      "price": 120100,
       "change_rate": 0.0,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 54.2,
+      "rsi": 46.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -383,7 +421,7 @@
       "ai_ensemble": {
         "decision": "관망",
         "score": 55,
-        "consensus": "2:0 관망 우세",
+        "consensus": "2사 합의",
         "models": [
           {
             "provider": "Google",
@@ -393,64 +431,26 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "정상·강세장 속에서 주가는 20일선을 상회하고 있으나, 장중 윗꼬리를 달고 음봉으로 밀렸으며 외국인과 기관이 동반 순매도세를 보이고 있어 단기 차익실현 압력이 존재합니다. 현재 보유 수량이 없는 미보유 상태이므로 무리한 추격매수보다는 향후 수급 개선과 눌림목 형성 여부를 확인한 후 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 55점 ↔ AI 55점 | 편차 0점)",
-        "checked_at": "2026-11-11 19:50:11"
-      }
-    },
-    {
-      "code": "066570",
-      "name": "LG전자",
-      "price": 141100,
-      "change_rate": 0.0,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "국내 우량주",
-      "theme_tag": "퀀트 수급 유망",
-      "rsi": 30.9,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "매수",
-        "score": 79,
-        "consensus": "2:0 매수 합의",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 78,
-            "decision": "매수"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          }
-        ],
-        "reason": "정상·강세장 속에서 LG전자가 14일 RSI 31.2의 과매도 구간에서 장대 양봉을 분출하며 강한 저가 매수세를 유입시키고 있습니다. 단기 조정에 따른 기술적 반등 기대감이 높고 외국인 순매수가 유입되어 신규 진입 타점으로 적절하므로 1주를 자동 매수합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 68점 ↔ AI 79점 | 편차 11점)",
-        "checked_at": "2026-11-11 19:50:22"
+        "reason": "거시경제 레짐 및 수급·기술적 지표 분석 완료.",
+        "audit_badge": "✅ 5대 팩트 검증 완료",
+        "checked_at": "분석 전"
       }
     },
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 356.472,
-      "change_rate": 2.28,
+      "price": 355.7145,
+      "change_rate": 2.07,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
       "theme_tag": "AI 모바일 생태계",
-      "rsi": 60.9,
+      "rsi": 60.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -482,13 +482,13 @@
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 158.737,
-      "change_rate": -6.01,
+      "price": 160.2699,
+      "change_rate": -5.1,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 반도체",
       "theme_tag": "글로벌 AI 대장주",
-      "rsi": 20.9,
+      "rsi": 21.4,
       "is_held": true,
       "held_qty": 1,
       "pnl_rate": -1.32,
@@ -520,13 +520,13 @@
     {
       "code": "GOOGL",
       "name": "알파벳 A (구글)",
-      "price": 296.2,
-      "change_rate": 3.07,
+      "price": 296.9489,
+      "change_rate": 3.33,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 클라우드·검색",
       "theme_tag": "M7 최저 PER 🔍",
-      "rsi": 40.1,
+      "rsi": 40.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -558,13 +558,13 @@
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 386.34,
-      "change_rate": 1.73,
+      "price": 387.97,
+      "change_rate": 2.16,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "전기차/로보틱스",
       "theme_tag": "자율주행·FSD",
-      "rsi": 53.0,
+      "rsi": 53.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -634,13 +634,13 @@
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 36.0501,
-      "change_rate": 0.61,
+      "price": 36.0405,
+      "change_rate": 0.59,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국 고배당 ETF",
       "theme_tag": "10년 연속 배당성장",
-      "rsi": 64.4,
+      "rsi": 64.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -671,22 +671,22 @@
     }
   ],
   "morning_research": {
-    "updated_at": "2026-11-11 08:30:22",
+    "updated_at": "2026-11-12 08:30:02",
     "earnings_alert_level": "CAUTION",
-    "kr_macro_summary": "원/달러 환율이 1,344.50원을 기록하며 안정세를 보이고 있으나, 미 기술주 폭락 여파로 코스피 시장의 외국인 수급 불확실성이 커진 상태입니다. NAVER 등 주요 종목의 실적 발표와 DART 공시를 주시하며 보수적인 리스크 관리가 필요합니다.",
-    "us_bigtech_summary": "11월 12일 어플라이드머티어리얼즈(AMAT, EPS 예상치 $4.06)와 11월 17일 엔비디아(NVDA, EPS 예상치 $2.49)의 실적 발표를 앞두고 글로벌 기술주 변동성이 확대되고 있습니다. 필라델피아 반도체 지수는 소폭 반등(+0.61%)했으나 나스닥100의 최근 급락 여파로 AI 섹터 전반의 경계감이 지속되고 있습니다.",
+    "kr_macro_summary": "원/달러 환율이 1,336원대로 소폭 하락하고 미 필라델피아 반도체 지수가 하락세를 보인 가운데, NAVER가 오늘 3분기 실적을 공식 발표하며 외국인 수급과 실적 모멘텀이 증시 방향성을 결정할 전망입니다.",
+    "us_bigtech_summary": "어플라이드머티어리얼즈(AMAT)가 오늘 장마감 후 EPS 예상치 $4.06으로 실적을 발표하며, 11월 17일 엔비디아(NVDA) 실적 발표를 앞두고 반도체 섹터 변동성이 확대되고 있습니다.",
     "fx_soxx_info": {
-      "usd_krw": "1,344.50",
-      "usd_krw_change": "0.00",
-      "usd_krw_rate": "0.00",
-      "soxx_price": "$147.48",
-      "soxx_pct": "+0.61%",
-      "summary": "원/달러 환율: 1,344.50원 (전일대비 0.00원 / 0.00%) | 미 필라델피아 반도체(SOXX): $147.48 (+0.61%)"
+      "usd_krw": "1,336.50",
+      "usd_krw_change": "-1.00",
+      "usd_krw_rate": "-0.07",
+      "soxx_price": "$153.39",
+      "soxx_pct": "-1.29%",
+      "summary": "원/달러 환율: 1,336.50원 (전일대비 -1.00원 / -0.07%) | 미 필라델피아 반도체(SOXX): $153.39 (-1.29%)"
     },
     "us_official_calendar": [
       {
         "date": "2026-11-12",
-        "dday": 1,
+        "dday": 0,
         "symbol": "AMAT",
         "kr_name": "어플라이드머티어리얼즈",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -695,7 +695,7 @@
       },
       {
         "date": "2026-11-17",
-        "dday": 6,
+        "dday": 5,
         "symbol": "NVDA",
         "kr_name": "엔비디아",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -707,8 +707,8 @@
       "005930": {
         "name": "삼성전자",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "DART 임원 주식 소유 변동 공시 및 외인 수급 추이를 모니터링하며 분할 매수 관점 접근",
+        "earnings_status": "공식 확정 IR 일정 미등록(발표 완료)",
+        "memo": "DART 임원 주식 소유 변동 공시를 모니터링하며 미국 반도체 섹터 및 AMAT 실적 발표 연동 흐름 주시",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -717,28 +717,28 @@
       "000660": {
         "name": "SK하이닉스",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "HBM 수요 모멘텀과 미국 반도체(AMAT·NVDA) 실적 발표 연동성을 확인한 후 진입",
+        "earnings_status": "공식 확정 IR 일정 미등록(발표 완료)",
+        "memo": "HBM 수요 모멘텀이 유효하나 미국 반도체 지수 하락 및 엔비디아 실적 대기 기간이므로 추격 매수 자제",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "3,054,286"
+        "consensus_target_price": "3,102,000"
       },
       "005380": {
         "name": "현대차",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "본업 실적 호조 및 로보틱스 모멘텀 유효하나, 거시경제 변동성 완화 시까지 추격 매수 자제",
+        "earnings_status": "공식 확정 IR 일정 미등록(발표 완료)",
+        "memo": "본업 판매 반등 및 로보틱스 실행 국면 리포트를 참고하되 외국인 수급 변동성에 따른 분할 접근",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "525,417"
+        "consensus_target_price": "516,667"
       },
       "105560": {
         "name": "KB금융",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
-        "memo": "높은 CET-1 비율을 바탕으로 한 방어력 검증 완료, 안정적인 밴드 내 트레이딩 수행",
+        "earnings_status": "공식 확정 IR 일정 미등록(발표 완료)",
+        "memo": "높은 CET-1 비율과 안정적인 주주환원 여력을 바탕으로 변동성 장세 속 방어적 관점 유지",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -747,24 +747,30 @@
       "035420": {
         "name": "NAVER",
         "earnings_imminent": true,
-        "earnings_status": "2026-11-12 (D-1) 3분기 실적 공식 발표 예정",
-        "memo": "내일 실적 발표 및 AI DC 사업 본격화에 따른 불확실성 해소 여부를 확인한 후 대응",
-        "official_ir_schedule": "2026-11-12 (D-1) 2026년 3분기 실적",
+        "earnings_status": "2026-11-12 (D-0) 3분기 실적 공정공시 공식 발표",
+        "memo": "금일 실적 발표 직후 AI DC 사업 및 조달 불확실성 해소 여부를 확인한 뒤 보수적으로 진입",
+        "official_ir_schedule": "2026-11-12 (D-Day(오늘)) 2026년 3분기 실적",
         "ir_date": "2026-11-12",
-        "ir_dday": 1,
-        "consensus_target_price": "319,696"
+        "ir_dday": 0,
+        "consensus_target_price": "318,150"
       },
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록",
-        "memo": "미국 빅테크 전력 인프라 투자 방향성과 연동하여 수급 유입 시 제한적 비중 확대"
+        "earnings_status": "공식 확정 IR 일정 미등록",
+        "memo": "글로벌 전력망 및 빅테크 인프라 투자 관련 수급 연동성을 체크하며 박스권 대응"
       },
       "091160": {
         "name": "KODEX 반도체",
-        "earnings_imminent": false,
-        "earnings_status": "미국 AMAT(11/12) 및 엔비디아(11/17) 실적 발표 연동",
-        "memo": "미국 대형 반도체 실적 발표 직전까지 성급한 추격 매수를 자제하고 관망 유지"
+        "earnings_imminent": true,
+        "earnings_status": "2026-11-12 AMAT 및 11-17 NVDA 실적 발표 일정 연동",
+        "memo": "미 필라델피아 반도체 지수 하락(-1.29%) 및 오늘 AMAT 실적 대기 중이므로 신규 매수 보류"
+      },
+      "NVDA": {
+        "name": "엔비디아",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null
       },
       "465580": {
         "name": "ACE 미국빅테크TOP7 Plus",
@@ -772,25 +778,18 @@
         "ir_date": null,
         "ir_dday": null
       },
-      "381170": {
-        "name": "TIGER 미국테크TOP10 INDXX",
+      "458730": {
+        "name": "TIGER 미국배당다우존스",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
       },
-      "051910": {
-        "name": "LG화학",
+      "086790": {
+        "name": "하나금융지주",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "355,583"
-      },
-      "012330": {
-        "name": "현대모비스",
-        "official_ir_schedule": "향후 공식 IR 일정 미등록",
-        "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "606,957"
+        "consensus_target_price": "166,650"
       }
     }
   }
