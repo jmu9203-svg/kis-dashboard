@@ -56,15 +56,15 @@
     }
   },
   "watchdog": {
-    "status": "HEALTHY",
-    "thread_status": "🟢 모든 스레드 정상 박동 중",
+    "status": "WARNING",
+    "thread_status": "🟢 5대 스레드(메인·토스·전략감시·스케줄러·감시망) 정상 박동 중",
     "circuit_breaker_tripped": false,
     "circuit_breaker_limit_pct": -3.5,
     "daily_pnl_krw": 0,
     "daily_pnl_pct": 0.0,
-    "anomaly_count": 0,
+    "anomaly_count": 1,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-07 23:55:00"
+    "checked_at": "2026-11-11 12:13:15"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -74,10 +74,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 12:13:06",
-  "market_status": "24/7 시스템 정상 가동 중",
-  "is_market_open": false,
-  "battery": "확인 중",
+  "updated_at": "2026-11-11 12:13:15",
+  "market_status": "장중 실시간 감시 & 매매 가동 중",
+  "is_market_open": true,
+  "battery": "78% (🔋 배터리 사용 중, 20.5°C)",
   "budget_limit": 2500000,
   "fund_eval": 2500000,
   "fund_pnl": 0,
@@ -105,7 +105,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 43.4,
+      "rsi": null,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -113,14 +113,52 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 52,
+        "score": 58,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 50,
+            "score": 60,
             "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 시장은 강세지만 해당 종목은 거래량이 평시 수준이고 RSI·외인·기관 수급 데이터가 부족해 매수 신호가 약합니다. 현금은 충분하지만 위험을 최소화하기 위해 관망을 유지하고 추가 지표가 확보될 때까지 진입을 미룹니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 58점 | 편차 0점)",
+        "checked_at": "2026-11-11 11:30:53"
+      }
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "price": 204000,
+      "change_rate": 2.56,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "국내 우량주",
+      "theme_tag": "퀀트 수급 유망",
+      "rsi": null,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 66,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 78,
+            "decision": "매수"
           },
           {
             "provider": "Groq",
@@ -129,47 +167,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "직전 거래일 코스피200의 -5.69% 급락에 따른 패닉 폭락장 레짐으로 오늘 09:00 개장 직후 신규 매수가 전면 차단되었으며, 기관의 4일 연속 순매도와 음봉 흐름이 겹쳐 보수적 관망을 유지합니다. 향후 실시간 지수 안정세와 저가 매수세 유입을 확인한 후 재진입을 검토하겠습니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 31점 ↔ AI 52점 | 편차 21점 · 보수적 관망)",
-        "checked_at": "2026-11-06 01:13:24"
-      }
-    },
-    {
-      "code": "005930",
-      "name": "삼성전자",
-      "price": 204250,
-      "change_rate": 2.69,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "국내 우량주",
-      "theme_tag": "퀀트 수급 유망",
-      "rsi": 38.5,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "매수",
-        "score": 78,
-        "consensus": "3사 합의",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 78,
-            "decision": "매수"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 78,
-            "decision": "매수"
-          }
-        ],
-        "reason": "20일선 상회 및 눌림목 지지",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 87점 ↔ AI 78점 | 편차 9점)",
-        "checked_at": "2026-11-08 02:33:31"
+        "reason": "현재 매수 신호가 부족하고 RSI·외인·기관 수급 정보가 없으며, ATR 목표익절선이 아직 도달하지 않았으므로 보수적으로 관망을 선택했습니다. 시장 레짐은 정상·강세장이지만 구체적 매수 조건이 충족되지 않아 리스크를 최소화합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 66점 | 편차 8점)",
+        "checked_at": "2026-11-11 11:31:10"
       }
     },
     {
@@ -181,7 +181,7 @@
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 32.1,
+      "rsi": null,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -189,37 +189,37 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 54,
+        "score": 55,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "코스피200이 급락한 패닉 상황에서 변동성이 큰 주식이며, RSI는 저가 매수 수준이지만 외국인 순매도가 지속되고 있어 하방 위험이 남아 있다. 기관의 순매수와 강한 거래량은 긍정적이지만, 현재 현금 한도와 시장 레짐을 고려하면 즉시 진입보다는 추세 확인 후 관망이 바람직하다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 34점 ↔ AI 54점 | 편차 20점 · 보수적 관망)",
-        "checked_at": "2026-11-06 01:11:33"
+        "reason": "현재 시장은 강세지만 현대차는 당일 하락세이며 거래량도 평시 수준이고 RSI·외인·기관 흐름이 확인되지 않아 매수 신호가 약합니다. 보유 포지션이 없으므로 관망하며 추후 흐름을 지켜볼 것을 권고합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 55점 | 편차 3점)",
+        "checked_at": "2026-11-11 11:31:28"
       }
     },
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 153400,
-      "change_rate": 0.46,
+      "price": 153300,
+      "change_rate": 0.39,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 40.7,
+      "rsi": null,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -227,7 +227,83 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 54,
+        "score": 55,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 60,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 ATR 목표익절선·과열익절선·손절선이 모두 미충족되고, RSI·외인·기관 수급 등 핵심 지표가 불확실하여 매수·매도 판단이 어려운 상황입니다. 따라서 보유 여부와 상관없이 관망으로 유지하고, 추가 데이터 확보 후 재검토가 필요합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 55점 | 편차 3점)",
+        "checked_at": "2026-11-11 11:31:47"
+      }
+    },
+    {
+      "code": "381170",
+      "name": "TIGER 미국테크TOP10 INDXX",
+      "price": 28670,
+      "change_rate": -0.43,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "국내 우량주",
+      "theme_tag": "퀀트 수급 유망",
+      "rsi": null,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 55,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 60,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 50,
+            "decision": "관망"
+          }
+        ],
+        "reason": "정상·강세장 레짐이나 미 기술주 실적 발표를 앞두고 관망세가 짙으며 기술적 지표 및 수급 데이터 확인이 필요합니다. 미보유 상태에서 무리한 진입보다 시장 방향성을 확인한 후 향후 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 55점 | 편차 3점)",
+        "checked_at": "2026-11-11 11:32:01"
+      }
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "price": 192700,
+      "change_rate": -0.16,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "국내 우량주",
+      "theme_tag": "퀀트 수급 유망",
+      "rsi": null,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 51,
         "consensus": "2:0 관망 우세",
         "models": [
           {
@@ -239,63 +315,25 @@
           {
             "provider": "Groq",
             "model": "Groq 20B",
-            "score": 55,
+            "score": 50,
             "decision": "관망"
           }
         ],
-        "reason": "현재 RSI가 중립 수준이며 외인 매도세가 지속되고 있어 단기 매수에 대한 불확실성이 큽니다. 또한, 시장이 폭락장으로 전환된 상황에서 매수 시점이 아직 명확하지 않으므로 보수적으로 관망을 선택했습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 45점 ↔ AI 54점 | 편차 9점)",
-        "checked_at": "2026-11-06 01:14:31"
+        "reason": "RSI와 외인·기관 수급이 확인되지 않아 매수/매도 판단 기준을 충족하지 못했으며, 실적 발표 직전이라 변동성이 커질 가능성이 있어 보수적으로 관망을 선택했습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 51점 | 편차 1점)",
+        "checked_at": "2026-11-11 11:32:17"
       }
     },
     {
-      "code": "458730",
-      "name": "TIGER 미국배당다우존스",
-      "price": 15150,
-      "change_rate": 0.23,
+      "code": "051910",
+      "name": "LG화학",
+      "price": 242500,
+      "change_rate": 1.89,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 60.1,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 55,
-        "consensus": "3사 합의",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "거시경제 레짐 및 수급·기술적 지표 분석 완료.",
-        "audit_badge": "✅ 5대 팩트 검증 완료",
-        "checked_at": "분석 전"
-      }
-    },
-    {
-      "code": "035420",
-      "name": "NAVER",
-      "price": 192600,
-      "change_rate": -0.21,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "국내 우량주",
-      "theme_tag": "퀀트 수급 유망",
-      "rsi": 57.1,
+      "rsi": null,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -309,31 +347,31 @@
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 58,
+            "score": 62,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 20B",
-            "score": 55,
+            "score": 50,
             "decision": "관망"
           }
         ],
-        "reason": "현재 RSI가 중립 수준이며, 외인·기관 순매수가 강세를 보이지만, 코스피200이 급락한 패닉 시장 상황과 5대 정량 팩트가 왜곡될 가능성이 있어 보수적으로 관망을 선택했습니다. ATR 목표익절선이 아직 도달하지 않았고, 과열 위험이 없으므로 매수보다는 대기하는 것이 바람직합니다.",
+        "reason": "현재 매수·매도 판단 기준을 충족할 수 있는 충분한 기술적·기본적 지표가 부족하며, ATR 목표익절선·과열익절선에 도달하지 않았고, 외인·기관 수급 정보가 없으므로 보수적으로 관망을 선택했습니다. 시장 레짐은 정상·강세장이지만, 구체적 매수 신호가 없으므로 리스크를 최소화하기 위해 현재 포지션을 유지합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 56점 | 편차 2점)",
-        "checked_at": "2026-11-06 01:13:04"
+        "checked_at": "2026-11-11 11:32:35"
       }
     },
     {
-      "code": "035720",
-      "name": "카카오",
-      "price": 31850,
-      "change_rate": -0.62,
+      "code": "012330",
+      "name": "현대모비스",
+      "price": 356500,
+      "change_rate": 1.42,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 51.9,
+      "rsi": null,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -342,74 +380,74 @@
       "ai_ensemble": {
         "decision": "관망",
         "score": 55,
-        "consensus": "3사 합의",
+        "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
             "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "거시경제 레짐 및 수급·기술적 지표 분석 완료.",
-        "audit_badge": "✅ 5대 팩트 검증 완료",
-        "checked_at": "분석 전"
-      }
-    },
-    {
-      "code": "066570",
-      "name": "LG전자",
-      "price": 139600,
-      "change_rate": -0.29,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "국내 우량주",
-      "theme_tag": "퀀트 수급 유망",
-      "rsi": 28.6,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 65,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
+            "score": 55,
+            "decision": "관망"
           }
         ],
-        "reason": "코스피200 시장이 -5.69% 급락한 패닉 상태로 개장 직후 신규 매수가 전면 차단되었으며, RSI 24.2로 과매도 구간이나 장대 음봉과 외인 매도세가 겹쳐 추가 조정 위험이 존재합니다. 따라서 보유 물량이 없는 상태에서 무리한 진입을 자제하고 향후 시장 지수 안정화 및 저점 다지기 확인 후 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 57점 ↔ AI 65점 | 편차 8점)",
-        "checked_at": "2026-11-06 01:15:49"
+        "reason": "현재 매수 신호가 부족하고 RSI·외인·기관 데이터가 없으며, ATR 목표익절선이 아직 도달하지 않았으므로 보수적으로 관망을 선택합니다. KOSPI가 정상·강세장이라도 개별 종목에 대한 구체적 매수 근거가 없으므로 리스크를 최소화합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 55점 | 편차 3점)",
+        "checked_at": "2026-11-11 11:32:52"
       }
     },
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 348.51,
-      "change_rate": -0.62,
+      "price": 0.0,
+      "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
       "theme_tag": "AI 모바일 생태계",
-      "rsi": 55.6,
+      "rsi": 50.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "새벽 정규장 분석 결과 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 55,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "RSI가 중립 수준이고 외국인·기관 순매수나 호재 뉴스가 확인되지 않아 매수 신호가 부족합니다. 현재 보유 주식이 없으며, ATR 기반 목표익절선도 아직 도달하지 않았으므로 관망이 적절합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 55점 | 편차 6점)",
+        "checked_at": "2026-11-11 05:30:36"
+      }
+    },
+    {
+      "code": "NVDA",
+      "name": "엔비디아 (NVDA)",
+      "price": 0.0,
+      "change_rate": 0.0,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "AI 반도체",
+      "theme_tag": "글로벌 AI 대장주",
+      "rsi": 50.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -423,69 +461,31 @@
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 62,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "애플의 공식 실적발표(11/2, D-1)를 하루 앞두고 필라델피아 반도체 지수의 급락 등 매크로 불확실성이 존재하여 신규 진입보다는 관망이 유리합니다. 당일 주가가 상승세를 보였으나 실적 발표 전 변동성 확대에 대비하며, 향후 실적 소화 및 시장 안정 시 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 64점 ↔ AI 56점 | 편차 8점)",
-        "checked_at": "2026-11-10 10:23:53"
-      }
-    },
-    {
-      "code": "NVDA",
-      "name": "엔비디아 (NVDA)",
-      "price": 168.89,
-      "change_rate": -5.47,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "AI 반도체",
-      "theme_tag": "글로벌 AI 대장주",
-      "rsi": 23.9,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "새벽 정규장 분석 결과 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 58,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
             "score": 60,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
+            "model": "Groq 120B",
+            "score": 52,
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 정상·강세장이나 필라델피아 반도체 지수의 급락(-8.24%)과 엔비디아의 당일 -4.27% 조가 하락 속에서 14일 RSI가 45.0으로 중립 구간에 머물러 있습니다. 현재 미보유 상태에서 추가적인 변동성 완화 및 저가 매수세 유입 여부를 관찰할 필요가 있으므로 신규 진입을 유보하고 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 64점 ↔ AI 58점 | 편차 6점)",
-        "checked_at": "2026-11-10 10:24:01"
+        "reason": "현재 시장은 강세이지만 NVDA의 RSI가 중립이며 거래량도 평범해 매수 신호가 부족합니다. 또한 주가 정보가 명확하지 않아 진입 타점을 확인할 수 없으므로 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 56점 | 편차 5점)",
+        "checked_at": "2026-11-11 05:30:49"
       }
     },
     {
       "code": "GOOGL",
       "name": "알파벳 A (구글)",
-      "price": 287.38,
-      "change_rate": -0.27,
+      "price": 0.0,
+      "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 클라우드·검색",
       "theme_tag": "M7 최저 PER 🔍",
-      "rsi": 32.6,
+      "rsi": 50.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -493,121 +493,7 @@
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 58,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 62,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "필라델피아 반도체 지수의 급락 및 주요 빅테크 실적 발표를 앞둔 경계감 속에서 알파벳 A(GOOGL)는 RSI 45의 중립 구간을 기록하며 방향성을 탐색 중입니다. 현재 미보유 상태이나 뚜렷한 수급 유입이나 모멘텀 돌파 시그널이 관찰되지 않아, 향후 시장 변동성 완화 및 눌림목 형성 시그널을 확인한 후 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 64점 ↔ AI 58점 | 편차 6점)",
-        "checked_at": "2026-11-10 10:23:18"
-      }
-    },
-    {
-      "code": "TSLA",
-      "name": "테슬라 (TSLA)",
-      "price": 379.78,
-      "change_rate": 0.46,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "전기차/로보틱스",
-      "theme_tag": "자율주행·FSD",
-      "rsi": 50.5,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "새벽 정규장 분석 결과 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 52,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "테슬라(TSLA) 주가가 당일 +5.54% 급등하여 단기 고점 추격매수 방지 규칙에 해당하므로, 과열에 따른 되돌림 위험을 피하기 위해 신규 진입을 자제하고 관망합니다. 향후 주가 눌림목 형성 및 시장 안정 여부를 확인한 후 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 52점 | 편차 6점)",
-        "checked_at": "2026-11-10 10:24:09"
-      }
-    },
-    {
-      "code": "SGOV",
-      "name": "iShares 0-3M 단기국채",
-      "price": 100.53,
-      "change_rate": 0.03,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "초단기 채권 ETF",
-      "theme_tag": "연 4.5% 무위험 달러이자",
-      "rsi": 100.0,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "새벽 정규장 분석 결과 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 50,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "iShares 0-3M 단기국채(SGOV)는 초단기 현금성 자산으로 변동성이 매우 낮아 기술적 모멘텀이나 수급에 따른 급등락 요인이 제한적입니다. 현재 포지션이 없고 특별한 매수 촉매나 낙폭 과대 신호가 없어 안전 자산 성격에 맞추어 관망을 유지하며, 향후 유동성 관리 목적으로 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 64점 ↔ AI 50점 | 편차 14점)",
-        "checked_at": "2026-11-10 10:24:17"
-      }
-    },
-    {
-      "code": "SCHD",
-      "name": "Schwab 미국 배당 다우",
-      "price": 35.83,
-      "change_rate": 0.5,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국 고배당 ETF",
-      "theme_tag": "10년 연속 배당성장",
-      "rsi": 62.3,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "새벽 정규장 분석 결과 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 58,
+        "score": 59,
         "consensus": "2:0 관망 우세",
         "models": [
           {
@@ -618,34 +504,148 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          }
+        ],
+        "reason": "시장 전체는 강세이지만 GOOGL은 RSI가 중립이고 뚜렷한 매수 신호가 없습니다. ATR 목표익절선이나 손절선도 아직 도달하지 않았으며, 수급 및 뉴스에서도 특별한 호재가 없어 신중히 기다리는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 59점 | 편차 2점)",
+        "checked_at": "2026-11-11 05:30:58"
+      }
+    },
+    {
+      "code": "TSLA",
+      "name": "테슬라 (TSLA)",
+      "price": 0.0,
+      "change_rate": 0.0,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "전기차/로보틱스",
+      "theme_tag": "자율주행·FSD",
+      "rsi": 50.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "새벽 정규장 분석 결과 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 51,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 50,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 52,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 종목의 실시간 현재가와 이동평균선 등 구체적인 가격 데이터가 명확하게 확인되지 않아 신규 진입 타점을 산정하기 어렵습니다. 따라서 무리한 진입을 자제하고 시장 안정 및 명확한 수급 신호 포착 시 재진입을 검토하며 관망합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 51점 | 편차 10점)",
+        "checked_at": "2026-11-11 05:31:03"
+      }
+    },
+    {
+      "code": "SGOV",
+      "name": "iShares 0-3M 단기국채",
+      "price": 0.0,
+      "change_rate": 0.0,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "초단기 채권 ETF",
+      "theme_tag": "연 4.5% 무위험 달러이자",
+      "rsi": 50.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "새벽 정규장 분석 결과 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 54,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 50,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 RSI가 중립 수준이고 외인·기관 수급 및 호재가 확인되지 않아 매수 신호가 약합니다. 현금 및 섹터 한도는 충족하지만, 추가 진입은 시장 흐름이 명확해질 때까지 기다리는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 54점 | 편차 7점)",
+        "checked_at": "2026-11-11 05:31:09"
+      }
+    },
+    {
+      "code": "SCHD",
+      "name": "Schwab 미국 배당 다우",
+      "price": 0.0,
+      "change_rate": 0.0,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국 고배당 ETF",
+      "theme_tag": "10년 연속 배당성장",
+      "rsi": 50.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "새벽 정규장 분석 결과 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 55,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "미 증시가 강세장을 유지하고 SCHD가 안정적인 흐름을 보이고 있으나, 현재 14일 RSI가 45.0으로 중립 구간에 위치하며 뚜렷한 수급 모멘텀이나 기술적 돌파 시그널이 부재합니다. 미보유 상태에서 단기 급등락 위험을 피하고 명확한 눌림목 타점을 확보하기 위해 현재는 관망을 유지하며 향후 시장 안정 시 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 64점 ↔ AI 58점 | 편차 6점)",
-        "checked_at": "2026-11-10 10:24:26"
+        "reason": "미 증시 정상·강세장 속에서 14일 RSI가 50.0으로 중립 구간에 위치하며 특이 모멘텀이나 수급적 돌파 신호가 부재합니다. 현재 미보유 상태이므로 명확한 저가 매수 타점이나 거래량 동반 상승 패턴이 나타날 때까지 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 61점 ↔ AI 55점 | 편차 6점)",
+        "checked_at": "2026-11-11 05:31:15"
       }
     }
   ],
   "morning_research": {
-    "updated_at": "2026-11-10 12:52:07",
+    "updated_at": "2026-11-11 08:30:22",
     "earnings_alert_level": "CAUTION",
-    "kr_macro_summary": "원/달러 환율이 1,345.00원으로 변동성을 보이는 가운데, 코스피 시장은 외국인 수급 불안과 미국 기술주 흐름에 연동되며 긴장감을 유지하고 있습니다. NAVER가 11월 12일 3분기 실적 발표를 앞두고 있어 국내 주요 IT 종목들의 실적 및 수급 대응이 중요합니다.",
-    "us_bigtech_summary": "어플라이드머티어리얼즈(AMAT)가 2026-11-12(D-2, EPS 예상치 $4.06) 발표를 앞두고 있으며, 이어 11-17(D-7) 엔비디아(NVDA, EPS 예상치 $2.49) 실적 발표가 대기 중입니다. 필라델피아 반도체 지수(+7.49%)의 급반등에도 불구하고 개별 빅테크 루머에 따른 변동성이 커 철저한 모니터링이 필요합니다.",
+    "kr_macro_summary": "원/달러 환율이 1,344.50원을 기록하며 안정세를 보이고 있으나, 미 기술주 폭락 여파로 코스피 시장의 외국인 수급 불확실성이 커진 상태입니다. NAVER 등 주요 종목의 실적 발표와 DART 공시를 주시하며 보수적인 리스크 관리가 필요합니다.",
+    "us_bigtech_summary": "11월 12일 어플라이드머티어리얼즈(AMAT, EPS 예상치 $4.06)와 11월 17일 엔비디아(NVDA, EPS 예상치 $2.49)의 실적 발표를 앞두고 글로벌 기술주 변동성이 확대되고 있습니다. 필라델피아 반도체 지수는 소폭 반등(+0.61%)했으나 나스닥100의 최근 급락 여파로 AI 섹터 전반의 경계감이 지속되고 있습니다.",
     "fx_soxx_info": {
-      "usd_krw": "1,345.00",
-      "usd_krw_change": "3.00",
-      "usd_krw_rate": "0.22",
-      "soxx_price": "$146.76",
-      "soxx_pct": "+7.49%",
-      "summary": "원/달러 환율: 1,345.00원 (전일대비 3.00원 / 0.22%) | 미 필라델피아 반도체(SOXX): $146.76 (+7.49%)"
+      "usd_krw": "1,344.50",
+      "usd_krw_change": "0.00",
+      "usd_krw_rate": "0.00",
+      "soxx_price": "$147.48",
+      "soxx_pct": "+0.61%",
+      "summary": "원/달러 환율: 1,344.50원 (전일대비 0.00원 / 0.00%) | 미 필라델피아 반도체(SOXX): $147.48 (+0.61%)"
     },
     "us_official_calendar": [
       {
         "date": "2026-11-12",
-        "dday": 2,
+        "dday": 1,
         "symbol": "AMAT",
         "kr_name": "어플라이드머티어리얼즈",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -654,7 +654,7 @@
       },
       {
         "date": "2026-11-17",
-        "dday": 7,
+        "dday": 6,
         "symbol": "NVDA",
         "kr_name": "엔비디아",
         "time_desc": "미 장마감 후(한국시간 익일 새벽 05:00경)",
@@ -666,8 +666,8 @@
       "005930": {
         "name": "삼성전자",
         "earnings_imminent": false,
-        "earnings_status": "📅 공식 확정 IR 일정 미등록(또는 발표 완료)",
-        "memo": "공식 실적 발표 완료 구간이나 외국인 수급 및 미 반도체 섹터 연동성을 확인하며 분할 접근할 것.",
+        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
+        "memo": "DART 임원 주식 소유 변동 공시 및 외인 수급 추이를 모니터링하며 분할 매수 관점 접근",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -676,8 +676,8 @@
       "000660": {
         "name": "SK하이닉스",
         "earnings_imminent": false,
-        "earnings_status": "📅 공식 확정 IR 일정 미등록(또는 발표 완료)",
-        "memo": "HBM 모멘텀과 미국 반도체 지수(SOXX) 흐름을 실시간 대조하며 추격 매수를 자제할 것.",
+        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
+        "memo": "HBM 수요 모멘텀과 미국 반도체(AMAT·NVDA) 실적 발표 연동성을 확인한 후 진입",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -686,8 +686,8 @@
       "005380": {
         "name": "현대차",
         "earnings_imminent": false,
-        "earnings_status": "📅 공식 확정 IR 일정 미등록(또는 발표 완료)",
-        "memo": "본업 및 로보틱스 모멘텀 점검하되, 거시환율 변동성에 따른 외국인 수급을 확인 후 진입할 것.",
+        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
+        "memo": "본업 실적 호조 및 로보틱스 모멘텀 유효하나, 거시경제 변동성 완화 시까지 추격 매수 자제",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -696,8 +696,8 @@
       "105560": {
         "name": "KB금융",
         "earnings_imminent": false,
-        "earnings_status": "📅 공식 확정 IR 일정 미등록(또는 발표 완료)",
-        "memo": "견조한 자본비율과 방어력을 바탕으로 하방 경직성을 체크하며 박스권 대응할 것.",
+        "earnings_status": "공식 IR 일정 미등록 (발표 완료)",
+        "memo": "높은 CET-1 비율을 바탕으로 한 방어력 검증 완료, 안정적인 밴드 내 트레이딩 수행",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -706,24 +706,24 @@
       "035420": {
         "name": "NAVER",
         "earnings_imminent": true,
-        "earnings_status": "2026-11-12 (D-2, '2026년 3분기 실적') 공식 확정 발표",
-        "memo": "실적 발표 D-2 이내이므로 성급한 추격 매수를 금하고 공식 실적 및 AI DC 사업 성과 확인 후 진입할 것.",
-        "official_ir_schedule": "2026-11-12 (D-2) 2026년 3분기 실적",
+        "earnings_status": "2026-11-12 (D-1) 3분기 실적 공식 발표 예정",
+        "memo": "내일 실적 발표 및 AI DC 사업 본격화에 따른 불확실성 해소 여부를 확인한 후 대응",
+        "official_ir_schedule": "2026-11-12 (D-1) 2026년 3분기 실적",
         "ir_date": "2026-11-12",
-        "ir_dday": 2,
+        "ir_dday": 1,
         "consensus_target_price": "319,696"
       },
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": false,
-        "earnings_status": "📅 공식 확정 IR 일정 미등록(또는 발표 완료)",
-        "memo": "글로벌 전력 인프라 및 미국 빅테크 연동 수급 상황을 모니터링하며 보수적으로 대응할 것."
+        "earnings_status": "공식 IR 일정 미등록",
+        "memo": "미국 빅테크 전력 인프라 투자 방향성과 연동하여 수급 유입 시 제한적 비중 확대"
       },
       "091160": {
         "name": "KODEX 반도체",
-        "earnings_imminent": true,
-        "earnings_status": "2026-11-12 AMAT 및 11-17 엔비디아 공식 실적발표 일정 연동",
-        "memo": "미국 반도체 지수(SOXX) 급등락 및 대형 반도체 실적 발표 임박에 따른 변동성에 대비해 비중을 조절할 것."
+        "earnings_imminent": false,
+        "earnings_status": "미국 AMAT(11/12) 및 엔비디아(11/17) 실적 발표 연동",
+        "memo": "미국 대형 반도체 실적 발표 직전까지 성급한 추격 매수를 자제하고 관망 유지"
       },
       "465580": {
         "name": "ACE 미국빅테크TOP7 Plus",
@@ -731,25 +731,25 @@
         "ir_date": null,
         "ir_dday": null
       },
-      "458730": {
-        "name": "TIGER 미국배당다우존스",
+      "381170": {
+        "name": "TIGER 미국테크TOP10 INDXX",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
       },
-      "035720": {
-        "name": "카카오",
+      "051910": {
+        "name": "LG화학",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "45,952"
+        "consensus_target_price": "355,583"
       },
-      "066570": {
-        "name": "LG전자",
+      "012330": {
+        "name": "현대모비스",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "253,235"
+        "consensus_target_price": "606,957"
       }
     }
   }
