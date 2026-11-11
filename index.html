@@ -514,14 +514,16 @@
         }
       }
 
-      const fundEval = d.fund_eval || 2500000;
+      const fundEval = d.fund_eval !== undefined ? d.fund_eval : 2500000;
       const fundPnl = d.fund_pnl || 0;
       const fundPnlPct = d.fund_pnl_pct || 0;
       const krwStockEval = d.mkt_val_krw !== undefined ? d.mkt_val_krw : (d.stock_eval || 0);
       const krwStockPchs = d.tot_pchs_krw !== undefined ? d.tot_pchs_krw : (d.stock_pchs || 0);
       const usdStockEval = d.mkt_val_usd || 0;
       const usdStockPchs = d.tot_pchs_usd || 0;
-      const krwCashVal = d.krw_cash !== undefined ? d.krw_cash : (d.usable_cash || 2500000);
+      const krwCashVal = d.krw_cash !== undefined ? d.krw_cash : (d.usable_cash !== undefined ? d.usable_cash : 2500000);
+      const usdCashVal = Number(d.usd_cash || 0);
+      const fxRate = Number(d.fx_rate) > 500 ? Number(d.fx_rate) : 1350;
 
       document.getElementById('totalEval').textContent = (fundEval || 0).toLocaleString() + '원';
       const isProfit = fundPnl >= 0;
@@ -533,7 +535,7 @@
       document.getElementById('krwStockInfo').textContent = krwStockEval.toLocaleString() + '원 (' + krwStockPchs.toLocaleString() + '원)';
       document.getElementById('usdStockInfo').textContent = '$' + usdStockEval.toFixed(2) + ' ($' + usdStockPchs.toFixed(2) + ')';
       document.getElementById('krwCash').textContent = krwCashVal.toLocaleString() + '원';
-      const usdAvailableApprox = Math.round(krwCashVal / 1420);
+      const usdAvailableApprox = Math.round(usdCashVal + (krwCashVal / fxRate));
       document.getElementById('usdCash').textContent = krwCashVal.toLocaleString() + '원 ($' + usdAvailableApprox.toLocaleString() + ')';
       document.getElementById('lastUpdated').textContent = '최근 감시 동기화: ' + (d.updated_at || '--');
 
