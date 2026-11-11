@@ -30,9 +30,9 @@
       "date": "2026-11-11",
       "is_open": true,
       "is_trading_day": true,
-      "is_in_session": false,
-      "session_status": "⏳ 장 시작 전 (09:00 개장)",
-      "session_color": "#fbbf24",
+      "is_in_session": true,
+      "session_status": "🟢 정규장 거래중",
+      "session_color": "#34d399",
       "reason": "평일 정상 개장일",
       "is_half_day": false,
       "daylight_saving": false,
@@ -64,7 +64,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 1,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-11 08:47:54"
+    "checked_at": "2026-11-11 08:59:27"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -74,7 +74,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 08:47:55",
+  "updated_at": "2026-11-11 08:59:27",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.5°C)",
