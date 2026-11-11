@@ -64,7 +64,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 1,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-11 10:25:55"
+    "checked_at": "2026-11-11 10:32:29"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -74,7 +74,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 10:25:55",
+  "updated_at": "2026-11-11 10:32:29",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "82% (🔋 배터리 사용 중, 21.2°C)",
@@ -175,8 +175,8 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 272000,
-      "change_rate": -1.09,
+      "price": 272500,
+      "change_rate": -0.91,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -251,8 +251,8 @@
     {
       "code": "381170",
       "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 28640,
-      "change_rate": -0.54,
+      "price": 28645,
+      "change_rate": -0.52,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -289,8 +289,8 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 193400,
-      "change_rate": 0.21,
+      "price": 193200,
+      "change_rate": 0.1,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
