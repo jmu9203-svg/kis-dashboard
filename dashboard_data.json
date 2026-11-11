@@ -64,7 +64,7 @@
     "daily_pnl_pct": 9.3,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-12 06:01:04"
+    "checked_at": "2026-11-12 06:12:01"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -74,7 +74,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-12 06:01:04",
+  "updated_at": "2026-11-12 06:12:02",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.7°C)",
@@ -104,7 +104,7 @@
       "eval_amt": 232524,
       "marketCountry": "KR",
       "currency": "KRW",
-      "rsi": 28.8,
+      "rsi": 29.2,
       "investor_summary": "조회 대기",
       "ai_ensemble": {
         "decision": "관망",
@@ -168,7 +168,7 @@
         ],
         "reason": "미국 빅테크 우량주 펀더멘털 및 변동성 지수 감시 중.",
         "audit_badge": "✅ 미국주식 KIS 오픈API 검증",
-        "checked_at": "2026-11-12 06:01:04"
+        "checked_at": "2026-11-12 06:12:02"
       }
     }
   ],
@@ -480,13 +480,13 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 355.79,
-      "change_rate": 2.09,
+      "price": 355.42,
+      "change_rate": 1.98,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
       "theme_tag": "AI 모바일 생태계",
-      "rsi": 60.5,
+      "rsi": 60.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -518,13 +518,13 @@
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 173.82,
-      "change_rate": 2.92,
+      "price": 174.22,
+      "change_rate": 3.16,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 반도체",
       "theme_tag": "글로벌 AI 대장주",
-      "rsi": 28.8,
+      "rsi": 29.2,
       "is_held": true,
       "held_qty": 1,
       "pnl_rate": -1.26,
@@ -556,13 +556,13 @@
     {
       "code": "GOOGL",
       "name": "알파벳 A (구글)",
-      "price": 293.6789,
-      "change_rate": 2.19,
+      "price": 293.4698,
+      "change_rate": 2.12,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 클라우드·검색",
       "theme_tag": "M7 최저 PER 🔍",
-      "rsi": 38.2,
+      "rsi": 38.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -594,13 +594,13 @@
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 391.43,
-      "change_rate": 3.07,
+      "price": 390.6,
+      "change_rate": 2.85,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "전기차/로보틱스",
       "theme_tag": "자율주행·FSD",
-      "rsi": 54.6,
+      "rsi": 54.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
