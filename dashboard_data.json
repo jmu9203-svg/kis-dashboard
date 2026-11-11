@@ -64,7 +64,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 1,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-11 09:52:10"
+    "checked_at": "2026-11-11 09:58:57"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -74,10 +74,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 09:52:10",
+  "updated_at": "2026-11-11 09:58:57",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
-  "battery": "84% (🔋 배터리 사용 중, 21.7°C)",
+  "battery": "83% (🔋 배터리 사용 중, 21.3°C)",
   "budget_limit": 2500000,
   "fund_eval": 2500000,
   "fund_pnl": 0,
@@ -137,8 +137,8 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 198400,
-      "change_rate": -0.25,
+      "price": 199600,
+      "change_rate": 0.35,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -213,8 +213,8 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 153400,
-      "change_rate": 0.46,
+      "price": 152900,
+      "change_rate": 0.13,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -251,8 +251,8 @@
     {
       "code": "381170",
       "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 28575,
-      "change_rate": -0.76,
+      "price": 28595,
+      "change_rate": -0.69,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -295,8 +295,8 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 194700,
-      "change_rate": 0.88,
+      "price": 193900,
+      "change_rate": 0.47,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -371,8 +371,8 @@
     {
       "code": "012330",
       "name": "현대모비스",
-      "price": 358500,
-      "change_rate": 1.99,
+      "price": 358000,
+      "change_rate": 1.85,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
