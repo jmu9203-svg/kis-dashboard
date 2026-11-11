@@ -8,10 +8,44 @@
       "name": "엔비디아",
       "qty": 1,
       "avg_price": 176.06,
-      "cur_price": 175.5999,
       "pnl_rate": -0.26,
-      "eval_amt": 175.5999,
-      "eval_amt_krw": 249351,
+      "eval_amt": 234959,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "rsi": 30.5,
+      "investor_summary": "조회 대기",
+      "ai_ensemble": {
+        "decision": "매수",
+        "score": 76,
+        "consensus": "2:0 매수 합의",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 75,
+            "decision": "매수"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 78,
+            "decision": "매수"
+          }
+        ],
+        "reason": "RSI가 30.5로 과매도 구간에 있어 단기 반등 매수 기회이며, 주가가 20일 이동평균선 아래에 위치해 저평가된 상태입니다. 현금 및 종목당 한도 내에서 1주 매수가 가능하므로 신중히 진입하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 65점 ↔ AI 76점 | 편차 11점)",
+        "checked_at": "2026-11-12 01:31:08"
+      }
+    },
+    {
+      "code": "NVDA",
+      "name": "엔비디아",
+      "qty": 1,
+      "avg_price": 176.06,
+      "cur_price": 175.64,
+      "pnl_rate": -0.24,
+      "eval_amt": 175.64,
+      "eval_amt_krw": 249408,
       "marketCountry": "US",
       "currency": "USD",
       "rsi": 45.0,
@@ -42,7 +76,7 @@
         ],
         "reason": "미국 빅테크 우량주 펀더멘털 및 변동성 지수 감시 중.",
         "audit_badge": "✅ 미국주식 KIS 오픈API 검증",
-        "checked_at": "2026-11-12 01:32:20"
+        "checked_at": "2026-11-12 01:37:56"
       }
     }
   ]
