@@ -2,5 +2,48 @@
   "d2_cash": 2500000,
   "actual_tot_eval": 2500000,
   "usable_cash": 2500000,
-  "holdings": []
+  "holdings": [
+    {
+      "code": "NVDA",
+      "name": "엔비디아",
+      "qty": 1,
+      "avg_price": 176.06,
+      "cur_price": 175.5999,
+      "pnl_rate": -0.26,
+      "eval_amt": 175.5999,
+      "eval_amt_krw": 249351,
+      "marketCountry": "US",
+      "currency": "USD",
+      "rsi": 45.0,
+      "investor_summary": "글로벌 헤지펀드 및 메이저 수급 추적",
+      "ai_ensemble": {
+        "decision": "홀딩",
+        "score": 60,
+        "consensus": "3사 합의",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 60,
+            "decision": "홀딩"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 60,
+            "decision": "홀딩"
+          },
+          {
+            "provider": "Meta",
+            "model": "Llama 3.3",
+            "score": 60,
+            "decision": "홀딩"
+          }
+        ],
+        "reason": "미국 빅테크 우량주 펀더멘털 및 변동성 지수 감시 중.",
+        "audit_badge": "✅ 미국주식 KIS 오픈API 검증",
+        "checked_at": "2026-11-12 01:32:20"
+      }
+    }
+  ]
 }
