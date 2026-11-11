@@ -64,7 +64,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-11 23:31:54"
+    "checked_at": "2026-11-11 23:38:03"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -74,9 +74,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-11 23:36:22",
+  "updated_at": "2026-11-11 23:38:03",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
-  "is_market_open": true,
+  "is_market_open": false,
   "battery": "52% (🔋 배터리 사용 중, 20.5°C)",
   "budget_limit": 2500000,
   "fund_eval": 2500000,
@@ -403,8 +403,8 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 351.63,
-      "change_rate": 0.9,
+      "price": 352.315,
+      "change_rate": 1.09,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
@@ -441,8 +441,8 @@
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 173.83,
-      "change_rate": 2.92,
+      "price": 173.9841,
+      "change_rate": 3.02,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 반도체",
@@ -479,8 +479,8 @@
     {
       "code": "GOOGL",
       "name": "알파벳 A (구글)",
-      "price": 291.37,
-      "change_rate": 1.39,
+      "price": 291.65,
+      "change_rate": 1.49,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "AI 클라우드·검색",
@@ -517,8 +517,8 @@
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 389.69,
-      "change_rate": 2.61,
+      "price": 389.29,
+      "change_rate": 2.5,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "전기차/로보틱스",
@@ -555,8 +555,8 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.52,
-      "change_rate": -0.01,
+      "price": 100.53,
+      "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "초단기 채권 ETF",
@@ -593,8 +593,8 @@
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 35.7,
-      "change_rate": -0.36,
+      "price": 35.69,
+      "change_rate": -0.39,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국 고배당 ETF",
