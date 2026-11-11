@@ -12,7 +12,7 @@
       "eval_amt": 232363,
       "marketCountry": "KR",
       "currency": "KRW",
-      "rsi": 29.3,
+      "rsi": 29.5,
       "investor_summary": "조회 대기",
       "ai_ensemble": {
         "decision": "관망",
@@ -76,7 +76,7 @@
         ],
         "reason": "미국 빅테크 우량주 펀더멘털 및 변동성 지수 감시 중.",
         "audit_badge": "✅ 미국주식 KIS 오픈API 검증",
-        "checked_at": "2026-11-12 06:34:08"
+        "checked_at": "2026-11-12 06:45:09"
       }
     }
   ]
