@@ -1,10 +1,10 @@
 {
-  "d2_cash": 2262210,
-  "actual_tot_eval": 2495582,
-  "usable_cash": 2249694,
-  "net_krw_cash": 2262210,
+  "d2_cash": 2264073,
+  "actual_tot_eval": 2496298,
+  "usable_cash": 2251656,
+  "net_krw_cash": 2264073,
   "usd_cash": 0.0,
-  "fx_rate": 1343.3,
+  "fx_rate": 1336.7,
   "holdings": [
     {
       "code": "NVDA",
@@ -16,10 +16,10 @@
       "pnl_rate": -1.32,
       "eval_amt": 173.73,
       "eval_amt_usd": 173.73,
-      "eval_amt_krw": 233372,
+      "eval_amt_krw": 232225,
       "marketCountry": "US",
       "currency": "USD",
-      "rsi": 21.1,
+      "rsi": 20.9,
       "investor_summary": "글로벌 기관 · 미국 정규장 수급 연동",
       "ai_ensemble": {
         "decision": "관망",
