@@ -8,21 +8,21 @@
       "name": "엔비디아",
       "qty": 1,
       "avg_price": 176.06,
-      "pnl_rate": -0.7,
-      "eval_amt": 233856,
+      "pnl_rate": -0.82,
+      "eval_amt": 233589,
       "marketCountry": "KR",
       "currency": "KRW",
-      "rsi": 29.7,
+      "rsi": 29.5,
       "investor_summary": "조회 대기",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 59,
+        "score": 58,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 60,
+            "score": 58,
             "decision": "관망"
           },
           {
@@ -32,9 +32,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "RSI가 과매도 구역에 있어 단기 반등 가능성이 있지만 가격은 20일 평균선 아래에 머물고 ATR 목표익절선에 도달하지 않아 매도 시점이 아니다. 현재 보유 포지션을 유지하면서 추세와 수급을 관망하는 것이 적절하다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 65점 ↔ AI 59점 | 편차 6점)",
-        "checked_at": "2026-11-12 03:30:30"
+        "reason": "현재 주가는 MA20 이하이며 약세 조정 국면이지만 RSI가 과매도 구역에 있어 반등 가능성이 있습니다. 그러나 ATR 목표익절선에 도달하지 않았고 손절선도 아직 내려가지 않아 보유 포지션을 유지하고 신규 매수는 자제하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 58점 | 편차 8점)",
+        "checked_at": "2026-11-12 05:30:33"
       }
     },
     {
@@ -42,10 +42,10 @@
       "name": "엔비디아",
       "qty": 1,
       "avg_price": 176.06,
-      "cur_price": 174.845,
-      "pnl_rate": -0.69,
-      "eval_amt": 174.845,
-      "eval_amt_krw": 248279,
+      "cur_price": 174.55,
+      "pnl_rate": -0.86,
+      "eval_amt": 174.55,
+      "eval_amt_krw": 247861,
       "marketCountry": "US",
       "currency": "USD",
       "rsi": 45.0,
@@ -76,7 +76,7 @@
         ],
         "reason": "미국 빅테크 우량주 펀더멘털 및 변동성 지수 감시 중.",
         "audit_badge": "✅ 미국주식 KIS 오픈API 검증",
-        "checked_at": "2026-11-12 05:25:24"
+        "checked_at": "2026-11-12 05:31:21"
       }
     }
   ]
