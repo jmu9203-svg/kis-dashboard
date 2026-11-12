@@ -2,7 +2,7 @@
   "account_no": "10154692-01",
   "mkt_val_krw": 0,
   "tot_pchs_krw": 0,
-  "mkt_val_usd": 151.58,
+  "mkt_val_usd": 152.51,
   "tot_pchs_usd": 176.06,
   "krw_cash": 2251656,
   "net_krw_cash": 2264073,
@@ -12,7 +12,7 @@
     "score": 95,
     "grade": "매우 우수",
     "diagnoses": [
-      "실전 자산 2,466,690원 (국내 0종목 / 해외 1종목 | 주식 비중 8.2% · 가용 현금 91.8%)",
+      "실전 자산 2,467,940원 (국내 0종목 / 해외 1종목 | 주식 비중 8.3% · 가용 현금 91.7%)",
       "글로벌 통합증거금 지원 — 국내 우량주 및 미국 빅테크 동시 분할 매수 여력 확보"
     ],
     "prescriptions": [
@@ -47,9 +47,9 @@
       "date": "2026-11-12",
       "is_open": true,
       "is_trading_day": true,
-      "is_in_session": false,
-      "session_status": "🌙 장 마감 (23:30 개장)",
-      "session_color": "#94a3b8",
+      "is_in_session": true,
+      "session_status": "🟢 정규장 거래중",
+      "session_color": "#34d399",
       "reason": "평일 정상 개장일",
       "is_half_day": false,
       "daylight_saving": false,
@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-12 23:21:01"
+    "checked_at": "2026-11-12 23:32:12"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,21 +76,21 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-12 23:21:02",
+  "updated_at": "2026-11-12 23:32:12",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "56% (🔋 배터리 사용 중, 21.0°C)",
+  "battery": "55% (🔋 배터리 사용 중, 20.9°C)",
   "budget_limit": 2500000,
-  "fund_eval": 2466690,
-  "fund_pnl": -33310,
-  "fund_pnl_pct": -1.33,
-  "stock_eval": 202617,
+  "fund_eval": 2467940,
+  "fund_pnl": -32060,
+  "fund_pnl_pct": -1.28,
+  "stock_eval": 203867,
   "stock_pchs": 235339,
-  "stock_pnl": -32722,
-  "stock_pnl_pct": -13.9,
-  "stock_pnl_on_fund_pct": -1.31,
+  "stock_pnl": -31472,
+  "stock_pnl_pct": -13.37,
+  "stock_pnl_on_fund_pct": -1.26,
   "d2_cash": 2264073,
-  "actual_tot_eval": 2466690,
+  "actual_tot_eval": 2467940,
   "usable_cash": 2251656,
   "excess_amt": 0,
   "rebalance_mode": false,
@@ -102,15 +102,15 @@
       "name": "엔비디아",
       "qty": 1,
       "avg_price": 176.06,
-      "cur_price": 151.58,
-      "cur_price_usd": 151.58,
-      "pnl_rate": -13.9,
-      "eval_amt": 151.58,
-      "eval_amt_usd": 151.58,
-      "eval_amt_krw": 202617,
+      "cur_price": 152.515,
+      "cur_price_usd": 152.515,
+      "pnl_rate": -13.37,
+      "eval_amt": 152.51,
+      "eval_amt_usd": 152.51,
+      "eval_amt_krw": 203867,
       "marketCountry": "US",
       "currency": "USD",
-      "rsi": 21.9,
+      "rsi": 22.6,
       "investor_summary": "글로벌 기관 · 미국 정규장 수급 연동",
       "ai_ensemble": {
         "decision": "관망",
@@ -444,16 +444,16 @@
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 151.29,
-      "change_rate": -12.92,
+      "price": 153.654,
+      "change_rate": -11.56,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
       "theme_tag": "📦 보유 고정 · 글로벌 AI 대장주",
-      "rsi": 21.9,
+      "rsi": 22.6,
       "is_held": true,
       "held_qty": 1,
-      "pnl_rate": -13.9,
+      "pnl_rate": -13.37,
       "status_tag": "포트폴리오 보유 중 📦",
       "action_status": "보유 홀딩 관망 💎",
       "ai_ensemble": {
@@ -482,18 +482,18 @@
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 344.4,
-      "change_rate": 0.29,
+      "price": 345.28,
+      "change_rate": 0.55,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
       "theme_tag": "🔍 퀀트 발굴(76점) · 미국 1위 대형은행",
-      "rsi": 54.8,
+      "rsi": 55.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(76점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(76점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 60,
@@ -512,7 +512,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 54.8의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 55.5의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
@@ -520,18 +520,18 @@
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 385.6209,
-      "change_rate": -1.34,
+      "price": 391.005,
+      "change_rate": 0.04,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
       "theme_tag": "🔍 퀀트 발굴(76점) · 자율주행·로보틱스",
-      "rsi": 52.4,
+      "rsi": 54.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(76점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(76점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 52,
@@ -558,18 +558,18 @@
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 70.1,
-      "change_rate": -0.82,
+      "price": 69.815,
+      "change_rate": -1.22,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
       "theme_tag": "🔍 퀀트 발굴(76점) · 모빌리티·자율주행 플랫폼",
-      "rsi": 54.0,
+      "rsi": 53.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(76점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(76점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 60,
@@ -588,7 +588,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 54.0의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 53.0의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
@@ -596,18 +596,18 @@
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 58.1144,
-      "change_rate": -0.16,
+      "price": 58.2,
+      "change_rate": -0.02,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
       "theme_tag": "🔍 퀀트 발굴(76점) · 월배당 방어형 ETF",
-      "rsi": 60.8,
+      "rsi": 61.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(76점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(76점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 60,
@@ -626,7 +626,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 60.8의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 61.9의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
@@ -634,18 +634,18 @@
     {
       "code": "TSM",
       "name": "TSMC (TSM)",
-      "price": 393.3884,
-      "change_rate": -4.83,
+      "price": 400.59,
+      "change_rate": -3.09,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
       "theme_tag": "🔍 퀀트 발굴(75점) · 글로벌 1위 파운드리",
-      "rsi": 44.1,
+      "rsi": 45.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(75점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(75점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 60,
@@ -664,7 +664,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 44.1의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 45.9의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
@@ -672,18 +672,18 @@
     {
       "code": "AVGO",
       "name": "브로드컴 (AVGO)",
-      "price": 353.14,
-      "change_rate": 2.29,
+      "price": 355.02,
+      "change_rate": 2.84,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
       "theme_tag": "🔍 퀀트 발굴(74점) · AI 맞춤형 ASIC 칩",
-      "rsi": 56.6,
+      "rsi": 56.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(74점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(74점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 60,
@@ -702,7 +702,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 56.6의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 56.9의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
@@ -710,18 +710,18 @@
     {
       "code": "WMT",
       "name": "월마트 (WMT)",
-      "price": 127.16,
-      "change_rate": 1.19,
+      "price": 127.6026,
+      "change_rate": 1.54,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
       "theme_tag": "🔍 퀀트 발굴(69점) · 필수소비·방어 1위",
-      "rsi": 66.2,
+      "rsi": 66.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(69점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(69점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 60,
@@ -740,7 +740,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 66.2로 단기 과열 구간에 위치하여 고점 차익실현 리스크 방어를 위해 신규 진입을 유보하고 관망합니다.",
+        "reason": "14일 Wilder RSI 66.9로 단기 과열 구간에 위치하여 고점 차익실현 리스크 방어를 위해 신규 진입을 유보하고 관망합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
