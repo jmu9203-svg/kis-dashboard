@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-13 05:30:43",
+  "updated_at": "2026-11-13 05:31:06",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "43% (🔋 배터리 사용 중, 23.5°C)",
   "budget_limit": 2500000,
   "fund_eval": 2468748,
@@ -405,8 +405,8 @@
     {
       "code": "AVGO",
       "name": "브로드컴 (AVGO)",
-      "price": 361.28,
-      "change_rate": 4.65,
+      "price": 361.41,
+      "change_rate": 4.69,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -443,8 +443,8 @@
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 58.11,
-      "change_rate": -0.17,
+      "price": 58.105,
+      "change_rate": -0.18,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
@@ -481,8 +481,8 @@
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 397.005,
-      "change_rate": 1.58,
+      "price": 397.845,
+      "change_rate": 1.79,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -519,7 +519,7 @@
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 343.35,
+      "price": 343.3513,
       "change_rate": -0.01,
       "marketCountry": "US",
       "currency": "USD",
@@ -557,8 +557,8 @@
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 35.99,
-      "change_rate": -0.08,
+      "price": 35.9824,
+      "change_rate": -0.1,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
@@ -595,8 +595,8 @@
     {
       "code": "QCOM",
       "name": "퀄컴 (QCOM)",
-      "price": 176.265,
-      "change_rate": -0.17,
+      "price": 176.21,
+      "change_rate": -0.2,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -633,8 +633,8 @@
     {
       "code": "AMZN",
       "name": "아마존 (AMZN)",
-      "price": 267.93,
-      "change_rate": 0.66,
+      "price": 267.96,
+      "change_rate": 0.67,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -653,19 +653,19 @@
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 60,
+            "score": 62,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq Qwen",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 정상 및 20일선 상회로 상승 추세를 유지하고 있으나, 당일 거래량이 20일 평균 대비 다소 부족하고 RSI가 중립 구간에 머물러 있어 적극적인 신규 진입 시그널로는 부족합니다. 향후 거래량이 유입되거나 유의미한 눌림목 구간 형성 시 재진입을 검토하겠습니다.",
+        "reason": "미 증시 강세장 및 20일선 상회 추세 속에서 JP모건의 AI 수익성 기대감 등 긍정적 뉴스가 유입되고 있으나, 거래량이 20일 평균 대비 20% 부족하고 장중 윗꼬리가 발생하여 단기 모멘텀이 다소 둔화된 상태입니다. 미보유 포지션에서 무리한 추격 매수보다는 거래량 동반 돌파나 명확한 눌림목 형성 여부를 확인한 후 향후 재진입을 검토하는 것이 바람직합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 58점 | 편차 12점)",
-        "checked_at": "2026-11-12 23:36:25"
+        "checked_at": "2026-11-13 05:30:57"
       }
     },
     {
@@ -701,9 +701,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "현재 가격이 MA20를 상회하고 RSI가 중립 수준이지만 외인·기관 순매수 신호가 없으며 거래량이 낮아 단기 매수 타점이 불확실합니다. ATR 목표익절선이 아직 도달하지 않았고 과열 신호도 없으므로 보수적으로 관망을 권장합니다.",
+        "reason": "현재 가격이 MA20를 상회하고 RSI가 중립 수준이지만 외인·기관 순매수 신호가 없으며 거래량이 낮아 단기 매수 타점이 불확실합니다. ATR 목표익절선(8.5%)도 아직 도달하지 않았고, 과열익절(68)도 미달리므로 보수적으로 관망을 권장합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 56점 | 편차 11점)",
-        "checked_at": "2026-11-13 03:30:58"
+        "checked_at": "2026-11-13 05:31:04"
       }
     }
   ],
