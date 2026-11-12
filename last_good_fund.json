@@ -13,13 +13,36 @@
       "avg_price": 176.06,
       "cur_price": 173.73,
       "cur_price_usd": 173.73,
-      "exchange": "NASD",
       "pnl_rate": -1.32,
-      "eval_amt": 232225,
+      "eval_amt": 173.73,
       "eval_amt_usd": 173.73,
       "eval_amt_krw": 232225,
       "marketCountry": "US",
-      "currency": "USD"
+      "currency": "USD",
+      "rsi": 28.7,
+      "investor_summary": "글로벌 기관 · 미국 정규장 수급 연동",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 58,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 주가는 MA20 이하이며 약세 조정 국면이지만 RSI가 과매도 구역에 있어 반등 가능성이 있습니다. 그러나 ATR 목표익절선에 도달하지 않았고 손절선도 아직 내려가지 않아 보유 포지션을 유지하고 신규 매수는 자제하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 58점 | 편차 8점)",
+        "checked_at": "2026-11-12 05:30:33"
+      }
     }
   ]
 }
