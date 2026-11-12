@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-13 08:20:55"
+    "checked_at": "2026-11-13 08:31:58"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,10 +76,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-13 08:31:30",
-  "market_status": "24/7 시스템 정상 가동 중",
+  "updated_at": "2026-11-13 08:31:58",
+  "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "확인 중",
+  "battery": "37% (🔋 배터리 사용 중, 23.1°C)",
   "budget_limit": 2500000,
   "fund_eval": 2467883,
   "fund_pnl": -32117,
@@ -481,8 +481,8 @@
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 397.9626,
-      "change_rate": 1.82,
+      "price": 397.86,
+      "change_rate": 1.8,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -595,8 +595,8 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 355.4,
-      "change_rate": 0.01,
+      "price": 355.2052,
+      "change_rate": -0.04,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -671,8 +671,8 @@
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 69.1184,
-      "change_rate": -2.21,
+      "price": 69.1,
+      "change_rate": -2.24,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -709,8 +709,8 @@
     {
       "code": "V",
       "name": "비자 (V)",
-      "price": 421.0,
-      "change_rate": -1.07,
+      "price": 421.14,
+      "change_rate": -1.04,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
@@ -747,8 +747,8 @@
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 35.94,
-      "change_rate": -0.22,
+      "price": 35.9303,
+      "change_rate": -0.25,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
