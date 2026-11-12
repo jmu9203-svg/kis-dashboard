@@ -2,7 +2,7 @@
   "account_no": "10154692-01",
   "mkt_val_krw": 0,
   "tot_pchs_krw": 0,
-  "mkt_val_usd": 159.0,
+  "mkt_val_usd": 155.89,
   "tot_pchs_usd": 176.06,
   "krw_cash": 2251656,
   "net_krw_cash": 2264073,
@@ -12,7 +12,7 @@
     "score": 95,
     "grade": "매우 우수",
     "diagnoses": [
-      "실전 자산 2,476,602원 (국내 0종목 / 해외 1종목 | 주식 비중 8.6% · 가용 현금 91.4%)",
+      "실전 자산 2,472,451원 (국내 0종목 / 해외 1종목 | 주식 비중 8.4% · 가용 현금 91.6%)",
       "글로벌 통합증거금 지원 — 국내 우량주 및 미국 빅테크 동시 분할 매수 여력 확보"
     ],
     "prescriptions": [
@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-12 22:46:50"
+    "checked_at": "2026-11-12 22:58:58"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,21 +76,21 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-12 22:46:50",
+  "updated_at": "2026-11-12 22:58:59",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "57% (🔋 배터리 사용 중, 21.0°C)",
+  "battery": "56% (🔋 배터리 사용 중, 21.0°C)",
   "budget_limit": 2500000,
-  "fund_eval": 2476602,
-  "fund_pnl": -23398,
-  "fund_pnl_pct": -0.94,
-  "stock_eval": 212529,
+  "fund_eval": 2472451,
+  "fund_pnl": -27549,
+  "fund_pnl_pct": -1.1,
+  "stock_eval": 208378,
   "stock_pchs": 235339,
-  "stock_pnl": -22810,
-  "stock_pnl_pct": -9.69,
-  "stock_pnl_on_fund_pct": -0.91,
+  "stock_pnl": -26961,
+  "stock_pnl_pct": -11.46,
+  "stock_pnl_on_fund_pct": -1.08,
   "d2_cash": 2264073,
-  "actual_tot_eval": 2476602,
+  "actual_tot_eval": 2472451,
   "usable_cash": 2251656,
   "excess_amt": 0,
   "rebalance_mode": false,
@@ -102,15 +102,15 @@
       "name": "엔비디아",
       "qty": 1,
       "avg_price": 176.06,
-      "cur_price": 158.9953,
-      "cur_price_usd": 158.9953,
-      "pnl_rate": -9.69,
-      "eval_amt": 159.0,
-      "eval_amt_usd": 159.0,
-      "eval_amt_krw": 212529,
+      "cur_price": 155.89,
+      "cur_price_usd": 155.89,
+      "pnl_rate": -11.46,
+      "eval_amt": 155.89,
+      "eval_amt_usd": 155.89,
+      "eval_amt_krw": 208378,
       "marketCountry": "US",
       "currency": "USD",
-      "rsi": 23.8,
+      "rsi": 22.9,
       "investor_summary": "글로벌 기관 · 미국 정규장 수급 연동",
       "ai_ensemble": {
         "decision": "관망",
@@ -444,16 +444,16 @@
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 159.0,
-      "change_rate": -8.48,
+      "price": 155.7,
+      "change_rate": -10.38,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
       "theme_tag": "📦 보유 고정 · 글로벌 AI 대장주",
-      "rsi": 23.8,
+      "rsi": 22.9,
       "is_held": true,
       "held_qty": 1,
-      "pnl_rate": -9.69,
+      "pnl_rate": -11.46,
       "status_tag": "포트폴리오 보유 중 📦",
       "action_status": "보유 홀딩 관망 💎",
       "ai_ensemble": {
@@ -482,13 +482,13 @@
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 343.7319,
-      "change_rate": 0.1,
+      "price": 344.8317,
+      "change_rate": 0.42,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
       "theme_tag": "🔍 퀀트 발굴(76점) · 미국 1위 대형은행",
-      "rsi": 54.3,
+      "rsi": 55.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -512,7 +512,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 54.3의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 55.2의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
@@ -520,13 +520,13 @@
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 386.03,
+      "price": 386.04,
       "change_rate": -1.23,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
       "theme_tag": "🔍 퀀트 발굴(76점) · 자율주행·로보틱스",
-      "rsi": 52.5,
+      "rsi": 52.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -558,13 +558,13 @@
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 69.9639,
-      "change_rate": -1.01,
+      "price": 69.95,
+      "change_rate": -1.03,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
       "theme_tag": "🔍 퀀트 발굴(76점) · 모빌리티·자율주행 플랫폼",
-      "rsi": 53.5,
+      "rsi": 53.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -588,7 +588,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 53.5의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 53.4의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
@@ -596,13 +596,13 @@
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 58.08,
+      "price": 58.0837,
       "change_rate": -0.22,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
       "theme_tag": "🔍 퀀트 발굴(76점) · 월배당 방어형 ETF",
-      "rsi": 60.4,
+      "rsi": 60.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -626,7 +626,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 60.4의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 60.5의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
@@ -634,13 +634,13 @@
     {
       "code": "TSM",
       "name": "TSMC (TSM)",
-      "price": 400.78,
-      "change_rate": -3.04,
+      "price": 397.9845,
+      "change_rate": -3.72,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
       "theme_tag": "🔍 퀀트 발굴(75점) · 글로벌 1위 파운드리",
-      "rsi": 46.0,
+      "rsi": 45.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -664,7 +664,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 46.0의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 45.2의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
@@ -672,13 +672,13 @@
     {
       "code": "AVGO",
       "name": "브로드컴 (AVGO)",
-      "price": 349.6,
-      "change_rate": 1.27,
+      "price": 350.99,
+      "change_rate": 1.67,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
       "theme_tag": "🔍 퀀트 발굴(74점) · AI 맞춤형 ASIC 칩",
-      "rsi": 55.3,
+      "rsi": 55.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -702,7 +702,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 55.3의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 55.8의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
@@ -710,13 +710,13 @@
     {
       "code": "WMT",
       "name": "월마트 (WMT)",
-      "price": 126.5629,
-      "change_rate": 0.71,
+      "price": 126.7,
+      "change_rate": 0.82,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
       "theme_tag": "🔍 퀀트 발굴(69점) · 필수소비·방어 1위",
-      "rsi": 65.3,
+      "rsi": 65.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -740,7 +740,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 65.3로 단기 과열 구간에 위치하여 고점 차익실현 리스크 방어를 위해 신규 진입을 유보하고 관망합니다.",
+        "reason": "14일 Wilder RSI 65.5로 단기 과열 구간에 위치하여 고점 차익실현 리스크 방어를 위해 신규 진입을 유보하고 관망합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
