@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-13 03:29:12",
+  "updated_at": "2026-11-13 03:31:58",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "47% (🔋 배터리 사용 중, 22.8°C)",
   "budget_limit": 2500000,
   "fund_eval": 2468748,
@@ -403,48 +403,10 @@
       }
     },
     {
-      "code": "TSM",
-      "name": "TSMC (TSM)",
-      "price": 408.2452,
-      "change_rate": -1.23,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국반도체·AI하드웨어",
-      "theme_tag": "🔍 퀀트 발굴(68점) · 글로벌 1위 파운드리",
-      "rsi": 48.1,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(68점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 58,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 60,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "RSI가 저가 매수 수준(≤40)까지 내려가지 않았고, 거래량이 감소한 상태에서 급격한 상승 모멘텀이 부족합니다. 긍정적 뉴스와 MA20 상회는 호재이지만, 확실한 외인·기관 순매수 신호가 없어 신중히 기다리는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 58점 | 편차 9점)",
-        "checked_at": "2026-11-13 01:30:24"
-      }
-    },
-    {
       "code": "ORCL",
       "name": "오라클 (ORCL)",
-      "price": 127.505,
-      "change_rate": -0.68,
+      "price": 127.4,
+      "change_rate": -0.76,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -468,102 +430,26 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "RSI 중립이며 거래량이 평균 대비 크게 낮고 외인·기관 수급이 명확히 확인되지 않아 즉각적인 매수 시점이 아니다. 현금과 한도는 충분하지만 현재 시장 신호가 약해 관망 후 추가 확인이 필요하다.",
+        "reason": "현재 ORCL은 MA20를 상회하고 있지만 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. 또한 외인·기관 수급이 명확하지 않아 위험을 최소화하기 위해 관망을 선택했습니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 58점 | 편차 9점)",
-        "checked_at": "2026-11-13 01:31:33"
+        "checked_at": "2026-11-13 03:30:23"
       }
     },
     {
       "code": "SPYM",
       "name": "SPDR S&P500 (SPYM)",
-      "price": 89.52,
-      "change_rate": 0.11,
+      "price": 89.525,
+      "change_rate": 0.12,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
       "theme_tag": "🔍 퀀트 발굴(68점) · 저단가 S&P500 인덱스",
       "rsi": 50.3,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(68점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 55,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 SPYM은 20일 이동평균선 위에 있어 상승 추세이지만 RSI가 중립 수준이고 거래량이 부족해 단기 매수 신호가 약합니다. 현금과 섹터 한도는 충분하지만, 뚜렷한 외인·기관 순매수와 호재가 없어 신중히 기다리는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 55점 | 편차 3점)",
-        "checked_at": "2026-11-13 01:32:02"
-      }
-    },
-    {
-      "code": "TSLA",
-      "name": "테슬라 (TSLA)",
-      "price": 392.08,
-      "change_rate": 0.32,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(68점) · 자율주행·로보틱스",
-      "rsi": 54.8,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(68점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 55,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 58,
-            "decision": "관망"
-          }
-        ],
-        "reason": "가격이 20일 이동평균 위에 있어 상승세이지만 RSI가 중립이고 거래량이 평균보다 크게 낮아 매수 신호가 약합니다. 또한 최근 호재가 제한적이며, 현재 현금으로 1주 매수는 가능하지만 보수적인 접근이 필요하므로 관망을 권합니다.",
-        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 70점 ↔ 교정후 55점 | 편차 15점)",
-        "checked_at": "2026-11-13 01:32:52"
-      }
-    },
-    {
-      "code": "QCOM",
-      "name": "퀄컴 (QCOM)",
-      "price": 178.39,
-      "change_rate": 1.03,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국반도체·AI하드웨어",
-      "theme_tag": "🔍 퀀트 발굴(68점) · 온디바이스 AI 칩",
-      "rsi": 53.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -582,21 +468,59 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "주가는 상승추세이지만 RSI가 중립이고 거래량이 감소한 상태이며, 뉴스가 긍정·부정이 혼재해 확신이 부족합니다. 현금 여유는 있지만 추가 매수 시점은 더 명확한 매수 신호가 나타날 때까지 기다리는 것이 바람직합니다.",
+        "reason": "현재 SPY와 SPYM이 상승세를 유지하고 있으나 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. ATR 목표익절선과 과열익절선이 아직 도달하지 않았고, 외인·기관 수급이 확정적이지 않으므로 보수적으로 관망을 권장합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 56점 | 편차 2점)",
+        "checked_at": "2026-11-13 03:30:35"
+      }
+    },
+    {
+      "code": "TSLA",
+      "name": "테슬라 (TSLA)",
+      "price": 392.26,
+      "change_rate": 0.36,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국증시·글로벌빅테크",
+      "theme_tag": "🔍 퀀트 발굴(68점) · 자율주행·로보틱스",
+      "rsi": 54.8,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(68점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 TSLA는 상승 추세를 유지하고 있으나 RSI가 중립 수준이며 거래량이 평균 대비 낮아 단기 매수 신호가 부족합니다. 또한 외인·기관 수급이 아직 명확한 순매수로 이어지지 않았으므로 보수적으로 관망을 선택했습니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 56점 | 편차 14점)",
-        "checked_at": "2026-11-13 01:33:20"
+        "checked_at": "2026-11-13 03:30:47"
       }
     },
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 69.91,
-      "change_rate": -1.09,
+      "price": 69.88,
+      "change_rate": -1.13,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -609,31 +533,31 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 54,
+        "score": 56,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 52,
+            "score": 58,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 주가는 20일 평균선 위에 있어 상승 추세이지만 RSI가 중립이며 거래량이 감소하고 음봉이 나타나는 등 매수 강도가 약합니다. 또한 외국인·기관 수급과 확실한 호재가 확인되지 않아 신중히 기다리는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 54점 | 편차 13점)",
-        "checked_at": "2026-11-13 01:33:50"
+        "reason": "현재 가격이 MA20를 상회하고 RSI가 중립 수준이지만 외인·기관 순매수 신호가 없으며 거래량이 낮아 단기 매수 타점이 불확실합니다. ATR 목표익절선이 아직 도달하지 않았고 과열 신호도 없으므로 보수적으로 관망을 권장합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 56점 | 편차 11점)",
+        "checked_at": "2026-11-13 03:30:58"
       }
     },
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 344.34,
+      "price": 344.35,
       "change_rate": 0.28,
       "marketCountry": "US",
       "currency": "USD",
@@ -644,6 +568,44 @@
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "🔍 퀀트 발굴(64점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 가격이 20일 이동평균선 위에 있으나 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. 보유 주식이 없으므로 매도 옵션도 없으며, 시장이 강세장임에도 불구하고 단기 매수에 대한 명확한 지표가 없으므로 관망이 가장 합리적입니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 56점 | 편차 14점)",
+        "checked_at": "2026-11-13 03:31:01"
+      }
+    },
+    {
+      "code": "QCOM",
+      "name": "퀄컴 (QCOM)",
+      "price": 178.785,
+      "change_rate": 1.25,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국반도체·AI하드웨어",
+      "theme_tag": "🔍 퀀트 발굴(60점) · 온디바이스 AI 칩",
+      "rsi": 53.2,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(60점) · 실시간 감시 🎯",
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
@@ -658,14 +620,14 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "주가가 20일 평균선 위에 있어 상승 추세이지만 RSI가 중립이고 거래량이 감소한 음봉이 나타났으며, 외국인·기관 순매수와 강력한 호재가 확인되지 않아 신중히 기다리는 것이 바람직합니다.",
+        "reason": "현재 QCOM은 상승 추세를 유지하고 있으나 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. 또한 외인·기관 수급이 명확하지 않아 위험 회피를 우선시하고 관망으로 판단했습니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 55점 | 편차 15점)",
-        "checked_at": "2026-11-13 01:34:17"
+        "checked_at": "2026-11-13 03:31:13"
       }
     },
     {
@@ -696,14 +658,52 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "ETF가 MA20 위에 있어 상승세이지만 RSI가 63.3으로 저가 매수 신호가 없고, 거래량이 부족하며 외국인·기관 순매수 확인이 안돼 신중히 기다리는 것이 바람직합니다. 현금은 충분하지만 현재는 진입 타점이 명확하지 않아 관망을 권합니다.",
+        "reason": "현재 JEPI는 상승 추세를 유지하고 있으나 RSI가 68 이하가 아니고 거래량이 낮아 단기 매수 신호가 부족합니다. 보유가 없으므로 매도도 불가능하며, 시장 레짐이 강세이지만 위험 회피를 위해 관망을 권장합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 56점 | 편차 14점)",
-        "checked_at": "2026-11-13 01:35:00"
+        "checked_at": "2026-11-13 03:31:23"
+      }
+    },
+    {
+      "code": "V",
+      "name": "비자 (V)",
+      "price": 424.23,
+      "change_rate": -0.31,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국금융·결제",
+      "theme_tag": "🔍 퀀트 발굴(54점) · 글로벌 결제 네트워크",
+      "rsi": 63.7,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(54점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 비자(V)는 상승추세를 유지하고 있으나 RSI가 68 이하이면서 외국인·기관 순매수 신호가 없고 거래량이 평균 대비 18% 부족해 단기 매수에 대한 확신이 부족합니다. ATR 목표익절선과 과열익절선이 아직 도달하지 않았으며, 보유량이 없으므로 매도도 불가능하므로 관망이 가장 합리적입니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 56점 | 편차 11점)",
+        "checked_at": "2026-11-13 03:31:56"
       }
     }
   ],
