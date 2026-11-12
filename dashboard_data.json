@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-12 09:54:37"
+    "checked_at": "2026-11-12 10:00:35"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-12 09:54:37",
+  "updated_at": "2026-11-12 10:00:35",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "83% (🔋 배터리 사용 중, 21.2°C)",
@@ -138,10 +138,48 @@
   ],
   "watch_list": [
     {
+      "code": "NVDA",
+      "name": "엔비디아",
+      "price": 173,
+      "change_rate": null,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "국내 우량주",
+      "theme_tag": "퀀트 수급 유망",
+      "rsi": 28.7,
+      "is_held": true,
+      "held_qty": 1,
+      "pnl_rate": -1.32,
+      "status_tag": "포트폴리오 보유 중 📦",
+      "action_status": "보유 홀딩 관망 💎",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 58,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 주가는 MA20 이하이며 약세 조정 국면이지만 RSI가 과매도 구역에 있어 반등 가능성이 있습니다. 그러나 ATR 목표익절선에 도달하지 않았고 손절선도 아직 내려가지 않아 보유 포지션을 유지하고 신규 매수는 자제하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 58점 | 편차 8점)",
+        "checked_at": "2026-11-12 05:30:33"
+      }
+    },
+    {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22510,
-      "change_rate": -1.85,
+      "price": 22505,
+      "change_rate": -1.87,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -154,25 +192,25 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 56,
+        "score": 58,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
+            "score": 60,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 58,
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "가격이 20일 평균선 아래에 위치하고 RSI는 중립 수준이며 외국인·기관이 지속적으로 순매도하고 있어 단기 매수 시점으로는 약함이 있다. 긍정적인 펀드 자산 규모 뉴스가 있지만, 거래량 감소와 약세 수급이 결합돼 현재는 관망이 바람직하다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 45점 ↔ AI 56점 | 편차 11점)",
-        "checked_at": "2026-11-11 19:49:24"
+        "reason": "RSI가 저가 매수 구간에 있으나 외국인·기관이 지속적으로 순매도하고 있어 매수 신호가 약합니다. 또한 코스피200이 약세·조정장이고 거래량 급증이 가짜 반등 가능성을 내포하므로 보수적으로 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 45점 ↔ AI 58점 | 편차 13점)",
+        "checked_at": "2026-11-12 10:00:23"
       }
     },
     {
@@ -192,7 +230,7 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 56,
+        "score": 60,
         "consensus": "2:0 관망 우세",
         "models": [
           {
@@ -204,13 +242,13 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 55,
+            "score": 62,
             "decision": "관망"
           }
         ],
-        "reason": "RSI가 저가 매수 구간에 들어서 매수 매력은 있지만, 현재가가 20일 평균선 아래에 위치하고 5일 누적 외국인 순매도가 마이너스이며 당일 급등(+5.3%)으로 단기 고점 추격 위험이 있어 보수적으로 관망한다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 60점 ↔ AI 56점 | 편차 4점)",
-        "checked_at": "2026-11-11 19:49:29"
+        "reason": "현재 코스피200 약세장과 20일선 아래의 단기 조정 흐름 속에서 최근 예측 적중률 보정 및 외인 5일 누적 순매도세가 겹쳐 보수적 접근이 필요합니다. 14일 RSI가 40.7로 중립적이나 명확한 수급 반전과 지지력 확인을 위해 추가적인 눌림목 조정을 대기하며 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 57점 ↔ AI 60점 | 편차 3점)",
+        "checked_at": "2026-11-12 10:00:34"
       }
     },
     {
@@ -254,13 +292,13 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 152600,
-      "change_rate": -0.46,
+      "price": 151700,
+      "change_rate": -1.04,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 40.4,
+      "rsi": 39.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -292,13 +330,13 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15235,
-      "change_rate": 1.13,
+      "price": 15225,
+      "change_rate": 1.06,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 61.8,
+      "rsi": 61.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -328,15 +366,53 @@
       }
     },
     {
-      "code": "035420",
-      "name": "NAVER",
-      "price": 186600,
-      "change_rate": -3.96,
+      "code": "086790",
+      "name": "하나금융지주",
+      "price": 118900,
+      "change_rate": -1.0,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 51.7,
+      "rsi": 44.1,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 55,
+        "consensus": "2사 합의",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "거시경제 레짐 및 수급·기술적 지표 분석 완료.",
+        "audit_badge": "✅ 5대 팩트 검증 완료",
+        "checked_at": "분석 전"
+      }
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "price": 185100,
+      "change_rate": -4.73,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "국내 우량주",
+      "theme_tag": "퀀트 수급 유망",
+      "rsi": 50.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -363,82 +439,6 @@
         "reason": "외국인과 기관의 5일 연속 동반 순매수와 풍부한 거래량은 긍정적이나, 내일(11/12) 3분기 공식 실적 발표를 앞두고 있어 단기 불확실성이 존재합니다. 또한 과거 예측 적중률 피드백에 따른 보수적 감점이 적용되어, 실적 발표 후 방향성이 확인될 때까지 신규 진입을 유보하고 관망합니다.",
         "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 70점 ↔ AI 54점 | 편차 16점 · 보수적 관망)",
         "checked_at": "2026-11-11 19:50:02"
-      }
-    },
-    {
-      "code": "035720",
-      "name": "카카오",
-      "price": 31900,
-      "change_rate": -0.31,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "국내 우량주",
-      "theme_tag": "퀀트 수급 유망",
-      "rsi": 53.4,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 55,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "정상·강세장 속에서 주가는 20일선을 상회하고 있으나, 장중 윗꼬리를 달고 음봉으로 밀렸으며 외국인과 기관이 동반 순매도세를 보이고 있어 단기 차익실현 압력이 존재합니다. 현재 보유 수량이 없는 미보유 상태이므로 무리한 추격매수보다는 향후 수급 개선과 눌림목 형성 여부를 확인한 후 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 55점 ↔ AI 55점 | 편차 0점)",
-        "checked_at": "2026-11-11 19:50:11"
-      }
-    },
-    {
-      "code": "066570",
-      "name": "LG전자",
-      "price": 140700,
-      "change_rate": -0.28,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "국내 우량주",
-      "theme_tag": "퀀트 수급 유망",
-      "rsi": 30.6,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "매수",
-        "score": 79,
-        "consensus": "2:0 매수 합의",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 78,
-            "decision": "매수"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          }
-        ],
-        "reason": "정상·강세장 속에서 LG전자가 14일 RSI 31.2의 과매도 구간에서 장대 양봉을 분출하며 강한 저가 매수세를 유입시키고 있습니다. 단기 조정에 따른 기술적 반등 기대감이 높고 외국인 순매수가 유입되어 신규 진입 타점으로 적절하므로 1주를 자동 매수합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 68점 ↔ AI 79점 | 편차 11점)",
-        "checked_at": "2026-11-11 19:50:22"
       }
     },
     {
