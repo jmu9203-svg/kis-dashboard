@@ -1,9 +1,9 @@
 {
-  "d2_cash": 2704629,
-  "actual_tot_eval": 2469460,
-  "usable_cash": 2467855,
-  "net_krw_cash": 2704629,
-  "usd_cash": -176.5,
+  "d2_cash": 2467883,
+  "actual_tot_eval": 2467883,
+  "usable_cash": 2263254,
+  "net_krw_cash": 2467883,
+  "usd_cash": 0.0,
   "fx_rate": 1332.4,
   "holdings": []
 }
