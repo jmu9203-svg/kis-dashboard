@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-12 11:32:40",
+  "updated_at": "2026-11-12 11:33:15",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "80% (🔋 배터리 사용 중, 20.7°C)",
@@ -140,8 +140,8 @@
     {
       "code": "381180",
       "name": "TIGER 미국필라델피아반도체나스닥",
-      "price": 36245,
-      "change_rate": 0.95,
+      "price": 36260,
+      "change_rate": 0.99,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
@@ -178,8 +178,8 @@
     {
       "code": "003490",
       "name": "대한항공",
-      "price": 31350,
-      "change_rate": -0.48,
+      "price": 31400,
+      "change_rate": -0.32,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "항공·운송·물류",
@@ -216,8 +216,8 @@
     {
       "code": "010170",
       "name": "대한광통신",
-      "price": 13400,
-      "change_rate": 3.88,
+      "price": 13420,
+      "change_rate": 4.03,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "기타·분산섹터",
@@ -254,8 +254,8 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 183400,
-      "change_rate": -5.61,
+      "price": 183350,
+      "change_rate": -5.64,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "플랫폼·바이오",
@@ -292,8 +292,8 @@
     {
       "code": "035720",
       "name": "카카오",
-      "price": 32000,
-      "change_rate": 0.0,
+      "price": 32050,
+      "change_rate": 0.16,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "플랫폼·바이오",
@@ -406,8 +406,8 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15210,
-      "change_rate": 0.96,
+      "price": 15205,
+      "change_rate": 0.93,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
@@ -458,32 +458,32 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 58,
-        "consensus": "2:0 관망 우세",
+        "score": 71,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 60,
+            "score": 62,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           }
         ],
-        "reason": "현재 코스피200 시장이 약세·조정장이고 기관 수급이 5일 누적 기준으로 순매도 흐름을 보이는 점을 감안하여 보수적으로 관망합니다. 당일 아래꼬리를 달고 반등하며 외국인이 2일 연속 순매수세를 보인 점은 긍정적이나, 추가적인 모멘텀과 수급 개선을 확인한 뒤 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 69점 ↔ AI 58점 | 편차 11점)",
-        "checked_at": "2026-11-12 11:32:21"
+        "reason": "코스피200 약세·조정장 레짐과 외국인 5일 누적 순매도세가 지속되는 가운데, 주가가 20일선을 상회하고 아래꼬리 양봉 반등을 보였으나 적극적인 매수 시그널로는 부족합니다. 따라서 추가적인 수급 유입과 시장 안정을 확인한 뒤 향후 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 69점 ↔ AI 71점 | 편차 2점)",
+        "checked_at": "2026-11-12 11:32:52"
       }
     },
     {
       "code": "267260",
       "name": "HD현대일렉트릭",
-      "price": 423500,
-      "change_rate": 4.57,
+      "price": 422500,
+      "change_rate": 4.32,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "전력망·중공업·방산",
@@ -512,9 +512,9 @@
             "decision": "매수"
           }
         ],
-        "reason": "코스피200 약세장 및 20일선 하회에 따른 보수적 접근이 필요하며, 당일 주가 +4.44% 상승으로 단기 추격매수 방지 규칙이 적용됩니다. 외인 수급은 유입 중이나 기관 연속 매도세와 중립적 RSI(36.0)를 고려할 때 신규 진입보다 눌림목 대기가 유리하므로 향후 시장 안정 시 재진입을 검토합니다.",
+        "reason": "현재 코스피200 약세장 속에서 20일 이동평균선을 하회하고 있으며, 당일 주가 등락률이 +4.32%로 단기 급등 기준(+5.0% 임박)에 근접해 추격매수 리스크가 존재합니다. 외국인 3일 연속 순매수와 AI 데이터센터 수주 호재가 있으나, 기관의 연속 매도세와 전반적인 시장 조정 흐름을 고려할 때 적극적인 진입보다는 눌림목을 대기하며 향후 시장 안정 시 재진입을 검토합니다.",
         "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 54점 ↔ AI 70점 | 편차 16점 · 보수적 관망)",
-        "checked_at": "2026-11-12 11:32:36"
+        "checked_at": "2026-11-12 11:33:11"
       }
     },
     {
