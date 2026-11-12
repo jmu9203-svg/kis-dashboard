@@ -1,48 +1,9 @@
 {
-  "d2_cash": 2264073,
-  "actual_tot_eval": 2467940,
-  "usable_cash": 2251656,
-  "net_krw_cash": 2264073,
+  "d2_cash": 2468748,
+  "actual_tot_eval": 2468748,
+  "usable_cash": 2467104,
+  "net_krw_cash": 2468748,
   "usd_cash": 0.0,
   "fx_rate": 1336.7,
-  "holdings": [
-    {
-      "code": "NVDA",
-      "name": "엔비디아",
-      "qty": 1,
-      "avg_price": 176.06,
-      "cur_price": 152.515,
-      "cur_price_usd": 152.515,
-      "pnl_rate": -13.37,
-      "eval_amt": 152.51,
-      "eval_amt_usd": 152.51,
-      "eval_amt_krw": 203867,
-      "marketCountry": "US",
-      "currency": "USD",
-      "rsi": 22.6,
-      "investor_summary": "글로벌 기관 · 미국 정규장 수급 연동",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 58,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 58,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 주가는 MA20 이하이며 약세 조정 국면이지만 RSI가 과매도 구역에 있어 반등 가능성이 있습니다. 그러나 ATR 목표익절선에 도달하지 않았고 손절선도 아직 내려가지 않아 보유 포지션을 유지하고 신규 매수는 자제하는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 58점 | 편차 8점)",
-        "checked_at": "2026-11-12 05:30:33"
-      }
-    }
-  ]
+  "holdings": []
 }
