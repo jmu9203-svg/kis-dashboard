@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-12 09:09:32"
+    "checked_at": "2026-11-12 09:10:18"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-12 09:09:32",
+  "updated_at": "2026-11-12 09:10:19",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "85% (⚡ 충전 중, 21.6°C)",
@@ -138,48 +138,10 @@
   ],
   "watch_list": [
     {
-      "code": "NVDA",
-      "name": "엔비디아",
-      "price": 173,
-      "change_rate": null,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "국내 우량주",
-      "theme_tag": "퀀트 수급 유망",
-      "rsi": 21.4,
-      "is_held": true,
-      "held_qty": 1,
-      "pnl_rate": -1.32,
-      "status_tag": "포트폴리오 보유 중 📦",
-      "action_status": "보유 홀딩 관망 💎",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 58,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 58,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 주가는 MA20 이하이며 약세 조정 국면이지만 RSI가 과매도 구역에 있어 반등 가능성이 있습니다. 그러나 ATR 목표익절선에 도달하지 않았고 손절선도 아직 내려가지 않아 보유 포지션을 유지하고 신규 매수는 자제하는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 58점 | 편차 8점)",
-        "checked_at": "2026-11-12 05:30:33"
-      }
-    },
-    {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 22485,
-      "change_rate": -1.96,
+      "price": 22515,
+      "change_rate": -1.83,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
@@ -216,13 +178,13 @@
     {
       "code": "005930",
       "name": "삼성전자",
-      "price": 209000,
-      "change_rate": 1.46,
+      "price": 208500,
+      "change_rate": 1.21,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 39.5,
+      "rsi": 39.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -254,13 +216,13 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 270000,
-      "change_rate": -0.92,
+      "price": 269500,
+      "change_rate": -1.1,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 31.8,
+      "rsi": 31.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -292,13 +254,13 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 153300,
-      "change_rate": 0.0,
+      "price": 153600,
+      "change_rate": 0.2,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 41.3,
+      "rsi": 42.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -368,13 +330,13 @@
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 186800,
-      "change_rate": -3.86,
+      "price": 186950,
+      "change_rate": -3.78,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 51.9,
+      "rsi": 52.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -404,15 +366,15 @@
       }
     },
     {
-      "code": "086790",
-      "name": "하나금융지주",
-      "price": 119800,
-      "change_rate": -0.25,
+      "code": "035720",
+      "name": "카카오",
+      "price": 31850,
+      "change_rate": -0.47,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "국내 우량주",
       "theme_tag": "퀀트 수급 유망",
-      "rsi": 45.6,
+      "rsi": 53.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -421,7 +383,7 @@
       "ai_ensemble": {
         "decision": "관망",
         "score": 55,
-        "consensus": "2사 합의",
+        "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
@@ -431,26 +393,64 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "거시경제 레짐 및 수급·기술적 지표 분석 완료.",
-        "audit_badge": "✅ 5대 팩트 검증 완료",
-        "checked_at": "분석 전"
+        "reason": "정상·강세장 속에서 주가는 20일선을 상회하고 있으나, 장중 윗꼬리를 달고 음봉으로 밀렸으며 외국인과 기관이 동반 순매도세를 보이고 있어 단기 차익실현 압력이 존재합니다. 현재 보유 수량이 없는 미보유 상태이므로 무리한 추격매수보다는 향후 수급 개선과 눌림목 형성 여부를 확인한 후 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 55점 ↔ AI 55점 | 편차 0점)",
+        "checked_at": "2026-11-11 19:50:11"
+      }
+    },
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "price": 139400,
+      "change_rate": -1.2,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "국내 우량주",
+      "theme_tag": "퀀트 수급 유망",
+      "rsi": 30.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "매수",
+        "score": 79,
+        "consensus": "2:0 매수 합의",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 78,
+            "decision": "매수"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "reason": "정상·강세장 속에서 LG전자가 14일 RSI 31.2의 과매도 구간에서 장대 양봉을 분출하며 강한 저가 매수세를 유입시키고 있습니다. 단기 조정에 따른 기술적 반등 기대감이 높고 외국인 순매수가 유입되어 신규 진입 타점으로 적절하므로 1주를 자동 매수합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 68점 ↔ AI 79점 | 편차 11점)",
+        "checked_at": "2026-11-11 19:50:22"
       }
     },
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 355.48,
-      "change_rate": 2.0,
+      "price": 355.63,
+      "change_rate": 2.04,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "빅테크/IT",
       "theme_tag": "AI 모바일 생태계",
-      "rsi": 60.3,
+      "rsi": 60.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -634,13 +634,13 @@
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 36.0415,
-      "change_rate": 0.59,
+      "price": 36.02,
+      "change_rate": 0.53,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국 고배당 ETF",
       "theme_tag": "10년 연속 배당성장",
-      "rsi": 64.3,
+      "rsi": 64.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
