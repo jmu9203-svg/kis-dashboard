@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-13 11:31:42",
+  "updated_at": "2026-11-13 11:32:09",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "30% (🔋 배터리 사용 중, 22.2°C)",
@@ -101,8 +101,8 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15170,
-      "change_rate": 0.0,
+      "price": 15175,
+      "change_rate": 0.03,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
@@ -177,8 +177,8 @@
     {
       "code": "003490",
       "name": "대한항공",
-      "price": 31700,
-      "change_rate": 0.16,
+      "price": 31650,
+      "change_rate": 0.0,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "항공·운송·물류",
@@ -367,8 +367,8 @@
     {
       "code": "086790",
       "name": "하나금융지주",
-      "price": 123800,
-      "change_rate": 2.74,
+      "price": 123900,
+      "change_rate": 2.82,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "금융·밸류업지주",
@@ -419,8 +419,8 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
-        "consensus": "2사 합의",
+        "score": 68,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
         "models": [
           {
             "provider": "Google",
@@ -430,21 +430,21 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
+            "model": "Groq 20B",
+            "score": 80,
+            "decision": "매수"
           }
         ],
-        "reason": "거시경제 레짐 및 수급·기술적 지표 분석 완료.",
-        "audit_badge": "✅ 5대 팩트 검증 완료",
-        "checked_at": "분석 전"
+        "reason": "현재 코스피200 약세장 레짐 속에서 신한지주는 당일 +4.94% 급등하여 단기 고점 추격매수 방지 규칙(당일 +5% 임박)과 외국인 5일 누적 순매도세가 겹쳐 보수적 접근이 필요합니다. RSI 40.2의 중립 구간 및 기관의 2일 연속 매도세 등을 고려할 때 지금은 무리한 진입을 자제하고 향후 시장 안정 및 눌림목 형성 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 55점 ↔ AI 68점 | 편차 13점)",
+        "checked_at": "2026-11-13 11:31:49"
       }
     },
     {
       "code": "381180",
       "name": "TIGER 미국필라델피아반도체나스닥",
-      "price": 36855,
-      "change_rate": 4.04,
+      "price": 36860,
+      "change_rate": 4.05,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
@@ -457,25 +457,25 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 54,
-        "consensus": "2:0 관망 우세",
+        "score": 71,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 52,
+            "score": 62,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           }
         ],
-        "reason": "현재 가격이 20일 이동평균선 아래에 위치하고 RSI가 중립 수준이므로 단기 매수 신호가 부족합니다. 외국인 순매수는 있으나 기관이 지속적으로 매도하고 있어 매수 압력이 약합니다. ATR 목표익절선(6% 상승)까지는 아직 멀어 보이며, 현재 시장은 약세·조정장으로 보수적 관망이 적절합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 49점 ↔ AI 54점 | 편차 5점)",
-        "checked_at": "2026-11-12 11:30:32"
+        "reason": "현재 코스피200 약세·조정장 레짐으로 인해 매수 커트라인이 강화되었으며, 20일선 아래에 위치해 단기 조정 흐름을 보이고 있습니다. 당일 대규모 거래량과 외국인 매수세가 유입되었으나 약세장 속 보수적 접근이 필요하므로 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 50점 ↔ AI 71점 | 편차 21점 · 보수적 관망)",
+        "checked_at": "2026-11-13 11:32:05"
       }
     },
     {
