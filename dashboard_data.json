@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-14 05:30:45",
+  "updated_at": "2026-11-14 05:31:21",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "70% (🔋 배터리 사용 중, 23.0°C)",
   "budget_limit": 2500000,
   "fund_eval": 2467883,
@@ -405,7 +405,7 @@
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 57.91,
+      "price": 57.9101,
       "change_rate": -0.22,
       "marketCountry": "US",
       "currency": "USD",
@@ -443,8 +443,8 @@
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 162.155,
-      "change_rate": -2.43,
+      "price": 162.07,
+      "change_rate": -2.48,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -481,8 +481,8 @@
     {
       "code": "TSLA",
       "name": "테슬라 (TSLA)",
-      "price": 390.09,
-      "change_rate": -1.85,
+      "price": 390.0092,
+      "change_rate": -1.87,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -519,8 +519,8 @@
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 344.55,
-      "change_rate": 0.5,
+      "price": 344.49,
+      "change_rate": 0.49,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
@@ -557,8 +557,8 @@
     {
       "code": "AMZN",
       "name": "아마존 (AMZN)",
-      "price": 265.8193,
-      "change_rate": -0.61,
+      "price": 265.78,
+      "change_rate": -0.62,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -595,7 +595,7 @@
     {
       "code": "TLT",
       "name": "iShares 20년+ 미 국채 (TLT)",
-      "price": 79.37,
+      "price": 79.3701,
       "change_rate": -0.44,
       "marketCountry": "US",
       "currency": "USD",
@@ -609,25 +609,25 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 60,
-        "consensus": "2사 합의",
+        "score": 50,
+        "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 60,
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 60,
+            "model": "Groq 20B",
+            "score": 50,
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 40.7의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
-        "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
-        "checked_at": "분석 전"
+        "reason": "현재 미 증시 약세장 속에서 20일 이동평균선을 하회하고 있으며, 거래량이 20일 평균 대비 36% 수준으로 실종되어 유의미한 수급 유입이 확인되지 않습니다. 14일 RSI 역시 40.7의 중립 구간에 머물러 있어 뚜렷한 반등 모멘텀이 부족하므로 당분간 관망하며 향후 시장 안정 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 50점 | 편차 4점)",
+        "checked_at": "2026-11-14 05:30:47"
       }
     },
     {
@@ -647,13 +647,13 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 56,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
+            "score": 58,
             "decision": "관망"
           },
           {
@@ -663,15 +663,15 @@
             "decision": "관망"
           }
         ],
-        "reason": "현재 RSI가 68 이하이면서 40 이상이므로 저가 매수 신호가 없고, 과열 매도 신호도 없으므로 보유하지 않은 상태에서 매수는 보수적으로 판단된다. 거래량이 평균 대비 부족하고 음봉이 이어지며 외인·기관 수급이 불확실해 단기 상승 가능성이 낮아 관망이 적절하다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 53점 ↔ AI 55점 | 편차 2점)",
-        "checked_at": "2026-11-13 05:30:38"
+        "reason": "미 증시 약세장 레짐과 최근 예측 적중률 저조에 따른 보수적 감점 요인이 작용했습니다. 거래량이 20일 평균 대비 49%로 부족하고 음봉 흐름을 보여, 향후 시장 안정 및 명확한 거래량 동반 반등 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 56점 | 편차 6점)",
+        "checked_at": "2026-11-14 05:31:03"
       }
     },
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 69.38,
+      "price": 69.385,
       "change_rate": 0.38,
       "marketCountry": "US",
       "currency": "USD",
@@ -685,13 +685,13 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 54,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
+            "score": 52,
             "decision": "관망"
           },
           {
@@ -701,9 +701,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세장 속에서 UBER가 20일선 위에 위치하고 있으나 14일 RSI 중립(51.2) 및 거래량이 20일 평균 대비 18% 부족하며 긴 윗꼬리 음봉이 발생해 단기 모멘텀이 다소 약화되었습니다. 미보유 상태에서 추가적인 수급 유입과 눌림목을 확인한 후 진입하는 것이 안전하므로 현재는 관망을 유지하며 향후 시장 안정 시 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 55점 | 편차 7점)",
-        "checked_at": "2026-11-14 03:31:00"
+        "reason": "현재 미 증시가 약세·조정장 국면에 위치한 가운데, 우버(UBER)는 20일 이동평균선을 상회하고 있으나 당일 거래량이 20일 평균 대비 25% 부족하고 긴 윗꼬리 음봉이 발생하여 단기 상단 저항 압력이 큽니다. 따라서 적극적인 신규 매수보다는 시장 안정을 확인하며 눌림목을 대기하는 관망 포지션을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 54점 | 편차 8점)",
+        "checked_at": "2026-11-14 05:31:19"
       }
     }
   ],
