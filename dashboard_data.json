@@ -47,9 +47,9 @@
       "date": "2026-11-13",
       "is_open": true,
       "is_trading_day": true,
-      "is_in_session": false,
-      "session_status": "🌙 장 마감 (23:30 개장)",
-      "session_color": "#94a3b8",
+      "is_in_session": true,
+      "session_status": "🟢 정규장 거래중",
+      "session_color": "#34d399",
       "reason": "평일 정상 개장일",
       "is_half_day": false,
       "daylight_saving": false,
@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-13 23:26:35"
+    "checked_at": "2026-11-13 23:37:44"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-13 23:26:35",
+  "updated_at": "2026-11-13 23:37:44",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "82% (🔋 배터리 사용 중, 22.2°C)",
@@ -479,20 +479,58 @@
       }
     },
     {
-      "code": "TSLA",
-      "name": "테슬라 (TSLA)",
-      "price": 402.275,
-      "change_rate": 1.21,
+      "code": "GOOGL",
+      "name": "알파벳 A (GOOGL)",
+      "price": 302.27,
+      "change_rate": 1.2,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(76점) · 자율주행·로보틱스",
-      "rsi": 58.1,
+      "theme_tag": "🔍 퀀트 발굴(68점) · AI 클라우드·검색",
+      "rsi": 46.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(76점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(68점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 58,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 62,
+            "decision": "관망"
+          }
+        ],
+        "reason": "RSI가 중립 수준이고 거래량이 평균보다 낮아 단기 매수 신호가 약합니다. 가격이 MA20 아래에 머물고 있어 추가 상승 여력이 제한적이며, 현재 현금으로 1주 매수는 가능하지만 확신이 부족하므로 관망을 권합니다.",
+        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 51점 ↔ 교정후 58점 | 편차 7점)",
+        "checked_at": "2026-11-13 23:35:18"
+      }
+    },
+    {
+      "code": "QCOM",
+      "name": "퀄컴 (QCOM)",
+      "price": 176.21,
+      "change_rate": -0.53,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국반도체·AI하드웨어",
+      "theme_tag": "🔍 퀀트 발굴(68점) · 온디바이스 AI 칩",
+      "rsi": 51.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(68점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 55,
@@ -506,31 +544,31 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 RSI가 중립 수준이며 거래량이 낮아 단기 상승 모멘텀이 부족합니다. 또한 외인·기관 순매수 여부가 확인되지 않아 매수에 대한 확신이 없으므로 보유하지 않은 상태에서 관망을 선택했습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 55점 | 편차 15점)",
-        "checked_at": "2026-11-13 05:30:27"
+        "reason": "미 증시 강세장 및 20일선 상회 추세이나 당일 거래량이 부족하고 윗꼬리(+3.6%)가 발생해 단기 차익실현 압력이 존재합니다. 현재 미보유 상태에서 뚜렷한 수급 돌파 시그널이 부재하므로 무리한 진입을 자제하고 향후 눌림목 형성 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 55점 | 편차 12점)",
+        "checked_at": "2026-11-13 23:35:29"
       }
     },
     {
-      "code": "JPM",
-      "name": "JP모건 (JPM)",
-      "price": 345.6,
-      "change_rate": 0.81,
+      "code": "JEPI",
+      "name": "JPMorgan 커버드콜 (JEPI)",
+      "price": 58.125,
+      "change_rate": 0.15,
       "marketCountry": "US",
       "currency": "USD",
-      "sector": "미국금융·결제",
-      "theme_tag": "🔍 퀀트 발굴(72점) · 미국 1위 대형은행",
-      "rsi": 55.8,
+      "sector": "미국배당·가치주ETF",
+      "theme_tag": "🔍 퀀트 발굴(68점) · 월배당 방어형 ETF",
+      "rsi": 60.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(72점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(68점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 58,
@@ -544,183 +582,107 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 가격은 MA20를 상회하지만 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. ATR 목표익절선이 아직 도달하지 않았고 과열 신호도 없으므로 보유하거나 진입을 보류하는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 58점 | 편차 9점)",
-        "checked_at": "2026-11-13 05:30:31"
-      }
-    },
-    {
-      "code": "JEPI",
-      "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 58.1642,
-      "change_rate": 0.21,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국배당·가치주ETF",
-      "theme_tag": "🔍 퀀트 발굴(72점) · 월배당 방어형 ETF",
-      "rsi": 61.0,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(72점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 56,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 JEPI는 MA20를 상회하고 있으나 RSI가 68 이하로 과열 신호가 없으며, 거래량이 20일 평균 대비 50% 부족해 단기 매수에 대한 확신이 부족합니다. 또한 보유량이 없으므로 매도 옵션이 없으며, 현재 시장 레짐이 강세장이라 관망이 가장 안전한 선택입니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 72점 ↔ AI 56점 | 편차 16점 · 보수적 관망)",
-        "checked_at": "2026-11-13 05:30:21"
-      }
-    },
-    {
-      "code": "AAPL",
-      "name": "애플 (AAPL)",
-      "price": 356.9568,
-      "change_rate": 0.59,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(72점) · AI 모바일 생태계",
-      "rsi": 61.4,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(72점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 52,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
             "model": "Groq 120B",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "미 증시 약세장 진입과 당일 거래량이 20일 평균 대비 28%로 부족하여 수급 모멘텀이 약화된 상태입니다. 14일 RSI 60.1 및 20일선 상회로 상승 추세는 유지 중이나, 거래량 부족 및 약세장 리스크를 고려하여 신규 진입을 보류하고 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 52점 | 편차 10점)",
-        "checked_at": "2026-11-12 05:30:25"
-      }
-    },
-    {
-      "code": "QCOM",
-      "name": "퀄컴 (QCOM)",
-      "price": 176.69,
-      "change_rate": -0.25,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국반도체·AI하드웨어",
-      "theme_tag": "🔍 퀀트 발굴(68점) · 온디바이스 AI 칩",
-      "rsi": 52.0,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(68점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 56,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 QCOM은 상승 추세를 유지하고 있으나 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. 보유량이 없으므로 매도도 불가능하고, 시장 레짐이 강세이지만 단기 변동성에 대한 확신이 없으므로 관망이 가장 합리적입니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 56점 | 편차 11점)",
-        "checked_at": "2026-11-13 05:30:43"
+        "reason": "미 증시 강세장 및 20일 이동평균선 상회로 상승 추세를 유지하고 있으나, 당일 거래량이 20일 평균 대비 부족하고 뚜렷한 수급 모멘텀이 포착되지 않아 신규 진입보다는 관망이 유리합니다. 보유 수량이 0주이므로 향후 거래량이 유입되거나 조정 시 눌림목 구간에서 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 58점 | 편차 12점)",
+        "checked_at": "2026-11-13 23:35:40"
       }
     },
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 69.39,
-      "change_rate": 0.39,
+      "price": 69.91,
+      "change_rate": 1.14,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
-      "theme_tag": "🔍 퀀트 발굴(67점) · 모빌리티·자율주행 플랫폼",
-      "rsi": 51.5,
+      "theme_tag": "🔍 퀀트 발굴(64점) · 모빌리티·자율주행 플랫폼",
+      "rsi": 53.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(67점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(64점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 56,
+        "score": 58,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 58,
+            "score": 62,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 가격이 MA20를 상회하고 RSI가 중립 수준이지만 외인·기관 순매수 신호가 없으며 거래량이 낮아 단기 매수 타점이 불확실합니다. ATR 목표익절선(8.5%)도 아직 도달하지 않았고, 과열익절(68)도 미달리므로 보수적으로 관망을 권장합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 56점 | 편차 11점)",
-        "checked_at": "2026-11-13 05:31:04"
+        "reason": "미 증시 강세장 및 20일선 상회 등 우상향 흐름이나, 당일 거래량이 20일 평균 대비 부족하고 뚜렷한 수급 유입 모멘텀이 확인되지 않아 보수적으로 관망합니다. 향후 거래량 유입 및 눌림목 형성 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 58점 | 편차 12점)",
+        "checked_at": "2026-11-13 23:36:20"
       }
     },
     {
-      "code": "V",
-      "name": "비자 (V)",
-      "price": 421.4875,
-      "change_rate": 0.28,
+      "code": "JPM",
+      "name": "JP모건 (JPM)",
+      "price": 345.115,
+      "change_rate": 0.67,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
-      "theme_tag": "🔍 퀀트 발굴(67점) · 글로벌 결제 네트워크",
-      "rsi": 60.8,
+      "theme_tag": "🔍 퀀트 발굴(64점) · 미국 1위 대형은행",
+      "rsi": 55.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(67점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(64점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 58,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 57,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 JPM은 MA20을 상회하며 상승 추세를 유지하고 있으나, 20일 평균 대비 거래량이 부족하고 상원 조사 뉴스 등 개별 노이즈와 함께 신고가 영역을 테스트 중입니다. 단기 급등이나 뚜렷한 수급 주도 모멘텀이 확인되지 않아 무리한 신규 진입보다는 관망하며 향후 조정 시 눌림목을 대기합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 58점 | 편차 0점)",
+        "checked_at": "2026-11-13 23:36:32"
+      }
+    },
+    {
+      "code": "AVGO",
+      "name": "브로드컴 (AVGO)",
+      "price": 352.8,
+      "change_rate": -3.17,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국반도체·AI하드웨어",
+      "theme_tag": "🔍 퀀트 발굴(64점) · AI 맞춤형 ASIC 칩",
+      "rsi": 55.5,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(64점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
         "score": 56,
@@ -734,52 +696,90 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 비자(V)는 상승추세를 유지하고 있으나 RSI가 68 이하이면서 외국인·기관 순매수 신호가 없고 거래량이 평균 대비 18% 부족해 단기 매수에 대한 확신이 부족합니다. ATR 목표익절선과 과열익절선이 아직 도달하지 않았으며, 보유량이 없으므로 매도도 불가능하므로 관망이 가장 합리적입니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 56점 | 편차 11점)",
-        "checked_at": "2026-11-13 03:31:56"
+        "reason": "현재 브로드컴은 20일 이동평균선을 상회하고 있으나, 당일 거래량이 20일 평균 대비 8% 부족하며 음봉 흐름을 보여 적극적인 매수세가 확인되지 않습니다. 미보유 상태에서 추가적인 수급 유입 및 기술적 지표의 방향성을 확인한 후 향후 시장 안정 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 55점 ↔ AI 56점 | 편차 1점)",
+        "checked_at": "2026-11-13 23:36:44"
       }
     },
     {
-      "code": "SCHD",
-      "name": "Schwab 미국 배당 다우",
-      "price": 36.03,
-      "change_rate": 0.28,
+      "code": "TSLA",
+      "name": "테슬라 (TSLA)",
+      "price": 389.25,
+      "change_rate": -2.06,
       "marketCountry": "US",
       "currency": "USD",
-      "sector": "미국배당·가치주ETF",
-      "theme_tag": "🔍 퀀트 발굴(62점) · 10년 연속 배당성장",
-      "rsi": 63.6,
+      "sector": "미국증시·글로벌빅테크",
+      "theme_tag": "🔍 퀀트 발굴(64점) · 자율주행·로보틱스",
+      "rsi": 53.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(62점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "status_tag": "🔍 퀀트 발굴(64점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 56,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
+            "score": 53,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
+            "score": 60,
+            "decision": "관망"
+          }
+        ],
+        "reason": "미 증시 강세장 및 20일선 상회 흐름에도 불구하고 투자의견 하향 등 거버넌스 리스크가 상존하고 최근 AI 적중률 피드백에 따른 보수적 감점 및 거래량 부족이 겹쳐 관망을 유지합니다. 향후 명확한 수급 유입 및 눌림목 형성 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 55점 ↔ AI 56점 | 편차 1점)",
+        "checked_at": "2026-11-13 23:37:23"
+      }
+    },
+    {
+      "code": "WMT",
+      "name": "월마트 (WMT)",
+      "price": 127.39,
+      "change_rate": 0.95,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국소비·헬스케어·에너지",
+      "theme_tag": "🔍 퀀트 발굴(58점) · 필수소비·방어 1위",
+      "rsi": 66.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(58점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 RSI가 68 이하이면서 40 이상이므로 저가 매수 신호가 없고, 과열 매도 신호도 없으므로 보유하지 않은 상태에서 매수는 보수적으로 판단된다. 거래량이 평균 대비 부족하고 음봉이 이어지며 외인·기관 수급이 불확실해 단기 상승 가능성이 낮아 관망이 적절하다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 53점 ↔ AI 55점 | 편차 2점)",
-        "checked_at": "2026-11-13 05:30:38"
+        "reason": "현재 주가는 20일 이동평균선을 상회하며 양봉 흐름을 유지하고 있으나, 당일 거래량이 20일 평균 대비 다소 부족하고 다가오는 실적 발표를 앞두고 관망세가 우세합니다. 따라서 신규 진입보다는 추세와 거래량 유입을 조금 더 지켜본 뒤 향후 안정적인 구간에서 재진입을 검토하는 것이 타당합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 53점 ↔ AI 56점 | 편차 3점)",
+        "checked_at": "2026-11-13 23:37:35"
       }
     }
   ],
