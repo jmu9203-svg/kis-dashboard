@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-14 09:51:12"
+    "checked_at": "2026-11-14 10:02:24"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,10 +76,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-14 09:51:12",
+  "updated_at": "2026-11-14 10:02:24",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "62% (🔋 배터리 사용 중, 21.8°C)",
+  "battery": "61% (🔋 배터리 사용 중, 21.7°C)",
   "budget_limit": 2500000,
   "fund_eval": 2467883,
   "fund_pnl": -32117,
