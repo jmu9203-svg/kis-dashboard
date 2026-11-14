@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-14 09:27:28"
+    "checked_at": "2026-11-14 09:38:35"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-14 09:27:28",
+  "updated_at": "2026-11-14 09:38:36",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "62% (🔋 배터리 사용 중, 21.8°C)",
@@ -403,6 +403,82 @@
       }
     },
     {
+      "code": "UBER",
+      "name": "우버 (UBER)",
+      "price": 69.69,
+      "change_rate": 0.82,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국소비·헬스케어·에너지",
+      "theme_tag": "🔍 퀀트 발굴(76점) · 모빌리티·자율주행 플랫폼",
+      "rsi": 52.5,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(76점) 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 54,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 미 증시가 약세·조정장 국면에 위치한 가운데, 우버(UBER)는 20일 이동평균선을 상회하고 있으나 당일 거래량이 20일 평균 대비 25% 부족하고 긴 윗꼬리 음봉이 발생하여 단기 상단 저항 압력이 큽니다. 따라서 적극적인 신규 매수보다는 시장 안정을 확인하며 눌림목을 대기하는 관망 포지션을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 54점 | 편차 8점)",
+        "checked_at": "2026-11-14 05:31:19"
+      }
+    },
+    {
+      "code": "JPM",
+      "name": "JP모건 (JPM)",
+      "price": 346.19,
+      "change_rate": 0.98,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국금융·결제",
+      "theme_tag": "🔍 퀀트 발굴(72점) · 미국 1위 대형은행",
+      "rsi": 56.3,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(72점) 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 54,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 RSI가 중립 수준이며 거래량이 평균 대비 낮아 단기 매수 신호가 부족합니다. 또한, 외인·기관 수급이 불확실하고, 정치적 리스크가 존재해 주가가 단기적으로 변동성을 보일 가능성이 높습니다. 따라서 현재는 보유하지 않으므로 관망으로 판단합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 54점 | 편차 4점)",
+        "checked_at": "2026-11-14 05:30:25"
+      }
+    },
+    {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
       "price": 57.96,
@@ -438,6 +514,44 @@
         "reason": "현재 JEPI는 상승추세에 있으나 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. ATR 목표익절선이 아직 도달하지 않았고, 외인·기관 수급이 명확히 긍정적이지 않으므로 보유를 유지하고 추가 매수는 보류합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 54점 | 편차 5점)",
         "checked_at": "2026-11-14 05:30:12"
+      }
+    },
+    {
+      "code": "AMZN",
+      "name": "아마존 (AMZN)",
+      "price": 266.66,
+      "change_rate": -0.29,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국증시·글로벌빅테크",
+      "theme_tag": "🔍 퀀트 발굴(72점) · 클라우드·AI 커머스",
+      "rsi": 57.5,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(72점) 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "미 증시 약세·조정장 기조 속 당일 거래량이 20일 평균 대비 24%로 부족하고 음봉 흐름을 보여 적극적인 신규 진입 시그널이 부족합니다. 20일 이동평균선과 중립적 RSI를 유지하고 있으나 단기 거래량 실종 및 모멘텀 대기를 고려하여 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 56점 | 편차 3점)",
+        "checked_at": "2026-11-14 05:30:30"
       }
     },
     {
@@ -517,57 +631,19 @@
       }
     },
     {
-      "code": "JPM",
-      "name": "JP모건 (JPM)",
-      "price": 346.19,
-      "change_rate": 0.98,
+      "code": "V",
+      "name": "비자 (V)",
+      "price": 425.76,
+      "change_rate": 1.3,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
-      "theme_tag": "🔍 퀀트 발굴(64점) · 미국 1위 대형은행",
-      "rsi": 56.3,
+      "theme_tag": "🔍 퀀트 발굴(66점) · 글로벌 결제 네트워크",
+      "rsi": 63.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(64점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 54,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 RSI가 중립 수준이며 거래량이 평균 대비 낮아 단기 매수 신호가 부족합니다. 또한, 외인·기관 수급이 불확실하고, 정치적 리스크가 존재해 주가가 단기적으로 변동성을 보일 가능성이 높습니다. 따라서 현재는 보유하지 않으므로 관망으로 판단합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 54점 | 편차 4점)",
-        "checked_at": "2026-11-14 05:30:25"
-      }
-    },
-    {
-      "code": "AMZN",
-      "name": "아마존 (AMZN)",
-      "price": 266.66,
-      "change_rate": -0.29,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(64점) · 클라우드·AI 커머스",
-      "rsi": 57.5,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(64점) 📊",
+      "status_tag": "🔍 퀀트 발굴(66점) 📊",
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
@@ -587,47 +663,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세·조정장 기조 속 당일 거래량이 20일 평균 대비 24%로 부족하고 음봉 흐름을 보여 적극적인 신규 진입 시그널이 부족합니다. 20일 이동평균선과 중립적 RSI를 유지하고 있으나 단기 거래량 실종 및 모멘텀 대기를 고려하여 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 56점 | 편차 3점)",
-        "checked_at": "2026-11-14 05:30:30"
-      }
-    },
-    {
-      "code": "TLT",
-      "name": "iShares 20년+ 미 국채 (TLT)",
-      "price": 79.38,
-      "change_rate": -0.43,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국국채·방어자산",
-      "theme_tag": "🔍 퀀트 발굴(62점) · 금리인하 수혜 장기채",
-      "rsi": 40.7,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(62점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 50,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 미 증시 약세장 속에서 20일 이동평균선을 하회하고 있으며, 거래량이 20일 평균 대비 36% 수준으로 실종되어 유의미한 수급 유입이 확인되지 않습니다. 14일 RSI 역시 40.7의 중립 구간에 머물러 있어 뚜렷한 반등 모멘텀이 부족하므로 당분간 관망하며 향후 시장 안정 시 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 50점 | 편차 4점)",
-        "checked_at": "2026-11-14 05:30:47"
+        "reason": "현재 미 증시 약세·조정장 레짐 속에서 비자(V)는 MA20을 상회하고 있으나 거래량이 20일 평균 대비 16% 부족하며 당일 +1.47% 상승으로 뚜렷한 수급 돌파 모멘텀이 관찰되지 않습니다. 미보유 상태인 만큼 무리한 추격매수보다는 거래량 유입 및 눌림목 형성 여부를 지켜보며 향후 시장 안정 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 56점 | 편차 6점)",
+        "checked_at": "2026-11-14 03:30:44"
       }
     },
     {
@@ -638,12 +676,12 @@
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
-      "theme_tag": "🔍 퀀트 발굴(62점) · 10년 연속 배당성장",
+      "theme_tag": "🔍 퀀트 발굴(66점) · 10년 연속 배당성장",
       "rsi": 64.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(62점) 📊",
+      "status_tag": "🔍 퀀트 발굴(66점) 📊",
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
@@ -666,44 +704,6 @@
         "reason": "미 증시 약세장 레짐과 최근 예측 적중률 저조에 따른 보수적 감점 요인이 작용했습니다. 거래량이 20일 평균 대비 49%로 부족하고 음봉 흐름을 보여, 향후 시장 안정 및 명확한 거래량 동반 반등 시 재진입을 검토합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 56점 | 편차 6점)",
         "checked_at": "2026-11-14 05:31:03"
-      }
-    },
-    {
-      "code": "UBER",
-      "name": "우버 (UBER)",
-      "price": 69.69,
-      "change_rate": 0.82,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국소비·헬스케어·에너지",
-      "theme_tag": "🔍 퀀트 발굴(60점) · 모빌리티·자율주행 플랫폼",
-      "rsi": 52.5,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(60점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 54,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 미 증시가 약세·조정장 국면에 위치한 가운데, 우버(UBER)는 20일 이동평균선을 상회하고 있으나 당일 거래량이 20일 평균 대비 25% 부족하고 긴 윗꼬리 음봉이 발생하여 단기 상단 저항 압력이 큽니다. 따라서 적극적인 신규 매수보다는 시장 안정을 확인하며 눌림목을 대기하는 관망 포지션을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 54점 | 편차 8점)",
-        "checked_at": "2026-11-14 05:31:19"
       }
     }
   ],
