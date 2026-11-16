@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-16 23:36:20",
+  "updated_at": "2026-11-16 23:37:50",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "85% (⚡ 충전 중, 26.1°C)",
   "budget_limit": 2500000,
   "fund_eval": 2468084,
@@ -481,8 +481,8 @@
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 69.64,
-      "change_rate": -0.07,
+      "price": 69.59,
+      "change_rate": -0.14,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -557,8 +557,8 @@
     {
       "code": "AMZN",
       "name": "아마존 (AMZN)",
-      "price": 261.4199,
-      "change_rate": -1.97,
+      "price": 262.03,
+      "change_rate": -1.74,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -595,8 +595,8 @@
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 57.76,
-      "change_rate": -0.35,
+      "price": 57.8009,
+      "change_rate": -0.27,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
@@ -609,7 +609,7 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 54,
+        "score": 55,
         "consensus": "2:0 관망 우세",
         "models": [
           {
@@ -620,21 +620,21 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
+            "model": "Groq 120B",
+            "score": 58,
             "decision": "관망"
           }
         ],
-        "reason": "현재 JEPI는 상승추세에 있으나 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. ATR 목표익절선이 아직 도달하지 않았고, 외인·기관 수급이 명확히 긍정적이지 않으므로 보유를 유지하고 추가 매수는 보류합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 54점 | 편차 5점)",
-        "checked_at": "2026-11-14 05:30:12"
+        "reason": "현재 미 증시 약세장과 거래량 실종(20일 평균 대비 1% 부족)으로 인해 단기 모멘텀이 다소 약화된 상태입니다. 저변동 고배당 ETF로서 안정성은 확보되어 있으나 적극적인 신규 매수 시점으로는 부적합하므로, 향후 시장 안정 및 거래량 유입 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 55점 | 편차 4점)",
+        "checked_at": "2026-11-16 23:36:32"
       }
     },
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 345.87,
-      "change_rate": -0.09,
+      "price": 346.25,
+      "change_rate": 0.02,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
@@ -658,21 +658,21 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 RSI가 중립 수준이며 거래량이 평균 대비 낮아 단기 매수 신호가 부족합니다. 또한, 외인·기관 수급이 불확실하고, 정치적 리스크가 존재해 주가가 단기적으로 변동성을 보일 가능성이 높습니다. 따라서 현재는 보유하지 않으므로 관망으로 판단합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 54점 | 편차 4점)",
-        "checked_at": "2026-11-14 05:30:25"
+        "reason": "미 증시 약세장 속에서 JPM 종목은 SENATE(상원) 조사 뉴스 및 당국 관련 악재 헤드라인이 노출되어 단기 변동성이 확대된 상태입니다. 20일 이동평균선을 상회하고 있으나 거래량이 실종된 음봉 흐름을 보이고 있어, 향후 시장 안정 및 악재 해소 여부를 확인한 뒤 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 47점 ↔ AI 54점 | 편차 7점)",
+        "checked_at": "2026-11-16 23:36:45"
       }
     },
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 354.825,
-      "change_rate": -0.41,
+      "price": 355.35,
+      "change_rate": -0.26,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -685,32 +685,32 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 52,
+        "score": 54,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
+            "score": 52,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 50,
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세장 진입과 당일 거래량이 20일 평균 대비 28%로 부족하여 수급 모멘텀이 약화된 상태입니다. 14일 RSI 60.1 및 20일선 상회로 상승 추세는 유지 중이나, 거래량 부족 및 약세장 리스크를 고려하여 신규 진입을 보류하고 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 52점 | 편차 10점)",
-        "checked_at": "2026-11-12 05:30:25"
+        "reason": "현재 미국 증시가 약세 조정장이고 거래량이 20일 평균 대비 부족한 음봉 흐름을 보여 신규 진입 매수 점수가 미흡합니다. 다만 20일 이동평균선을 상회하며 스마트 글래스 등 신사업 모멘텀이 유효하므로, 향후 시장 안정 및 거래량 동반 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 54점 | 편차 5점)",
+        "checked_at": "2026-11-16 23:36:57"
       }
     },
     {
       "code": "V",
       "name": "비자 (V)",
-      "price": 429.8,
-      "change_rate": 0.95,
+      "price": 429.59,
+      "change_rate": 0.9,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
@@ -734,21 +734,21 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 미 증시 약세·조정장 레짐 속에서 비자(V)는 MA20을 상회하고 있으나 거래량이 20일 평균 대비 16% 부족하며 당일 +1.47% 상승으로 뚜렷한 수급 돌파 모멘텀이 관찰되지 않습니다. 미보유 상태인 만큼 무리한 추격매수보다는 거래량 유입 및 눌림목 형성 여부를 지켜보며 향후 시장 안정 시 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 56점 | 편차 6점)",
-        "checked_at": "2026-11-14 03:30:44"
+        "reason": "현재 주당 단가가 573,695원으로 신규 진입 기준인 500,000원 상한선을 초과하였으며, 미 증시 약세장과 20일 평균 대비 부족한 거래량(-2%) 및 음봉 흐름을 고려할 때 적극적인 매수보다는 관망이 타당합니다. 향후 주가 조정 시 50만원 이하 구간에서의 눌림목 및 수급 유입 여부를 확인한 후 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 45점 ↔ AI 56점 | 편차 11점)",
+        "checked_at": "2026-11-16 23:37:35"
       }
     },
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 36.125,
-      "change_rate": 0.01,
+      "price": 36.13,
+      "change_rate": 0.03,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
@@ -761,25 +761,25 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 56,
+        "score": 55,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 58,
+            "score": 52,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
+            "model": "Groq 120B",
+            "score": 58,
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세장 레짐과 최근 예측 적중률 저조에 따른 보수적 감점 요인이 작용했습니다. 거래량이 20일 평균 대비 49%로 부족하고 음봉 흐름을 보여, 향후 시장 안정 및 명확한 거래량 동반 반등 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 56점 | 편차 6점)",
-        "checked_at": "2026-11-14 05:31:03"
+        "reason": "미 증시 약세장 진입과 투자의견 하향 등 개별 리스크 뉴스 존재 및 AI 적중률 피드백에 따른 보수적 감점이 적용되었습니다. 거래량이 부족하고 음봉 흐름을 보이고 있어, 향후 시장이 안정되고 명확한 눌림목 타점이 형성될 때까지 진입을 유보하고 관망합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 55점 | 편차 5점)",
+        "checked_at": "2026-11-16 23:37:47"
       }
     }
   ],
