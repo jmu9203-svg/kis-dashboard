@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-16 10:02:06",
+  "updated_at": "2026-11-16 10:03:54",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "83% (🔋 배터리 사용 중, 22.4°C)",
@@ -101,13 +101,13 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15250,
-      "change_rate": 0.33,
+      "price": 15255,
+      "change_rate": 0.36,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 62.7,
+      "rsi": 63.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -139,13 +139,13 @@
     {
       "code": "034730",
       "name": "SK",
-      "price": 494500,
-      "change_rate": -1.88,
+      "price": 496500,
+      "change_rate": -1.49,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "금융·밸류업지주",
       "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 47.1,
+      "rsi": 46.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -177,13 +177,13 @@
     {
       "code": "017670",
       "name": "SK텔레콤",
-      "price": 85300,
-      "change_rate": 1.67,
+      "price": 85200,
+      "change_rate": 1.55,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "통신·유틸리티",
       "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 60.7,
+      "rsi": 60.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -215,13 +215,13 @@
     {
       "code": "012330",
       "name": "현대모비스",
-      "price": 358500,
-      "change_rate": 0.84,
+      "price": 359000,
+      "change_rate": 0.98,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "자동차·모빌리티",
       "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 52.7,
+      "rsi": 52.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -291,8 +291,8 @@
     {
       "code": "145020",
       "name": "휴젤",
-      "price": 191100,
-      "change_rate": -0.62,
+      "price": 190500,
+      "change_rate": -0.94,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "기타·분산섹터",
@@ -329,89 +329,13 @@
     {
       "code": "018260",
       "name": "삼성에스디에스",
-      "price": 237000,
-      "change_rate": 1.07,
+      "price": 236500,
+      "change_rate": 0.85,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "반도체·IT하드웨어",
       "theme_tag": "🏛️ 마스터 수급 주도주",
       "rsi": 63.9,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 58,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 58,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피200 약세장 레짐 속에서 당일 윗꼬리(고점 대비 -3% 후퇴)와 단기 차익매물이 출회되었고, 최근 예측 적중률 저조에 따른 보수적 감점 요인이 적용되었습니다. 미보유 상태에서 뚜렷한 눌림목이나 수급 정합성이 더 확인할 필요가 있으므로 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 58점 | 편차 9점)",
-        "checked_at": "2026-11-13 14:32:39"
-      }
-    },
-    {
-      "code": "035720",
-      "name": "카카오",
-      "price": 32450,
-      "change_rate": 2.37,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "플랫폼·바이오",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 56.3,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 55,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 시장이 약세·조정장세에 진입했으며, 외국인 및 기관의 연속 순매도 흐름이 확인되어 단기 수급이 불안정합니다. 기술적 지표(RSI 51.7, MA20 상회)는 중립~약한 강세이나, 미 반도체 섹터의 변동성 확대 리스크와 함께 매수 모멘텀이 부족하여 신규 진입보다는 관망이 적절합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 55점 | 편차 1점)",
-        "checked_at": "2026-11-12 14:31:29"
-      }
-    },
-    {
-      "code": "068270",
-      "name": "셀트리온",
-      "price": 215500,
-      "change_rate": 0.7,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "플랫폼·바이오",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 70.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -435,16 +359,92 @@
             "decision": "관망"
           }
         ],
-        "reason": "당일 코스피200 지수가 -1.48% 하락하는 약세장 속에서 14일 RSI가 68.1로 과열권에 근접해 있고 거래량이 평시 수준에 머물러 단기 추격매수 위험이 존재합니다. 따라서 미보유 상태인 현시점에서는 무리한 진입을 자제하고 향후 시장 안정 및 눌림목 형성 여부를 확인한 후 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 53점 ↔ AI 58점 | 편차 5점)",
-        "checked_at": "2026-11-13 14:32:51"
+        "reason": "현재 코스피200 약세·조정장과 AI 실적 경계감 속에서 윗꼬리 캔들이 발생하며 단기 차익매물 출회 가능성이 존재합니다. 외국인과 기관의 연속 순매수세 및 AI 인프라 투자 모멘텀은 긍정적이나, 약세장 매수 커트라인 보수적 적용과 단기 변동성 확대를 고려해 신규 진입을 유보하고 향후 시장 안정 및 눌림목 형성 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 64점 ↔ AI 58점 | 편차 6점)",
+        "checked_at": "2026-11-16 10:02:34"
+      }
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "price": 32550,
+      "change_rate": 2.68,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "플랫폼·바이오",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 56.3,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 57,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 코스피200 약세장 레짐과 외국인 및 기관의 5일 누적 순매도세가 이어지고 있어 보수적인 접근이 필요합니다. 비록 20일선 위에서 거래량이 실린 양봉 흐름을 보이고 있으나, 수급 모멘텀이 다소 미흡하여 향후 시장 안정 및 수급 개선 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 57점 ↔ AI 56점 | 편차 1점)",
+        "checked_at": "2026-11-16 10:02:47"
+      }
+    },
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "price": 215500,
+      "change_rate": 0.7,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "플랫폼·바이오",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 70.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 56,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 코스피 약세장 속에서 14일 RSI가 70.0으로 과열 구간에 진입했고 당일 윗꼬리가 출회되어 단기 차익매물 압력이 존재합니다. 따라서 신규 매수는 보류하고 향후 주가 눌림목 형성 및 시장 안정화 여부를 확인하며 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 56점 | 편차 6점)",
+        "checked_at": "2026-11-16 10:03:37"
       }
     },
     {
       "code": "000270",
       "name": "기아",
-      "price": 95300,
-      "change_rate": 0.74,
+      "price": 95400,
+      "change_rate": 0.85,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "자동차·모빌리티",
@@ -457,25 +457,25 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
-        "consensus": "2사 합의",
+        "score": 65,
+        "consensus": "정량 가드레일 제동 (관망 유지)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
+            "score": 76,
+            "decision": "매수"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
+            "score": 78,
+            "decision": "매수"
           }
         ],
-        "reason": "거시경제 레짐 및 수급·기술적 지표 분석 완료.",
-        "audit_badge": "✅ 5대 팩트 검증 완료",
-        "checked_at": "분석 전"
+        "reason": "현재 코스피200 약세장이나 기아의 14일 RSI가 34.6으로 과매도 구간에 위치하고, 20일 평균 대비 181%의 대량 거래량이 터진 강한 장대양봉이 출현하여 저가 매수세가 유입되었습니다. 다만 단기 급등(+5.8%)에 따른 추격매수 방지 규칙과 약세장 커트라인을 고려하여 신중하게 분할 매수 2주를 집행하며 향후 추세를 모니터링합니다.",
+        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 62점 ↔ 교정후 65점 | 편차 3점)",
+        "checked_at": "2026-11-16 10:03:50"
       }
     },
     {
