@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-17 05:28:07"
+    "checked_at": "2026-11-17 05:34:19"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-17 05:32:52",
+  "updated_at": "2026-11-17 05:34:20",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": true,
+  "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 23.9°C)",
   "budget_limit": 2500000,
   "fund_eval": 2468084,
@@ -481,8 +481,8 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.58,
-      "change_rate": 0.02,
+      "price": 100.5742,
+      "change_rate": 0.01,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "초단기채권·현금성자산",
@@ -519,7 +519,7 @@
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 35.839,
+      "price": 35.8399,
       "change_rate": -0.78,
       "marketCountry": "US",
       "currency": "USD",
@@ -557,8 +557,8 @@
     {
       "code": "AMZN",
       "name": "아마존 (AMZN)",
-      "price": 257.98,
-      "change_rate": -3.26,
+      "price": 257.79,
+      "change_rate": -3.33,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -595,8 +595,8 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 351.93,
-      "change_rate": -1.22,
+      "price": 351.89,
+      "change_rate": -1.23,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -671,8 +671,8 @@
     {
       "code": "JNJ",
       "name": "존슨앤존슨 (JNJ)",
-      "price": 283.58,
-      "change_rate": -0.76,
+      "price": 283.645,
+      "change_rate": -0.74,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -709,8 +709,8 @@
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 69.79,
-      "change_rate": 0.14,
+      "price": 69.765,
+      "change_rate": 0.11,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -747,8 +747,8 @@
     {
       "code": "V",
       "name": "비자 (V)",
-      "price": 426.06,
-      "change_rate": 0.07,
+      "price": 425.975,
+      "change_rate": 0.05,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
