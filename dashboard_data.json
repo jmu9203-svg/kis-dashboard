@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-17 14:28:07",
+  "updated_at": "2026-11-17 14:32:06",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "74% (🔋 배터리 사용 중, 22.2°C)",
@@ -115,13 +115,13 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 56,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
+            "score": 58,
             "decision": "관망"
           },
           {
@@ -131,9 +131,47 @@
             "decision": "관망"
           }
         ],
-        "reason": "현재 RSI가 중립 수준이며 외인·기관이 모두 매도세를 보이고 있어 단기 매수 신호가 부족합니다. ATR 목표익절선이 아직 도달하지 않았고, 시장이 약세·조정장으로 보이므로 보수적으로 관망하는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 56점 ↔ AI 55점 | 편차 1점)",
-        "checked_at": "2026-11-17 13:30:11"
+        "reason": "현재 RSI가 중립 수준이며, 외인·기관 수급이 순매수 상태이므로 단기 매수 신호가 부족합니다. ATR 목표익절선이 아직 도달하지 않았고, 시장이 약세·조정장으로 보이므로 보수적으로 관망하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 56점 ↔ AI 56점 | 편차 0점)",
+        "checked_at": "2026-11-17 14:30:17"
+      }
+    },
+    {
+      "code": "017670",
+      "name": "SK텔레콤",
+      "price": 83200,
+      "change_rate": -0.83,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "통신·유틸리티",
+      "theme_tag": "🔍 100선 퀀트 발굴",
+      "rsi": 55.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "100선 퀀트 발굴 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 71,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 62,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "reason": "현재 코스피200 약세장 레짐과 엔비디아 실적 발표를 앞둔 관망세 속에서, 기관의 연속 순매수와 양봉 흐름에도 불구하고 지수 하락(-1.88%)에 따른 매수 커트라인 강화 영향으로 신규 진입보다는 관망을 유지하며 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 75점 ↔ AI 71점 | 편차 4점)",
+        "checked_at": "2026-11-17 14:30:22"
       }
     },
     {
@@ -145,7 +183,7 @@
       "currency": "KRW",
       "sector": "플랫폼·바이오",
       "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 60.0,
+      "rsi": 60.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -153,46 +191,8 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 72,
+        "score": 71,
         "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 65,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          }
-        ],
-        "reason": "외국인과 기관의 5일 누적 동반 순매수 및 보령과의 당뇨 치료제 공동판매 호재는 긍정적이나, 코스피200 지수가 -1.71% 하락하는 약세 조정장에 따라 매수 판단 기준이 엄격히 강화되었습니다. 장중 고점 대비 윗꼬리가 달리며 단기 차익 실현 물량이 출회되는 점을 감안하여, 엔비디아 실적 발표 및 대외 불확실성 해소 후 시장 안정 시 재진입을 검토하는 것이 안전합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 70점 ↔ AI 72점 | 편차 2점)",
-        "checked_at": "2026-11-17 13:30:51"
-      }
-    },
-    {
-      "code": "017670",
-      "name": "SK텔레콤",
-      "price": 83400,
-      "change_rate": -0.6,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "통신·유틸리티",
-      "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 56.2,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "100선 퀀트 발굴 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 58,
-        "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
@@ -203,25 +203,63 @@
           {
             "provider": "Groq",
             "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           }
         ],
-        "reason": "현재 SK텔레콤은 상승 추세에 있으나 RSI가 40 이하가 아니고 과열 신호가 없으며, 외인 순매수는 5일 누적이지만 당일 외인 순매도이므로 단기 매수 신호가 부족합니다. ATR 목표익절선이 아직 도달하지 않았고, 고점 추격 매수 금지 조건도 충족되지 않으므로 보수적으로 관망을 권장합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 63점 ↔ AI 58점 | 편차 5점)",
-        "checked_at": "2026-11-17 13:31:07"
+        "reason": "코스피200 약세장 및 엔비디아 실적 발표를 앞둔 관망세 속에서 당일 주가가 +2.48% 상승하며 단기 고점 추격 매수 방지 규칙과 보수적 기준이 복합적으로 작용했습니다. 외인과 기관의 연속 순매수와 당뇨병 치료제 공동판매 호재가 유효하나, 시장 전체의 불확실성을 고려해 현시점에서는 신규 진입을 자제하고 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 82점 ↔ AI 71점 | 편차 11점)",
+        "checked_at": "2026-11-17 14:30:33"
       }
     },
     {
-      "code": "214450",
-      "name": "파마리서치",
-      "price": 262000,
-      "change_rate": 1.35,
+      "code": "003490",
+      "name": "대한항공",
+      "price": 32100,
+      "change_rate": 1.26,
       "marketCountry": "KR",
       "currency": "KRW",
-      "sector": "플랫폼·바이오",
+      "sector": "항공·운송·물류",
       "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 52.7,
+      "rsi": 60.8,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "100선 퀀트 발굴 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 71,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 62,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "reason": "코스피200 약세장 및 엔비디아 실적 발표를 앞둔 거시경제 경계감으로 인해, 외국인과 기관의 연속 순매수와 긍정적인 수급에도 불구하고 단기 추격 매수보다는 시장 안정화 및 눌림목 구간을 대기하며 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 77점 ↔ AI 71점 | 편차 6점)",
+        "checked_at": "2026-11-17 14:30:38"
+      }
+    },
+    {
+      "code": "145020",
+      "name": "휴젤",
+      "price": 194600,
+      "change_rate": 1.14,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "기타·분산섹터",
+      "theme_tag": "🔍 100선 퀀트 발굴",
+      "rsi": 56.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -245,59 +283,21 @@
             "decision": "매수"
           }
         ],
-        "reason": "코스피200 지수가 -1.71% 하락하는 약세 조정장 속에서, 당일 186%의 대량 거래량이 터졌으나 장중 고점 대비 4.0%의 긴 윗꼬리가 발생하여 단기 매물 압박이 확인되었습니다. 기관의 순매수세에도 불구하고 외국인의 5일 누적 순매도가 이어지고 있어 섣부른 진입은 차익실현 되돌림 위험이 있습니다. 향후 시장 전반의 안정과 윗꼬리 매물 소화 과정을 확인한 후 재진입 타점을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 55점 ↔ AI 69점 | 편차 14점)",
-        "checked_at": "2026-11-17 13:31:24"
+        "reason": "현재 코스피200 약세장 레짐과 외국인 4일 연속 순매도세로 인해 매수 커트라인(+7점)을 적용하여 보수적으로 접근합니다. 20일선 위에서 양봉 흐름을 보이고 있으나, 엔비디아 실적 발표를 앞둔 관망세가 짙어 향후 시장 안정 및 외인 수급 반등 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 67점 ↔ AI 69점 | 편차 2점)",
+        "checked_at": "2026-11-17 14:30:44"
       }
     },
     {
-      "code": "003490",
-      "name": "대한항공",
-      "price": 32150,
-      "change_rate": 1.42,
+      "code": "012330",
+      "name": "현대모비스",
+      "price": 347500,
+      "change_rate": -2.39,
       "marketCountry": "KR",
       "currency": "KRW",
-      "sector": "항공·운송·물류",
+      "sector": "자동차·모빌리티",
       "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 61.0,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "100선 퀀트 발굴 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 65,
-        "consensus": "정량 가드레일 제동 (관망 유지)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 82,
-            "decision": "매수"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          }
-        ],
-        "reason": "현재 RSI가 68 이하이며 외인·기관이 5일 연속 순매수 중이므로 매수 신호가 강합니다. ATR 목표익절선(12%)과 과열익절선(6%)은 아직 도달하지 않았으므로 손절 위험이 낮고, 현재 시장 레짐이 약세·조정장이라도 보수적 매수로 진입하는 것이 적절합니다. 따라서 23주를 매수해 포지션을 잡는 것이 바람직합니다.",
-        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 77점 ↔ 교정후 65점 | 편차 12점)",
-        "checked_at": "2026-11-17 13:31:42"
-      }
-    },
-    {
-      "code": "018260",
-      "name": "삼성에스디에스",
-      "price": 226500,
-      "change_rate": -1.09,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "반도체·IT하드웨어",
-      "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 55.8,
+      "rsi": 47.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -321,21 +321,21 @@
             "decision": "관망"
           }
         ],
-        "reason": "현재 가격이 1.97% 하락한 상태에서 RSI가 중립 수준이며 외인 순매수가 마이너스이지만 기관이 강력히 매수하고 있어 수급이 양호합니다. 그러나 긴 윗꼬리 음봉과 낮은 거래량이 고점 추격 매수를 위험하게 만들며, ATR 목표익절선이 아직 도달하지 않았으므로 보수적으로 관망을 권장합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 54점 | 편차 8점)",
-        "checked_at": "2026-11-17 13:31:46"
+        "reason": "당일 코스피200 시장의 약세(-1.88%)와 엔비디아 실적 발표를 앞둔 관망세가 겹치며, 종목 거래량이 평시 수준에 못 미쳐 섣부른 진입보다는 방어적 접근이 필요합니다. 향후 시장 안정 시 외국인 수급 추이를 지켜보며 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 66점 ↔ AI 54점 | 편차 12점)",
+        "checked_at": "2026-11-17 14:30:57"
       }
     },
     {
-      "code": "012330",
-      "name": "현대모비스",
-      "price": 348000,
-      "change_rate": -2.25,
+      "code": "105560",
+      "name": "KB금융",
+      "price": 157500,
+      "change_rate": -2.54,
       "marketCountry": "KR",
       "currency": "KRW",
-      "sector": "자동차·모빌리티",
+      "sector": "금융·밸류업지주",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 47.4,
+      "rsi": 48.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -343,13 +343,13 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 54,
+        "score": 55,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 52,
+            "score": 55,
             "decision": "관망"
           },
           {
@@ -359,16 +359,16 @@
             "decision": "관망"
           }
         ],
-        "reason": "현재 RSI가 중립 수준이며, ATR 목표익절선(378,000원)까지 상승이 필요하지만 현재가가 348,000원으로 아직 도달하지 않았습니다. 외인 순매수가 마이너스이므로 매수에 대한 강력한 신호가 없으며, 시장이 약세·조정장으로 보이므로 보수적으로 관망하는 것이 적절합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 66점 ↔ AI 54점 | 편차 12점)",
-        "checked_at": "2026-11-17 13:31:50"
+        "reason": "코스피200 장중 급락 및 약세장 레짐 속에서 당일 장대 음봉과 20일 평균 대비 미흡한 거래량으로 인해 추가 조정 가능성이 존재합니다. 기관의 순매수세가 유입되고 있으나 엔비디아 실적 발표를 앞둔 관망세를 고려하여 신규 진입은 보류하며 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 66점 ↔ AI 55점 | 편차 11점)",
+        "checked_at": "2026-11-17 14:31:15"
       }
     },
     {
       "code": "316140",
       "name": "우리금융지주",
-      "price": 32600,
-      "change_rate": -1.21,
+      "price": 32650,
+      "change_rate": -1.06,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "금융·밸류업지주",
@@ -381,8 +381,84 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 56,
+        "score": 55,
         "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 코스피200 약세장 레짐과 외국인의 단기 순매도세가 이어지는 가운데, 엔비디아 실적 발표를 앞둔 관망세가 짙어 섣부른 진입보다는 지지선 확인 후 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 69점 ↔ AI 55점 | 편차 14점)",
+        "checked_at": "2026-11-17 14:31:29"
+      }
+    },
+    {
+      "code": "018260",
+      "name": "삼성에스디에스",
+      "price": 226000,
+      "change_rate": -1.31,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "반도체·IT하드웨어",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 55.8,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 52,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 48,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "코스피200 약세장 및 엔비디아 실적 발표를 앞둔 관망세 속에서, 거래량이 55%로 위축되고 윗꼬리가 출회되어 적극적인 매수 조건에 미달합니다. 기관의 지속적인 순매수에도 불구하고 단기 변동성 확대가 우려되므로 향후 시장 안정 및 수급 유입 확인 후 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 52점 | 편차 10점)",
+        "checked_at": "2026-11-17 14:31:46"
+      }
+    },
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "price": 213500,
+      "change_rate": -0.47,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "플랫폼·바이오",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 67.8,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 69,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
         "models": [
           {
             "provider": "Google",
@@ -393,89 +469,13 @@
           {
             "provider": "Groq",
             "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
+            "score": 80,
+            "decision": "매수"
           }
         ],
-        "reason": "현재 주가가 MA20를 상회하고 RSI가 중립 수준이며 외인·기관 수급이 순매수 상태라 매수 신호가 부족합니다. ATR 목표익절선(8.5%)에 도달하지 않았고, 시장이 약세·조정장으로 보이므로 보수적으로 관망하는 것이 적절합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 69점 ↔ AI 56점 | 편차 13점)",
-        "checked_at": "2026-11-17 13:31:57"
-      }
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
-      "price": 157600,
-      "change_rate": -2.48,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "금융·밸류업지주",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 48.3,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 54,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 RSI가 중립 수준이며 외인·기관 순매수가 모두 매도세를 보이고 있어 단기 매수 신호가 부족합니다. ATR 목표익절선(8.5%)에 도달하지 않았고 과열익절 조건도 충족되지 않아 보수적으로 관망을 권장합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 66점 ↔ AI 54점 | 편차 12점)",
-        "checked_at": "2026-11-17 13:32:00"
-      }
-    },
-    {
-      "code": "381170",
-      "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 27825,
-      "change_rate": -1.14,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 35.3,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 56,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 코스피200 약세장과 엔비디아 실적 발표를 앞둔 관망세 속에서 당일 주가가 20일 이동평균선을 하회하고 있습니다. 외국인 수급은 유입되고 있으나 기관의 연속 매도 및 시장 불확실성이 상존하므로, 섣부른 진입을 자제하고 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 48점 ↔ AI 56점 | 편차 8점)",
-        "checked_at": "2026-11-17 13:32:09"
+        "reason": "현재 코스피200 약세·조정장 레짐으로 인해 매수 커트라인이 강화되었고, 거래량이 20일 평균 대비 55%로 실종된 상태에서 외국인 2일 연속 매도세가 관측됩니다. 신제품 호조 및 목표주가 상향 뉴스가 있으나 섣부른 추격 매수보다는 시장 안정과 외국인 수급 전환 여부를 확인하는 보수적 접근이 필요하므로 관망하며 향후 눌림목 구간 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 57점 ↔ AI 69점 | 편차 12점)",
+        "checked_at": "2026-11-17 14:32:02"
       }
     },
     {
