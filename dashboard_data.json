@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-18 03:26:32"
+    "checked_at": "2026-11-18 03:32:32"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-18 03:31:28",
+  "updated_at": "2026-11-18 03:32:32",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": true,
+  "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 24.3°C)",
   "budget_limit": 2500000,
   "fund_eval": 2468283,
@@ -405,7 +405,7 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.585,
+      "price": 100.5812,
       "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
@@ -443,8 +443,8 @@
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 69.3,
-      "change_rate": -0.99,
+      "price": 69.285,
+      "change_rate": -1.01,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -481,8 +481,8 @@
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 153.995,
-      "change_rate": -1.37,
+      "price": 153.865,
+      "change_rate": -1.46,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -519,8 +519,8 @@
     {
       "code": "AVGO",
       "name": "브로드컴 (AVGO)",
-      "price": 339.945,
-      "change_rate": 1.96,
+      "price": 339.85,
+      "change_rate": 1.93,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -557,8 +557,8 @@
     {
       "code": "JNJ",
       "name": "존슨앤존슨 (JNJ)",
-      "price": 279.7,
-      "change_rate": -1.01,
+      "price": 279.6058,
+      "change_rate": -1.04,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -595,8 +595,8 @@
     {
       "code": "AMZN",
       "name": "아마존 (AMZN)",
-      "price": 257.14,
-      "change_rate": -0.24,
+      "price": 257.2953,
+      "change_rate": -0.18,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -633,8 +633,8 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 351.295,
-      "change_rate": -0.42,
+      "price": 351.33,
+      "change_rate": -0.41,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -671,8 +671,8 @@
     {
       "code": "V",
       "name": "비자 (V)",
-      "price": 419.58,
-      "change_rate": -1.61,
+      "price": 419.46,
+      "change_rate": -1.64,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
