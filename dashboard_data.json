@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-19 10:02:57",
+  "updated_at": "2026-11-19 10:03:25",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "85% (⚡ 충전 중, 22.4°C)",
@@ -107,7 +107,7 @@
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 37.3,
+      "rsi": 41.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -139,13 +139,13 @@
     {
       "code": "068270",
       "name": "셀트리온",
-      "price": 208500,
-      "change_rate": 0.48,
+      "price": 209000,
+      "change_rate": 0.72,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "플랫폼·바이오",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 60.9,
+      "rsi": 61.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -183,7 +183,7 @@
       "currency": "KRW",
       "sector": "반도체·IT하드웨어",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 56.3,
+      "rsi": 52.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -215,8 +215,8 @@
     {
       "code": "086790",
       "name": "하나금융지주",
-      "price": 125200,
-      "change_rate": 0.81,
+      "price": 125100,
+      "change_rate": 0.72,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "금융·밸류업지주",
@@ -291,8 +291,8 @@
     {
       "code": "012330",
       "name": "현대모비스",
-      "price": 350500,
-      "change_rate": -1.54,
+      "price": 350000,
+      "change_rate": -1.69,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "자동차·모빌리티",
@@ -329,8 +329,8 @@
     {
       "code": "035720",
       "name": "카카오",
-      "price": 32350,
-      "change_rate": 1.73,
+      "price": 32400,
+      "change_rate": 1.89,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "플랫폼·바이오",
@@ -405,8 +405,8 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 267000,
-      "change_rate": 0.0,
+      "price": 267500,
+      "change_rate": 0.19,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "자동차·모빌리티",
@@ -443,8 +443,8 @@
     {
       "code": "066570",
       "name": "LG전자",
-      "price": 134900,
-      "change_rate": -1.53,
+      "price": 134600,
+      "change_rate": -1.75,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "반도체·IT하드웨어",
@@ -457,8 +457,8 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 56,
-        "consensus": "2:0 관망 우세",
+        "score": 68,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
         "models": [
           {
             "provider": "Google",
@@ -468,14 +468,14 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
+            "model": "Groq 120B",
+            "score": 78,
+            "decision": "매수"
           }
         ],
-        "reason": "현재 코스피200 약세장 속에서 20일 이동평균선을 하회하고 있으며, 기관의 5일 누적 순매도세가 이어지고 있어 보수적인 접근이 필요합니다. 14일 RSI가 29.8로 과매도 구간에 진입하여 반등 가능성이 있으나, 단기 추세 안정화와 수급 개선 여부를 조금 더 확인한 뒤 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 56점 | 편차 2점)",
-        "checked_at": "2026-11-18 13:31:59"
+        "reason": "현재 코스피200 약세장과 20일선 하회 흐름 속에서 14일 RSI 32.1로 과매도 구간에 진입했으나, 거래량이 20일 평균 대비 크게 부족하여 가짜 반등 우려가 있습니다. 외국인 수급이 유입되고 있으나 거래량 보강과 기술적 지지력 확인이 필요하므로 현재는 관망하며 향후 눌림목 및 수급 유입 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 58점 ↔ AI 68점 | 편차 10점)",
+        "checked_at": "2026-11-19 10:03:21"
       }
     },
     {
