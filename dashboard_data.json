@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-20 01:35:36",
+  "updated_at": "2026-11-20 01:38:36",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "85% (⚡ 충전 중, 23.7°C)",
   "budget_limit": 2500000,
   "fund_eval": 2467684,
@@ -481,8 +481,8 @@
     {
       "code": "WMT",
       "name": "월마트 (WMT)",
-      "price": 125.33,
-      "change_rate": -1.59,
+      "price": 125.485,
+      "change_rate": -1.47,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -519,7 +519,7 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.6,
+      "price": 100.605,
       "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
@@ -557,8 +557,8 @@
     {
       "code": "AAPL",
       "name": "애플 (AAPL)",
-      "price": 349.525,
-      "change_rate": -0.83,
+      "price": 349.87,
+      "change_rate": -0.73,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -595,8 +595,8 @@
     {
       "code": "AMZN",
       "name": "아마존 (AMZN)",
-      "price": 268.69,
-      "change_rate": 0.35,
+      "price": 269.5,
+      "change_rate": 0.66,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -633,8 +633,8 @@
     {
       "code": "PG",
       "name": "P&G (PG)",
-      "price": 168.25,
-      "change_rate": -1.2,
+      "price": 168.19,
+      "change_rate": -1.23,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -671,8 +671,8 @@
     {
       "code": "AVGO",
       "name": "브로드컴 (AVGO)",
-      "price": 359.5,
-      "change_rate": 1.54,
+      "price": 360.96,
+      "change_rate": 1.95,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -696,21 +696,21 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 AVGO는 상승 추세를 유지하고 있으나 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. 또한 과열익절선(6.0%)에 도달하지 않았고, ATR 손절선도 아직 멀리 떨어져 있어 보수적으로 관망하는 것이 적절합니다. 따라서 현재는 매수·매도 결정이 아닌 관망으로 판단합니다",
+        "reason": "미국 증시 전반이 약세이며 AVGO의 RSI가 중립 수준이고 거래량도 저조해 단기 매수 시점이 불확실합니다. 최근 예측 적중률이 낮아 보수적으로 접근하고, 현재 현금 한도는 충족하지만 진입 위험을 감수하기엔 상황이 부적합하므로 관망합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 54점 | 편차 8점)",
-        "checked_at": "2026-11-19 05:30:39"
+        "checked_at": "2026-11-20 01:36:43"
       }
     },
     {
       "code": "NVDA",
       "name": "엔비디아 (NVDA)",
-      "price": 153.0,
-      "change_rate": 1.35,
+      "price": 153.54,
+      "change_rate": 1.71,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -723,32 +723,32 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 52,
+        "score": 48,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 45,
+            "score": 42,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 58,
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 주가는 MA20 이하이며 과매도 RSI에도 불구하고 CEO 교체 등 중대한 악재가 존재해 위험이 크다. 거래량 감소와 긴 윗꼬리 음봉은 가짜 반등 가능성을 시사한다. 따라서 신규 진입을 보류하고 관망하는 것이 바람직하다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 34점 ↔ AI 52점 | 편차 18점 · 보수적 관망)",
-        "checked_at": "2026-11-19 23:37:36"
+        "reason": "가격이 MA20 아래에 머물며 거래량이 급감하고 윗꼬리 양봉이 나타났지만, CEO 사임 및 조사 등 중대한 악재가 존재해 반등 위험이 큽니다. 현재 포지션이 없고 가용 현금은 있지만, 악재와 약세 시장 상황으로 매수를 보류합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 34점 ↔ AI 48점 | 편차 14점)",
+        "checked_at": "2026-11-20 01:36:59"
       }
     },
     {
       "code": "V",
       "name": "비자 (V)",
-      "price": 404.2247,
-      "change_rate": -2.65,
+      "price": 404.67,
+      "change_rate": -2.54,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
@@ -761,25 +761,25 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 52,
+        "score": 55,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 50,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 미 증시 약세장 및 20일 평균 대비 거래량이 29% 수준으로 크게 부족한 음봉 흐름을 보이고 있어 신규 진입 시그널이 미흡합니다. 또한 미보유 상태이므로 매도 대상이 아니며, 향후 거래량 회복과 시장 안정 추이를 지켜보며 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 47점 ↔ AI 52점 | 편차 5점)",
-        "checked_at": "2026-11-18 05:31:09"
+        "reason": "현재 시장은 약세 조정 국면이며 Visa는 MA20 하회와 낮은 거래량, 중립 RSI로 매수 신호가 약합니다. 가용 현금으로 1주 매수는 가능하지만 매수 기준을 충족하지 않아 관망을 유지하는 것이 바람직합니다.",
+        "audit_badge": "🛡️ 감사관 자동 교정 완료 (정량 39점 ↔ 교정후 55점 | 편차 16점)",
+        "checked_at": "2026-11-20 01:38:34"
       }
     }
   ],
