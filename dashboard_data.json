@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-19 14:33:35",
+  "updated_at": "2026-11-19 14:34:00",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "75% (🔋 배터리 사용 중, 20.6°C)",
@@ -329,8 +329,8 @@
     {
       "code": "086790",
       "name": "하나금융지주",
-      "price": 124400,
-      "change_rate": 0.16,
+      "price": 124300,
+      "change_rate": 0.08,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "금융·밸류업지주",
@@ -457,25 +457,25 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 68,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "score": 56,
+        "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
+            "score": 58,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
           }
         ],
-        "reason": "코스피 시장의 약세장 지속과 코스피200 하락(-1.21%), 그리고 장대 음봉(-2.51%) 출현으로 단기 하방 압력이 거세어 보수적인 접근이 필요합니다. 다만 RSI 29.4의 과매도 구간 진입 및 외국인 5일 누적 순매수세가 유입되고 있어, 향후 시장 안정 및 추가 저점 확인 시 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 68점 | 편차 14점)",
-        "checked_at": "2026-11-19 11:33:01"
+        "reason": "RSI가 과매도 구역에 있어 반등 가능성이 있지만, 거래량이 평균의 절반 수준으로 가짜 반등 위험이 크고 시장은 전반적인 약세 흐름이다. 외국인 순매수는 긍정적이지만 현재는 신중히 관망하며 추가 신호를 기다리는 것이 바람직하다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 63점 ↔ AI 56점 | 편차 7점)",
+        "checked_at": "2026-11-19 14:33:56"
       }
     },
     {
