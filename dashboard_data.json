@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-20 05:30:43",
+  "updated_at": "2026-11-20 05:31:20",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "85% (⚡ 충전 중, 22.6°C)",
   "budget_limit": 2500000,
   "fund_eval": 2467684,
@@ -481,7 +481,7 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.6088,
+      "price": 100.61,
       "change_rate": 0.01,
       "marketCountry": "US",
       "currency": "USD",
@@ -519,8 +519,8 @@
     {
       "code": "KO",
       "name": "코카콜라 (KO)",
-      "price": 96.3,
-      "change_rate": -1.82,
+      "price": 96.355,
+      "change_rate": -1.77,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -557,8 +557,8 @@
     {
       "code": "WMT",
       "name": "월마트 (WMT)",
-      "price": 126.26,
-      "change_rate": -0.86,
+      "price": 126.37,
+      "change_rate": -0.78,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -595,8 +595,8 @@
     {
       "code": "AVGO",
       "name": "브로드컴 (AVGO)",
-      "price": 346.47,
-      "change_rate": -2.14,
+      "price": 346.22,
+      "change_rate": -2.21,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -633,8 +633,8 @@
     {
       "code": "SPYM",
       "name": "SPDR S&P500 (SPYM)",
-      "price": 84.3085,
-      "change_rate": -1.93,
+      "price": 84.3,
+      "change_rate": -1.94,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
@@ -671,8 +671,8 @@
     {
       "code": "QQQM",
       "name": "Invesco 나스닥100 (QQQM)",
-      "price": 265.69,
-      "change_rate": -2.17,
+      "price": 265.5599,
+      "change_rate": -2.22,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
@@ -685,37 +685,75 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 57,
+        "score": 58,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 52,
+            "score": 60,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 62,
+            "model": "Groq 20B",
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "RSI가 저가 매수 수준이지만 가격이 MA20 아래에 머물고 거래량이 크게 감소한 상태이며, 미국 증시 전반이 약세인 점을 고려하면 신중히 기다리는 것이 바람직합니다. 현금은 충분하지만 추가 호재나 수급 개선이 확인될 때까지 관망합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 57점 | 편차 11점)",
-        "checked_at": "2026-11-20 03:31:48"
+        "reason": "현재 S&P500 약세장 진입 및 14일 RSI 34.1로 과매도 구간이나 거래량이 20일 평균 대비 72%로 부진하고 단기 음봉 흐름을 보여 추가 변동성 축소를 확인해야 합니다. 미보유 상태에서 무리한 진입보다는 향후 시장 안정세와 저가 매수세 유입을 확인한 뒤 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 47점 ↔ AI 58점 | 편차 11점)",
+        "checked_at": "2026-11-20 05:30:45"
       }
     },
     {
       "code": "TSM",
       "name": "TSMC (TSM)",
-      "price": 353.715,
-      "change_rate": -2.46,
+      "price": 353.395,
+      "change_rate": -2.54,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
       "theme_tag": "🔍 퀀트 발굴(64점) · 글로벌 1위 파운드리",
       "rsi": 34.8,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(64점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 68,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "reason": "미 증시 약세장 속에서 TSMC는 RSI 35.0으로 과매도 구간에 진입했으나, 20일 이동평균선을 하회하고 거래량이 20일 평균 대비 48%로 실종된 음봉 흐름을 보여 추가 하락 및 변동성 확대가 우려됩니다. 따라서 무리한 진입을 자제하고 수급 안정 및 거래량 동반 반등 여부를 확인하며 향후 시장 안정 시 재진입을 검토하겠습니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 42점 ↔ AI 68점 | 편차 26점 · 보수적 관망)",
+        "checked_at": "2026-11-20 05:31:03"
+      }
+    },
+    {
+      "code": "JEPI",
+      "name": "JPMorgan 커버드콜 (JEPI)",
+      "price": 55.535,
+      "change_rate": -1.85,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국배당·가치주ETF",
+      "theme_tag": "🔍 퀀트 발굴(64점) · 월배당 방어형 ETF",
+      "rsi": 37.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -739,47 +777,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세장 속에서 20일 이동평균선 아래로 밀려나고 거래량이 부족한 긴 윗꼬리 음봉을 형성하여 단기 하방 압력이 우세합니다. 특히 투자의견 하향 등 개별 악재 노이즈가 존재하므로 현재 미보유 상태에서 무리한 진입을 자제하고 향후 시장 안정 및 수급 개선 시 재진입을 검토합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 34점 ↔ AI 52점 | 편차 18점 · 보수적 관망)",
-        "checked_at": "2026-11-20 03:32:34"
-      }
-    },
-    {
-      "code": "JEPI",
-      "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 55.535,
-      "change_rate": -1.85,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국배당·가치주ETF",
-      "theme_tag": "🔍 퀀트 발굴(64점) · 월배당 방어형 ETF",
-      "rsi": 37.1,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(64점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 54,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "미 증시 약세 조정장 속에서 거래량이 20일 평균 대비 크게 부족하고 음봉 흐름을 보여 적극적인 매수 타점으로 보기 어렵습니다. 다만 20일선 위에서 완만한 방어력을 보이고 있어, 향후 시장 변동성이 완화되고 수급이 개선될 때 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 54점 | 편차 5점)",
-        "checked_at": "2026-11-17 01:31:34"
+        "reason": "미 증시 약세장 진입 및 JEPI의 단기 이동평균선 하회와 음봉 흐름 등 기술적 지표가 다소 약세를 보이고 있어 신규 진입보다는 관망이 유리합니다. 향후 시장 변동성이 안정되고 저가 매수세가 유입될 때 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 51점 ↔ AI 52점 | 편차 1점)",
+        "checked_at": "2026-11-20 05:31:18"
       }
     }
   ],
