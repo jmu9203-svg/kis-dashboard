@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-20 11:26:58"
+    "checked_at": "2026-11-20 11:33:06"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-20 11:32:06",
+  "updated_at": "2026-11-20 11:33:06",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "80% (🔋 배터리 사용 중, 19.5°C)",
@@ -101,8 +101,8 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 14510,
-      "change_rate": -0.79,
+      "price": 14507,
+      "change_rate": -0.81,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
@@ -177,8 +177,8 @@
     {
       "code": "010170",
       "name": "대한광통신",
-      "price": 13960,
-      "change_rate": -2.1,
+      "price": 13950,
+      "change_rate": -2.17,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "기타·분산섹터",
@@ -215,8 +215,8 @@
     {
       "code": "011200",
       "name": "HMM",
-      "price": 22200,
-      "change_rate": -1.55,
+      "price": 22250,
+      "change_rate": -1.33,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "항공·운송·물류",
@@ -253,8 +253,8 @@
     {
       "code": "086790",
       "name": "하나금융지주",
-      "price": 125900,
-      "change_rate": 1.61,
+      "price": 125800,
+      "change_rate": 1.53,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "금융·밸류업지주",
@@ -291,8 +291,8 @@
     {
       "code": "024110",
       "name": "기업은행",
-      "price": 19360,
-      "change_rate": 0.68,
+      "price": 19320,
+      "change_rate": 0.47,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "금융·밸류업지주",
@@ -367,8 +367,8 @@
     {
       "code": "360750",
       "name": "TIGER 미국S&P500",
-      "price": 23770,
-      "change_rate": -2.58,
+      "price": 23760,
+      "change_rate": -2.62,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
