@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-20 09:58:27"
+    "checked_at": "2026-11-20 10:04:33"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-20 10:03:29",
+  "updated_at": "2026-11-20 10:04:33",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "84% (🔋 배터리 사용 중, 21.0°C)",
@@ -291,8 +291,8 @@
     {
       "code": "064760",
       "name": "티씨케이",
-      "price": 170000,
-      "change_rate": -7.1,
+      "price": 171100,
+      "change_rate": -6.5,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "기타·분산섹터",
@@ -329,8 +329,8 @@
     {
       "code": "138040",
       "name": "메리츠금융지주",
-      "price": 127900,
-      "change_rate": 2.16,
+      "price": 127800,
+      "change_rate": 2.08,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "금융·밸류업지주",
@@ -367,8 +367,8 @@
     {
       "code": "086790",
       "name": "하나금융지주",
-      "price": 125400,
-      "change_rate": 1.21,
+      "price": 125800,
+      "change_rate": 1.53,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "금융·밸류업지주",
@@ -443,8 +443,8 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 259500,
-      "change_rate": -2.99,
+      "price": 260000,
+      "change_rate": -2.8,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "자동차·모빌리티",
