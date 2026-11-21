@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-21 09:24:45"
+    "checked_at": "2026-11-21 09:35:54"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-21 09:24:45",
+  "updated_at": "2026-11-21 09:35:55",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 18.2°C)",
@@ -448,12 +448,12 @@
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
-      "theme_tag": "🔍 퀀트 발굴(76점) · 배당왕 필수소비재",
+      "theme_tag": "🔍 퀀트 발굴(80점) · 배당왕 필수소비재",
       "rsi": 58.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(76점) 📊",
+      "status_tag": "🔍 퀀트 발굴(80점) 📊",
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
@@ -476,44 +476,6 @@
         "reason": "현재 시장은 폭락장으로 위험이 높으며 KO의 RSI가 중립 수준에 머물러 있어 매수 신호가 부족합니다. ATR 목표익절선이 아직 도달하지 않았고, 거래량이 낮아 단기 상승 가능성이 낮아 보수적으로 관망을 선택했습니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 54점 | 편차 2점)",
         "checked_at": "2026-11-21 05:30:30"
-      }
-    },
-    {
-      "code": "JEPI",
-      "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 54.25,
-      "change_rate": -2.32,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국배당·가치주ETF",
-      "theme_tag": "🔍 퀀트 발굴(74점) · 월배당 방어형 ETF",
-      "rsi": 29.9,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(74점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 62,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 45,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          }
-        ],
-        "reason": "미국 증시가 S&P500 기준 -3.01% 급락하는 패닉 폭락장 레짐으로 인해 신규 매수 차단 기준이 적용됩니다. JEPI의 14일 RSI가 30.8로 과매도 구간에 진입했으나, 거시경제 하방 리스크와 약세장 변동성을 고려할 때 무리한 진입보다 향후 시장 안정 시 재진입 검토가 타당합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 62점 | 편차 25점 · 보수적 관망)",
-        "checked_at": "2026-11-21 05:30:35"
       }
     },
     {
@@ -555,15 +517,53 @@
       }
     },
     {
-      "code": "SPYM",
-      "name": "SPDR S&P500 (SPYM)",
-      "price": 81.27,
-      "change_rate": -3.55,
+      "code": "XOM",
+      "name": "엑슨모빌 (XOM)",
+      "price": 159.99,
+      "change_rate": 0.67,
       "marketCountry": "US",
       "currency": "USD",
-      "sector": "미국지수·성장ETF",
-      "theme_tag": "🔍 퀀트 발굴(69점) · 저단가 S&P500 인덱스",
-      "rsi": 25.0,
+      "sector": "미국소비·헬스케어·에너지",
+      "theme_tag": "🔍 퀀트 발굴(70점) · 글로벌 에너지 대장주",
+      "rsi": 37.1,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(70점) 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 60,
+        "consensus": "2사 합의",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 60,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 60,
+            "decision": "관망"
+          }
+        ],
+        "reason": "14일 Wilder RSI 37.1의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
+        "checked_at": "분석 전"
+      }
+    },
+    {
+      "code": "JEPI",
+      "name": "JPMorgan 커버드콜 (JEPI)",
+      "price": 54.25,
+      "change_rate": -2.32,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국배당·가치주ETF",
+      "theme_tag": "🔍 퀀트 발굴(69점) · 월배당 방어형 ETF",
+      "rsi": 29.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -587,9 +587,9 @@
             "decision": "매수"
           }
         ],
-        "reason": "미 증시 급락 패닉 장세와 더불어 중대 기업 스캔들 및 당국 조사 관련 악재가 겹쳐 단기 하방 압력이 매우 높습니다. 14일 RSI가 25.5로 과매도 구간에 진입했으나 떨어지는 칼날을 피하고 향후 시장 안정화 및 저점 확인 후 재진입을 검토합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 25점 ↔ AI 62점 | 편차 37점 · 보수적 관망)",
-        "checked_at": "2026-11-21 05:30:48"
+        "reason": "미국 증시가 S&P500 기준 -3.01% 급락하는 패닉 폭락장 레짐으로 인해 신규 매수 차단 기준이 적용됩니다. JEPI의 14일 RSI가 30.8로 과매도 구간에 진입했으나, 거시경제 하방 리스크와 약세장 변동성을 고려할 때 무리한 진입보다 향후 시장 안정 시 재진입 검토가 타당합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 62점 | 편차 25점 · 보수적 관망)",
+        "checked_at": "2026-11-21 05:30:35"
       }
     },
     {
@@ -600,12 +600,12 @@
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
-      "theme_tag": "🔍 퀀트 발굴(64점) · 미국 1위 대형은행",
+      "theme_tag": "🔍 퀀트 발굴(69점) · 미국 1위 대형은행",
       "rsi": 30.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(64점) 📊",
+      "status_tag": "🔍 퀀트 발굴(69점) 📊",
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
@@ -638,12 +638,12 @@
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(63점) · AI 클라우드·검색",
+      "theme_tag": "🔍 퀀트 발굴(68점) · AI 클라우드·검색",
       "rsi": 27.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(63점) 📊",
+      "status_tag": "🔍 퀀트 발굴(68점) 📊",
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
@@ -676,12 +676,12 @@
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(63점) · 코파일럿·애저 클라우드",
+      "theme_tag": "🔍 퀀트 발굴(68점) · 코파일럿·애저 클라우드",
       "rsi": 35.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(63점) 📊",
+      "status_tag": "🔍 퀀트 발굴(68점) 📊",
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
