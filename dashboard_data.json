@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-22 11:48:35"
+    "checked_at": "2026-11-22 11:59:42"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-22 11:48:35",
+  "updated_at": "2026-11-22 11:59:43",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "84% (⚡ 충전 중, 21.1°C)",
@@ -525,7 +525,7 @@
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
       "theme_tag": "🔍 퀀트 발굴(70점) · 글로벌 에너지 대장주",
-      "rsi": 37.1,
+      "rsi": 36.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -549,7 +549,7 @@
             "decision": "관망"
           }
         ],
-        "reason": "14일 Wilder RSI 37.1의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "reason": "14일 Wilder RSI 36.1의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
         "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
         "checked_at": "분석 전"
       }
