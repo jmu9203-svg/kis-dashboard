@@ -76,10 +76,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-24 01:31:45",
+  "updated_at": "2026-11-24 01:33:01",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": false,
-  "battery": "25% (⚡ 충전 중, 23.2°C)",
+  "is_market_open": true,
+  "battery": "27% (⚡ 충전 중, 23.5°C)",
   "budget_limit": 2500000,
   "fund_eval": 2468637,
   "fund_pnl": -31363,
@@ -785,8 +785,8 @@
     {
       "code": "TLT",
       "name": "iShares 20년+ 미 국채 (TLT)",
-      "price": 81.54,
-      "change_rate": 0.11,
+      "price": 81.545,
+      "change_rate": 0.12,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국국채·방어자산",
@@ -823,8 +823,8 @@
     {
       "code": "KO",
       "name": "코카콜라 (KO)",
-      "price": 96.24,
-      "change_rate": -0.77,
+      "price": 96.2499,
+      "change_rate": -0.76,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -861,8 +861,8 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.65,
-      "change_rate": 0.01,
+      "price": 100.6415,
+      "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "초단기채권·현금성자산",
@@ -899,8 +899,8 @@
     {
       "code": "WMT",
       "name": "월마트 (WMT)",
-      "price": 128.87,
-      "change_rate": 0.72,
+      "price": 128.81,
+      "change_rate": 0.67,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -937,8 +937,8 @@
     {
       "code": "CRM",
       "name": "세일즈포스 (CRM)",
-      "price": 184.425,
-      "change_rate": 2.11,
+      "price": 184.295,
+      "change_rate": 2.03,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -948,6 +948,82 @@
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "🔍 퀀트 발굴(54점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 52,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 50,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "미국 증시 전체가 약세·조정장 레짐에 진입했으며, CRM은 MA20을 크게 하회하는 추세적 하락 국면에 있습니다. RSI 25.6으로 과매도 상태이나, 거래량 부족과 함께 구조조정 및 목표가 하향 등 중대 개별 악재가 겹쳐 '떨어지는 칼날' 리스크가 높아 신규 진입을 보류하고 관망하는 것이 적절합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 52점 | 편차 0점)",
+        "checked_at": "2026-11-24 01:31:56"
+      }
+    },
+    {
+      "code": "JPM",
+      "name": "JP모건 (JPM)",
+      "price": 319.48,
+      "change_rate": 2.88,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국금융·결제",
+      "theme_tag": "🔍 퀀트 발굴(54점) · 미국 1위 대형은행",
+      "rsi": 39.4,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(54점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 66,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 78,
+            "decision": "매수"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "미국 증시가 20일선 하회의 약세·조정장 레짐에 진입했으며, JPM 역시 MA20을 하회하고 있어 추세적 하락 리스크가 존재합니다. RSI 39.4로 저가매수 구간은 맞으나, 당일 거래량이 20일 평균 대비 20% 부족하여 매수세가 확인되지 않는 '떨어지는 칼날' 가능성이 높아 보수적으로 관망합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 46점 ↔ AI 66점 | 편차 20점 · 보수적 관망)",
+        "checked_at": "2026-11-24 01:32:37"
+      }
+    },
+    {
+      "code": "SCHD",
+      "name": "Schwab 미국 배당 다우",
+      "price": 34.42,
+      "change_rate": 1.41,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국배당·가치주ETF",
+      "theme_tag": "🔍 퀀트 발굴(48점) · 10년 연속 배당성장",
+      "rsi": 43.8,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(48점) · 실시간 감시 🎯",
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
@@ -967,92 +1043,16 @@
             "decision": "관망"
           }
         ],
-        "reason": "RSI는 저가 매수 신호이나 최근 레이오프와 목표가 하향 등 중대한 악재가 존재해 위험이 크다. 현금은 충분하지만 약세장과 부정적 뉴스로 인해 신중히 기다리는 것이 바람직하다.",
+        "reason": "ETF가 단기 조정 국면에 있으며 RSI가 매수 신호 수준(≤40)보다 높고 거래량도 저조해 급등 반등 가능성이 낮습니다. 긍정적인 뉴스와 현금 여유는 있지만, 현재는 추가 매수 타이밍이 확실치 않아 관망하는 것이 바람직합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 52점 | 편차 6점)",
-        "checked_at": "2026-11-23 23:37:56"
-      }
-    },
-    {
-      "code": "JPM",
-      "name": "JP모건 (JPM)",
-      "price": 319.63,
-      "change_rate": 2.93,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국금융·결제",
-      "theme_tag": "🔍 퀀트 발굴(54점) · 미국 1위 대형은행",
-      "rsi": 39.4,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(54점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 65,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          }
-        ],
-        "reason": "미국 증시가 S&P500 기준 -3.01% 급락하는 극심한 패닉 폭락장 레짐 속에서 신규 매수가 차단되었습니다. 14일 RSI가 30.8로 과매도 구간에 진입했으나, 거래량이 20일 평균의 62% 수준으로 낮고 거시경제적 불확실성이 커서 향후 시장 안정 시 재진입을 검토하며 관망합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 37점 ↔ AI 65점 | 편차 28점 · 보수적 관망)",
-        "checked_at": "2026-11-21 05:31:04"
-      }
-    },
-    {
-      "code": "SCHD",
-      "name": "Schwab 미국 배당 다우",
-      "price": 34.425,
-      "change_rate": 1.43,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국배당·가치주ETF",
-      "theme_tag": "🔍 퀀트 발굴(48점) · 10년 연속 배당성장",
-      "rsi": 43.8,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(48점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 54,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "미 증시 약세·조정장 국면 속 엔비디아 실적 발표를 앞두고 시장 전반의 눈치보기 장세가 이어지고 있습니다. SCHD는 20일 이동평균선을 상회하고 있으나 거래량이 다소 부족한 음봉 흐름을 보여 신규 매수 조건에 미치지 못하므로, 향후 시장 안정세 및 수급 유입 확인 후 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 54점 | 편차 5점)",
-        "checked_at": "2026-11-17 23:36:51"
+        "checked_at": "2026-11-24 01:32:40"
       }
     },
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 55.965,
-      "change_rate": 3.16,
+      "price": 55.955,
+      "change_rate": 3.14,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
@@ -1065,7 +1065,7 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 56,
+        "score": 55,
         "consensus": "2:0 관망 우세",
         "models": [
           {
@@ -1077,13 +1077,13 @@
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 58,
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "미국 증시가 약세·조정장 레짐에 진입했으며, 종목 역시 20일 이동평균선(MA20)을 하회하는 단기 조정 국면에 있어 매수 타이밍이 아닙니다. RSI 44.2는 저가매수 유입 구간(RSI<=40)이 아닌 중립 영역에 위치해 있고, 당일 거래량이 20일 평균 대비 부족하여 반등의 지속력을 확신하기 어렵습니다. 따라서 신규 진입보다는 시장 안정화 및 기술적 지지 확인을 위한 관망이 적절합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 56점 | 편차 10점)",
-        "checked_at": "2026-11-23 23:37:38"
+        "reason": "미국 증시가 20일선 하회의 약세·조정장 레짐에 진입했으며, JEPI 역시 MA20을 하회하고 있어 기술적 지지 확인이 필요합니다. RSI 45.0은 저가매수 유입 구간(RSI<=40)이 아닌 중립 구간이며, 당일 거래량이 20일 평균 대비 40% 부족해 매수 모멘텀이 약합니다. 따라서 신규 진입보다는 시장 방향성 확인 후 관망하는 것이 적절합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 55점 | 편차 9점)",
+        "checked_at": "2026-11-24 01:32:59"
       }
     }
   ],
