@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-24 03:34:45"
+    "checked_at": "2026-11-24 03:36:49"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-24 03:34:31",
+  "updated_at": "2026-11-24 03:36:49",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": true,
+  "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.9°C)",
   "budget_limit": 2500000,
   "fund_eval": 2468637,
@@ -785,7 +785,7 @@
     {
       "code": "TLT",
       "name": "iShares 20년+ 미 국채 (TLT)",
-      "price": 81.55,
+      "price": 81.545,
       "change_rate": 0.12,
       "marketCountry": "US",
       "currency": "USD",
@@ -823,8 +823,8 @@
     {
       "code": "AMZN",
       "name": "아마존 (AMZN)",
-      "price": 258.925,
-      "change_rate": 4.9,
+      "price": 258.515,
+      "change_rate": 4.74,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -861,7 +861,7 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.6455,
+      "price": 100.6499,
       "change_rate": 0.01,
       "marketCountry": "US",
       "currency": "USD",
@@ -899,8 +899,8 @@
     {
       "code": "PG",
       "name": "P&G (PG)",
-      "price": 170.3,
-      "change_rate": 0.55,
+      "price": 170.28,
+      "change_rate": 0.54,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -937,8 +937,8 @@
     {
       "code": "WMT",
       "name": "월마트 (WMT)",
-      "price": 129.33,
-      "change_rate": 1.08,
+      "price": 129.27,
+      "change_rate": 1.03,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -975,8 +975,8 @@
     {
       "code": "CRM",
       "name": "세일즈포스 (CRM)",
-      "price": 185.235,
-      "change_rate": 2.56,
+      "price": 185.1054,
+      "change_rate": 2.48,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -1013,8 +1013,8 @@
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 34.4,
-      "change_rate": 1.36,
+      "price": 34.3877,
+      "change_rate": 1.32,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
@@ -1051,8 +1051,8 @@
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 56.0,
-      "change_rate": 3.23,
+      "price": 55.9662,
+      "change_rate": 3.16,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
