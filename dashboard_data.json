@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-24 05:33:10"
+    "checked_at": "2026-11-24 05:35:15"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-24 05:33:45",
+  "updated_at": "2026-11-24 05:35:15",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": true,
+  "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 21.8°C)",
   "budget_limit": 2500000,
   "fund_eval": 2468637,
@@ -785,8 +785,8 @@
     {
       "code": "KO",
       "name": "코카콜라 (KO)",
-      "price": 95.785,
-      "change_rate": -1.24,
+      "price": 95.755,
+      "change_rate": -1.27,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -823,8 +823,8 @@
     {
       "code": "PG",
       "name": "P&G (PG)",
-      "price": 170.06,
-      "change_rate": 0.41,
+      "price": 170.01,
+      "change_rate": 0.38,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -861,7 +861,7 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.6439,
+      "price": 100.6401,
       "change_rate": 0.0,
       "marketCountry": "US",
       "currency": "USD",
@@ -899,8 +899,8 @@
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 55.9701,
-      "change_rate": 3.17,
+      "price": 55.985,
+      "change_rate": 3.2,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
@@ -937,8 +937,8 @@
     {
       "code": "CRM",
       "name": "세일즈포스 (CRM)",
-      "price": 185.24,
-      "change_rate": 2.56,
+      "price": 185.36,
+      "change_rate": 2.62,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -975,8 +975,8 @@
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 34.365,
-      "change_rate": 1.25,
+      "price": 34.368,
+      "change_rate": 1.26,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
@@ -1013,8 +1013,8 @@
     {
       "code": "SPYM",
       "name": "SPDR S&P500 (SPYM)",
-      "price": 85.1999,
-      "change_rate": 4.84,
+      "price": 85.255,
+      "change_rate": 4.9,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
@@ -1051,8 +1051,8 @@
     {
       "code": "AMZN",
       "name": "아마존 (AMZN)",
-      "price": 256.81,
-      "change_rate": 4.05,
+      "price": 256.91,
+      "change_rate": 4.09,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
