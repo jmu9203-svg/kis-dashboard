@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-23 13:31:35",
+  "updated_at": "2026-11-23 13:33:39",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "44% (🔋 배터리 사용 중, 18.4°C)",
@@ -101,8 +101,8 @@
     {
       "code": "381170",
       "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 26510,
-      "change_rate": -0.66,
+      "price": 26515,
+      "change_rate": -0.64,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
@@ -139,13 +139,13 @@
     {
       "code": "108490",
       "name": "로보티즈",
-      "price": 247500,
-      "change_rate": 6.0,
+      "price": 248000,
+      "change_rate": 6.21,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "기타·분산섹터",
       "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 48.2,
+      "rsi": 48.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -177,13 +177,13 @@
     {
       "code": "090430",
       "name": "아모레퍼시픽",
-      "price": 136600,
-      "change_rate": -2.01,
+      "price": 136700,
+      "change_rate": -1.94,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "기타·분산섹터",
       "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 56.1,
+      "rsi": 56.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -215,8 +215,8 @@
     {
       "code": "039030",
       "name": "이오테크닉스",
-      "price": 293000,
-      "change_rate": 1.74,
+      "price": 293500,
+      "change_rate": 1.91,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "기타·분산섹터",
@@ -253,51 +253,13 @@
     {
       "code": "214450",
       "name": "파마리서치",
-      "price": 277000,
-      "change_rate": 0.73,
+      "price": 278500,
+      "change_rate": 1.27,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "플랫폼·바이오",
       "theme_tag": "🔍 100선 퀀트 발굴",
       "rsi": 58.6,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "100선 퀀트 발굴 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 52,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "당일 코스피200 지수가 -4.89% 급락하는 패닉 폭락장으로 신규매수 전면 차단 국면이며, 장중 윗꼬리 발생 및 외국인 2일 연속 매도세로 인해 단기 변동성이 확대되었습니다. 따라서 무리한 신규 진입을 자제하고 향후 시장 안정 및 저점 눌림목 형성 여부를 확인하며 관망합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 48점 ↔ AI 52점 | 편차 4점)",
-        "checked_at": "2026-11-23 11:31:46"
-      }
-    },
-    {
-      "code": "010170",
-      "name": "대한광통신",
-      "price": 13850,
-      "change_rate": -0.93,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "기타·분산섹터",
-      "theme_tag": "🔍 100선 퀀트 발굴",
-      "rsi": 46.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -311,73 +273,35 @@
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 52,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 58,
+            "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "당일 코스피200이 -4.89% 급락하는 패닉 폭락장으로 신규 매수 전면 차단 레짐이 발동되었으며, 장중 윗꼬리가 발생하여 단기 차익 실현 매물이 출회되었습니다. 우수한 수급과 모멘텀에도 불구하고 극심한 거시경제 변동성을 고려하여 현재는 신규 진입을 자제하고 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 59점 ↔ AI 55점 | 편차 4점)",
-        "checked_at": "2026-11-23 11:31:59"
+        "reason": "당일 코스피200 급락(-3.46%)의 패닉 폭락장 레짐으로 인해 신규 매수 전면 차단 및 보수적 관점이 요구됩니다. 기관의 연속 순매수와 리쥬란 수출 호조 모멘텀에도 불구하고, 당일 윗꼬리 차익매물 출회와 거시경제 불안정을 고려해 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 48점 ↔ AI 55점 | 편차 7점)",
+        "checked_at": "2026-11-23 13:31:42"
       }
     },
     {
-      "code": "381180",
-      "name": "TIGER 미국필라델피아반도체나스닥",
-      "price": 30805,
-      "change_rate": -3.66,
+      "code": "010170",
+      "name": "대한광통신",
+      "price": 13860,
+      "change_rate": -0.86,
       "marketCountry": "KR",
       "currency": "KRW",
-      "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 28.9,
+      "sector": "기타·분산섹터",
+      "theme_tag": "🔍 100선 퀀트 발굴",
+      "rsi": 46.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 70,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 62,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 78,
-            "decision": "매수"
-          }
-        ],
-        "reason": "현재 코스피200 시장이 약세·조정장인 가운데 엔비디아 실적 발표를 앞두고 시장 관망세가 짙어 섣부른 추격 매수보다는 보수적 접근이 필요합니다. RSI 36.7 및 외국인의 5일 누적 순매수 유입 등 긍정적 요인도 존재하나 약세장 레짐을 고려해 현 포지션을 유지하며 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 56점 ↔ AI 70점 | 편차 14점)",
-        "checked_at": "2026-11-17 11:33:25"
-      }
-    },
-    {
-      "code": "396500",
-      "name": "TIGER 반도체TOP10",
-      "price": 23590,
-      "change_rate": -2.22,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "반도체·IT하드웨어",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 31.1,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
+      "status_tag": "100선 퀀트 발굴 🎯",
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
@@ -397,9 +321,85 @@
             "decision": "관망"
           }
         ],
-        "reason": "당일 코스피200 시장이 -4.89% 급락하는 패닉 폭락장으로 신규매수 전면 차단 원칙이 적용됩니다. RSI 30.3으로 과매도권에 진입하고 외인 순매수가 유입되고 있으나, 거시경제 하방 리스크와 긴 윗꼬리 음봉 형성으로 인해 향후 시장 안정 시 재진입을 검토하며 관망합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 31점 ↔ AI 54점 | 편차 23점 · 보수적 관망)",
-        "checked_at": "2026-11-23 11:33:02"
+        "reason": "당일 코스피200 지수가 -3.46% 급락하는 패닉 폭락장으로 신규매수 전면 차단 지침이 적용되며, 5일 누적 외인 수급이 양호함에도 불구하고 거시경제 변동성이 극심하여 미보유 상태를 유지하며 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 68점 ↔ AI 54점 | 편차 14점)",
+        "checked_at": "2026-11-23 13:31:54"
+      }
+    },
+    {
+      "code": "381180",
+      "name": "TIGER 미국필라델피아반도체나스닥",
+      "price": 30805,
+      "change_rate": -3.66,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "미국증시·글로벌빅테크",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 28.9,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 69,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 60,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 78,
+            "decision": "매수"
+          }
+        ],
+        "reason": "당일 코스피200 시장이 -3.46% 급락하는 패닉 폭락장 레짐으로 신규 매수 전면 차단 원칙이 적용됩니다. RSI 28.9의 과매도 및 아래꼬리 양봉 반등 조짐이 있으나 거시적 변동성이 극심하므로, 향후 시장 안정 시 재진입 검토를 위해 신중하게 관망합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 52점 ↔ AI 69점 | 편차 17점 · 보수적 관망)",
+        "checked_at": "2026-11-23 13:32:32"
+      }
+    },
+    {
+      "code": "396500",
+      "name": "TIGER 반도체TOP10",
+      "price": 23605,
+      "change_rate": -2.16,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "반도체·IT하드웨어",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 31.1,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 50,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "당일 코스피200 지수의 급격한 패닉 폭락(-3.46%)으로 인해 신규 매수 전면 차단 지침이 적용되며, 기관의 지속적인 매도세와 단기 하방 압력이 커 보수적인 접근이 필요합니다. 14일 RSI가 과매도 구간에 진입했으나 거시 경제 불안과 시장 변동성 확대로 인해 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 31점 ↔ AI 50점 | 편차 19점 · 보수적 관망)",
+        "checked_at": "2026-11-23 13:32:45"
       }
     },
     {
@@ -419,32 +419,32 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 56,
-        "consensus": "2:0 관망 우세",
+        "score": 68,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 50,
+            "score": 58,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
-            "decision": "관망"
+            "score": 78,
+            "decision": "매수"
           }
         ],
-        "reason": "당일 코스피200 지수가 -3.43% 급락하는 패닉 폭락장으로 신규 매수 전면 차단 원칙이 적용됩니다. RSI 27.3의 과매도 상태와 외국인 저가 매수세 유입 조짐이 있으나, 거시경제 하방 리스크가 극심하여 향후 시장 안정 시 재진입 검토를 위해 관망합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 51점 ↔ AI 56점 | 편차 5점)",
-        "checked_at": "2026-11-23 10:02:29"
+        "reason": "당일 코스피200 시장이 -3.46% 급락하는 패닉 폭락장 레짐으로 인해 신규 매수 전면 차단 및 보수적 접근이 요구됩니다. 14일 RSI가 28.0으로 과매도 구간이며 아래꼬리 양봉 반등과 외인 누적 순매수세가 유입되고 있으나, 극심한 지수 하방 압력 속에서 리스크 관리를 위해 현재는 관망하며 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 60점 ↔ AI 68점 | 편차 8점)",
+        "checked_at": "2026-11-23 13:32:58"
       }
     },
     {
       "code": "091160",
       "name": "KODEX 반도체",
-      "price": 83345,
-      "change_rate": -1.48,
+      "price": 83510,
+      "change_rate": -1.29,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "반도체·IT하드웨어",
@@ -473,9 +473,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "당일 코스피200이 -4.89% 급락하는 패닉 폭락장으로 당일 신규 매수 전면 차단 원칙이 적용됩니다. KODEX 반도체는 RSI 29.7로 과매도 구간이나 긴 윗꼬리 음봉과 기관의 지속적인 매도세로 인해 추가 하락 리스크가 높아 향후 시장 안정 시 재진입 검토를 위해 관망합니다.",
+        "reason": "당일 코스피200이 -3.46% 급락하는 패닉 폭락장세로 신규 매수 전면 차단 원칙이 적용되며, 윗꼬리 출회와 기관의 연속 순매도세로 인해 추가 하락 리스크가 큽니다. 따라서 14일 RSI가 30.7로 과매도 구간에 진입했음에도 불구하고 보수적 관점에서 관망하며 향후 시장 안정 시 재진입을 검토합니다.",
         "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 31점 ↔ AI 50점 | 편차 19점 · 보수적 관망)",
-        "checked_at": "2026-11-23 11:32:49"
+        "checked_at": "2026-11-23 13:33:35"
       }
     },
     {
