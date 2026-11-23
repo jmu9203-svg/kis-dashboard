@@ -76,10 +76,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-24 08:30:46",
-  "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
+  "updated_at": "2026-11-24 08:32:16",
+  "market_status": "24/7 시스템 정상 가동 중",
   "is_market_open": false,
-  "battery": "85% (⚡ 충전 중, 21.8°C)",
+  "battery": "확인 중",
   "budget_limit": 2500000,
   "fund_eval": 2470065,
   "fund_pnl": -29935,
@@ -861,8 +861,8 @@
     {
       "code": "XOM",
       "name": "엑슨모빌 (XOM)",
-      "price": 157.68,
-      "change_rate": -1.44,
+      "price": 157.3,
+      "change_rate": -1.68,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -899,8 +899,8 @@
     {
       "code": "PG",
       "name": "P&G (PG)",
-      "price": 169.5613,
-      "change_rate": 0.11,
+      "price": 169.38,
+      "change_rate": 0.01,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -1051,8 +1051,8 @@
     {
       "code": "AVGO",
       "name": "브로드컴 (AVGO)",
-      "price": 310.5,
-      "change_rate": 2.0,
+      "price": 310.9007,
+      "change_rate": 2.13,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -1088,41 +1088,45 @@
     }
   ],
   "morning_research": {
-    "updated_at": "2026-11-23 08:30:25",
-    "earnings_alert_level": "NORMAL",
-    "kr_macro_summary": "코스피 4,800선 후퇴 국면에서 외국인 매도세 진정 여부와 환율 변동성이 핵심 변수로 작용하고 있습니다. 주요 보유 종목들은 분기보고서 공시가 완료되었으며, 주주환원 및 개별 기업 모멘텀에 따른 선별적 대응이 요구됩니다.",
-    "us_bigtech_summary": "향후 7일 내 나스닥 공식 빅테크 실적발표 일정은 없으나, 엔비디아의 매출 급증세와 AI 무기 관련 시장의 기대감이 교차하고 있습니다. 뉴욕증시는 최근 변동성이 확대된 가운데 빅테크 흐름과 외국인 수급 연동성에 주목하고 있습니다.",
+    "updated_at": "2026-11-24 08:30:31",
+    "earnings_alert_level": "CAUTION",
+    "kr_macro_summary": "원/달러 환율은 1,342.50원으로 보합세를 보이고 있으나, 코스피 5,100선 등락 속 외국인 매도세 진정 여부가 지수 반등의 핵심 관건입니다. 국내 주요 대기업들은 3분기 실적 발표를 마무리하고 DART 공시 및 주주환원 정책 중심으로 수급이 재편되고 있습니다.",
+    "us_bigtech_summary": "향후 7일 내 나스닥 공식 빅테크 실적발표 일정은 없으나, 유가 100달러 돌파 및 AI 투자 부담 여파로 뉴욕증시 변동성이 확대된 상태입니다. SOXX 지수 하락 및 매크로 불확실성에 연동된 보수적 리스크 관리가 필요합니다.",
     "fx_soxx_info": {
-      "usd_krw": "1,345.50",
-      "usd_krw_change": "0.50",
-      "usd_krw_rate": "0.04",
-      "soxx_price": "확인 중",
-      "soxx_pct": "0.0%",
-      "summary": "원/달러 환율: 1,345.50원 (전일대비 0.50원 / 0.04%) | 미 필라델피아 반도체(SOXX): 확인 중 (0.0%)"
+      "usd_krw": "1,342.50",
+      "usd_krw_change": "0.00",
+      "usd_krw_rate": "0.00",
+      "soxx_price": "$139.70",
+      "soxx_pct": "-0.37%",
+      "summary": "원/달러 환율: 1,342.50원 (전일대비 0.00원 / 0.00%) | 미 필라델피아 반도체(SOXX): $139.70 (-0.37%)"
     },
     "us_official_calendar": [],
     "stock_notes": {
       "005930": {
         "name": "삼성전자",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(분기보고서 공시 완료)",
-        "memo": "지정 감시 종목 외 대상이나 반도체 업황 및 외국인 수급을 실시간 모니터링하며 진입하세요."
+        "earnings_status": "2026-11-16 분기보고서 발표 완료 (IR 일정 미등록)",
+        "memo": "외국인 매도세 진정 여부와 실적 바닥 확인 후 분할 매수 관점 접근.",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "465,714"
       },
       "000660": {
         "name": "SK하이닉스",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(분기보고서 공시 완료)",
-        "memo": "HBM 중심의 실적 개선세가 유효하므로 외인 수급 반등 시 분할 매수 관점을 유지하세요.",
+        "earnings_status": "2026년 3분기 실적 발표 완료 (IR 일정 미등록)",
+        "memo": "HBM 모멘텀 유효하나 지수 급락 연동 변동성에 대비해 추격 매수 자제.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "3,001,905"
+        "consensus_target_price": "2,973,333"
       },
       "005380": {
         "name": "현대차",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(분기보고서 공시 완료)",
-        "memo": "로보틱스 및 본업 모멘텀을 주시하며 지수 하방 압력 속 눌림목 중심로 대응하세요.",
+        "earnings_status": "2026-11-16 분기보고서 발표 완료 (IR 일정 미등록)",
+        "memo": "본업 실적 개선세와 로보틱스 모멘텀 체크하며 저점 분할 매수 대응.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -1131,26 +1135,41 @@
       "105560": {
         "name": "KB금융",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(실적발표 완료)",
-        "memo": "안정적인 펀더멘털과 주주환원 여력을 바탕으로 방어적 포트폴리오 비중을 유지하세요."
+        "earnings_status": "2026년 3분기 실적 발표 완료 (IR 일정 미등록)",
+        "memo": "압도적 자본력과 주주환원 모멘텀을 바탕으로 변동성 장세 방어주 역할 집중.",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "218,684"
       },
       "035420": {
         "name": "NAVER",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(실적발표 완료)",
-        "memo": "AI 및 글로벌 빅테크 트렌드와 연동된 수급 유입 여부를 확인한 후 보수적으로 접근하세요."
+        "earnings_status": "2026-11-13 분기보고서 발표 완료 (IR 일정 미등록)",
+        "memo": "AI 성장성 기반 기회 요인과 기관 수급 유입 여부 확인 후 진입.",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "292,048"
       },
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": false,
-        "earnings_status": "공식 IR 일정 미등록(실적발표 완료)",
-        "memo": "유사 전력기기 및 조선·기계 섹터의 수급 흐름에 맞춰 탄력적으로 대응하세요."
+        "earnings_status": "2026-11-16 분기보고서 발표 완료 (IR 일정 미등록)",
+        "memo": "데이터센터 향 전력기기 모멘텀 유효하나 단기 수급 이탈 시 관망.",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "837,889"
       },
       "091160": {
         "name": "KODEX 반도체",
         "earnings_imminent": false,
-        "earnings_status": "미 필라델피아 반도체 지수 및 국내 반도체 실적 연동",
-        "memo": "미국 반도체 지수(SOXX)의 방향성과 연동하여 장중 변동성 돌파 시에만 제한적으로 매매하세요."
+        "earnings_status": "미 필라델피아 반도체(SOXX) 및 국내 반도체 대형주 실적 연동",
+        "memo": "SOXX 지수 약세(-0.37%) 반영하여 장중 외국인 반도체 수급 반전 전까지 추격 매수 금지.",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null
       },
       "465580": {
         "name": "ACE 미국빅테크TOP7 Plus",
@@ -1158,54 +1177,48 @@
         "ir_date": null,
         "ir_dday": null
       },
-      "011200": {
-        "name": "HMM",
+      "381170": {
+        "name": "TIGER 미국테크TOP10 INDXX",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "26,167"
+        "ir_dday": null
       },
-      "086280": {
-        "name": "현대글로비스",
+      "360750": {
+        "name": "TIGER 미국S&P500",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "308,278"
+        "ir_dday": null
       },
-      "068270": {
-        "name": "셀트리온",
+      "458730": {
+        "name": "TIGER 미국배당다우존스",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "296,842"
+        "ir_dday": null
       },
-      "214450": {
-        "name": "파마리서치",
+      "069500": {
+        "name": "KODEX 200",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "422,429"
+        "ir_dday": null
       },
-      "443060": {
-        "name": "HD현대마린솔루션",
+      "305720": {
+        "name": "KODEX 2차전지산업",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "293,538"
+        "ir_dday": null
       },
-      "316140": {
-        "name": "우리금융지주",
+      "102110": {
+        "name": "TIGER 200",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
-        "ir_dday": null,
-        "consensus_target_price": "43,550"
+        "ir_dday": null
       },
-      "086790": {
-        "name": "하나금융지주",
+      "035720": {
+        "name": "카카오",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "166,650"
+        "consensus_target_price": "43,750"
       },
       "066570": {
         "name": "LG전자",
@@ -1213,6 +1226,20 @@
         "ir_date": null,
         "ir_dday": null,
         "consensus_target_price": "247,188"
+      },
+      "012450": {
+        "name": "한화에어로스페이스",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "1,219,524"
+      },
+      "005490": {
+        "name": "POSCO홀딩스",
+        "official_ir_schedule": "향후 공식 IR 일정 미등록",
+        "ir_date": null,
+        "ir_dday": null,
+        "consensus_target_price": "468,333"
       }
     }
   }
