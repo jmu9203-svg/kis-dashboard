@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-25 03:24:57"
+    "checked_at": "2026-11-25 03:32:17"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-25 03:24:57",
+  "updated_at": "2026-11-25 03:32:17",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 21.5°C)",
@@ -785,8 +785,8 @@
     {
       "code": "JNJ",
       "name": "존슨앤존슨 (JNJ)",
-      "price": 275.5,
-      "change_rate": 2.53,
+      "price": 275.585,
+      "change_rate": 2.56,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -803,66 +803,104 @@
         "consensus": "2:0 관망 우세",
         "models": [
           {
-            "provider": "Google",
-            "model": "Gemini 3.5",
+            "provider": "Groq",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
+            "model": "Groq Qwen",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "현재 RSI가 중립 수준이며 외인·기관 순매수 정보가 없으므로 매수 기준을 충족하지 못합니다. 또한 보유 주식이 없으므로 매도도 불가능합니다. 따라서 현재는 관망으로 유지하는 것이 가장 안전한 판단입니다.",
+        "reason": "현재 JNJ는 상승 추세를 유지하고 있으나 RSI가 40 이하가 아니고, 거래량이 낮아 단기 매수 신호가 부족합니다. ATR 목표익절선이 아직 도달하지 않았고, 보유량이 없으므로 매도도 불가능합니다. 따라서 보수적으로 관망을 권장합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 55점 | 편차 7점)",
-        "checked_at": "2026-11-25 01:30:22"
+        "checked_at": "2026-11-25 03:31:17"
       }
     },
     {
       "code": "KO",
       "name": "코카콜라 (KO)",
-      "price": 97.87,
-      "change_rate": 2.08,
+      "price": 97.9342,
+      "change_rate": 2.14,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
-      "theme_tag": "🔍 퀀트 발굴(58점) · 배당왕 필수소비재",
-      "rsi": 59.8,
+      "theme_tag": "🔍 퀀트 발굴(68점) · 배당왕 필수소비재",
+      "rsi": 59.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(58점) · 실시간 감시 🎯",
+      "status_tag": "🔍 퀀트 발굴(68점) · 실시간 감시 🎯",
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 56,
+        "score": 55,
         "consensus": "2:0 관망 우세",
         "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
           {
             "provider": "Groq",
             "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 55,
+            "decision": "관망"
           }
         ],
-        "reason": "현재 RSI가 68 이하이지만 40 이하가 아니고, 외인·기관 순매수 여부가 확인되지 않아 매수 조건을 충족하지 못한다. 또한 과열익절선에 도달하지 않았으며, ATR 손절선도 아직 멀리 떨어져 있어 보유가 없으므로 매도도 불가능하다. 따라서 현재는 관망으로 판단한다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 56점 | 편차 6점)",
-        "checked_at": "2026-11-25 01:31:06"
+        "reason": "현재 RSI가 중립 수준이며, 거래량이 평균 대비 낮아 단기 상승 모멘텀이 부족합니다. 또한 매수 시점에 필요한 5% 급등이나 30일 전 고점 근접 조건이 충족되지 않아 보수적 관망이 적절합니다. 현재 보유가 없으므로 매도는 불가능합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 55점 | 편차 7점)",
+        "checked_at": "2026-11-25 03:31:20"
+      }
+    },
+    {
+      "code": "SPYM",
+      "name": "SPDR S&P500 (SPYM)",
+      "price": 84.675,
+      "change_rate": -0.43,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국지수·성장ETF",
+      "theme_tag": "🔍 퀀트 발굴(65점) · 저단가 S&P500 인덱스",
+      "rsi": 40.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(65점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 55,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 SPYM은 20일 이동평균선 아래에 위치해 단기 조정세가 지속되고 있으며, RSI가 중립 수준이어서 매수 신호가 명확하지 않습니다. 또한 매크로 환경이 약세이며, 외인·기관 수급이 불확실해 리스크가 높아 보이므로 보유 없이 관망하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 51점 ↔ AI 55점 | 편차 4점)",
+        "checked_at": "2026-11-25 03:31:23"
       }
     },
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.655,
-      "change_rate": 0.01,
+      "price": 100.6553,
+      "change_rate": 0.02,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "초단기채권·현금성자산",
@@ -872,120 +910,6 @@
       "held_qty": 0,
       "pnl_rate": null,
       "status_tag": "🔍 퀀트 발굴(54점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 50,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 50,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 RSI가 과열 구간에 머무르고 거래량이 낮아 매수 시점이 부적절합니다. 보유한 주식이 없으므로 매도도 불가능하며, 시장이 조정 중인 상황에서 관망이 가장 안전한 선택입니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 37점 ↔ AI 50점 | 편차 13점)",
-        "checked_at": "2026-11-25 01:31:45"
-      }
-    },
-    {
-      "code": "CRM",
-      "name": "세일즈포스 (CRM)",
-      "price": 193.33,
-      "change_rate": 4.24,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(54점) · AI 엔터프라이즈 SaaS",
-      "rsi": 34.9,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(54점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 66,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 53,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          }
-        ],
-        "reason": "14일 RSI가 34.9로 과매도 구간에 진입했으나, 거래량이 20일 평균 대비 24%로 현저히 부족하고 미 증시 약세장 및 최근 예측 적중률 저조에 따른 감점 요인이 겹쳐 단기 매수보다는 눌림목을 대기하며 관망하는 것이 타당합니다. 향후 시장 안정 시 재진입 검토.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 66점 | 편차 14점)",
-        "checked_at": "2026-11-25 01:32:08"
-      }
-    },
-    {
-      "code": "JPM",
-      "name": "JP모건 (JPM)",
-      "price": 317.465,
-      "change_rate": 0.25,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국금융·결제",
-      "theme_tag": "🔍 퀀트 발굴(46점) · 미국 1위 대형은행",
-      "rsi": 37.7,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(46점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 68,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "미국 증시가 20일선 하회로 약세·조정장 레짐에 진입했으며, JPM 역시 MA20을 하회하고 있어 추세적 하락 리스크가 존재합니다. RSI 36.0으로 저가매수 구간은 맞으나, 당일 거래량이 20일 평균 대비 11% 부족하고 윗꼬리가 발생하여 매수 모멘텀이 약화되어 있어 '떨어지는 칼날'을 피하기 위해 관망이 적절합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 46점 ↔ AI 68점 | 편차 22점 · 보수적 관망)",
-        "checked_at": "2026-11-25 01:33:34"
-      }
-    },
-    {
-      "code": "SPYM",
-      "name": "SPDR S&P500 (SPYM)",
-      "price": 84.5987,
-      "change_rate": -0.52,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국지수·성장ETF",
-      "theme_tag": "🔍 퀀트 발굴(44점) · 저단가 S&P500 인덱스",
-      "rsi": 40.4,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(44점) · 실시간 감시 🎯",
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
@@ -1005,25 +929,101 @@
             "decision": "관망"
           }
         ],
-        "reason": "현재 SPYM은 20일 이동평균선 아래에 위치하고 RSI가 40 이하로 저가 매수 신호가 있지만 거래량이 평균 대비 68%로 낮아 진입 타점이 불확실합니다. 또한 외인·기관 수급이 명확하지 않으며, 시장 전반이 약세·조정장으로 보이므로 보수적으로 관망하는 것이 바람직합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 51점 ↔ AI 52점 | 편차 1점)",
-        "checked_at": "2026-11-25 01:33:37"
+        "reason": "현재 RSI가 97.6으로 과열 구간에 속해 매수는 위험하며, 보유량이 없으므로 매도도 불가능합니다. 시장은 약세·조정장으로 보수적 접근이 필요하며, 외인·기관 수급이 명확하지 않아 관망이 최선입니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 37점 ↔ AI 52점 | 편차 15점)",
+        "checked_at": "2026-11-25 03:31:34"
+      }
+    },
+    {
+      "code": "CRM",
+      "name": "세일즈포스 (CRM)",
+      "price": 193.46,
+      "change_rate": 4.31,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국증시·글로벌빅테크",
+      "theme_tag": "🔍 퀀트 발굴(54점) · AI 엔터프라이즈 SaaS",
+      "rsi": 34.9,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(54점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 68,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 80,
+            "decision": "매수"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "미국 증시 약세 레짐과 금리 상승이라는 매크로 악재가 지속되고 있으며, CRM의 당일 +4.22% 급등은 거래량 부족(31%)과 20일 이동평균선 하회라는 기술적 약세 신호를 동반한 반등으로 판단됩니다. 또한 최근 AI 예측 적중률이 낮아 보수적 리스크 관리가 필요하므로, RSI 과매도 구간임에도 불구하고 추격매수보다는 관망하며 추가 하락 또는 거래량 동반 반등 여부를 확인하는 것이 적절합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 52점 ↔ AI 68점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-25 03:31:37"
+      }
+    },
+    {
+      "code": "JPM",
+      "name": "JP모건 (JPM)",
+      "price": 317.525,
+      "change_rate": 0.27,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국금융·결제",
+      "theme_tag": "🔍 퀀트 발굴(54점) · 미국 1위 대형은행",
+      "rsi": 37.8,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(54점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 68,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 80,
+            "decision": "매수"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "미국 증시가 20일선 하회의 약세·조정장세에 진입했으며, JPM 역시 MA20을 하회하는 단기 조정 국면에 있습니다. RSI 37.7로 저가매수 구간은 맞으나, 당일 거래량이 20일 평균 대비 18% 부족하여 매수 모멘텀이 약하고, 매크로 불확실성(금리 상승, 유가 변동)으로 인해 '떨어지는 칼날' 리스크가 존재합니다. 따라서 신규 진입보다는 추가 하락 확인 후의 보수적 접근이 필요하여 관망을 선택합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 46점 ↔ AI 68점 | 편차 22점 · 보수적 관망)",
+        "checked_at": "2026-11-25 03:32:11"
       }
     },
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 34.936,
-      "change_rate": 1.59,
+      "price": 34.96,
+      "change_rate": 1.66,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
-      "theme_tag": "🔍 퀀트 발굴(40점) · 10년 연속 배당성장",
-      "rsi": 49.8,
+      "theme_tag": "🔍 퀀트 발굴(48점) · 10년 연속 배당성장",
+      "rsi": 50.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(40점) · 실시간 감시 🎯",
+      "status_tag": "🔍 퀀트 발굴(48점) · 실시간 감시 🎯",
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
@@ -1051,17 +1051,17 @@
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 56.0099,
-      "change_rate": 0.2,
+      "price": 56.055,
+      "change_rate": 0.28,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
-      "theme_tag": "🔍 퀀트 발굴(40점) · 월배당 방어형 ETF",
-      "rsi": 45.4,
+      "theme_tag": "🔍 퀀트 발굴(48점) · 월배당 방어형 ETF",
+      "rsi": 45.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(40점) · 실시간 감시 🎯",
+      "status_tag": "🔍 퀀트 발굴(48점) · 실시간 감시 🎯",
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
