@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-25 03:32:17"
+    "checked_at": "2026-11-25 03:40:17"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-25 03:32:17",
+  "updated_at": "2026-11-25 03:40:17",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 21.5°C)",
@@ -785,7 +785,7 @@
     {
       "code": "JNJ",
       "name": "존슨앤존슨 (JNJ)",
-      "price": 275.585,
+      "price": 275.59,
       "change_rate": 2.56,
       "marketCountry": "US",
       "currency": "USD",
@@ -823,13 +823,13 @@
     {
       "code": "KO",
       "name": "코카콜라 (KO)",
-      "price": 97.9342,
-      "change_rate": 2.14,
+      "price": 97.835,
+      "change_rate": 2.04,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
       "theme_tag": "🔍 퀀트 발굴(68점) · 배당왕 필수소비재",
-      "rsi": 59.9,
+      "rsi": 59.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -861,13 +861,13 @@
     {
       "code": "SPYM",
       "name": "SPDR S&P500 (SPYM)",
-      "price": 84.675,
-      "change_rate": -0.43,
+      "price": 84.655,
+      "change_rate": -0.45,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
       "theme_tag": "🔍 퀀트 발굴(65점) · 저단가 S&P500 인덱스",
-      "rsi": 40.6,
+      "rsi": 40.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -899,13 +899,13 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.6553,
+      "price": 100.66,
       "change_rate": 0.02,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "초단기채권·현금성자산",
       "theme_tag": "🔍 퀀트 발굴(54점) · 연 4.5% 무위험 달러이자",
-      "rsi": 97.6,
+      "rsi": 97.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -937,13 +937,13 @@
     {
       "code": "CRM",
       "name": "세일즈포스 (CRM)",
-      "price": 193.46,
-      "change_rate": 4.31,
+      "price": 193.57,
+      "change_rate": 4.37,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
       "theme_tag": "🔍 퀀트 발굴(54점) · AI 엔터프라이즈 SaaS",
-      "rsi": 34.9,
+      "rsi": 35.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -975,13 +975,13 @@
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 317.525,
-      "change_rate": 0.27,
+      "price": 317.375,
+      "change_rate": 0.23,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
       "theme_tag": "🔍 퀀트 발굴(54점) · 미국 1위 대형은행",
-      "rsi": 37.8,
+      "rsi": 37.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -1013,13 +1013,13 @@
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 34.96,
-      "change_rate": 1.66,
+      "price": 34.94,
+      "change_rate": 1.6,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
       "theme_tag": "🔍 퀀트 발굴(48점) · 10년 연속 배당성장",
-      "rsi": 50.1,
+      "rsi": 49.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -1027,37 +1027,37 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 54,
         "consensus": "2:0 관망 우세",
         "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
           {
             "provider": "Groq",
             "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 55,
-            "decision": "관망"
           }
         ],
-        "reason": "현재 가격이 20일 이동평균선 아래에 위치하고 RSI가 중립 수준이므로 단기 매수 신호가 부족합니다. ATR 목표익절선(≈37.13)까지 도달하지 않았으며, 거래량이 낮아 반등 가능성이 낮아 보수적으로 관망하는 것이 적절합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 55점 | 편차 12점)",
-        "checked_at": "2026-11-25 01:33:40"
+        "reason": "현재 가격이 20일 이동평균선 아래에 위치하고 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. ATR 목표익절선(≈37.34)까지 도달하지 않았고, 외인·기관 수급이 명확하지 않아 보수적으로 관망하는 것이 적절합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 54점 | 편차 11점)",
+        "checked_at": "2026-11-25 03:32:20"
       }
     },
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 56.055,
-      "change_rate": 0.28,
+      "price": 56.03,
+      "change_rate": 0.23,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
       "theme_tag": "🔍 퀀트 발굴(48점) · 월배당 방어형 ETF",
-      "rsi": 45.7,
+      "rsi": 45.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -1065,25 +1065,25 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 52,
         "consensus": "2:0 관망 우세",
         "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 50,
+            "decision": "관망"
+          },
           {
             "provider": "Groq",
             "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 55,
-            "decision": "관망"
           }
         ],
-        "reason": "현재 가격이 20일 이동평균선 아래에 위치하고 RSI가 중립 수준이어서 단기 매수 신호가 부족합니다. 또한 거래량이 평균 대비 낮아 반등 가능성이 낮으며, 보유량이 없으므로 매도도 불가능합니다. 따라서 현재는 관망이 가장 합리적인 선택입니다",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 55점 | 편차 9점)",
-        "checked_at": "2026-11-25 01:33:52"
+        "reason": "현재 JEPI는 MA20 아래에 위치하고 RSI가 중립 수준이므로 과열 신호가 없으며, 거래량이 낮아 단기 매수에 대한 확신이 부족합니다. 보유량이 없으므로 매도는 불가능하고, 현재 시장 레짐과 기술적 지표를 고려할 때 관망이 가장 합리적입니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 52점 | 편차 9점)",
+        "checked_at": "2026-11-25 03:32:25"
       }
     }
   ],
