@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-25 05:32:03",
+  "updated_at": "2026-11-25 05:32:40",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "85% (⚡ 충전 중, 21.5°C)",
   "budget_limit": 2500000,
   "fund_eval": 2470065,
@@ -785,7 +785,7 @@
     {
       "code": "KO",
       "name": "코카콜라 (KO)",
-      "price": 97.655,
+      "price": 97.65,
       "change_rate": 1.85,
       "marketCountry": "US",
       "currency": "USD",
@@ -823,8 +823,8 @@
     {
       "code": "JNJ",
       "name": "존슨앤존슨 (JNJ)",
-      "price": 276.575,
-      "change_rate": 2.93,
+      "price": 276.5018,
+      "change_rate": 2.9,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -861,8 +861,8 @@
     {
       "code": "SPYM",
       "name": "SPDR S&P500 (SPYM)",
-      "price": 84.335,
-      "change_rate": -0.83,
+      "price": 84.285,
+      "change_rate": -0.89,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
@@ -899,7 +899,7 @@
     {
       "code": "CRM",
       "name": "세일즈포스 (CRM)",
-      "price": 192.5101,
+      "price": 192.51,
       "change_rate": 3.8,
       "marketCountry": "US",
       "currency": "USD",
@@ -937,8 +937,8 @@
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 316.295,
-      "change_rate": -0.12,
+      "price": 316.17,
+      "change_rate": -0.15,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
@@ -1013,8 +1013,8 @@
     {
       "code": "PLTR",
       "name": "팔란티어 (PLTR)",
-      "price": 159.915,
-      "change_rate": 0.35,
+      "price": 159.82,
+      "change_rate": 0.29,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -1027,13 +1027,13 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 52,
         "consensus": "2:0 관망 우세",
         "models": [
           {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 55,
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 50,
             "decision": "관망"
           },
           {
@@ -1043,16 +1043,16 @@
             "decision": "관망"
           }
         ],
-        "reason": "미국 증시가 약세·조정장세에 진입했으며, 해당 종목은 20일 이동평균선(MA20)을 하회하는 단기 조정 국면에 있습니다. RSI가 42.8로 저가매수 유입 구간(RSI<=40)에는 미치지 못했고, 당일 거래량이 평균 대비 부족하여 매수 모멘텀이 약한 상태입니다. 또한 CTO의 대규모 지분 매도라는 개별 악재가 존재하여, 기술적 지지 확인 전까지 신규 진입보다는 관망이 적절합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 55점 | 편차 9점)",
-        "checked_at": "2026-11-24 23:39:07"
+        "reason": "미 증시 약세장 및 S&P500 20일선 하회 상황에서 PLTR 역시 MA20을 밑돌며 윗꼬리가 달린 채 거래량이 부족한 모습을 보이고 있습니다. 단기 조정 국면에서 뚜렷한 수급 유입이 확인되지 않아 보수적 리스크 관리가 필요하므로, 향후 시장 안정 및 기술적 반등 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 52점 | 편차 6점)",
+        "checked_at": "2026-11-25 05:32:25"
       }
     },
     {
       "code": "AVGO",
       "name": "브로드컴 (AVGO)",
-      "price": 301.7,
-      "change_rate": -3.78,
+      "price": 301.38,
+      "change_rate": -3.88,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -1065,25 +1065,25 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 54,
         "consensus": "2:0 관망 우세",
         "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
           {
             "provider": "Groq",
             "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 55,
-            "decision": "관망"
           }
         ],
-        "reason": "미국 시장이 약세이며 거래량이 저조한 상황에서 RSI가 40 이하가 아니고 확실한 외인·기관 순매수 신호가 없어 신중히 기다리는 것이 바람직합니다. 현금과 한도는 충족하지만, 현재는 매수 타이밍이 미흡하므로 관망을 권고합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 42점 ↔ AI 55점 | 편차 13점)",
-        "checked_at": "2026-11-24 23:38:49"
+        "reason": "미 증시 약세장 및 20일선 아래의 단기 조정 국면에서 거래량이 실종되고 윗꼬리가 발생하여 추가 하락 압력이 존재합니다. RSI 40.8로 중립 구간이나 매수 모멘텀이 부족하므로 현재 보유 수량 0주 상태를 유지하며 향후 시장 안정 및 수급 유입 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 42점 ↔ AI 54점 | 편차 12점)",
+        "checked_at": "2026-11-25 05:32:38"
       }
     }
   ],
