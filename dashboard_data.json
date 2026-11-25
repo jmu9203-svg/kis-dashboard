@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-25 13:35:39",
+  "updated_at": "2026-11-25 13:35:58",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "75% (🔋 배터리 사용 중, 18.7°C)",
@@ -139,8 +139,8 @@
     {
       "code": "381170",
       "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 26740,
-      "change_rate": -2.87,
+      "price": 26745,
+      "change_rate": -2.85,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
@@ -253,8 +253,8 @@
     {
       "code": "069500",
       "name": "KODEX 200",
-      "price": 73570,
-      "change_rate": -6.47,
+      "price": 73540,
+      "change_rate": -6.51,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "기타·분산섹터",
@@ -291,8 +291,8 @@
     {
       "code": "091160",
       "name": "KODEX 반도체",
-      "price": 81500,
-      "change_rate": -8.07,
+      "price": 81490,
+      "change_rate": -8.08,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "반도체·IT하드웨어",
@@ -315,27 +315,27 @@
             "decision": "관망"
           },
           {
-            "provider": "Groq",
-            "model": "Groq Qwen",
+            "provider": "Google",
+            "model": "Gemini 3.5",
             "score": 45,
             "decision": "관망"
           }
         ],
-        "reason": "당일 코스피200이 -6.13% 폭락하는 패닉 장세 속에서 KODEX 반도체 역시 8만 원대(-8.08%)로 급락하며 20일선 및 역배열 하방 압력이 거셉니다. 외국인 수급이 5일 누적 순매도세를 보이고 있어 신규 진입 조건에 부합하지 않으므로, 향후 시장 안정 시 재진입을 검토하며 관망합니다.",
+        "reason": "당일 코스피200 지수가 -6.30% 급락하는 패닉 장세이며 MA20 및 MA60 하회하는 역배열 상태로 신규 매수 조건에 부합하지 않습니다. 미보유 상태에서 하방 리스크가 커 보수적 관점에서 진입을 보류하며, 향후 시장 안정 시 재진입을 검토하겠습니다.",
         "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 22점 ↔ AI 45점 | 편차 23점 · 보수적 관망)",
-        "checked_at": "2026-11-25 11:34:48"
+        "checked_at": "2026-11-25 13:35:51"
       }
     },
     {
       "code": "305720",
       "name": "KODEX 2차전지산업",
-      "price": 11705,
-      "change_rate": -2.66,
+      "price": 11700,
+      "change_rate": -2.7,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "플랫폼·바이오",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 40.8,
+      "rsi": 40.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -367,8 +367,8 @@
     {
       "code": "102110",
       "name": "TIGER 200",
-      "price": 73370,
-      "change_rate": -6.46,
+      "price": 73330,
+      "change_rate": -6.51,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "기타·분산섹터",
@@ -481,8 +481,8 @@
     {
       "code": "005380",
       "name": "현대차",
-      "price": 270500,
-      "change_rate": -1.64,
+      "price": 271000,
+      "change_rate": -1.45,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "자동차·모빌리티",
@@ -519,8 +519,8 @@
     {
       "code": "105560",
       "name": "KB금융",
-      "price": 148300,
-      "change_rate": -2.05,
+      "price": 148200,
+      "change_rate": -2.11,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "금융·밸류업지주",
@@ -595,8 +595,8 @@
     {
       "code": "035720",
       "name": "카카오",
-      "price": 31100,
-      "change_rate": 2.47,
+      "price": 31150,
+      "change_rate": 2.64,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "플랫폼·바이오",
@@ -709,8 +709,8 @@
     {
       "code": "267260",
       "name": "HD현대일렉트릭",
-      "price": 380000,
-      "change_rate": -5.0,
+      "price": 380500,
+      "change_rate": -4.88,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "전력망·중공업·방산",
