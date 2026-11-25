@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-25 20:33:12"
+    "checked_at": "2026-11-25 20:44:45"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-25 20:33:13",
+  "updated_at": "2026-11-25 20:44:46",
   "market_status": "정규장 마감 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "58% (🔋 배터리 사용 중, 19.1°C)",
@@ -785,13 +785,13 @@
     {
       "code": "JNJ",
       "name": "존슨앤존슨 (JNJ)",
-      "price": 279.4087,
-      "change_rate": 1.07,
+      "price": 278.05,
+      "change_rate": 0.58,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
       "theme_tag": "🔍 퀀트 발굴(79점) · 헬스케어 배당 방어주",
-      "rsi": 57.8,
+      "rsi": 56.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -823,13 +823,13 @@
     {
       "code": "KO",
       "name": "코카콜라 (KO)",
-      "price": 98.67,
-      "change_rate": 1.08,
+      "price": 98.61,
+      "change_rate": 1.01,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
       "theme_tag": "🔍 퀀트 발굴(79점) · 배당왕 필수소비재",
-      "rsi": 62.2,
+      "rsi": 62.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -861,8 +861,8 @@
     {
       "code": "CRM",
       "name": "세일즈포스 (CRM)",
-      "price": 189.11,
-      "change_rate": -2.15,
+      "price": 189.0,
+      "change_rate": -2.2,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -899,13 +899,13 @@
     {
       "code": "TLT",
       "name": "iShares 20년+ 미 국채 (TLT)",
-      "price": 82.18,
-      "change_rate": 0.85,
+      "price": 82.19,
+      "change_rate": 0.86,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국국채·방어자산",
       "theme_tag": "🔍 퀀트 발굴(72점) · 금리인하 수혜 장기채",
-      "rsi": 63.1,
+      "rsi": 63.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -937,8 +937,8 @@
     {
       "code": "SPYM",
       "name": "SPDR S&P500 (SPYM)",
-      "price": 83.1,
-      "change_rate": -1.78,
+      "price": 83.08,
+      "change_rate": -1.81,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
@@ -975,13 +975,13 @@
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 314.45,
-      "change_rate": -0.84,
+      "price": 313.22,
+      "change_rate": -1.22,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
       "theme_tag": "🔍 퀀트 발굴(65점) · 미국 1위 대형은행",
-      "rsi": 35.7,
+      "rsi": 35.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -1013,7 +1013,7 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.6718,
+      "price": 100.6722,
       "change_rate": 0.01,
       "marketCountry": "US",
       "currency": "USD",
@@ -1049,15 +1049,15 @@
       }
     },
     {
-      "code": "JEPI",
-      "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 55.5279,
-      "change_rate": -0.9,
+      "code": "SCHD",
+      "name": "Schwab 미국 배당 다우",
+      "price": 34.8279,
+      "change_rate": -0.18,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
-      "theme_tag": "🔍 퀀트 발굴(51점) · 월배당 방어형 ETF",
-      "rsi": 42.5,
+      "theme_tag": "🔍 퀀트 발굴(51점) · 10년 연속 배당성장",
+      "rsi": 48.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -1065,13 +1065,13 @@
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 52,
+        "score": 54,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 50,
+            "score": 52,
             "decision": "관망"
           },
           {
@@ -1081,9 +1081,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "현재 JEPI는 MA20 아래에 위치하고 RSI가 중립 수준이므로 과열 신호가 없으며, 거래량이 낮아 단기 매수에 대한 확신이 부족합니다. 보유량이 없으므로 매도는 불가능하고, 현재 시장 레짐과 기술적 지표를 고려할 때 관망이 가장 합리적입니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 52점 | 편차 9점)",
-        "checked_at": "2026-11-25 03:32:25"
+        "reason": "현재 가격이 20일 이동평균선 아래에 위치하고 RSI가 중립 수준이며 거래량이 낮아 단기 매수 신호가 부족합니다. ATR 목표익절선(≈37.34)까지 도달하지 않았고, 외인·기관 수급이 명확하지 않아 보수적으로 관망하는 것이 적절합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 54점 | 편차 11점)",
+        "checked_at": "2026-11-25 03:32:20"
       }
     }
   ],
