@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-26 01:23:33"
+    "checked_at": "2026-11-26 01:30:52"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-26 01:23:33",
+  "updated_at": "2026-11-26 01:30:52",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 18.9°C)",
@@ -783,19 +783,95 @@
       }
     },
     {
-      "code": "KO",
-      "name": "코카콜라 (KO)",
-      "price": 98.19,
-      "change_rate": 0.58,
+      "code": "SPYM",
+      "name": "SPDR S&P500 (SPYM)",
+      "price": 82.31,
+      "change_rate": -2.72,
       "marketCountry": "US",
       "currency": "USD",
-      "sector": "미국소비·헬스케어·에너지",
-      "theme_tag": "🔍 퀀트 발굴(68점) · 배당왕 필수소비재",
-      "rsi": 60.8,
+      "sector": "미국지수·성장ETF",
+      "theme_tag": "🔍 퀀트 발굴(69점) · 저단가 S&P500 인덱스",
+      "rsi": 35.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(68점) · 실시간 감시 🎯",
+      "status_tag": "🔍 퀀트 발굴(69점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 50,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "시장 전반이 급락하고 변동성이 확대된 상황에서 RSI는 저가 매수 수준이지만 외국인·기관 순매수와 확실한 호재가 확인되지 않아 진입 위험이 큽니다. 현재 현금은 충분하지만 보수적인 접근이 필요하므로 관망을 유지합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 37점 ↔ AI 50점 | 편차 13점)",
+        "checked_at": "2026-11-26 01:30:34"
+      }
+    },
+    {
+      "code": "SGOV",
+      "name": "iShares 0-3M 단기국채",
+      "price": 100.679,
+      "change_rate": 0.02,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "초단기채권·현금성자산",
+      "theme_tag": "🔍 퀀트 발굴(58점) · 연 4.5% 무위험 달러이자",
+      "rsi": 97.9,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(58점) · 실시간 감시 🎯",
+      "action_status": "정규장 실시간 운용 🟢",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 51,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 50,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 52,
+            "decision": "관망"
+          }
+        ],
+        "reason": "미 증시 패닉 폭락장 여파와 SGOV의 14일 RSI 97.8 극단적 과열 구간 및 거래량 실종을 고려할 때 신규 진입 리스크가 큽니다. 따라서 현재는 관망을 유지하며 향후 시장 안정 시 저가 매수 타점을 재검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 27점 ↔ AI 51점 | 편차 24점 · 보수적 관망)",
+        "checked_at": "2026-11-26 01:30:41"
+      }
+    },
+    {
+      "code": "KO",
+      "name": "코카콜라 (KO)",
+      "price": 98.115,
+      "change_rate": 0.51,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국소비·헬스케어·에너지",
+      "theme_tag": "🔍 퀀트 발굴(58점) · 배당왕 필수소비재",
+      "rsi": 60.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(58점) · 실시간 감시 🎯",
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
@@ -821,53 +897,53 @@
       }
     },
     {
-      "code": "SGOV",
-      "name": "iShares 0-3M 단기국채",
-      "price": 100.675,
-      "change_rate": 0.01,
+      "code": "CRM",
+      "name": "세일즈포스 (CRM)",
+      "price": 193.615,
+      "change_rate": 0.18,
       "marketCountry": "US",
       "currency": "USD",
-      "sector": "초단기채권·현금성자산",
-      "theme_tag": "🔍 퀀트 발굴(58점) · 연 4.5% 무위험 달러이자",
-      "rsi": 97.8,
+      "sector": "미국증시·글로벌빅테크",
+      "theme_tag": "🔍 퀀트 발굴(54점) · AI 엔터프라이즈 SaaS",
+      "rsi": 35.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(58점) · 실시간 감시 🎯",
+      "status_tag": "🔍 퀀트 발굴(54점) · 실시간 감시 🎯",
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 51,
+        "score": 57,
         "consensus": "2:0 관망 우세",
         "models": [
           {
-            "provider": "Groq",
-            "model": "Groq 120B",
+            "provider": "Google",
+            "model": "Gemini 3.5",
             "score": 52,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 50,
+            "model": "Groq 120B",
+            "score": 62,
             "decision": "관망"
           }
         ],
-        "reason": "RSI가 97.8로 과열 구간에 있어 단기 매수 시 차익실현 매도 압력이 예상됩니다. 현금은 충분하지만 현재 시장 레짐은 약세이며, 거래량도 저조해 진입 타이밍이 부적절하므로 관망합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 37점 ↔ AI 51점 | 편차 14점)",
-        "checked_at": "2026-11-25 23:37:25"
+        "reason": "미 증시 약세장 레짐과 거래량 실종, 사후 적중률 저조에 따른 보수적 반영으로 신규 진입 매수 점수가 충족되지 않습니다. 단기 낙폭과대에 따른 RSI 33.6의 과매도 구간이나 거래량이 부족하여 향후 시장 안정 및 수급 유입 확인 후 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 57점 | 편차 5점)",
+        "checked_at": "2026-11-25 23:37:42"
       }
     },
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 64.235,
-      "change_rate": -0.72,
+      "price": 64.44,
+      "change_rate": -0.4,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
       "theme_tag": "🔍 퀀트 발굴(54점) · 모빌리티·자율주행 플랫폼",
-      "rsi": 37.9,
+      "rsi": 38.4,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -897,53 +973,15 @@
       }
     },
     {
-      "code": "CRM",
-      "name": "세일즈포스 (CRM)",
-      "price": 194.1,
-      "change_rate": 0.43,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(50점) · AI 엔터프라이즈 SaaS",
-      "rsi": 35.7,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(50점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 57,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 62,
-            "decision": "관망"
-          }
-        ],
-        "reason": "미 증시 약세장 레짐과 거래량 실종, 사후 적중률 저조에 따른 보수적 반영으로 신규 진입 매수 점수가 충족되지 않습니다. 단기 낙폭과대에 따른 RSI 33.6의 과매도 구간이나 거래량이 부족하여 향후 시장 안정 및 수급 유입 확인 후 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 57점 | 편차 5점)",
-        "checked_at": "2026-11-25 23:37:42"
-      }
-    },
-    {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 311.61,
-      "change_rate": -1.73,
+      "price": 310.9,
+      "change_rate": -1.96,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
       "theme_tag": "🔍 퀀트 발굴(50점) · 미국 1위 대형은행",
-      "rsi": 34.2,
+      "rsi": 33.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -973,53 +1011,15 @@
       }
     },
     {
-      "code": "SPYM",
-      "name": "SPDR S&P500 (SPYM)",
-      "price": 82.36,
-      "change_rate": -2.66,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국지수·성장ETF",
-      "theme_tag": "🔍 퀀트 발굴(45점) · 저단가 S&P500 인덱스",
-      "rsi": 35.2,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(45점) · 실시간 감시 🎯",
-      "action_status": "정규장 실시간 운용 🟢",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 64,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 50,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 78,
-            "decision": "매수"
-          }
-        ],
-        "reason": "현재 미국 증시가 약세 조정장인 상태에서 S&P500 관련 종목이 20일 이동평균선을 하회하고 14일 RSI가 35.9로 하락세를 보이고 있습니다. 당일 거래량이 20일 평균 대비 부족하고 음봉 흐름을 나타내고 있어 무리한 신규 진입보다는 추세 안정을 확인하는 관망이 필요하며, 향후 시장 안정 시 재진입을 검토하겠습니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 42점 ↔ AI 64점 | 편차 22점 · 보수적 관망)",
-        "checked_at": "2026-11-25 23:38:32"
-      }
-    },
-    {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 34.9375,
-      "change_rate": 0.14,
+      "price": 34.905,
+      "change_rate": 0.04,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
       "theme_tag": "🔍 퀀트 발굴(40점) · 10년 연속 배당성장",
-      "rsi": 49.9,
+      "rsi": 49.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -1051,13 +1051,13 @@
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 55.135,
-      "change_rate": -1.6,
+      "price": 55.115,
+      "change_rate": -1.63,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
       "theme_tag": "🔍 퀀트 발굴(36점) · 월배당 방어형 ETF",
-      "rsi": 40.3,
+      "rsi": 40.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
