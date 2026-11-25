@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-26 01:30:52",
+  "updated_at": "2026-11-26 01:33:31",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "85% (⚡ 충전 중, 18.9°C)",
   "budget_limit": 2500000,
   "fund_eval": 2469604,
@@ -785,8 +785,8 @@
     {
       "code": "SPYM",
       "name": "SPDR S&P500 (SPYM)",
-      "price": 82.31,
-      "change_rate": -2.72,
+      "price": 82.315,
+      "change_rate": -2.71,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
@@ -823,7 +823,7 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.679,
+      "price": 100.6788,
       "change_rate": 0.02,
       "marketCountry": "US",
       "currency": "USD",
@@ -861,8 +861,8 @@
     {
       "code": "KO",
       "name": "코카콜라 (KO)",
-      "price": 98.115,
-      "change_rate": 0.51,
+      "price": 98.105,
+      "change_rate": 0.5,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -875,32 +875,32 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 52,
         "consensus": "2:0 관망 우세",
         "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
-            "decision": "관망"
-          },
           {
             "provider": "Groq",
             "model": "Groq 120B",
             "score": 55,
             "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 50,
+            "decision": "관망"
           }
         ],
-        "reason": "시장 전반이 약세이며 RSI가 중립 수준이고 거래량도 저조해 단기 매수 시점이 명확하지 않다. 가용 현금과 한도는 충족하지만 호재와 외인·기관 순매수 신호가 부족하므로 관망을 유지한다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 55점 | 편차 7점)",
-        "checked_at": "2026-11-25 23:36:08"
+        "reason": "현재 시장은 급락 국면이며 KO는 방어적 종목이지만 RSI가 60.8로 저가 매수 신호가 없고 거래량도 평균 대비 크게 감소했다. 따라서 신규 진입을 보류하고 관망하는 것이 바람직하다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 52점 | 편차 0점)",
+        "checked_at": "2026-11-26 01:31:34"
       }
     },
     {
       "code": "CRM",
       "name": "세일즈포스 (CRM)",
-      "price": 193.615,
-      "change_rate": 0.18,
+      "price": 193.52,
+      "change_rate": 0.13,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -913,32 +913,32 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 57,
+        "score": 54,
         "consensus": "2:0 관망 우세",
         "models": [
           {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 62,
+            "score": 52,
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세장 레짐과 거래량 실종, 사후 적중률 저조에 따른 보수적 반영으로 신규 진입 매수 점수가 충족되지 않습니다. 단기 낙폭과대에 따른 RSI 33.6의 과매도 구간이나 거래량이 부족하여 향후 시장 안정 및 수급 유입 확인 후 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 57점 | 편차 5점)",
-        "checked_at": "2026-11-25 23:37:42"
+        "reason": "미국 증시 패닉 폭락장(-2.67%)이라는 거시경제적 하방 리스크가 극심하여 신규 매수 진입을 엄격히 차단해야 합니다. 종목 자체는 RSI 35.2로 저평가 구간에 있으나, 거래량이 20일 평균 대비 21% 부족하여 매수세가 약하고, 최근 AI 예측 적중률이 낮아 보수적인 관망이 필요합니다. 따라서 현금 보유를 유지하며 시장 안정화 및 거래량 회복을 기다리는 것이 적절합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 36점 ↔ AI 54점 | 편차 18점 · 보수적 관망)",
+        "checked_at": "2026-11-26 01:31:38"
       }
     },
     {
       "code": "UBER",
       "name": "우버 (UBER)",
-      "price": 64.44,
-      "change_rate": -0.4,
+      "price": 64.28,
+      "change_rate": -0.65,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -951,32 +951,32 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 65,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "score": 52,
+        "consensus": "2:0 관망 우세",
         "models": [
           {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 78,
-            "decision": "매수"
+            "score": 55,
+            "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세장 진입과 함께 종목 주가가 20일 이동평균선을 하회하며 단기 조정 국면에 있어 보수적인 접근이 필요합니다. 14일 RSI가 37.2로 낮아지고 있으나 거래량이 실종된 음봉 흐름을 보이고 있어, 향후 시장 안정 및 명확한 수급 유입 시 재진입을 검토하겠습니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 46점 ↔ AI 65점 | 편차 19점 · 보수적 관망)",
-        "checked_at": "2026-11-25 23:37:31"
+        "reason": "미국 증시가 -2.67%로 패닉 폭락장을 연출하고 있어 거시경제 변동성이 극심하며, 신규 매수 차단 레짐이 발동되었습니다. 종목 자체는 MA20을 하회하고 거래량이 15% 부족하여 매수 모멘텀이 약하며, RSI 38.4는 저가매수 구간이지만 폭락장에서의 '떨어지는 칼날' 리스크를 고려해 보수적으로 관망합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 36점 ↔ AI 52점 | 편차 16점 · 보수적 관망)",
+        "checked_at": "2026-11-26 01:31:50"
       }
     },
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 310.9,
-      "change_rate": -1.96,
+      "price": 310.95,
+      "change_rate": -1.94,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
@@ -989,32 +989,32 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 56,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 55,
+            "score": 62,
             "decision": "관망"
           }
         ],
-        "reason": "RSI가 과매도 구역에 있어 단기 반등 가능성이 있으나, 전체 시장이 약세이며 거래량이 현저히 낮아 가짜 반등 위험이 크다. 현금은 충분하지만 보수적인 접근이 필요하므로 신규 매수는 보류한다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 55점 | 편차 9점)",
-        "checked_at": "2026-11-25 23:38:03"
+        "reason": "시장 전반이 급락 국면에 있어 과매도 RSI와 저가 매수 매력은 있지만 거래량이 현저히 낮고, 최근 뉴스에 중대한 악재가 없어 확신이 부족합니다. 현금은 유지하되 추가 매수는 추세가 안정될 때까지 관망하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 42점 ↔ AI 56점 | 편차 14점)",
+        "checked_at": "2026-11-26 01:32:10"
       }
     },
     {
       "code": "SCHD",
       "name": "Schwab 미국 배당 다우",
-      "price": 34.905,
-      "change_rate": 0.04,
+      "price": 34.885,
+      "change_rate": -0.01,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
@@ -1027,13 +1027,13 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 52,
+        "score": 50,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 50,
+            "score": 45,
             "decision": "관망"
           },
           {
@@ -1043,16 +1043,16 @@
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세장 속에서 SCHD가 20일 이동평균선을 하회하고 투자의견 하향 리포트 등 구조적 주의 요인이 감지되어 신규 진입을 유보합니다. 현재 14일 RSI는 중립 수준이나 거래량이 부족하고 방향성이 불확실하므로, 향후 시장 안정세와 기술적 반등을 확인한 후 재진입을 검토하겠습니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 31점 ↔ AI 52점 | 편차 21점 · 보수적 관망)",
-        "checked_at": "2026-11-25 23:38:45"
+        "reason": "미 증시 패닉 폭락장 속에서 SCHD는 투자의견 하향 등 구조적 악재와 20일 이동평균선을 하회하는 약세 흐름을 보이고 있어 신규 진입을 자제합니다. 향후 시장 변동성이 완화되고 기술적 지표가 안정될 때 재진입을 검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 21점 ↔ AI 50점 | 편차 29점 · 보수적 관망)",
+        "checked_at": "2026-11-26 01:32:40"
       }
     },
     {
       "code": "JEPI",
       "name": "JPMorgan 커버드콜 (JEPI)",
-      "price": 55.115,
-      "change_rate": -1.63,
+      "price": 55.0899,
+      "change_rate": -1.68,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국배당·가치주ETF",
@@ -1065,25 +1065,25 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 58,
         "consensus": "2:0 관망 우세",
         "models": [
           {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 55,
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 60,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq Qwen",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 조정장이 지속되는 가운데 JEPI 주가는 20일 이동평균선을 하회하고 거래량이 실종된 음봉 흐름을 보이고 있습니다. 14일 RSI 지표가 42.5로 중립 상태이며 뚜렷한 외인·기관의 저가 매수세 유입 시그널이 부족하므로 보수적인 관망 태세를 유지합니다. 향후 기술적 반등 시그널 확인 및 시장 안정 시 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 46점 ↔ AI 55점 | 편차 9점)",
-        "checked_at": "2026-11-25 23:38:58"
+        "reason": "시장 전반이 급락한 상황에서 JEPI는 저변동 고배당 ETF이지만 거래량이 현저히 낮고 뚜렷한 외·기관 순매수 신호가 없어 신중히 접근해야 합니다. RSI는 저가 매수 매력은 있으나, 현재는 보수적인 관망이 적절합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 36점 ↔ AI 58점 | 편차 22점 · 보수적 관망)",
+        "checked_at": "2026-11-26 01:33:29"
       }
     }
   ],
