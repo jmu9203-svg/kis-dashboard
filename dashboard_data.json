@@ -76,9 +76,9 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-26 03:31:16",
+  "updated_at": "2026-11-26 03:32:12",
   "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
-  "is_market_open": false,
+  "is_market_open": true,
   "battery": "85% (⚡ 충전 중, 20.1°C)",
   "budget_limit": 2500000,
   "fund_eval": 2469604,
@@ -785,8 +785,8 @@
     {
       "code": "SOXX",
       "name": "iShares 반도체 (SOXX)",
-      "price": 124.5859,
-      "change_rate": -3.14,
+      "price": 124.465,
+      "change_rate": -3.23,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -823,8 +823,8 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.6799,
-      "change_rate": 0.02,
+      "price": 100.6743,
+      "change_rate": 0.01,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "초단기채권·현금성자산",
@@ -861,8 +861,8 @@
     {
       "code": "SPYM",
       "name": "SPDR S&P500 (SPYM)",
-      "price": 84.04,
-      "change_rate": -0.67,
+      "price": 84.0,
+      "change_rate": -0.72,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
@@ -899,8 +899,8 @@
     {
       "code": "JNJ",
       "name": "존슨앤존슨 (JNJ)",
-      "price": 276.58,
-      "change_rate": 0.04,
+      "price": 276.535,
+      "change_rate": 0.03,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -913,32 +913,32 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 52,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 55,
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세장 및 거래량 부족 상태 속에서 현재 존슨앤존슨은 20일 이동평균선을 상회하고 있으나 거래량이 실종된 관망세를 보이고 있습니다. 당일 가용 현금 내 신규 진입 조건에는 부합하나 뚜렷한 수급 모멘텀이 없어 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 55점 | 편차 7점)",
-        "checked_at": "2026-11-25 05:30:32"
+        "reason": "미 증시 약세장 진입과 거래량 실종에 따라 보수적인 접근이 요구되며, 현재 미보유 상태에서 추가적인 수급 유입 및 기술적 눌림목을 확인한 후 향후 시장 안정 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 52점 | 편차 10점)",
+        "checked_at": "2026-11-26 03:31:32"
       }
     },
     {
       "code": "QQQM",
       "name": "Invesco 나스닥100 (QQQM)",
-      "price": 258.62,
-      "change_rate": -1.58,
+      "price": 258.46,
+      "change_rate": -1.64,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
@@ -951,13 +951,13 @@
       "action_status": "정규장 실시간 운용 🟢",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 70,
+        "score": 66,
         "consensus": "1:1 의견 분립 (안전 관망 채택)",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 60,
+            "score": 52,
             "decision": "관망"
           },
           {
@@ -967,16 +967,16 @@
             "decision": "매수"
           }
         ],
-        "reason": "미 증시 약세장 진입과 필라델피아 반도체 지수 하락 여파로 하방 압력이 존재하며, 14일 RSI가 과매도 구간(28.8)에 진입했으나 거래량이 평시 수준에 머물러 신중한 접근이 필요합니다. 따라서 현재는 적극적인 매수보다는 시장 안정을 확인하며 향후 낙폭 과대 지점에서의 재진입을 검토하는 관망 전략을 유지합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 47점 ↔ AI 70점 | 편차 23점 · 보수적 관망)",
-        "checked_at": "2026-11-21 03:31:17"
+        "reason": "현재 미 증시 약세·조정장 국면에서 S&P500 및 종목 주가가 20일 이동평균선을 하회하고 있으며, 20일 평균 대비 거래량이 55%로 부족하여 가짜 반등 위험이 존재합니다. 14일 RSI가 37.1로 낙폭 과대 구간에 진입하고 있으나 수급 모멘텀이 확인되지 않아 무리한 진입을 자제하고 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 51점 ↔ AI 66점 | 편차 15점)",
+        "checked_at": "2026-11-26 03:31:42"
       }
     },
     {
       "code": "AMZN",
       "name": "아마존 (AMZN)",
-      "price": 244.755,
-      "change_rate": -2.99,
+      "price": 244.46,
+      "change_rate": -3.1,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
@@ -1000,21 +1000,21 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세장 속에서 20일 이동평균선 아래에 위치하고 거래량이 평균 대비 부족한 음봉 흐름을 보여 모멘텀이 다소 약화되었습니다. 단기 기술적 과열은 해소되었으나 뚜렷한 수급 유입 시그널이 부족하여 현재는 무리한 진입을 자제하고 향후 시장 안정 및 추세 전환 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 54점 | 편차 11점)",
-        "checked_at": "2026-11-24 05:33:43"
+        "reason": "AMZN가 MA20 아래에 위치해 단기 고점 추격 매수 기준을 충족하지 못하고, RSI가 40 이하가 아니며, 거래량이 낮아 매수 신호가 약합니다. 보유량이 없으므로 매도도 불가능하고, 현재 시장 레짐과 기술적 지표를 고려해 관망이 가장 합리적입니다",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 42점 ↔ AI 54점 | 편차 12점)",
+        "checked_at": "2026-11-26 03:31:48"
       }
     },
     {
       "code": "AVGO",
       "name": "브로드컴 (AVGO)",
-      "price": 291.74,
-      "change_rate": -3.1,
+      "price": 291.33,
+      "change_rate": -3.24,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -1038,21 +1038,21 @@
           },
           {
             "provider": "Groq",
-            "model": "Groq 120B",
+            "model": "Groq 20B",
             "score": 55,
             "decision": "관망"
           }
         ],
-        "reason": "미 증시 약세장 및 20일선 아래의 단기 조정 국면에서 거래량이 실종되고 윗꼬리가 발생하여 추가 하락 압력이 존재합니다. RSI 40.8로 중립 구간이나 매수 모멘텀이 부족하므로 현재 보유 수량 0주 상태를 유지하며 향후 시장 안정 및 수급 유입 시 재진입을 검토하겠습니다.",
+        "reason": "현재 가격이 20일 이동평균선 아래에 위치하고, RSI가 40 이하로 저가 매수 신호가 있지만 거래량이 현저히 부족해 진입 위험이 높습니다. 또한 매크로 환경이 약세이며, AVGO가 아직 목표익절선에 도달하지 않았으므로 보수적으로 관망하는 것이 바람직합니다.",
         "audit_badge": "✅ 5대 팩트 일치 (정량 42점 ↔ AI 54점 | 편차 12점)",
-        "checked_at": "2026-11-25 05:32:38"
+        "checked_at": "2026-11-26 03:32:00"
       }
     },
     {
       "code": "KO",
       "name": "코카콜라 (KO)",
-      "price": 98.425,
-      "change_rate": 0.82,
+      "price": 98.405,
+      "change_rate": 0.8,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국소비·헬스케어·에너지",
@@ -1069,21 +1069,21 @@
         "consensus": "2:0 관망 우세",
         "models": [
           {
-            "provider": "Groq",
-            "model": "Groq 120B",
+            "provider": "Google",
+            "model": "Gemini 3.5",
             "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq Qwen",
+            "model": "Groq 20B",
             "score": 50,
             "decision": "관망"
           }
         ],
-        "reason": "현재 시장은 급락 국면이며 KO는 방어적 종목이지만 RSI가 60.8로 저가 매수 신호가 없고 거래량도 평균 대비 크게 감소했다. 따라서 신규 진입을 보류하고 관망하는 것이 바람직하다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 52점 ↔ AI 52점 | 편차 0점)",
-        "checked_at": "2026-11-26 01:31:34"
+        "reason": "현재 가격이 20일 이동평균선 위에 있으나 RSI가 68 이하이며, 거래량이 낮아 단기 매수 신호가 부족합니다. 또한 ATR 목표익절선이 아직 도달하지 않았고, 매도 조건도 충족되지 않으므로 보유하거나 진입을 보류하는 것이 가장 안전합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 62점 ↔ AI 52점 | 편차 10점)",
+        "checked_at": "2026-11-26 03:32:09"
       }
     }
   ],
