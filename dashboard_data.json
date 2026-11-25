@@ -76,10 +76,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-26 08:22:39",
-  "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
+  "updated_at": "2026-11-26 08:31:58",
+  "market_status": "24/7 시스템 정상 가동 중",
   "is_market_open": false,
-  "battery": "85% (⚡ 충전 중, 20.1°C)",
+  "battery": "확인 중",
   "budget_limit": 2500000,
   "fund_eval": 2469650,
   "fund_pnl": -30350,
@@ -783,19 +783,57 @@
       }
     },
     {
-      "code": "KO",
-      "name": "코카콜라 (KO)",
-      "price": 97.8499,
-      "change_rate": 0.24,
+      "code": "QCOM",
+      "name": "퀄컴 (QCOM)",
+      "price": 168.17,
+      "change_rate": 1.95,
       "marketCountry": "US",
       "currency": "USD",
-      "sector": "미국소비·헬스케어·에너지",
-      "theme_tag": "🔍 퀀트 발굴(72점) · 배당왕 필수소비재",
-      "rsi": 59.7,
+      "sector": "미국반도체·AI하드웨어",
+      "theme_tag": "🔍 퀀트 발굴(79점) · 온디바이스 AI 칩",
+      "rsi": 49.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(72점) 📊",
+      "status_tag": "🔍 퀀트 발굴(79점) 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 55,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 55,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "미국 시장은 약세 조정 국면이며 QCOM은 MA20 하회와 중립 RSI를 보이고 거래량도 저조해 단기 매수 시점이 명확하지 않습니다. ATR 목표익절선도 아직 도달하지 않았고, 호재와 악재 뉴스가 혼재하므로 현재는 관망이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 55점 | 편차 12점)",
+        "checked_at": "2026-11-24 23:39:00"
+      }
+    },
+    {
+      "code": "KO",
+      "name": "코카콜라 (KO)",
+      "price": 97.8,
+      "change_rate": 0.18,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국소비·헬스케어·에너지",
+      "theme_tag": "🔍 퀀트 발굴(75점) · 배당왕 필수소비재",
+      "rsi": 59.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(75점) 📊",
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
@@ -821,15 +859,129 @@
       }
     },
     {
+      "code": "XOM",
+      "name": "엑슨모빌 (XOM)",
+      "price": 158.2,
+      "change_rate": -0.02,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국소비·헬스케어·에너지",
+      "theme_tag": "🔍 퀀트 발굴(74점) · 글로벌 에너지 대장주",
+      "rsi": 36.3,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(74점) 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 60,
+        "consensus": "2사 합의",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 60,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 60,
+            "decision": "관망"
+          }
+        ],
+        "reason": "14일 Wilder RSI 36.3의 중립 추세 구간으로 20일선 지지력과 매크로 레짐을 확인하며 분할 매수 타점을 대기(관망)합니다.",
+        "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
+        "checked_at": "분석 전"
+      }
+    },
+    {
+      "code": "MRVL",
+      "name": "마벨 테크놀로지 (MRVL)",
+      "price": 129.85,
+      "change_rate": -1.31,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국반도체·AI하드웨어",
+      "theme_tag": "🔍 퀀트 발굴(70점) · AI 데이터센터 네트워크",
+      "rsi": 34.8,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(70점) 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 60,
+        "consensus": "2사 합의",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 60,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 60,
+            "decision": "관망"
+          }
+        ],
+        "reason": "14일 Wilder RSI 34.8로 과매도 눌림목 구간에 진입했으나, 안정적 지지선 및 거래량 확인을 위해 신규 진입을 유보하고 관망합니다.",
+        "audit_badge": "✅ 1차 퀀트 스크리닝 통과 (AI 정밀 대기)",
+        "checked_at": "분석 전"
+      }
+    },
+    {
+      "code": "QQQM",
+      "name": "Invesco 나스닥100 (QQQM)",
+      "price": 260.4,
+      "change_rate": -0.91,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국지수·성장ETF",
+      "theme_tag": "🔍 퀀트 발굴(70점) · 저보수 나스닥100 ETF",
+      "rsi": 38.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(70점) 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 71,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 62,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "reason": "현재 S&P500이 20일선을 하회하는 약세 조정장이며 14일 RSI가 38.1로 낮아 낙폭과대 구간이나, 거래량이 20일 평균의 73%로 실종되어 본격적인 반등 모멘텀이 확인되지 않습니다. 미보유 상태에서 무리한 진입보다는 향후 거래량 유입 및 시장 안정 여부를 확인한 후 재진입을 검토하는 것이 타당합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 51점 ↔ AI 71점 | 편차 20점 · 보수적 관망)",
+        "checked_at": "2026-11-26 05:31:25"
+      }
+    },
+    {
       "code": "SPYM",
       "name": "SPDR S&P500 (SPYM)",
-      "price": 84.41,
-      "change_rate": -0.24,
+      "price": 84.36,
+      "change_rate": -0.3,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
       "theme_tag": "🔍 퀀트 발굴(70점) · 저단가 S&P500 인덱스",
-      "rsi": 39.9,
+      "rsi": 39.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -897,15 +1049,15 @@
       }
     },
     {
-      "code": "ARM",
-      "name": "Arm 홀딩스 (ARM)",
-      "price": 162.9,
-      "change_rate": 0.83,
+      "code": "JPM",
+      "name": "JP모건 (JPM)",
+      "price": 317.3,
+      "change_rate": 0.06,
       "marketCountry": "US",
       "currency": "USD",
-      "sector": "미국반도체·AI하드웨어",
-      "theme_tag": "🔍 퀀트 발굴(65점) · AI 아키텍처 로열티",
-      "rsi": 38.7,
+      "sector": "미국금융·결제",
+      "theme_tag": "🔍 퀀트 발굴(65점) · 미국 1위 대형은행",
+      "rsi": 37.8,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -919,224 +1071,72 @@
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 58,
+            "score": 50,
             "decision": "관망"
           },
           {
             "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "ARM은 현재 MA20 아래에 위치해 단기 고점 추격 매수 위험이 있으며, 거래량이 낮아 가짜 반등 가능성이 있다. RSI가 40 이하이지만 시장이 약세장인 상황에서 보수적으로 관망을 권장한다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 56점 | 편차 2점)",
-        "checked_at": "2026-11-26 05:30:52"
-      }
-    },
-    {
-      "code": "CRM",
-      "name": "세일즈포스 (CRM)",
-      "price": 196.5,
-      "change_rate": 1.68,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(62점) · AI 엔터프라이즈 SaaS",
-      "rsi": 38.0,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(62점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 66,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          }
-        ],
-        "reason": "미 증시 약세장과 함께 20일 이동평균선을 하회하고 거래량이 29%로 크게 부족한 소강 상태를 보이고 있습니다. RSI는 39.7로 중립권에 머물러 있으나 거래량 실종 및 단기 조정 압력을 고려할 때 신규 진입보다는 관망하며 향후 시장 안정 및 수급 유입 시 재진입을 검토하겠습니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 46점 ↔ AI 66점 | 편차 20점 · 보수적 관망)",
-        "checked_at": "2026-11-26 05:30:58"
-      }
-    },
-    {
-      "code": "SOXX",
-      "name": "iShares 반도체 (SOXX)",
-      "price": 127.5,
-      "change_rate": -0.87,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국반도체·AI하드웨어",
-      "theme_tag": "🔍 퀀트 발굴(61점) · 미국 반도체 섹터 ETF",
-      "rsi": 36.9,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(61점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 69,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 58,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
-          }
-        ],
-        "reason": "미 증시 약세장과 20일선 하회 흐름 속에서 14일 RSI가 36.7로 낮아지고 아래꼬리 양봉 반등을 보였으나, 거래량이 20일 평균의 65%로 다소 실종되어 본격적인 추세 반전으로 확인하기에 부족합니다. 따라서 무리한 진입을 자제하고 향후 수급 유입 및 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 50점 ↔ AI 69점 | 편차 19점 · 보수적 관망)",
-        "checked_at": "2026-11-26 05:31:09"
-      }
-    },
-    {
-      "code": "QQQM",
-      "name": "Invesco 나스닥100 (QQQM)",
-      "price": 260.6709,
-      "change_rate": -0.8,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국지수·성장ETF",
-      "theme_tag": "🔍 퀀트 발굴(61점) · 저보수 나스닥100 ETF",
-      "rsi": 38.1,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(61점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 71,
-        "consensus": "1:1 의견 분립 (안전 관망 채택)",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
+            "model": "Groq 120B",
             "score": 62,
             "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 80,
-            "decision": "매수"
           }
         ],
-        "reason": "현재 S&P500이 20일선을 하회하는 약세 조정장이며 14일 RSI가 38.1로 낮아 낙폭과대 구간이나, 거래량이 20일 평균의 73%로 실종되어 본격적인 반등 모멘텀이 확인되지 않습니다. 미보유 상태에서 무리한 진입보다는 향후 거래량 유입 및 시장 안정 여부를 확인한 후 재진입을 검토하는 것이 타당합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 51점 ↔ AI 71점 | 편차 20점 · 보수적 관망)",
-        "checked_at": "2026-11-26 05:31:25"
-      }
-    },
-    {
-      "code": "AMZN",
-      "name": "아마존 (AMZN)",
-      "price": 245.51,
-      "change_rate": -2.69,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(58점) · 클라우드·AI 커머스",
-      "rsi": 42.5,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(58점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 54,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 20B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "미 증시 약세장 및 20일선 아래에서 거래량이 실종된 단기 조정 국면으로, 기술적 반등의 신뢰도가 낮아 적극적인 매수보다는 관망이 유리합니다. 향후 거래량 유입 및 추세 안정을 확인한 후 재진입을 검토하겠습니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 50점 ↔ AI 54점 | 편차 4점)",
-        "checked_at": "2026-11-26 05:31:42"
+        "reason": "시장 전반이 급락 국면에 있어 과매도 RSI와 저가 매수 매력은 있지만 거래량이 현저히 낮고, 최근 뉴스에 중대한 악재가 없어 확신이 부족합니다. 현금은 유지하되 추가 매수는 추세가 안정될 때까지 관망하는 것이 바람직합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 42점 ↔ AI 56점 | 편차 14점)",
+        "checked_at": "2026-11-26 01:32:10"
       }
     }
   ],
   "morning_research": {
-    "updated_at": "2026-11-25 08:30:26",
-    "earnings_alert_level": "NORMAL",
-    "kr_macro_summary": "원/달러 환율은 1,341.50원(-1.00원, -0.07%)으로 하락 안정세를 보이고 있으며, 주요 감시 종목들은 이미 3분기 분기보고서 공시를 완료한 상태입니다. 특이 매크로 뉴스가 부재한 가운데 외국인 수급과 개별 기업의 주주환원 및 자사주 처분 공시를 중심으로 한 장중 대응이 요구됩니다.",
-    "us_bigtech_summary": "향후 7일 내 나스닥 공식 빅테크 실적발표 일정은 없으나, 미·중·러 정상회담 및 젠슨 황 의회 출석 등 첨단 기술 이벤트와 매크로 변동성에 주목해야 합니다. 필라델피아 반도체 지수($128.82) 및 환율 움직임과 연동하여 보수적인 리스크 관리가 필요합니다.",
+    "updated_at": "2026-11-26 08:30:11",
+    "earnings_alert_level": "CAUTION",
+    "kr_macro_summary": "코스피의 5,000선 회복 시도 속에서 미국 기술주 하락 및 외국인 수급 변동성에 따른 장중 변동성 확대에 주의가 필요합니다. 주요 기업들은 이미 분기 실적 발표를 마쳤거나 공식 확정 일정이 미등록된 상태입니다.",
+    "us_bigtech_summary": "향후 7일 내 나스닥 공식 빅테크 실적발표 일정은 없으나, AI 투자 부담과 필라델피아 반도체 지수 약세 영향으로 관망세가 우세합니다. 원/달러 환율은 1,345원 선에서 소폭 하락하며 안정세를 보이고 있습니다.",
     "fx_soxx_info": {
-      "usd_krw": "1,341.50",
-      "usd_krw_change": "-1.00",
-      "usd_krw_rate": "-0.07",
-      "soxx_price": "$128.82",
-      "soxx_pct": "",
-      "summary": "원/달러 환율: 1,341.50원 (전일대비 -1.00원 / -0.07%) | 미 필라델피아 반도체(SOXX): $128.82 ()"
+      "usd_krw": "1,345.00",
+      "usd_krw_change": "-0.50",
+      "usd_krw_rate": "-0.04",
+      "soxx_price": "$127.30",
+      "soxx_pct": "-0.53%",
+      "summary": "원/달러 환율: 1,345.00원 (전일대비 -0.50원 / -0.04%) | 미 필라델피아 반도체(SOXX): $127.30 (-0.53%)"
     },
     "us_official_calendar": [],
     "stock_notes": {
       "005930": {
         "name": "삼성전자",
         "earnings_imminent": false,
-        "earnings_status": "2026-11-16 3분기 분기보고서 공시 완료 (IR 일정 미등록)",
-        "memo": "최근 1.5조원 규모의 개인 매수세 유입 및 임원 소유상황 변동 공시를 참고하되, HBM4 및 4분기 실적 기대감에 따른 수급 변동성에 유의하여 분할 접근하세요.",
+        "earnings_status": "공식 IR 일정 미등록 (11월 16일 분기보고서 공시 완료)",
+        "memo": "장중 AI는 증권사 평균 목표주가(458,182원) 대비 괴리율과 외인 수급을 모니터링하며 추격 매수를 자제하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "465,714"
+        "consensus_target_price": "458,182"
       },
       "000660": {
         "name": "SK하이닉스",
         "earnings_imminent": false,
-        "earnings_status": "2026-11-20 타법인주식취득결정 및 임원 소유상황 보고 공시 완료 (IR 일정 미등록)",
-        "memo": "증권가 목표주가 상향 조정 및 HBM 기반 실적 기대감이 유효하나 최근 주가 변동성이 크므로 외국인 현물 수급 방향성을 확인하며 대응하세요.",
+        "earnings_status": "공식 IR 일정 미등록 (11월 25일 기업가치제고계획 자율공시)",
+        "memo": "목표주가 상향 리포트가 지속되고 있으나 미 반도체 지수 하락 연동성을 확인하며 분할 접근하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "2,973,333"
+        "consensus_target_price": "2,929,091"
       },
       "005380": {
         "name": "현대차",
         "earnings_imminent": false,
-        "earnings_status": "2026-11-16 3분기 분기보고서 및 11월 24일 자기주식처분결과 공시 완료 (IR 일정 미등록)",
-        "memo": "자사주 처분 결과 및 로보틱스 모멘텀과 본업 판매 반등 여부를 점검하며 지지선 부근에서 분할 매수 관점으로 접근하세요.",
+        "earnings_status": "공식 IR 일정 미등록 (11월 16일 분기보고서 및 11월 24일 자사주 처분 결과 공시)",
+        "memo": "본업 실적 개선 기대감과 로보틱스 모멘텀을 주시하되, 지수 전반의 변동성에 연동하여 대응하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "515,417"
+        "consensus_target_price": "501,667"
       },
       "105560": {
         "name": "KB금융",
         "earnings_imminent": false,
-        "earnings_status": "2026-11-23 상각형조건부자본증권 발행결정 및 대표이사 변경 공시 완료 (IR 일정 미등록)",
-        "memo": "압도적인 자본력과 양호한 3분기 실적 기반의 방어력이 돋보이나, 지주사 전반의 수급 흐름을 체크하며 안정적으로 트레이딩하세요.",
+        "earnings_status": "공식 IR 일정 미등록 (대표이사 변경 및 자본증권 발행 공시 완료)",
+        "memo": "방어주 매력과 안정적인 실적 체력을 바탕으로 눌림목 중심의 보수적 접근을 유지하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -1145,8 +1145,8 @@
       "035420": {
         "name": "NAVER",
         "earnings_imminent": false,
-        "earnings_status": "2026-11-13 3분기 분기보고서 공시 완료 (IR 일정 미등록)",
-        "memo": "AI 서비스 및 외형 성장에 대한 기대감이 유효하므로 AI 관련 뉴스 플로우와 연동하여 저점 매수 기회를 포착하세요.",
+        "earnings_status": "공식 IR 일정 미등록 (11월 13일 분기보고서 공시 완료)",
+        "memo": "AI 사업 기회와 위협 요인이 혼재되어 있으므로, 외인 수급 방향성 확인 후 진입하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -1155,8 +1155,8 @@
       "267260": {
         "name": "HD현대일렉트릭",
         "earnings_imminent": false,
-        "earnings_status": "2026-11-24 임원 소유상황 보고 공시 완료 (IR 일정 미등록)",
-        "memo": "데이터센터향 전력기기 모멘텀과 환율 부담 요인을 동시에 감안하며, 단기 급등락 시 밴드 하단 중심의 탄력적 대응을 수행하세요.",
+        "earnings_status": "공식 IR 일정 미등록",
+        "memo": "환율 부담 및 데이터센터 관련 수주 모멘텀을 함께 고려하여 박스권 대응을 수행하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
@@ -1165,8 +1165,8 @@
       "091160": {
         "name": "KODEX 반도체",
         "earnings_imminent": false,
-        "earnings_status": "국내 주요 반도체 기업 실적 시즌 종료 후 박스권 등락 연동",
-        "memo": "필라델피아 반도체 지수($128.82) 및 국내 대형 반도체(삼성전자·SK하이닉스)의 수급 탄력성을 실시간으로 추종하여 진입하세요.",
+        "earnings_status": "미 필라델피아 반도체 지수(SOXX) 및 국내 대형 반도체주 흐름 연동",
+        "memo": "미 증시 반도체 투매 영향에 따른 변동성이 크므로 공식 실적 및 지수 반등 확인 전까지 추격 매수를 금지하세요.",
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null
@@ -1218,7 +1218,7 @@
         "official_ir_schedule": "향후 공식 IR 일정 미등록",
         "ir_date": null,
         "ir_dday": null,
-        "consensus_target_price": "43,750"
+        "consensus_target_price": "43,421"
       },
       "066570": {
         "name": "LG전자",
