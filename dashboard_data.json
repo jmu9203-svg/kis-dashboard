@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-26 08:22:39"
+    "checked_at": "2026-11-26 08:34:12"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,10 +76,10 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-26 08:31:58",
-  "market_status": "24/7 시스템 정상 가동 중",
+  "updated_at": "2026-11-26 08:34:12",
+  "market_status": "장 시작 전 대기 (24/7 실시간 관제 중)",
   "is_market_open": false,
-  "battery": "확인 중",
+  "battery": "85% (⚡ 충전 중, 21.2°C)",
   "budget_limit": 2500000,
   "fund_eval": 2469650,
   "fund_pnl": -30350,
@@ -785,8 +785,8 @@
     {
       "code": "QCOM",
       "name": "퀄컴 (QCOM)",
-      "price": 168.17,
-      "change_rate": 1.95,
+      "price": 167.6068,
+      "change_rate": 1.6,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -899,8 +899,8 @@
     {
       "code": "MRVL",
       "name": "마벨 테크놀로지 (MRVL)",
-      "price": 129.85,
-      "change_rate": -1.31,
+      "price": 130.4,
+      "change_rate": -0.89,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국반도체·AI하드웨어",
@@ -937,8 +937,8 @@
     {
       "code": "QQQM",
       "name": "Invesco 나스닥100 (QQQM)",
-      "price": 260.4,
-      "change_rate": -0.91,
+      "price": 260.7358,
+      "change_rate": -0.78,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
@@ -975,8 +975,8 @@
     {
       "code": "SPYM",
       "name": "SPDR S&P500 (SPYM)",
-      "price": 84.36,
-      "change_rate": -0.3,
+      "price": 84.4141,
+      "change_rate": -0.23,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국지수·성장ETF",
@@ -1051,8 +1051,8 @@
     {
       "code": "JPM",
       "name": "JP모건 (JPM)",
-      "price": 317.3,
-      "change_rate": 0.06,
+      "price": 316.7501,
+      "change_rate": -0.11,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국금융·결제",
