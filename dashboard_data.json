@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-28 06:58:39"
+    "checked_at": "2026-11-28 07:10:06"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-28 06:58:40",
+  "updated_at": "2026-11-28 07:10:06",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "85% (⚡ 충전 중, 22.0°C)",
@@ -785,13 +785,13 @@
     {
       "code": "SGOV",
       "name": "iShares 0-3M 단기국채",
-      "price": 100.715,
+      "price": 100.71,
       "change_rate": 0.03,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "초단기채권·현금성자산",
       "theme_tag": "🔍 퀀트 발굴(66점) · 연 4.5% 무위험 달러이자",
-      "rsi": 98.2,
+      "rsi": 98.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -975,8 +975,8 @@
     {
       "code": "AMZN",
       "name": "아마존 (AMZN)",
-      "price": 254.9987,
-      "change_rate": 4.32,
+      "price": 255.05,
+      "change_rate": 4.34,
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
