@@ -317,6 +317,15 @@
       if (globalData) renderData(globalData);
     }
 
+    function escapeHtml(val) {
+      return String(val ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
     function renderModelChips(models, consensus) {
       if (!models || models.length === 0) return '';
       const chipsHtml = models.map(m => {
@@ -333,8 +342,8 @@
 
         return `
           <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 4px 8px; font-size: 11px; display: flex; justify-content: space-between; align-items: center;">
-            <span style="color: #c9d1d9;">${icon} ${m.provider}</span>
-            <span style="color: ${mColor}; font-weight: 700;">${scText} <span style="font-size: 10px; font-weight: 600;">${dec}</span></span>
+            <span style="color: #c9d1d9;">${icon} ${escapeHtml(m.provider)}</span>
+            <span style="color: ${mColor}; font-weight: 700;">${escapeHtml(scText)} <span style="font-size: 10px; font-weight: 600;">${escapeHtml(dec)}</span></span>
           </div>
         `;
       }).join('');
@@ -343,7 +352,7 @@
         <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.25); border-radius: 8px; padding: 8px 10px; margin: 8px 0;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
             <span style="font-size: 11px; font-weight: 700; color: #c4b5fd;">🤖 초고속 2사 듀얼 AI 앙상블</span>
-            <span style="font-size: 10px; color: #8b949e;">· ${consensus || '2사 합의'}</span>
+            <span style="font-size: 10px; color: #8b949e;">· ${escapeHtml(consensus || '2사 합의')}</span>
           </div>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 6px;">
             ${chipsHtml}
@@ -548,7 +557,7 @@
         const isGood = sc >= 85;
         cardEl.style.borderLeftColor = isGood ? '#10b981' : '#fbbf24';
         badgeEl.textContent = `${sc}점 (${hInfo.grade || '우수'})`;
-        const diags = (hInfo.diagnoses || []).map(dg => `• ${dg}`).join('<br>');
+        const diags = (hInfo.diagnoses || []).map(dg => `• ${escapeHtml(dg)}`).join('<br>');
         document.getElementById('healthDiagnoses').innerHTML = diags;
         const rx = (hInfo.prescriptions || []).join(' / ') || '국내 및 미국 우량주 퀀트 타점 포착 시 분할 매수 대기';
         document.getElementById('healthPrescription').textContent = rx;
@@ -735,10 +744,10 @@
                 <div>
                   <div class="stock-title">
                     ${countryBadge}
-                    <span class="stock-name">${item.name}</span>
-                    <span class="stock-code">${item.code}</span>
+                    <span class="stock-name">${escapeHtml(item.name)}</span>
+                    <span class="stock-code">${escapeHtml(item.code)}</span>
                   </div>
-                  <div class="stock-qty" style="color: var(--toss-blue); font-weight: 600; margin-top: 4px;">🏷️ ${item.sector || (isKr ? '국내 대표주' : '글로벌 빅테크')}</div>
+                  <div class="stock-qty" style="color: var(--toss-blue); font-weight: 600; margin-top: 4px;">🏷️ ${escapeHtml(item.sector || (isKr ? '국내 대표주' : '글로벌 빅테크'))}</div>
                 </div>
                 <div class="stock-val-box">
                   <div class="stock-cur-price">${priceStr}</div>
@@ -747,25 +756,25 @@
               </div>
 
               <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; margin: 6px 0 2px 0;">
-                <span class="ai-badge ${badgeClass}">✨ AI 앙상블 종합: ${ensScore}점 (${ensDec})</span>
-                <span style="font-size: 10px; color: #8b949e; background: rgba(255,255,255,0.06); padding: 2px 7px; border-radius: 6px; font-weight: 500;">🕒 분석: ${ens.checked_at || d.updated_at || '실시간'}</span>
+                <span class="ai-badge ${badgeClass}">✨ AI 앙상블 종합: ${escapeHtml(ensScore)}점 (${escapeHtml(ensDec)})</span>
+                <span style="font-size: 10px; color: #8b949e; background: rgba(255,255,255,0.06); padding: 2px 7px; border-radius: 6px; font-weight: 500;">🕒 분석: ${escapeHtml(ens.checked_at || d.updated_at || '실시간')}</span>
               </div>
 
               ${renderModelChips(ens.models, consensus)}
 
               <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; margin-top: 4px; padding: 5px 10px; background: rgba(63, 185, 80, 0.08); border-radius: 6px; border: 1px solid rgba(63, 185, 80, 0.3);">
-                <span style="color: #3fb950; font-weight: 600;">${auditBadge}</span>
-                <span style="color: #8b949e; font-size: 10px;">${item.action_status || '자율 매매 감시 중'}</span>
+                <span style="color: #3fb950; font-weight: 600;">${escapeHtml(auditBadge)}</span>
+                <span style="color: #8b949e; font-size: 10px;">${escapeHtml(item.action_status || '자율 매매 감시 중')}</span>
               </div>
 
               <div class="action-tip-box" style="border-left-color: ${ensDec.includes('매수') ? '#3fb950' : '#3182F6'}; margin-top: 10px;">
                 <div class="action-tip-title" style="color: ${ensDec.includes('매수') ? '#3fb950' : '#3182F6'};">💡 AI 자율 운용 액션 &amp; 타점 분석</div>
-                <div class="action-tip-text">${aiReason}</div>
+                <div class="action-tip-text">${escapeHtml(aiReason)}</div>
               </div>
 
               <div class="indicator-row">
                 <div class="indicator-pill"><span>Wilder RSI (14)</span><span class="pill-val ${item.rsi !== null && item.rsi !== undefined ? (item.rsi <= 30 ? 'rsi-oversold' : (item.rsi >= 70 ? 'rsi-overbought' : '')) : ''}">${item.rsi !== null && item.rsi !== undefined ? (item.rsi <= 30 ? item.rsi + ' (과매도 눌림목 🟢)' : (item.rsi >= 70 ? item.rsi + ' (과열 경계 ⚠️)' : item.rsi + ' (중립)')) : '--'}</span></div>
-                <div class="indicator-pill"><span>구분</span><span class="pill-val">${item.theme_tag || (isKr ? '코스피 우량주' : '미국 대표주')}</span></div>
+                <div class="indicator-pill"><span>구분</span><span class="pill-val">${escapeHtml(item.theme_tag || (isKr ? '코스피 우량주' : '미국 대표주'))}</span></div>
               </div>
             </div>
           `;
@@ -823,8 +832,8 @@
               <div>
                 <div class="stock-title">
                   ${countryBadge}
-                  <span class="stock-name">${h.name}</span>
-                  <span class="stock-code">${h.code}</span>
+                  <span class="stock-name">${escapeHtml(h.name)}</span>
+                  <span class="stock-code">${escapeHtml(h.code)}</span>
                 </div>
                 <div class="stock-qty">${h.qty}주 보유 (평단 ${avgStr})</div>
               </div>
@@ -837,20 +846,20 @@
             </div>
 
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; margin: 6px 0 2px 0;">
-              <span class="ai-badge ${badgeClass}">🤖 AI 실시간 판단: ${ensScore}점 (${ensDec})</span>
-              <span style="font-size: 10px; color: #8b949e; background: rgba(255,255,255,0.06); padding: 2px 7px; border-radius: 6px; font-weight: 500;">🕒 갱신: ${ens.checked_at || '실시간'}</span>
+              <span class="ai-badge ${badgeClass}">🤖 AI 실시간 판단: ${escapeHtml(ensScore)}점 (${escapeHtml(ensDec)})</span>
+              <span style="font-size: 10px; color: #8b949e; background: rgba(255,255,255,0.06); padding: 2px 7px; border-radius: 6px; font-weight: 500;">🕒 갱신: ${escapeHtml(ens.checked_at || '실시간')}</span>
             </div>
 
             ${renderModelChips(ens.models, consensus)}
 
             <div class="action-tip-box" style="border-left-color: ${ensDec.includes('매수') ? '#3fb950' : '#3182F6'}; margin-top: 10px;">
               <div class="action-tip-title" style="color: ${ensDec.includes('매수') ? '#3fb950' : '#3182F6'};">💡 AI 실시간 전략 지침</div>
-              <div class="action-tip-text">${ens.reason || '안정적인 포지션을 유지하며 추세를 관제합니다.'}</div>
+              <div class="action-tip-text">${escapeHtml(ens.reason || '안정적인 포지션을 유지하며 추세를 관제합니다.')}</div>
             </div>
 
             <div class="indicator-row">
               <div class="indicator-pill"><span>Wilder RSI (14)</span><span class="pill-val ${h.rsi !== undefined && h.rsi !== null ? (h.rsi <= 30 ? 'rsi-oversold' : (h.rsi >= 70 ? 'rsi-overbought' : '')) : ''}">${h.rsi !== undefined && h.rsi !== null ? (h.rsi <= 30 ? h.rsi + ' (과매도 눌림목 🟢)' : (h.rsi >= 70 ? h.rsi + ' (과열 경계 ⚠️)' : h.rsi + ' (중립)')) : '--'}</span></div>
-              <div class="indicator-pill"><span>수급 동향</span><span class="pill-val">${h.investor_summary || '기관·외인 실시간 추적 중'}</span></div>
+              <div class="indicator-pill"><span>수급 동향</span><span class="pill-val">${escapeHtml(h.investor_summary || '기관·외인 실시간 추적 중')}</span></div>
             </div>
           </div>
         `;
