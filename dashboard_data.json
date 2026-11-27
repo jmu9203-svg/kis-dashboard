@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-27 10:05:44"
+    "checked_at": "2026-11-27 10:10:13"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-27 10:05:44",
+  "updated_at": "2026-11-27 10:11:03",
   "market_status": "장중 실시간 감시 & 매매 가동 중",
   "is_market_open": true,
   "battery": "83% (🔋 배터리 사용 중, 20.8°C)",
@@ -101,13 +101,13 @@
     {
       "code": "465580",
       "name": "ACE 미국빅테크TOP7 Plus",
-      "price": 21595,
-      "change_rate": 0.54,
+      "price": 21620,
+      "change_rate": 0.65,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 40.2,
+      "rsi": 40.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -139,13 +139,13 @@
     {
       "code": "381170",
       "name": "TIGER 미국테크TOP10 INDXX",
-      "price": 26900,
-      "change_rate": 0.41,
+      "price": 26930,
+      "change_rate": 0.52,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 38.5,
+      "rsi": 38.7,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -177,13 +177,13 @@
     {
       "code": "360750",
       "name": "TIGER 미국S&P500",
-      "price": 24085,
-      "change_rate": 0.31,
+      "price": 24105,
+      "change_rate": 0.4,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 40.1,
+      "rsi": 40.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -215,13 +215,13 @@
     {
       "code": "458730",
       "name": "TIGER 미국배당다우존스",
-      "price": 15030,
-      "change_rate": 0.33,
+      "price": 15035,
+      "change_rate": 0.37,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "미국증시·글로벌빅테크",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 56.1,
+      "rsi": 56.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -253,201 +253,11 @@
     {
       "code": "069500",
       "name": "KODEX 200",
-      "price": 73980,
-      "change_rate": 0.8,
+      "price": 74500,
+      "change_rate": 1.51,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "기타·분산섹터",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 36.8,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 48,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 45,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피200 약세장 및 20일 이동평균선 아래에 위치하며 역배열 상태를 보이고 있어 추세 돌파 매수 조건을 충족하지 못합니다. 다만 장중 아래꼬리를 달고 반등하며 저가 매수세가 유입된 점을 감안하여 신규 진입보다는 관망을 유지하며 향후 시장 안정 및 수급 개선 시 재진입을 검토하겠습니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 28점 ↔ AI 48점 | 편차 20점 · 보수적 관망)",
-        "checked_at": "2026-11-26 14:38:32"
-      }
-    },
-    {
-      "code": "091160",
-      "name": "KODEX 반도체",
-      "price": 82450,
-      "change_rate": 1.54,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "반도체·IT하드웨어",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 37.7,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 48,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 45,
-            "decision": "관망"
-          }
-        ],
-        "reason": "코스피 약세장 속에서 20일선 아래에 위치하고 있으며, 장중 긴 윗꼬리 음봉과 부진한 거래량을 기록해 추세적 반등 모멘텀이 부족합니다. 10일선 및 전고점 돌파 여부와 외인·기관의 수급 개선을 확인한 후 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 33점 ↔ AI 48점 | 편차 15점)",
-        "checked_at": "2026-11-26 14:39:01"
-      }
-    },
-    {
-      "code": "305720",
-      "name": "KODEX 2차전지산업",
-      "price": 11945,
-      "change_rate": 4.6,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "플랫폼·바이오",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 44.2,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 55,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 58,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 코스피200 약세·조정장 속에서 20일 이동평균선 아래에 위치하며 역배열을 보이고 있고, 장중 긴 윗꼬리 음봉이 형성되어 상단 매물대 저항이 강합니다. 또한 기관의 5일 누적 순매도가 이어지고 매수 조건인 정배열 및 신고가 돌파 기준을 충족하지 못하므로, 무리한 진입을 피하고 관망하며 향후 추세 반전 시 재진입을 검토합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 39점 ↔ AI 55점 | 편차 16점 · 보수적 관망)",
-        "checked_at": "2026-11-26 14:36:26"
-      }
-    },
-    {
-      "code": "102110",
-      "name": "TIGER 200",
-      "price": 73777,
-      "change_rate": 0.7,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "기타·분산섹터",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 36.6,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 48,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 52,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 45,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 주가가 MA20과 MA60을 모두 하회하는 명확한 역배열 추세에 있으며, 20일 신고가 돌파 조건이 전혀 충족되지 않아 매수 진입 기준에 부합하지 않습니다. 또한 5일 누적 기준 외국인 및 기관의 대규모 순매도가 지속되고 있어 수급 기반의 반등 확신이 부족하며, RSI 37.1은 과매도 구간이지만 추세 전환 신호가 확인되지 않은 상태입니다. 따라서 현재 시점에서는 신규 진입을 보류하고, 향후 MA20 회복 및 수급 개선 등 시장 안정 시 재진입을 검토하는 것이 적절합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 31점 ↔ AI 48점 | 편차 17점 · 보수적 관망)",
-        "checked_at": "2026-11-26 14:38:37"
-      }
-    },
-    {
-      "code": "005930",
-      "name": "삼성전자",
-      "price": 171500,
-      "change_rate": 0.12,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "반도체·IT하드웨어",
-      "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 34.5,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "신규 레이더 감시 🎯",
-      "action_status": "진입 타점 추적 중 📡",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 45,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 45,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 45,
-            "decision": "관망"
-          }
-        ],
-        "reason": "현재 주가가 MA20과 MA60을 모두 하회하는 강한 역배열 추세에 있으며, 5일 누적 외국인 및 기관의 대규모 순매도 지속과 거래량 부진(77%)으로 매수 모멘텀이 결여되어 있습니다. RSI 35.9의 약세권과 윗꼬리 캔들 형성은 단기 반등 시 차익매물 출회 가능성을 시사하므로, 추격 매수보다는 향후 시장 안정 및 수급 개선 시 재진입을 검토하는 것이 적절합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 24점 ↔ AI 45점 | 편차 21점 · 보수적 관망)",
-        "checked_at": "2026-11-26 14:38:42"
-      }
-    },
-    {
-      "code": "000660",
-      "name": "SK하이닉스",
-      "price": 1044000,
-      "change_rate": -0.85,
-      "marketCountry": "KR",
-      "currency": "KRW",
-      "sector": "반도체·IT하드웨어",
       "theme_tag": "🏛️ 마스터 수급 주도주",
       "rsi": 37.6,
       "is_held": false,
@@ -457,25 +267,215 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 46,
+        "score": 56,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 48,
+            "score": 55,
             "decision": "관망"
           },
           {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          }
+        ],
+        "reason": "코스피200 지수가 20일선을 하회하는 약세장 속에서 종목 또한 역배열을 유지하고 있으며 외국인과 기관의 5일 누적 순매도가 이어지고 있어 매수 조건을 충족하지 못합니다. 미보유 상태인 현재는 리스크 관리 차원에서 적극적인 진입을 보류하고 향후 시장 안정화 및 추세 전환 시 재진입을 검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 32점 ↔ AI 56점 | 편차 24점 · 보수적 관망)",
+        "checked_at": "2026-11-27 10:08:50"
+      }
+    },
+    {
+      "code": "091160",
+      "name": "KODEX 반도체",
+      "price": 83225,
+      "change_rate": 2.49,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "반도체·IT하드웨어",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 38.2,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 48,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
             "provider": "Google",
             "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
             "score": 45,
             "decision": "관망"
           }
         ],
-        "reason": "현재 코스피200 약세장 속에서 주가가 20일 이동평균선과 10일선을 모두 하회하며 역배열을 형성하고 있고, 외국인과 기관의 5일 누적 대량 순매도세가 이어지고 있습니다. 장중 윗꼬리가 출회되며 단기 차익매물이 확인되므로 신규 매수 조건을 충족하지 못해 관망하며 향후 시장 안정 시 재진입을 검토합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 18점 ↔ AI 46점 | 편차 28점 · 보수적 관망)",
-        "checked_at": "2026-11-26 14:39:29"
+        "reason": "코스피200 약세장 및 20일 이동평균선 아래에 위치하여 정배열 추세 돌파 조건을 충족하지 못했습니다. 미보유 상태에서 장대 양봉 반등세가 나타났으나 거래량과 이평선 정배열 여건을 더 확인할 필요가 있으므로 현재는 관망을 유지하며 향후 시장 안정 시 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 40점 ↔ AI 48점 | 편차 8점)",
+        "checked_at": "2026-11-27 10:10:20"
+      }
+    },
+    {
+      "code": "305720",
+      "name": "KODEX 2차전지산업",
+      "price": 12040,
+      "change_rate": 5.43,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "플랫폼·바이오",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 45.0,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 59,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 60,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 120B",
+            "score": 58,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 코스피200 약세장 속에서 종목이 20일 이동평균선(12,317원)을 하회하고 역배열 상태에 있어 정배열 추세 돌파 조건을 충족하지 못했습니다. 미보유 상태에서 단기 반등세가 나타났으나 추가적인 기술적 확인이 필요하므로, 향후 시장 안정 및 추세 전환 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 54점 ↔ AI 59점 | 편차 5점)",
+        "checked_at": "2026-11-27 10:07:35"
+      }
+    },
+    {
+      "code": "102110",
+      "name": "TIGER 200",
+      "price": 74280,
+      "change_rate": 1.39,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "기타·분산섹터",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 37.5,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 48,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 45,
+            "decision": "관망"
+          }
+        ],
+        "reason": "약세·조정장 속에서 코스피200이 20일 이동평균선을 하회하는 역배열 상태이며, RSI 36.6으로 모멘텀이 부족하여 매수 기준을 충족하지 않습니다. 현재 미보유 잔고 상태이므로 매도 대상이 아니며, 향후 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 36점 ↔ AI 48점 | 편차 12점)",
+        "checked_at": "2026-11-27 10:10:06"
+      }
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "price": 172500,
+      "change_rate": 0.7,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "반도체·IT하드웨어",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 34.7,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 48,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq Qwen",
+            "score": 45,
+            "decision": "관망"
+          }
+        ],
+        "reason": "코스피200 약세·조정장 속에서 삼성전자가 MA20을 하회하는 역배열 상태를 보이고 외국인 5일 누적 순매도가 이어지고 있어 매수 조건을 충족하지 못합니다. 다만 14일 RSI가 34.7로 과매도 구간에 진입하고 휴머노이드 공개 기대감 등 로봇 관련 모멘텀이 상존하므로, 향후 시장 안정 및 수급 개선 추이를 모니터링하며 재진입을 검토하겠습니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 36점 ↔ AI 48점 | 편차 12점)",
+        "checked_at": "2026-11-27 10:10:36"
+      }
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "price": 1057000,
+      "change_rate": 0.38,
+      "marketCountry": "KR",
+      "currency": "KRW",
+      "sector": "반도체·IT하드웨어",
+      "theme_tag": "🏛️ 마스터 수급 주도주",
+      "rsi": 37.9,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "신규 레이더 감시 🎯",
+      "action_status": "진입 타점 추적 중 📡",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 54,
+        "consensus": "2:0 관망 우세",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 52,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 55,
+            "decision": "관망"
+          }
+        ],
+        "reason": "현재 코스피200 약세·조정장 속에서 SK하이닉스가 20일 이동평균선 아래에 위치하고 역배열 상태를 보이고 있어 추세 돌파 조건에 미달합니다. 또한 주당 단가가 가용 한도를 초과하며 5일 누적 수급이 매도 우위를 나타내어 적극적인 진입보다는 향후 시장 안정 및 추세 전환 시 재진입을 검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 32점 ↔ AI 54점 | 편차 22점 · 보수적 관망)",
+        "checked_at": "2026-11-27 10:10:54"
       }
     },
     {
@@ -487,7 +487,7 @@
       "currency": "KRW",
       "sector": "자동차·모빌리티",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 43.3,
+      "rsi": 42.5,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -533,37 +533,37 @@
       "action_status": "진입 타점 추적 중 📡",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 57,
+        "score": 56,
         "consensus": "2:0 관망 우세",
         "models": [
           {
             "provider": "Google",
             "model": "Gemini 3.5",
-            "score": 62,
+            "score": 55,
             "decision": "관망"
           },
           {
             "provider": "Groq",
             "model": "Groq 120B",
-            "score": 52,
+            "score": 58,
             "decision": "관망"
           }
         ],
-        "reason": "현재 코스피200 약세·조정장 레짐 속에서 KB금융이 20일 이동평균선과 역배열 상태를 보이고 있어 적극적인 추세 돌파 매수 조건을 충족하지 못합니다. 다만, 기관의 지속적인 순매수와 활발한 거래량 속에서 하방 지지력을 확인하고 있으므로, 향후 시장이 안정되거나 10일선을 회복할 때까지 진입을 유보하고 관망을 유지합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 55점 ↔ AI 57점 | 편차 2점)",
-        "checked_at": "2026-11-26 14:31:26"
+        "reason": "현재 코스피200 약세·조정장 속에서 KB금융은 MA20을 하회하는 역배열 상태이며, 20일 신고가 돌파 조건 및 정배열 추세 기준을 충족하지 못해 신규 매수보다는 관망이 타당합니다. 미보유 상태이므로 매도 대상이 아니며, 향후 시장 안정 및 추세 회복 시 재진입을 검토합니다.",
+        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 56점 | 편차 13점)",
+        "checked_at": "2026-11-27 10:06:33"
       }
     },
     {
       "code": "035420",
       "name": "NAVER",
-      "price": 161400,
-      "change_rate": 0.75,
+      "price": 162300,
+      "change_rate": 1.31,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "플랫폼·바이오",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 40.5,
+      "rsi": 41.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -595,13 +595,13 @@
     {
       "code": "035720",
       "name": "카카오",
-      "price": 30850,
-      "change_rate": 2.15,
+      "price": 31050,
+      "change_rate": 2.81,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "플랫폼·바이오",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 47.8,
+      "rsi": 49.0,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -633,13 +633,13 @@
     {
       "code": "066570",
       "name": "LG전자",
-      "price": 143200,
-      "change_rate": 5.92,
+      "price": 143600,
+      "change_rate": 6.21,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "반도체·IT하드웨어",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 47.9,
+      "rsi": 48.3,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -671,13 +671,13 @@
     {
       "code": "012450",
       "name": "한화에어로스페이스",
-      "price": 669000,
-      "change_rate": 6.7,
+      "price": 673000,
+      "change_rate": 7.34,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "전력망·중공업·방산",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 45.5,
+      "rsi": 45.9,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -709,13 +709,13 @@
     {
       "code": "267260",
       "name": "HD현대일렉트릭",
-      "price": 411000,
-      "change_rate": 6.06,
+      "price": 414000,
+      "change_rate": 6.84,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "전력망·중공업·방산",
       "theme_tag": "🏛️ 마스터 수급 주도주",
-      "rsi": 45.4,
+      "rsi": 46.1,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
@@ -747,8 +747,8 @@
     {
       "code": "005490",
       "name": "POSCO홀딩스",
-      "price": 252750,
-      "change_rate": 1.71,
+      "price": 253500,
+      "change_rate": 2.01,
       "marketCountry": "KR",
       "currency": "KRW",
       "sector": "철강·에너지·소재",
