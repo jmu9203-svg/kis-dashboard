@@ -66,7 +66,7 @@
     "daily_pnl_pct": 0.0,
     "anomaly_count": 0,
     "api_status": "한투 API: 🟢 정상 | 토스 API: 🟢 정상 | Gemini AI: 🟢 정상",
-    "checked_at": "2026-11-28 09:28:08"
+    "checked_at": "2026-11-28 09:39:37"
   },
   "friction_guard": {
     "domestic_stock_pct": 0.35,
@@ -76,7 +76,7 @@
   },
   "env_type": "REAL",
   "frozen_reserve": 0,
-  "updated_at": "2026-11-28 09:28:08",
+  "updated_at": "2026-11-28 09:39:38",
   "market_status": "주말 휴장 (24/7 실시간 관제 중)",
   "is_market_open": false,
   "battery": "84% (⚡ 충전 중, 21.6°C)",
@@ -821,44 +821,6 @@
       }
     },
     {
-      "code": "SCHD",
-      "name": "Schwab 미국 배당 다우",
-      "price": 35.67,
-      "change_rate": 1.08,
-      "marketCountry": "US",
-      "currency": "USD",
-      "sector": "미국배당·가치주ETF",
-      "theme_tag": "🔍 퀀트 발굴(78점) · 10년 연속 배당성장",
-      "rsi": 57.2,
-      "is_held": false,
-      "held_qty": 0,
-      "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(78점) 📊",
-      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
-      "ai_ensemble": {
-        "decision": "관망",
-        "score": 50,
-        "consensus": "2:0 관망 우세",
-        "models": [
-          {
-            "provider": "Google",
-            "model": "Gemini 3.5",
-            "score": 45,
-            "decision": "관망"
-          },
-          {
-            "provider": "Groq",
-            "model": "Groq 120B",
-            "score": 55,
-            "decision": "관망"
-          }
-        ],
-        "reason": "미 증시 패닉 폭락장 속에서 SCHD는 투자의견 하향 등 구조적 악재와 20일 이동평균선을 하회하는 약세 흐름을 보이고 있어 신규 진입을 자제합니다. 향후 시장 변동성이 완화되고 기술적 지표가 안정될 때 재진입을 검토합니다.",
-        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 21점 ↔ AI 50점 | 편차 29점 · 보수적 관망)",
-        "checked_at": "2026-11-26 01:32:40"
-      }
-    },
-    {
       "code": "TLT",
       "name": "iShares 20년+ 미 국채 (TLT)",
       "price": 81.27,
@@ -897,29 +859,29 @@
       }
     },
     {
-      "code": "V",
-      "name": "비자 (V)",
-      "price": 429.56,
-      "change_rate": 1.22,
+      "code": "SCHD",
+      "name": "Schwab 미국 배당 다우",
+      "price": 35.67,
+      "change_rate": 1.08,
       "marketCountry": "US",
       "currency": "USD",
-      "sector": "미국금융·결제",
-      "theme_tag": "🔍 퀀트 발굴(72점) · 글로벌 결제 네트워크",
-      "rsi": 62.0,
+      "sector": "미국배당·가치주ETF",
+      "theme_tag": "🔍 퀀트 발굴(70점) · 10년 연속 배당성장",
+      "rsi": 57.2,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(72점) 📊",
+      "status_tag": "🔍 퀀트 발굴(70점) 📊",
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
-        "score": 55,
+        "score": 50,
         "consensus": "2:0 관망 우세",
         "models": [
           {
-            "provider": "Groq",
-            "model": "Groq Qwen",
-            "score": 55,
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 45,
             "decision": "관망"
           },
           {
@@ -929,9 +891,9 @@
             "decision": "관망"
           }
         ],
-        "reason": "미국 증시가 20일선 하회의 약세·조정장 레짐에 진입했으며, 해당 종목 역시 MA20을 하회하고 있어 기술적 지지선이 무너진 상태입니다. RSI 47.7은 저가매수 유입 구간(RSI<=40)이 아닌 중립 영역에 위치해 있으며, 거래량 부족으로 매수 모멘텀이 확인되지 않아 신규 진입 시 리스크가 큽니다. 따라서 현금 확보와 관망이 우선이며, MA20 회복 및 거래량 동반 반등 확인 전까지 대기합니다.",
-        "audit_badge": "✅ 5대 팩트 일치 (정량 43점 ↔ AI 55점 | 편차 12점)",
-        "checked_at": "2026-11-23 23:38:03"
+        "reason": "미 증시 패닉 폭락장 속에서 SCHD는 투자의견 하향 등 구조적 악재와 20일 이동평균선을 하회하는 약세 흐름을 보이고 있어 신규 진입을 자제합니다. 향후 시장 변동성이 완화되고 기술적 지표가 안정될 때 재진입을 검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 21점 ↔ AI 50점 | 편차 29점 · 보수적 관망)",
+        "checked_at": "2026-11-26 01:32:40"
       }
     },
     {
@@ -980,12 +942,12 @@
       "marketCountry": "US",
       "currency": "USD",
       "sector": "미국증시·글로벌빅테크",
-      "theme_tag": "🔍 퀀트 발굴(52점) · 클라우드·AI 커머스",
+      "theme_tag": "🔍 퀀트 발굴(44점) · 클라우드·AI 커머스",
       "rsi": 48.6,
       "is_held": false,
       "held_qty": 0,
       "pnl_rate": null,
-      "status_tag": "🔍 퀀트 발굴(52점) 📊",
+      "status_tag": "🔍 퀀트 발굴(44점) 📊",
       "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
       "ai_ensemble": {
         "decision": "관망",
@@ -1084,6 +1046,44 @@
         "reason": "시장 전반이 급락한 상황에서 JEPI는 저변동 고배당 ETF이지만 거래량이 현저히 낮고 뚜렷한 외·기관 순매수 신호가 없어 신중히 접근해야 합니다. RSI는 저가 매수 매력은 있으나, 현재는 보수적인 관망이 적절합니다.",
         "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 36점 ↔ AI 58점 | 편차 22점 · 보수적 관망)",
         "checked_at": "2026-11-26 01:33:29"
+      }
+    },
+    {
+      "code": "SOXX",
+      "name": "iShares 반도체 (SOXX)",
+      "price": 134.07,
+      "change_rate": 4.76,
+      "marketCountry": "US",
+      "currency": "USD",
+      "sector": "미국반도체·AI하드웨어",
+      "theme_tag": "🔍 퀀트 발굴(31점) · 미국 반도체 섹터 ETF",
+      "rsi": 41.6,
+      "is_held": false,
+      "held_qty": 0,
+      "pnl_rate": null,
+      "status_tag": "🔍 퀀트 발굴(31점) 📊",
+      "action_status": "정규장 안전 관망 (체결 0건) 🛡️",
+      "ai_ensemble": {
+        "decision": "관망",
+        "score": 69,
+        "consensus": "1:1 의견 분립 (안전 관망 채택)",
+        "models": [
+          {
+            "provider": "Google",
+            "model": "Gemini 3.5",
+            "score": 58,
+            "decision": "관망"
+          },
+          {
+            "provider": "Groq",
+            "model": "Groq 20B",
+            "score": 80,
+            "decision": "매수"
+          }
+        ],
+        "reason": "미 증시 약세장과 20일선 하회 흐름 속에서 14일 RSI가 36.7로 낮아지고 아래꼬리 양봉 반등을 보였으나, 거래량이 20일 평균의 65%로 다소 실종되어 본격적인 추세 반전으로 확인하기에 부족합니다. 따라서 무리한 진입을 자제하고 향후 수급 유입 및 시장 안정 시 재진입을 검토합니다.",
+        "audit_badge": "⚠️ 정량-AI 편차 주의 (정량 50점 ↔ AI 69점 | 편차 19점 · 보수적 관망)",
+        "checked_at": "2026-11-26 05:31:09"
       }
     }
   ],
